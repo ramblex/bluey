@@ -10,6 +10,7 @@ gem 'devise', '1.1.5'
 gem 'cancan', '1.5.1'
 gem 'haml', '3.0.25'
 gem 'compass', '0.10.6'
+gem 'jquery-rails', '>= 0.2.6'
 
 # Use unicorn as the web server
 # gem 'unicorn'
