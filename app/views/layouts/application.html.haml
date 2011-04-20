@@ -13,11 +13,12 @@
       #left-col
         %h1=link_to 'Bluey health & fitness', root_path
         %nav
-          %li=link_to 'Plans', plans_path, :class => 'plans selected'
-          %li=link_to 'Community', '#', :class => 'community'
-          %li=link_to 'Challenges', '#', :class => 'challenges'
-          %li=link_to 'Profile', '#', :class => 'profile'
-          %li=link_to 'Financial', '#', :class => 'financial'
+          %ul
+            %li=link_to 'Plans', plans_path, :class => 'plans selected'
+            %li=link_to 'Community', '#', :class => 'community'
+            %li=link_to 'Challenges', '#', :class => 'challenges'
+            %li=link_to 'Profile', '#', :class => 'profile'
+            %li=link_to 'Financial', '#', :class => 'financial'
       #right-col
         #stats-bar
         #content

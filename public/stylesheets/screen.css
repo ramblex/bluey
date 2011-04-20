@@ -103,7 +103,7 @@ h1 a {
 }
 
 /* line 54, ../sass/screen.sass */
-nav {
+nav ul {
   width: 107px;
   height: 633px;
   background: #0e99e8;
@@ -116,13 +116,13 @@ nav {
   border-radius: 5px;
 }
 /* line 60, ../sass/screen.sass */
-nav li {
+nav ul li {
   text-align: center;
   list-style: none;
   margin: 7px 0;
 }
 /* line 64, ../sass/screen.sass */
-nav li a {
+nav ul li a {
   padding: 10px 0;
   height: 100px;
   color: #333333;
@@ -131,27 +131,27 @@ nav li a {
   font-weight: bold;
 }
 /* line 71, ../sass/screen.sass */
-nav li a.plans {
+nav ul li a.plans {
   background: url(/images/plans.png) no-repeat center 25px;
 }
 /* line 73, ../sass/screen.sass */
-nav li a.community {
+nav ul li a.community {
   background: url(/images/community.png) no-repeat center 25px;
 }
 /* line 75, ../sass/screen.sass */
-nav li a.challenges {
+nav ul li a.challenges {
   background: url(/images/challenges.png) no-repeat center 25px;
 }
 /* line 77, ../sass/screen.sass */
-nav li a.profile {
+nav ul li a.profile {
   background: url(/images/profile.png) no-repeat center 25px;
 }
 /* line 79, ../sass/screen.sass */
-nav li a.financial {
+nav ul li a.financial {
   background: url(/images/financial.png) no-repeat center 25px;
 }
 /* line 81, ../sass/screen.sass */
-nav li a:hover, nav li a.selected {
+nav ul li a:hover, nav ul li a.selected {
   color: white;
 }
 
@@ -197,13 +197,12 @@ nav li a:hover, nav li a.selected {
 }
 
 /* line 105, ../sass/screen.sass */
-sidebar {
-  display: block;
+#context-bar {
   height: 30px;
   margin-bottom: 10px;
 }
-/* line 109, ../sass/screen.sass */
-sidebar ul.filter-buttons {
+/* line 108, ../sass/screen.sass */
+#context-bar ul.filter-buttons {
   background: #3baeee;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -218,12 +217,12 @@ sidebar ul.filter-buttons {
   background-image: linear-gradient(bottom, #0092e6 0%, #3baeee 100%);
   padding: 0 10px;
 }
-/* line 116, ../sass/screen.sass */
-sidebar ul.filter-buttons li {
+/* line 115, ../sass/screen.sass */
+#context-bar ul.filter-buttons li {
   float: left;
 }
-/* line 118, ../sass/screen.sass */
-sidebar ul.filter-buttons li a {
+/* line 117, ../sass/screen.sass */
+#context-bar ul.filter-buttons li a {
   display: block;
   outline: 0;
   height: 30px;
@@ -234,17 +233,17 @@ sidebar ul.filter-buttons li a {
   color: #add8f1;
   text-shadow: #1e89c5 -1px -1px 0;
 }
-/* line 128, ../sass/screen.sass */
-sidebar ul.filter-buttons li a:hover, sidebar ul.filter-buttons li a.selected {
+/* line 127, ../sass/screen.sass */
+#context-bar ul.filter-buttons li a:hover, #context-bar ul.filter-buttons li a.selected {
   color: white;
 }
-/* line 130, ../sass/screen.sass */
-sidebar ul.filter-buttons li a:active {
+/* line 129, ../sass/screen.sass */
+#context-bar ul.filter-buttons li a:active {
   padding-top: 1px;
   height: 29px;
 }
-/* line 133, ../sass/screen.sass */
-sidebar input {
+/* line 132, ../sass/screen.sass */
+#context-bar input {
   border: 1px solid #dbdbdb;
   height: 30px;
   line-height: 30px;
@@ -261,8 +260,8 @@ sidebar input {
   font-weight: bold;
   color: #dddddd;
 }
-/* line 144, ../sass/screen.sass */
-sidebar #share {
+/* line 143, ../sass/screen.sass */
+#context-bar #share {
   display: block;
   float: right;
   width: 135px;
@@ -284,22 +283,22 @@ sidebar #share {
   text-decoration: none;
   font-size: 18px;
 }
-/* line 158, ../sass/screen.sass */
-sidebar #share:hover {
+/* line 157, ../sass/screen.sass */
+#context-bar #share:hover {
   text-decoration: underline;
 }
-/* line 160, ../sass/screen.sass */
-sidebar #share:active {
+/* line 159, ../sass/screen.sass */
+#context-bar #share:active {
   padding-top: 1px;
   height: 29px;
 }
 
-/* line 164, ../sass/screen.sass */
+/* line 163, ../sass/screen.sass */
 #plans {
   clear: both;
 }
 
-/* line 167, ../sass/screen.sass */
+/* line 166, ../sass/screen.sass */
 .plan {
   margin-right: 1px;
   display: block;
@@ -311,17 +310,17 @@ sidebar #share:active {
   padding: 5px;
   position: relative;
 }
-/* line 177, ../sass/screen.sass */
+/* line 176, ../sass/screen.sass */
 .plan header {
   color: #077cbe;
   font-weight: bold;
 }
-/* line 180, ../sass/screen.sass */
+/* line 179, ../sass/screen.sass */
 .plan header .date {
   font-size: 80%;
   color: #8b8b8b;
 }
-/* line 183, ../sass/screen.sass */
+/* line 182, ../sass/screen.sass */
 .plan footer {
   width: 284px;
   padding: 0 5px;
@@ -333,13 +332,13 @@ sidebar #share:active {
   background: #484848;
   font-weight: bold;
 }
-/* line 193, ../sass/screen.sass */
+/* line 192, ../sass/screen.sass */
 .plan footer a {
   color: white;
   text-decoration: none;
   font-size: 90%;
 }
-/* line 197, ../sass/screen.sass */
+/* line 196, ../sass/screen.sass */
 .plan footer a:hover {
   text-decoration: underline;
 }
