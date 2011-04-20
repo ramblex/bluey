@@ -93,10 +93,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cancan
-  capistrano
-  compass
-  devise
-  haml
-  mysql2
+  cancan (= 1.5.1)
+  capistrano (= 2.5.19)
+  compass (= 0.10.6)
+  devise (= 1.1.5)
+  haml (= 3.0.25)
+  mysql2 (= 0.2.7)
   rails (= 3.0.5)
