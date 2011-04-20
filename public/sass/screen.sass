@@ -1,0 +1,198 @@
+/*
+ * Stylesheet for Bluey health and fitness
+ * Author: Alex Duller
+ * Contents:
+ * - Variables
+ * - Colours
+ * - Globals and wrapper
+ * - Left column
+ * - Right column
+ */
+
+@import "compass/reset"
+@import "compass/utilities/general/clearfix"
+@import "compass/css3/border-radius"
+@import "compass/css3/box-shadow"
+@import "compass/css3/text-shadow"
+@import "compass/css3/gradient"
+
+/* Variables */
+$total_width = 1000px
+$left_col_width = 107px
+$right_col_width = $total_width - $left_col_width
+$stats_bar_height = 107px
+
+/* Colours */
+$blue_border = #007cc2
+$blue_bg = #0e99e8
+
+/* Globals and wrapper */
+body
+  font: 14px Helvetica, Arial, sans-serif
+  letter-spacing: -1px
+
+#wrapper
+  @include clearfix
+  width: $total_width
+  margin: 0 auto
+  margin-bottom: 50px
+
+/* Left column */
+#left-col
+  width: $left_col_width
+  float: left
+
+h1
+  a
+    display: block
+    height: $stats_bar_height
+    outline: 0
+    text-indent: -30000px
+    background: url(/images/logo.png) no-repeat
+    margin: 20px 0
+
+nav
+  width: 107px
+  height: 633px
+  background: $blue_bg
+  border: 1px solid $blue_border
+  @include border-radius(5px)
+  li
+    text-align: center
+    list-style: none
+    margin: 7px 0
+    a
+      padding: 10px 0
+      height: 100px
+      color: #333
+      display: block
+      text-decoration: none
+      font-weight: bold
+      &.plans
+        background: url(/images/plans.png) no-repeat center 25px
+      &.community
+        background: url(/images/community.png) no-repeat center 25px
+      &.challenges
+        background: url(/images/challenges.png) no-repeat center 25px
+      &.profile
+        background: url(/images/profile.png) no-repeat center 25px
+      &.financial
+        background: url(/images/financial.png) no-repeat center 25px
+      &:hover, &.selected
+        color: white
+
+/* Right column */
+#right-col
+  width: $right_col_width
+  float: right
+
+#stats-bar
+  margin: 20px
+  height: $stats_bar_height
+  @include linear-gradient(color-stops($blue_bg, $blue_bg 55%, #2da6eb 55%, #2da6eb 100%), bottom)
+  @include border-radius(5px)
+  border: 1px solid $blue_border
+
+#content
+  margin: 0 20px
+  padding: 10px
+  @include border-radius(5px)
+  @include box-shadow(#ccc, 0, 0, 3px, 1px)
+  @include clearfix
+
+$side_bar_height: 30px
+
+sidebar
+  display: block
+  height: $side_bar_height
+  margin-bottom: 10px
+  ul.filter-buttons
+    background: #3baeee
+    @include border-radius(5px)
+    border: 1px solid $blue_border
+    float: left
+    @include linear-gradient(color-stops(#0092e6, #3baeee), bottom)
+    padding: 0 10px
+    li
+      float: left
+      a
+        display: block
+        outline: 0
+        height: $side_bar_height
+        line-height: $side_bar_height
+        text-decoration: none
+        font-weight: bold
+        margin: 0 5px
+        color: #add8f1
+        @include text-shadow(#1e89c5, -1px, -1px, 0)
+        &:hover, &.selected
+          color: white
+        &:active
+          padding-top: 1px
+          height: $side_bar_height - 1
+  input
+    border: 1px solid #dbdbdb
+    height: $side_bar_height
+    line-height: $side_bar_height
+    padding: 0 10px
+    @include border-radius(5px)
+    margin-left: 5px
+    width: 235px
+    font-size: 14px
+    font-weight: bold
+    color: #ddd
+  #share
+    display: block
+    float: right
+    width: 135px
+    text-align: center
+    height: $side_bar_height
+    line-height: $side_bar_height
+    @include linear-gradient(color-stops(#049204, #74b002), bottom)
+    @include border-radius(5px)
+    @include text-shadow(#418b03, -1px, -1px, 0)
+    border: 1px solid #178b0c
+    color: white
+    text-decoration: none
+    font-size: 18px
+    &:hover
+      text-decoration: underline
+    &:active
+      padding-top: 1px
+      height: $side_bar_height - 1
+
+#plans
+  clear: both
+
+.plan
+  margin-right: 1px
+  display: block
+  float: left
+  overflow: hidden
+  width: 266px
+  height: 163px
+  background: #cdedff
+  padding: 5px
+  position: relative
+  header
+    color: #077cbe
+    font-weight: bold
+    .date
+      font-size: 80%
+      color: #8b8b8b
+  footer
+    width: 284px
+    padding: 0 5px
+    position: absolute
+    bottom: 0
+    left: 0
+    height: 25px
+    line-height: 25px
+    background: #484848
+    font-weight: bold
+    a
+      color: white
+      text-decoration: none
+      font-size: 90%
+      &:hover
+        text-decoration: underline

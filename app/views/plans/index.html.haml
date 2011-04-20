@@ -1,0 +1,10 @@
+%sidebar
+  %ul.filter-buttons
+    %li=link_to 'Profile', '#', :class => 'profile selected'
+    %li=link_to 'Community', '#', :class => 'community'
+    %li=link_to 'Challenges', '#', :class => 'challenges'
+    %li=link_to 'Financial', '#', :class => 'financial'
+  = text_field_tag 'search', 'Search'
+  = link_to 'Share', '#', :id => 'share'
+#plans
+  = render :partial => @plans

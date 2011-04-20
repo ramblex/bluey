@@ -1,0 +1,345 @@
+/* Stylesheet for Bluey health and fitness
+ * Author: Alex Duller
+ * Contents:
+ * - Variables
+ * - Colours
+ * - Globals and wrapper
+ * - Left column
+ * - Right column
+ */
+/* line 14, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+/* line 19, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 25, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" "";
+}
+/* line 96, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+/* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* Variables */
+/* Colours */
+/* Globals and wrapper */
+/* line 30, ../sass/screen.sass */
+body {
+  font: 14px Helvetica, Arial, sans-serif;
+  letter-spacing: -1px;
+}
+
+/* line 34, ../sass/screen.sass */
+#wrapper {
+  overflow: hidden;
+  *zoom: 1;
+  width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+/* Left column */
+/* line 41, ../sass/screen.sass */
+#left-col {
+  width: 107px;
+  float: left;
+}
+
+/* line 46, ../sass/screen.sass */
+h1 a {
+  display: block;
+  height: 107px;
+  outline: 0;
+  text-indent: -30000px;
+  background: url(/images/logo.png) no-repeat;
+  margin: 20px 0;
+}
+
+/* line 54, ../sass/screen.sass */
+nav {
+  width: 107px;
+  height: 633px;
+  background: #0e99e8;
+  border: 1px solid #007cc2;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 60, ../sass/screen.sass */
+nav li {
+  text-align: center;
+  list-style: none;
+  margin: 7px 0;
+}
+/* line 64, ../sass/screen.sass */
+nav li a {
+  padding: 10px 0;
+  height: 100px;
+  color: #333333;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 71, ../sass/screen.sass */
+nav li a.plans {
+  background: url(/images/plans.png) no-repeat center 25px;
+}
+/* line 73, ../sass/screen.sass */
+nav li a.community {
+  background: url(/images/community.png) no-repeat center 25px;
+}
+/* line 75, ../sass/screen.sass */
+nav li a.challenges {
+  background: url(/images/challenges.png) no-repeat center 25px;
+}
+/* line 77, ../sass/screen.sass */
+nav li a.profile {
+  background: url(/images/profile.png) no-repeat center 25px;
+}
+/* line 79, ../sass/screen.sass */
+nav li a.financial {
+  background: url(/images/financial.png) no-repeat center 25px;
+}
+/* line 81, ../sass/screen.sass */
+nav li a:hover, nav li a.selected {
+  color: white;
+}
+
+/* Right column */
+/* line 85, ../sass/screen.sass */
+#right-col {
+  width: 893px;
+  float: right;
+}
+
+/* line 89, ../sass/screen.sass */
+#stats-bar {
+  margin: 20px;
+  height: 107px;
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #0e99e8), color-stop(55.0%, #0e99e8), color-stop(55.0%, #2da6eb), color-stop(100%, #2da6eb));
+  background-image: -moz-linear-gradient(bottom, #0e99e8 0%, #0e99e8 55%, #2da6eb 55%, #2da6eb 100%);
+  background-image: linear-gradient(bottom, #0e99e8 0%, #0e99e8 55%, #2da6eb 55%, #2da6eb 100%);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #007cc2;
+}
+
+/* line 96, ../sass/screen.sass */
+#content {
+  margin: 0 20px;
+  padding: 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: #cccccc 0 0 3px 1px;
+  -webkit-box-shadow: #cccccc 0 0 3px 1px;
+  -o-box-shadow: #cccccc 0 0 3px 1px;
+  box-shadow: #cccccc 0 0 3px 1px;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 105, ../sass/screen.sass */
+sidebar {
+  display: block;
+  height: 30px;
+  margin-bottom: 10px;
+}
+/* line 109, ../sass/screen.sass */
+sidebar ul.filter-buttons {
+  background: #3baeee;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #007cc2;
+  float: left;
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #0092e6), color-stop(100%, #3baeee));
+  background-image: -moz-linear-gradient(bottom, #0092e6 0%, #3baeee 100%);
+  background-image: linear-gradient(bottom, #0092e6 0%, #3baeee 100%);
+  padding: 0 10px;
+}
+/* line 116, ../sass/screen.sass */
+sidebar ul.filter-buttons li {
+  float: left;
+}
+/* line 118, ../sass/screen.sass */
+sidebar ul.filter-buttons li a {
+  display: block;
+  outline: 0;
+  height: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 5px;
+  color: #add8f1;
+  text-shadow: #1e89c5 -1px -1px 0;
+}
+/* line 128, ../sass/screen.sass */
+sidebar ul.filter-buttons li a:hover, sidebar ul.filter-buttons li a.selected {
+  color: white;
+}
+/* line 130, ../sass/screen.sass */
+sidebar ul.filter-buttons li a:active {
+  padding-top: 1px;
+  height: 29px;
+}
+/* line 133, ../sass/screen.sass */
+sidebar input {
+  border: 1px solid #dbdbdb;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  margin-left: 5px;
+  width: 235px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #dddddd;
+}
+/* line 144, ../sass/screen.sass */
+sidebar #share {
+  display: block;
+  float: right;
+  width: 135px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #049204), color-stop(100%, #74b002));
+  background-image: -moz-linear-gradient(bottom, #049204 0%, #74b002 100%);
+  background-image: linear-gradient(bottom, #049204 0%, #74b002 100%);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: #418b03 -1px -1px 0;
+  border: 1px solid #178b0c;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* line 158, ../sass/screen.sass */
+sidebar #share:hover {
+  text-decoration: underline;
+}
+/* line 160, ../sass/screen.sass */
+sidebar #share:active {
+  padding-top: 1px;
+  height: 29px;
+}
+
+/* line 164, ../sass/screen.sass */
+#plans {
+  clear: both;
+}
+
+/* line 167, ../sass/screen.sass */
+.plan {
+  margin-right: 1px;
+  display: block;
+  float: left;
+  overflow: hidden;
+  width: 266px;
+  height: 163px;
+  background: #cdedff;
+  padding: 5px;
+  position: relative;
+}
+/* line 177, ../sass/screen.sass */
+.plan header {
+  color: #077cbe;
+  font-weight: bold;
+}
+/* line 180, ../sass/screen.sass */
+.plan header .date {
+  font-size: 80%;
+  color: #8b8b8b;
+}
+/* line 183, ../sass/screen.sass */
+.plan footer {
+  width: 284px;
+  padding: 0 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 25px;
+  line-height: 25px;
+  background: #484848;
+  font-weight: bold;
+}
+/* line 193, ../sass/screen.sass */
+.plan footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 90%;
+}
+/* line 197, ../sass/screen.sass */
+.plan footer a:hover {
+  text-decoration: underline;
+}
