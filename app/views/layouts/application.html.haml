@@ -12,6 +12,9 @@
       = javascript_include_tag 'ie'
     = csrf_meta_tag
   %body
+    #notifications
+      %span#notice= notice
+      %span#alert= alert
     #wrapper
       #left-col
         %h1=link_to 'Bluey health & fitness', root_path
