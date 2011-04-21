@@ -120,8 +120,52 @@ nav ul
 
 #stats-bar
   margin: 20px
-  height: $stats_bar_height
+  padding: 15px
+  height: $stats_bar_height - 30px
   @include shiny-blue-box
+
+#badges
+  float: left
+  width: 150px
+  li
+    @extend .badge
+
+#stats
+  color: white
+  float: right
+  height: $stats_bar_height
+  @include text-shadow(#378cbb, 1px, 1px, 2px)
+  h2
+    letter-spacing: 0
+    margin-bottom: 5px
+    font-size: 18px
+  li
+    float: left
+    width: 160px
+    text-align: center
+    p
+      font-size: 36px
+      span
+        font-size: 24px
+    &.meter
+      h2
+        margin-bottom: 10px
+      span
+        margin-left: 10px
+        float: left
+        width: 106px
+        height: 26px
+        background: url(/images/progress-bg.png) no-repeat
+        display: block
+        .progress
+          background: url(/images/progress.png) no-repeat
+          display: block
+          margin: 0
+          width: 0
+      p
+        text-align: center
+        font-size: 18px
+        line-height: 26px
 
 #content
   margin: 0 20px
@@ -207,6 +251,7 @@ $ctx_bar_height: 65px
   clear: both
 
 .badge
+  background: #cdedff
   width: 30px
   height: 30px
   display: block

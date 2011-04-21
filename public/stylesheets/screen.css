@@ -198,7 +198,8 @@ nav ul li a:hover, nav ul li a.selected {
 /* line 121, ../sass/screen.sass */
 #stats-bar {
   margin: 20px;
-  height: 107px;
+  padding: 15px;
+  height: 77px;
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
   background-image: linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -215,7 +216,67 @@ nav ul li a:hover, nav ul li a.selected {
   border: 1px solid #666666;
 }
 
-/* line 126, ../sass/screen.sass */
+/* line 127, ../sass/screen.sass */
+#badges {
+  float: left;
+  width: 150px;
+}
+
+/* line 133, ../sass/screen.sass */
+#stats {
+  color: white;
+  float: right;
+  height: 107px;
+  text-shadow: #378cbb 1px 1px 2px;
+}
+/* line 138, ../sass/screen.sass */
+#stats h2 {
+  letter-spacing: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+/* line 142, ../sass/screen.sass */
+#stats li {
+  float: left;
+  width: 160px;
+  text-align: center;
+}
+/* line 146, ../sass/screen.sass */
+#stats li p {
+  font-size: 36px;
+}
+/* line 148, ../sass/screen.sass */
+#stats li p span {
+  font-size: 24px;
+}
+/* line 151, ../sass/screen.sass */
+#stats li.meter h2 {
+  margin-bottom: 10px;
+}
+/* line 153, ../sass/screen.sass */
+#stats li.meter span {
+  margin-left: 10px;
+  float: left;
+  width: 106px;
+  height: 26px;
+  background: url(/images/progress-bg.png) no-repeat;
+  display: block;
+}
+/* line 160, ../sass/screen.sass */
+#stats li.meter span .progress {
+  background: url(/images/progress.png) no-repeat;
+  display: block;
+  margin: 0;
+  width: 0;
+}
+/* line 165, ../sass/screen.sass */
+#stats li.meter p {
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/* line 170, ../sass/screen.sass */
 #content {
   margin: 0 20px;
   padding: 20px;
@@ -234,18 +295,18 @@ nav ul li a:hover, nav ul li a.selected {
 }
 
 /* Used for titles in content */
-/* line 134, ../sass/screen.sass */
+/* line 178, ../sass/screen.sass */
 h2 {
   font-weight: bold;
   font-size: 110%;
 }
 
-/* line 145, ../sass/screen.sass */
+/* line 189, ../sass/screen.sass */
 #context-bar {
   height: 65px;
   margin-bottom: 20px;
 }
-/* line 148, ../sass/screen.sass */
+/* line 192, ../sass/screen.sass */
 #context-bar ul.filter-buttons {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -265,11 +326,11 @@ h2 {
   padding: 0 10px;
   width: 225px;
 }
-/* line 153, ../sass/screen.sass */
+/* line 197, ../sass/screen.sass */
 #context-bar ul.filter-buttons li {
   float: left;
 }
-/* line 155, ../sass/screen.sass */
+/* line 199, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a {
   background: url(/images/plan-filter-icons.png) no-repeat 0 -50px;
   width: 55px;
@@ -280,39 +341,39 @@ h2 {
   text-indent: -30000px;
   color: #add8f1;
 }
-/* line 164, ../sass/screen.sass */
+/* line 208, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.profile {
   background-position: 0 -50px;
 }
-/* line 142, ../sass/screen.sass */
+/* line 186, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.profile:hover, #context-bar ul.filter-buttons li a.profile.selected {
   background-position: 0 0;
 }
-/* line 166, ../sass/screen.sass */
+/* line 210, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.community {
   background-position: -55px -50px;
 }
-/* line 142, ../sass/screen.sass */
+/* line 186, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.community:hover, #context-bar ul.filter-buttons li a.community.selected {
   background-position: -55px 0;
 }
-/* line 168, ../sass/screen.sass */
+/* line 212, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.challenges {
   background-position: -110px -50px;
 }
-/* line 142, ../sass/screen.sass */
+/* line 186, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.challenges:hover, #context-bar ul.filter-buttons li a.challenges.selected {
   background-position: -110px 0;
 }
-/* line 170, ../sass/screen.sass */
+/* line 214, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.financial {
   background-position: -165px -50px;
 }
-/* line 142, ../sass/screen.sass */
+/* line 186, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.financial:hover, #context-bar ul.filter-buttons li a.financial.selected {
   background-position: -165px 0;
 }
-/* line 172, ../sass/screen.sass */
+/* line 216, ../sass/screen.sass */
 #context-bar input {
   border: 1px solid #666666;
   height: 30px;
@@ -334,11 +395,11 @@ h2 {
   font-weight: bold;
   color: #dddddd;
 }
-/* line 184, ../sass/screen.sass */
+/* line 228, ../sass/screen.sass */
 #context-bar input:focus {
   outline: none;
 }
-/* line 186, ../sass/screen.sass */
+/* line 230, ../sass/screen.sass */
 #context-bar #share {
   float: right;
   width: 245px;
@@ -357,7 +418,7 @@ h2 {
   box-shadow: #454545 0 0 2px 0px;
   border: 1px solid #666666;
 }
-/* line 190, ../sass/screen.sass */
+/* line 234, ../sass/screen.sass */
 #context-bar #share a {
   background: url(/images/share-icon.png) no-repeat 150px 5px;
   line-height: 40px;
@@ -371,19 +432,20 @@ h2 {
   font-size: 35px;
   font-weight: 550;
 }
-/* line 202, ../sass/screen.sass */
+/* line 246, ../sass/screen.sass */
 #context-bar #share a:active {
   padding-top: 16px;
   height: 49px;
 }
 
-/* line 206, ../sass/screen.sass */
+/* line 250, ../sass/screen.sass */
 #plans {
   clear: both;
 }
 
-/* line 209, ../sass/screen.sass */
-.badge {
+/* line 253, ../sass/screen.sass */
+.badge, #badges li {
+  background: #cdedff;
   width: 30px;
   height: 30px;
   display: block;
@@ -395,7 +457,7 @@ h2 {
   margin: 0 5px 5px 0;
 }
 
-/* line 220, ../sass/screen.sass */
+/* line 265, ../sass/screen.sass */
 .plan {
   margin-right: 1px;
   display: block;
@@ -407,18 +469,18 @@ h2 {
   padding: 10px;
   position: relative;
 }
-/* line 230, ../sass/screen.sass */
+/* line 275, ../sass/screen.sass */
 .plan header {
   color: #077cbe;
   font-weight: bold;
 }
-/* line 233, ../sass/screen.sass */
+/* line 278, ../sass/screen.sass */
 .plan header .date {
   font-size: 80%;
   color: #8b8b8b;
   letter-spacing: 0;
 }
-/* line 237, ../sass/screen.sass */
+/* line 282, ../sass/screen.sass */
 .plan footer {
   width: 284px;
   padding: 0 5px;
@@ -430,34 +492,34 @@ h2 {
   background: #484848;
   font-weight: bold;
 }
-/* line 247, ../sass/screen.sass */
+/* line 292, ../sass/screen.sass */
 .plan footer a {
   color: white;
   text-decoration: none;
   font-size: 90%;
 }
-/* line 251, ../sass/screen.sass */
+/* line 296, ../sass/screen.sass */
 .plan footer a:hover {
   text-decoration: underline;
 }
 
 /* Forms */
-/* line 255, ../sass/screen.sass */
+/* line 300, ../sass/screen.sass */
 form {
   margin: 10px 0;
 }
-/* line 257, ../sass/screen.sass */
+/* line 302, ../sass/screen.sass */
 form p {
   margin-top: 15px;
 }
-/* line 259, ../sass/screen.sass */
+/* line 304, ../sass/screen.sass */
 form input[type=text], form input[type=password] {
   border: 1px solid #dddddd;
   padding: 5px;
   width: 300px;
   font-size: 100%;
 }
-/* line 264, ../sass/screen.sass */
+/* line 309, ../sass/screen.sass */
 form input[type=submit] {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -486,19 +548,19 @@ form input[type=submit] {
   cursor: pointer;
   height: 30px;
 }
-/* line 273, ../sass/screen.sass */
+/* line 318, ../sass/screen.sass */
 form input[type=submit]:hover {
   background: #5ebdf1;
 }
 
-/* line 276, ../sass/screen.sass */
+/* line 321, ../sass/screen.sass */
 #error_explanation {
   background: #ff9c99;
   border: 1px solid #d62300;
   padding: 10px;
 }
 
-/* line 281, ../sass/screen.sass */
+/* line 326, ../sass/screen.sass */
 .field_with_errors {
   color: #d62300;
   display: inline;

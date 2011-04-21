@@ -1,3 +1,30 @@
+- content_for :stats_bar do
+  %ul#badges
+    %li= image_tag 'badges/ace.png', :alt => 'Ace certified'
+    %li= image_tag 'badges/stress.png', :alt => 'No stress'
+    %li= image_tag 'badges/circles.png', :alt => 'Circle'
+    %li= image_tag 'badges/flu.png', :alt => 'No flu'
+    %li= image_tag 'badges/punch.png', :alt => 'Punching'
+  %ul#stats
+    %li
+      %h2 Wellness points
+      %p 302
+    %li.meter
+      %h2 Goal
+      %span
+        %span.progress
+      %p 30%
+    %li
+      %h2 Weight
+      %p
+        174
+        %span lbs
+    %li.meter
+      %h2 Health
+      %span
+        %span.progress
+      %p 50%
+
 #context-bar
   %ul.filter-buttons
     %li=link_to 'Profile', '#', :class => 'profile selected'
