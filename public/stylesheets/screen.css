@@ -490,3 +490,16 @@ form input[type=submit] {
 form input[type=submit]:hover {
   background: #5ebdf1;
 }
+
+/* line 276, ../sass/screen.sass */
+#error_explanation {
+  background: #ff9c99;
+  border: 1px solid #d62300;
+  padding: 10px;
+}
+
+/* line 281, ../sass/screen.sass */
+.field_with_errors {
+  color: #d62300;
+  display: inline;
+}
