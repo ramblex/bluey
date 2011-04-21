@@ -1,6 +1,7 @@
 %article.plan
   %header
+    = image_tag 'example-badge.png', :class => 'badge'
     = plan.name
-    .date= plan.created_at
+    .date= l plan.created_at, :format => :short
   %footer
     = link_to 'Share'

@@ -21,10 +21,17 @@ $total_width = 1000px
 $left_col_width = 107px
 $right_col_width = $total_width - $left_col_width
 $stats_bar_height = 107px
+$default_border_radius = 15px
 
 /* Colours */
 $blue_border = #007cc2
-$blue_bg = #0e99e8
+$blue_bg = #3baeee
+
+@mixin shiny-blue-box
+  @include linear-gradient(color-stops($blue_bg, $blue_bg 45%, #5ebdf1 45%, #5ebdf1 100%), bottom)
+  @include border-radius($default_border_radius)
+  @include box-shadow(#454545, 0, 0, 2px, 0px)
+  border: 1px solid #666
 
 /* Globals and wrapper */
 body
@@ -53,33 +60,43 @@ h1
 
 nav ul
   width: 107px
-  height: 633px
-  background: $blue_bg
-  border: 1px solid $blue_border
-  @include border-radius(5px)
+  background: url(/images/nav-shine.png) no-repeat 1px 1px $blue_bg
+  @include box-shadow(#666, 0, 0, 2px, 0px)
+  border: 1px solid #666
+  @include border-radius($default_border_radius)
+  padding: 10px 0
   li
     text-align: center
     list-style: none
-    margin: 7px 0
+    margin: 0
     a
-      padding: 10px 0
-      height: 100px
+      padding: 5px 0
+      height: 90px
       color: #333
       display: block
       text-decoration: none
       font-weight: bold
       &.plans
-        background: url(/images/plans.png) no-repeat center 25px
+        background: url(/images/plans.png) no-repeat center 20px
       &.community
-        background: url(/images/community.png) no-repeat center 25px
+        background: url(/images/community.png) no-repeat center 20px
       &.challenges
         background: url(/images/challenges.png) no-repeat center 25px
       &.profile
-        background: url(/images/profile.png) no-repeat center 25px
+        background: url(/images/profile.png) no-repeat center 15px
       &.financial
-        background: url(/images/financial.png) no-repeat center 25px
+        background: url(/images/financial.png) no-repeat center 20px
       &:hover, &.selected
         color: white
+
+#help
+  display: block
+  width: 107px
+  height: 90px
+  background: url(/images/help.png) no-repeat
+  margin-top: 15px
+  outline: 0
+  text-indent: -30000px
 
 /* Right column */
 #right-col
@@ -89,89 +106,106 @@ nav ul
 #stats-bar
   margin: 20px
   height: $stats_bar_height
-  @include linear-gradient(color-stops($blue_bg, $blue_bg 55%, #2da6eb 55%, #2da6eb 100%), bottom)
-  @include border-radius(5px)
-  border: 1px solid $blue_border
+  @include shiny-blue-box
 
 #content
   margin: 0 20px
-  padding: 10px
-  @include border-radius(5px)
+  padding: 20px
+  @include border-radius($default_border_radius)
   @include box-shadow(#ccc, 0, 0, 3px, 1px)
   @include clearfix
 
-$side_bar_height: 30px
+$ctx_bar_height: 65px
+
+@mixin filter-icon($x-offset)
+  background-position: $x-offset -50px
+  &:hover, &.selected
+    background-position: $x-offset 0
 
 #context-bar
-  height: $side_bar_height
-  margin-bottom: 10px
+  height: $ctx_bar_height
+  margin-bottom: 20px
   ul.filter-buttons
-    background: #3baeee
-    @include border-radius(5px)
-    border: 1px solid $blue_border
+    @include shiny-blue-box
     float: left
-    @include linear-gradient(color-stops(#0092e6, #3baeee), bottom)
     padding: 0 10px
+    width: 225px
     li
       float: left
       a
+        background: url(/images/plan-filter-icons.png) no-repeat 0 -50px
+        width: 55px
         display: block
         outline: 0
-        height: $side_bar_height
-        line-height: $side_bar_height
-        text-decoration: none
-        font-weight: bold
-        margin: 0 5px
+        height: 50px
+        margin: 7px 0
+        text-indent: -30000px
         color: #add8f1
-        @include text-shadow(#1e89c5, -1px, -1px, 0)
-        &:hover, &.selected
-          color: white
-        &:active
-          padding-top: 1px
-          height: $side_bar_height - 1
+        &.profile
+          @include filter-icon(0)
+        &.community
+          @include filter-icon(-55px)
+        &.challenges
+          @include filter-icon(-110px)
+        &.financial
+          @include filter-icon(-165px)
   input
-    border: 1px solid #dbdbdb
-    height: $side_bar_height
-    line-height: $side_bar_height
-    padding: 0 10px
-    @include border-radius(5px)
-    margin-left: 5px
+    border: 1px solid #666
+    height: 30px
     width: 235px
-    font-size: 14px
+    padding: 10px 10px 10px 40px
+    background: url(/images/magnifying-glass.png) no-repeat 7px 10px white
+    @include border-radius($default_border_radius)
+    @include box-shadow(#333, 0, 0, 2px, 0px)
+    margin: 7px 0 0 15px
+    font-size: 18px
     font-weight: bold
     color: #ddd
+    &:focus
+      outline: none
   #share
-    display: block
     float: right
-    width: 135px
-    text-align: center
-    height: $side_bar_height
-    line-height: $side_bar_height
-    @include linear-gradient(color-stops(#049204, #74b002), bottom)
-    @include border-radius(5px)
-    @include text-shadow(#418b03, -1px, -1px, 0)
-    border: 1px solid #178b0c
-    color: white
-    text-decoration: none
-    font-size: 18px
-    &:hover
-      text-decoration: underline
-    &:active
-      padding-top: 1px
-      height: $side_bar_height - 1
+    width: 245px
+    @include shiny-blue-box
+    a
+      background: url(/images/share-icon.png) no-repeat 150px 5px
+      line-height: 40px
+      display: block
+      width: 195px
+      padding: 15px 0 0 50px
+      height: $ctx_bar_height - 15px
+      @include text-shadow(#378cbb, 1px, 1px, 2px)
+      color: white
+      text-decoration: none
+      font-size: 35px
+      font-weight: 550
+      &:active
+        padding-top: 16px
+        height: $ctx_bar_height - 16px
 
 #plans
   clear: both
+
+.badge
+  width: 30px
+  height: 30px
+  display: block
+  float: left
+  border: 1px solid #bbb
+  padding: 1px
+  color: #eee
+  font-size: 8px
+  margin: 0 5px 5px 0
 
 .plan
   margin-right: 1px
   display: block
   float: left
   overflow: hidden
-  width: 266px
-  height: 163px
+  width: 250px
+  height: 153px
   background: #cdedff
-  padding: 5px
+  padding: 10px
   position: relative
   header
     color: #077cbe
@@ -179,6 +213,7 @@ $side_bar_height: 30px
     .date
       font-size: 80%
       color: #8b8b8b
+      letter-spacing: 0
   footer
     width: 284px
     padding: 0 5px
