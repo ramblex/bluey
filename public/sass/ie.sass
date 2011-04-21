@@ -1,0 +1,56 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+
+@import "compass/utilities/general/clearfix"
+
+nav ul
+  border: 0
+  background: url(/images/ie/nav.png) no-repeat
+  margin: -3px 0 0 0
+  width: 110px
+  padding-bottom: 15px
+
+#content
+  background: url(/images/ie/content.png) no-repeat
+  margin-left: 15px
+  padding: 20px 0 0 0
+
+#content-inner
+  padding: 0 20px
+  @include clearfix
+  background: url(/images/ie/content-bg.png) repeat-y
+
+#content-footer
+  height: 25px
+  background: url(/images/ie/content.png) no-repeat bottom
+  padding: 0 20px
+
+#stats-bar
+  border: 0
+  background: url(/images/ie/stats-bar.png) no-repeat
+  height: 113px
+  margin: 15px 0 15px 15px
+
+#context-bar
+  ul.filter-buttons, #share
+    border: 0
+    background: url(/images/ie/ctx-bar.png) no-repeat
+  ul.filter-buttons
+    width: 220px
+    padding: 3px 15px
+    height: 64px
+  #share
+    width: 250px
+    height: 70px
+    float: right
+  input
+    border: 0
+    background: url(/images/ie/search-bar.png) no-repeat
+    margin: 5px 0 0 10px
+    padding-top: 17px
+    width: 240px
+    height: 28px
+    float: left

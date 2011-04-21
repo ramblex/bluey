@@ -3,3 +3,69 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
+/* line 9, ../sass/ie.sass */
+nav ul {
+  border: 0;
+  background: url(/images/ie/nav.png) no-repeat;
+  margin: -3px 0 0 0;
+  width: 110px;
+  padding-bottom: 15px;
+}
+
+/* line 16, ../sass/ie.sass */
+#content {
+  background: url(/images/ie/content.png) no-repeat;
+  margin-left: 15px;
+  padding: 20px 0 0 0;
+}
+
+/* line 21, ../sass/ie.sass */
+#content-inner {
+  padding: 0 20px;
+  overflow: hidden;
+  *zoom: 1;
+  background: url(/images/ie/content-bg.png) repeat-y;
+}
+
+/* line 26, ../sass/ie.sass */
+#content-footer {
+  height: 25px;
+  background: url(/images/ie/content.png) no-repeat bottom;
+  padding: 0 20px;
+}
+
+/* line 31, ../sass/ie.sass */
+#stats-bar {
+  border: 0;
+  background: url(/images/ie/stats-bar.png) no-repeat;
+  height: 113px;
+  margin: 15px 0 15px 15px;
+}
+
+/* line 38, ../sass/ie.sass */
+#context-bar ul.filter-buttons, #context-bar #share {
+  border: 0;
+  background: url(/images/ie/ctx-bar.png) no-repeat;
+}
+/* line 41, ../sass/ie.sass */
+#context-bar ul.filter-buttons {
+  width: 220px;
+  padding: 3px 15px;
+  height: 64px;
+}
+/* line 45, ../sass/ie.sass */
+#context-bar #share {
+  width: 250px;
+  height: 70px;
+  float: right;
+}
+/* line 49, ../sass/ie.sass */
+#context-bar input {
+  border: 0;
+  background: url(/images/ie/search-bar.png) no-repeat;
+  margin: 5px 0 0 10px;
+  padding-top: 17px;
+  width: 240px;
+  height: 28px;
+  float: left;
+}
