@@ -26,6 +26,10 @@ $default_border_radius = 15px
 /* Colours */
 $blue_border = #007cc2
 $blue_bg = #3baeee
+$link_colour = #5ebdf1
+$link_visited = $link_colour - #101010
+$link_hover = $link_colour - #202020
+$link_active = $link_hover - #202020
 
 @mixin shiny-blue-box
   @include linear-gradient(color-stops($blue_bg, $blue_bg 45%, #5ebdf1 45%, #5ebdf1 100%), bottom)
@@ -36,7 +40,17 @@ $blue_bg = #3baeee
 /* Globals and wrapper */
 body
   font: 14px Helvetica, Arial, sans-serif
+  color: #333
   letter-spacing: -1px
+
+a
+  color: $link_colour
+  &:visited
+    color: $link_visited
+  &:hover
+    color: $link_hover
+  &:active
+    color: #333
 
 #wrapper
   @include clearfix
@@ -57,6 +71,7 @@ h1
     text-indent: -30000px
     background: url(/images/logo.png) no-repeat
     margin: 20px 0
+
 
 nav ul
   width: 107px
@@ -114,6 +129,11 @@ nav ul
   @include border-radius($default_border_radius)
   @include box-shadow(#ccc, 0, 0, 3px, 1px)
   @include clearfix
+
+/* Used for titles in content */
+h2
+  font-weight: bold
+  font-size: 110%
 
 $ctx_bar_height: 65px
 
@@ -230,3 +250,26 @@ $ctx_bar_height: 65px
       font-size: 90%
       &:hover
         text-decoration: underline
+
+/* Forms */
+form
+  margin: 10px 0
+  p
+    margin-top: 15px
+  input[type=text], input[type=password]
+    border: 1px solid #ddd
+    padding: 5px
+    width: 300px
+    font-size: 100%
+  input[type=submit]
+    @include shiny-blue-box
+    @include border-radius(4px)
+    padding: 5px
+    font-size: 13px
+    color: white
+    @include text-shadow(#378cbb, 1px, 1px, 2px)
+    cursor: pointer
+    height: 30px
+    &:hover
+      background: $link_colour
+
