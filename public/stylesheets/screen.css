@@ -635,3 +635,13 @@ form input[type=submit]:hover {
   width: 200px;
   margin: 0 50px;
 }
+
+/* Sign up and sign in forms */
+/* line 370, ../sass/screen.sass */
+#devise {
+  padding: 0 200px;
+}
+/* line 372, ../sass/screen.sass */
+#devise #content {
+  margin: 50px 20px;
+}
