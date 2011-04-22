@@ -606,27 +606,30 @@ form input[type=submit]:hover {
   text-align: center;
 }
 /* line 352, ../sass/screen.sass */
+#landing-page #left-col {
+  float: left;
+  margin-bottom: 50px;
+}
+/* line 355, ../sass/screen.sass */
 #landing-page #video {
   display: block;
   width: 640px;
   height: 380px;
-  float: left;
-  margin-bottom: 50px;
 }
-/* line 358, ../sass/screen.sass */
+/* line 359, ../sass/screen.sass */
 #landing-page #right-col {
   width: 332px;
   text-align: center;
   float: right;
 }
-/* line 362, ../sass/screen.sass */
+/* line 363, ../sass/screen.sass */
 #landing-page #alpha {
   margin-top: 30px;
   width: 332px;
   height: 225px;
   background: url(/images/alpha.png) no-repeat;
 }
-/* line 367, ../sass/screen.sass */
+/* line 368, ../sass/screen.sass */
 #landing-page #sign-up {
   display: block;
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
@@ -650,17 +653,17 @@ form input[type=submit]:hover {
   margin: 30px 50px 5px 50px;
   text-shadow: #378cbb 1px 1px 2px;
 }
-/* line 376, ../sass/screen.sass */
+/* line 377, ../sass/screen.sass */
 #landing-page #sign-in {
   clear: right;
 }
-/* line 378, ../sass/screen.sass */
+/* line 379, ../sass/screen.sass */
 #landing-page ol {
   clear: both;
   background: url(/images/steps.png) no-repeat 160px 0;
   padding: 65px 0 0 50px;
 }
-/* line 382, ../sass/screen.sass */
+/* line 383, ../sass/screen.sass */
 #landing-page ol li {
   float: left;
   width: 195px;
@@ -669,16 +672,16 @@ form input[type=submit]:hover {
 }
 
 /* Sign up and sign in forms */
-/* line 389, ../sass/screen.sass */
+/* line 390, ../sass/screen.sass */
 #devise {
   padding: 0 200px;
 }
-/* line 391, ../sass/screen.sass */
+/* line 392, ../sass/screen.sass */
 #devise #content {
   margin: 50px 20px;
 }
 
-/* line 395, ../sass/screen.sass */
+/* line 396, ../sass/screen.sass */
 #sign-up-form #content {
   margin: 0;
   -moz-box-shadow: none;
@@ -687,7 +690,7 @@ form input[type=submit]:hover {
   box-shadow: none;
 }
 
-/* line 399, ../sass/screen.sass */
+/* line 400, ../sass/screen.sass */
 .ui-widget-overlay {
   position: absolute;
   top: 0;
@@ -700,7 +703,7 @@ form input[type=submit]:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
 }
 
-/* line 408, ../sass/screen.sass */
+/* line 409, ../sass/screen.sass */
 .ui-dialog {
   padding: 10px;
   background: white;
@@ -716,7 +719,7 @@ form input[type=submit]:hover {
   border-radius: 15px;
 }
 
-/* line 414, ../sass/screen.sass */
+/* line 415, ../sass/screen.sass */
 .ui-icon-closethick {
   display: block;
   width: 25px;

@@ -7,11 +7,13 @@
 - content_for :main_content do
   #landing-page
     %h1 Can you live past 100 years old?
-    = link_to '', '/videos/bluey.flv', :id => 'video'
-    :javascript
-      $(document).ready(function() {
-        $f('video', {src: '/videos/flowplayer-3.2.7.swf', wmode: 'transparent'});
-      });
+    #left-col
+      = link_to '', '/videos/bluey.flv', :id => 'video'
+      = link_to 'Download in HD', '/videos/bluey.mov', :id => 'hd-video'
+      :javascript
+        $(document).ready(function() {
+          $f('video', {src: '/videos/flowplayer-3.2.7.swf', wmode: 'transparent'});
+        });
     #right-col
       #alpha
       = link_to 'Sign up', new_user_registration_path, :id => 'sign-up'
