@@ -1,0 +1,19 @@
+- content_for :head do
+  = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise'
+
+- content_for :main_content do
+  #landing-page
+    %h1 Can you live past 100 years old?
+    #video
+    #right-col
+      #alpha
+      = link_to 'Sign up', new_user_registration_path, :id => 'sign-up'
+      %p 
+        Already registered?
+        = link_to 'Sign in', new_user_session_path, :id => 'sign-in'
+    %ol
+      %li Sign up using an email address
+      %li Log in to answer a few questions about your health and fitness goals
+      %li 
+        We will recommend people to you to help you start building your health
+        and fitness community

@@ -322,3 +322,46 @@ form
 .field_with_errors
   color: #d62300
   display: inline
+
+/* Landing page */
+#landing-page
+  padding: 0 50px
+  h1
+    margin-top: 50px
+    font-family: 'Waiting for the Sunrise', arial, sans-serif
+    font-size: 64px
+    text-align: center
+  #video
+    width: 550px
+    height: 320px
+    background: gray
+    float: left
+    margin-bottom: 50px
+  #right-col
+    width: 300px
+    text-align: center
+    float: right
+  #alpha
+    margin-top: 30px
+    width: 300px
+    height: 150px
+    background: gray
+  #sign-up
+    display: block
+    @include shiny-blue-box
+    padding: 15px 30px
+    color: white
+    text-decoration: none
+    font-size: 36px
+    margin: 30px 50px 5px 50px
+    @include text-shadow(#378cbb, 1px, 1px, 2px)
+  #sign-in
+    clear: right
+  ol
+    clear: both
+    background: url(/images/steps.png) no-repeat 110px 0
+    padding-top: 65px
+    li
+      float: left
+      width: 200px
+      margin: 0 50px

@@ -2,6 +2,7 @@
 %html
   %head
     %title Bluey
+    = yield :head
     = stylesheet_link_tag 'screen.css', :media => 'screen, projection'
     = stylesheet_link_tag 'print.css', :media => 'print'
     /[if IE]
@@ -17,18 +18,21 @@
       %span#notice= notice
       %span#alert= alert
     #wrapper
-      #left-col
-        %h1=link_to 'Bluey health & fitness', root_path
-        %nav
-          %ul
-            %li=link_to 'Plans', plans_path, :class => 'plans selected'
-            %li=link_to 'Community', '#', :class => 'community'
-            %li=link_to 'Challenges', '#', :class => 'challenges'
-            %li=link_to 'Profile', '#', :class => 'profile'
-            %li=link_to 'Financial', '#', :class => 'financial'
-        = link_to 'Help', '#', :id => 'help'
-      #right-col
-        #stats-bar
-          = yield :stats_bar
-        #content
-          = yield
+      - if content_for?(:main_content)
+        = yield :main_content
+      - else
+        #left-col
+          %h1=link_to 'Bluey health & fitness', root_path
+          %nav
+            %ul
+              %li=link_to 'Plans', plans_path, :class => 'plans selected'
+              %li=link_to 'Community', '#', :class => 'community'
+              %li=link_to 'Challenges', '#', :class => 'challenges'
+              %li=link_to 'Profile', '#', :class => 'profile'
+              %li=link_to 'Financial', '#', :class => 'financial'
+          = link_to 'Help', '#', :id => 'help'
+        #right-col
+          #stats-bar
+            = yield :stats_bar
+          #content
+            = yield

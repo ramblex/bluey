@@ -561,3 +561,77 @@ form input[type=submit]:hover {
   color: #d62300;
   display: inline;
 }
+
+/* Landing page */
+/* line 327, ../sass/screen.sass */
+#landing-page {
+  padding: 0 50px;
+}
+/* line 329, ../sass/screen.sass */
+#landing-page h1 {
+  margin-top: 50px;
+  font-family: "Waiting for the Sunrise", arial, sans-serif;
+  font-size: 64px;
+  text-align: center;
+}
+/* line 334, ../sass/screen.sass */
+#landing-page #video {
+  width: 550px;
+  height: 320px;
+  background: gray;
+  float: left;
+  margin-bottom: 50px;
+}
+/* line 340, ../sass/screen.sass */
+#landing-page #right-col {
+  width: 300px;
+  text-align: center;
+  float: right;
+}
+/* line 344, ../sass/screen.sass */
+#landing-page #alpha {
+  margin-top: 30px;
+  width: 300px;
+  height: 150px;
+  background: gray;
+}
+/* line 349, ../sass/screen.sass */
+#landing-page #sign-up {
+  display: block;
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
+  background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
+  background-image: linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -o-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  border-radius: 15px;
+  -moz-box-shadow: #454545 0 0 2px 0px;
+  -webkit-box-shadow: #454545 0 0 2px 0px;
+  -o-box-shadow: #454545 0 0 2px 0px;
+  box-shadow: #454545 0 0 2px 0px;
+  border: 1px solid #666666;
+  padding: 15px 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 36px;
+  margin: 30px 50px 5px 50px;
+  text-shadow: #378cbb 1px 1px 2px;
+}
+/* line 358, ../sass/screen.sass */
+#landing-page #sign-in {
+  clear: right;
+}
+/* line 360, ../sass/screen.sass */
+#landing-page ol {
+  clear: both;
+  background: url(/images/steps.png) no-repeat 110px 0;
+  padding-top: 65px;
+}
+/* line 364, ../sass/screen.sass */
+#landing-page ol li {
+  float: left;
+  width: 200px;
+  margin: 0 50px;
+}
