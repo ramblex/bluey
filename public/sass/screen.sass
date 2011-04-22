@@ -15,6 +15,7 @@
 @import "compass/css3/box-shadow"
 @import "compass/css3/text-shadow"
 @import "compass/css3/gradient"
+@import "compass/css3/opacity"
 
 /* Variables */
 $total_width = 1000px
@@ -371,3 +372,33 @@ form
   padding: 0 200px
   #content
     margin: 50px 20px
+
+#sign-up-form
+  #content
+    margin: 0
+    @include box-shadow(none)
+
+.ui-widget-overlay
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: #666
+  @include opacity(0.5)
+
+.ui-dialog
+  padding: 10px
+  background: white
+  @include box-shadow(#333, 0, 0, 2px, 0px)
+  @include border-radius($default_border_radius)
+
+.ui-icon-closethick
+  display: block
+  width: 25px
+  height: 25px
+  background: url(/images/close.png) no-repeat
+  text-indent: -30000px
+  outline: 0
+  float: right
+  margin-left: -3px

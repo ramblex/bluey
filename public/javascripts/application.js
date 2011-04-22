@@ -21,4 +21,19 @@ function animate_progress(meter_id, percentage, append) {
 $(document).ready(function() {
   animate_progress(0, 30, true);
   animate_progress(1, 50, false);
+
+  var sign_up_form = $('<div id="sign-up-form">Loading form...</div>').dialog({
+    autoOpen: false,
+    height: 350,
+    width: 360,
+    modal: true,
+    open: function() {
+      $(this).load('/users/sign_up #content');
+    }
+  });
+
+  $('#sign-up').click(function(e) {
+    sign_up_form.dialog('open');
+    e.preventDefault();
+  })
 });
