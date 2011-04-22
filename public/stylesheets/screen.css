@@ -611,15 +611,15 @@ form input[type=submit]:hover {
 }
 /* line 353, ../sass/screen.sass */
 #landing-page #video {
+  display: block;
   width: 600px;
   height: 400px;
-  background: #eeeeee;
   float: left;
   margin-bottom: 50px;
 }
 /* line 359, ../sass/screen.sass */
 #landing-page #right-col {
-  width: 300px;
+  width: 332px;
   text-align: center;
   float: right;
 }
