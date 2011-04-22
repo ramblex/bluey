@@ -201,7 +201,8 @@ nav ul li a:hover, nav ul li a.selected {
 
 /* line 124, ../sass/screen.sass */
 #stats-bar {
-  margin: 20px;
+  float: left;
+  margin: 20px 5px 20px 20px;
   padding: 15px;
   height: 77px;
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
@@ -220,45 +221,45 @@ nav ul li a:hover, nav ul li a.selected {
   border: 1px solid #666666;
 }
 
-/* line 130, ../sass/screen.sass */
+/* line 131, ../sass/screen.sass */
 #badges {
   float: left;
   width: 150px;
 }
 
-/* line 136, ../sass/screen.sass */
+/* line 137, ../sass/screen.sass */
 #stats {
   color: white;
   float: right;
   height: 107px;
   text-shadow: #378cbb 1px 1px 2px;
 }
-/* line 141, ../sass/screen.sass */
+/* line 142, ../sass/screen.sass */
 #stats h2 {
   letter-spacing: 0;
   margin: 5px 0;
   font-size: 18px;
   font-weight: normal;
 }
-/* line 146, ../sass/screen.sass */
+/* line 147, ../sass/screen.sass */
 #stats li {
   float: left;
-  width: 160px;
+  width: 150px;
   text-align: center;
 }
-/* line 150, ../sass/screen.sass */
+/* line 151, ../sass/screen.sass */
 #stats li p {
   font-size: 36px;
 }
-/* line 152, ../sass/screen.sass */
+/* line 153, ../sass/screen.sass */
 #stats li p span {
   font-size: 24px;
 }
-/* line 155, ../sass/screen.sass */
+/* line 156, ../sass/screen.sass */
 #stats li.meter h2 {
   margin-bottom: 0;
 }
-/* line 157, ../sass/screen.sass */
+/* line 158, ../sass/screen.sass */
 #stats li.meter span {
   margin-left: 58px;
   float: left;
@@ -267,13 +268,47 @@ nav ul li a:hover, nav ul li a.selected {
   background: url(/images/meter-bg.png) no-repeat;
   display: block;
 }
-/* line 164, ../sass/screen.sass */
+/* line 165, ../sass/screen.sass */
 #stats li.meter .hint {
   display: none;
 }
 
-/* line 167, ../sass/screen.sass */
+/* line 168, ../sass/screen.sass */
+#logout {
+  display: block;
+  margin-top: 20px;
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
+  background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
+  background-image: linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -o-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -khtml-border-radius: 15px;
+  border-radius: 15px;
+  -moz-box-shadow: #454545 0 0 2px 0px;
+  -webkit-box-shadow: #454545 0 0 2px 0px;
+  -o-box-shadow: #454545 0 0 2px 0px;
+  box-shadow: #454545 0 0 2px 0px;
+  border: 1px solid #666666;
+  height: 107px;
+  float: left;
+  margin-right: 0;
+  padding: 0 10px;
+  color: white;
+  line-height: 112px;
+  text-decoration: none;
+  text-shadow: #378cbb 1px 1px 2px;
+  font-weight: bold;
+}
+/* line 181, ../sass/screen.sass */
+#logout:hover {
+  background: #5ebdf1;
+}
+
+/* line 184, ../sass/screen.sass */
 #content {
+  clear: both;
   margin: 0 20px;
   padding: 20px;
   -moz-border-radius: 15px;
@@ -291,18 +326,18 @@ nav ul li a:hover, nav ul li a.selected {
 }
 
 /* Used for titles in content */
-/* line 175, ../sass/screen.sass */
+/* line 193, ../sass/screen.sass */
 h2 {
   font-weight: bold;
   font-size: 110%;
 }
 
-/* line 186, ../sass/screen.sass */
+/* line 204, ../sass/screen.sass */
 #context-bar {
   height: 65px;
   margin-bottom: 20px;
 }
-/* line 189, ../sass/screen.sass */
+/* line 207, ../sass/screen.sass */
 #context-bar ul.filter-buttons {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -322,11 +357,11 @@ h2 {
   padding: 0 10px;
   width: 225px;
 }
-/* line 194, ../sass/screen.sass */
+/* line 212, ../sass/screen.sass */
 #context-bar ul.filter-buttons li {
   float: left;
 }
-/* line 196, ../sass/screen.sass */
+/* line 214, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a {
   background: url(/images/plan-filter-icons.png) no-repeat 0 -50px;
   width: 55px;
@@ -337,39 +372,39 @@ h2 {
   text-indent: -30000px;
   color: #add8f1;
 }
-/* line 205, ../sass/screen.sass */
+/* line 223, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.profile {
   background-position: 0 -50px;
 }
-/* line 183, ../sass/screen.sass */
+/* line 201, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.profile:hover, #context-bar ul.filter-buttons li a.profile.selected {
   background-position: 0 0;
 }
-/* line 207, ../sass/screen.sass */
+/* line 225, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.community {
   background-position: -55px -50px;
 }
-/* line 183, ../sass/screen.sass */
+/* line 201, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.community:hover, #context-bar ul.filter-buttons li a.community.selected {
   background-position: -55px 0;
 }
-/* line 209, ../sass/screen.sass */
+/* line 227, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.challenges {
   background-position: -110px -50px;
 }
-/* line 183, ../sass/screen.sass */
+/* line 201, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.challenges:hover, #context-bar ul.filter-buttons li a.challenges.selected {
   background-position: -110px 0;
 }
-/* line 211, ../sass/screen.sass */
+/* line 229, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.financial {
   background-position: -165px -50px;
 }
-/* line 183, ../sass/screen.sass */
+/* line 201, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.financial:hover, #context-bar ul.filter-buttons li a.financial.selected {
   background-position: -165px 0;
 }
-/* line 213, ../sass/screen.sass */
+/* line 231, ../sass/screen.sass */
 #context-bar input {
   border: 1px solid #666666;
   height: 30px;
@@ -391,11 +426,11 @@ h2 {
   font-weight: bold;
   color: #dddddd;
 }
-/* line 225, ../sass/screen.sass */
+/* line 243, ../sass/screen.sass */
 #context-bar input:focus {
   outline: none;
 }
-/* line 227, ../sass/screen.sass */
+/* line 245, ../sass/screen.sass */
 #context-bar #share {
   float: right;
   width: 245px;
@@ -414,7 +449,7 @@ h2 {
   box-shadow: #454545 0 0 2px 0px;
   border: 1px solid #666666;
 }
-/* line 231, ../sass/screen.sass */
+/* line 249, ../sass/screen.sass */
 #context-bar #share a {
   background: url(/images/share-icon.png) no-repeat 150px 5px;
   line-height: 40px;
@@ -428,18 +463,18 @@ h2 {
   font-size: 35px;
   font-weight: 550;
 }
-/* line 243, ../sass/screen.sass */
+/* line 261, ../sass/screen.sass */
 #context-bar #share a:active {
   padding-top: 16px;
   height: 49px;
 }
 
-/* line 247, ../sass/screen.sass */
+/* line 265, ../sass/screen.sass */
 #plans {
   clear: both;
 }
 
-/* line 250, ../sass/screen.sass */
+/* line 268, ../sass/screen.sass */
 .badge, #badges li {
   background: #cdedff;
   width: 30px;
@@ -453,7 +488,7 @@ h2 {
   margin: 0 5px 5px 0;
 }
 
-/* line 262, ../sass/screen.sass */
+/* line 280, ../sass/screen.sass */
 .plan {
   margin-right: 1px;
   display: block;
@@ -465,18 +500,18 @@ h2 {
   padding: 10px;
   position: relative;
 }
-/* line 272, ../sass/screen.sass */
+/* line 290, ../sass/screen.sass */
 .plan header {
   color: #077cbe;
   font-weight: bold;
 }
-/* line 275, ../sass/screen.sass */
+/* line 293, ../sass/screen.sass */
 .plan header .date {
   font-size: 80%;
   color: #8b8b8b;
   letter-spacing: 0;
 }
-/* line 279, ../sass/screen.sass */
+/* line 297, ../sass/screen.sass */
 .plan footer {
   width: 284px;
   padding: 0 5px;
@@ -488,34 +523,34 @@ h2 {
   background: #484848;
   font-weight: bold;
 }
-/* line 289, ../sass/screen.sass */
+/* line 307, ../sass/screen.sass */
 .plan footer a {
   color: white;
   text-decoration: none;
   font-size: 90%;
 }
-/* line 293, ../sass/screen.sass */
+/* line 311, ../sass/screen.sass */
 .plan footer a:hover {
   text-decoration: underline;
 }
 
 /* Forms */
-/* line 297, ../sass/screen.sass */
+/* line 315, ../sass/screen.sass */
 form {
   margin: 10px 0;
 }
-/* line 299, ../sass/screen.sass */
+/* line 317, ../sass/screen.sass */
 form p {
   margin-top: 15px;
 }
-/* line 301, ../sass/screen.sass */
+/* line 319, ../sass/screen.sass */
 form input[type=text], form input[type=password] {
   border: 1px solid #dddddd;
   padding: 5px;
   width: 300px;
   font-size: 100%;
 }
-/* line 306, ../sass/screen.sass */
+/* line 324, ../sass/screen.sass */
 form input[type=submit] {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -544,58 +579,58 @@ form input[type=submit] {
   cursor: pointer;
   height: 30px;
 }
-/* line 315, ../sass/screen.sass */
+/* line 333, ../sass/screen.sass */
 form input[type=submit]:hover {
   background: #5ebdf1;
 }
 
-/* line 318, ../sass/screen.sass */
+/* line 336, ../sass/screen.sass */
 #error_explanation {
   background: #ff9c99;
   border: 1px solid #d62300;
   padding: 10px;
 }
 
-/* line 323, ../sass/screen.sass */
+/* line 341, ../sass/screen.sass */
 .field_with_errors {
   color: #d62300;
   display: inline;
 }
 
 /* Landing page */
-/* line 328, ../sass/screen.sass */
+/* line 346, ../sass/screen.sass */
 #landing-page {
-  padding: 0 50px;
+  padding: 0 10px;
 }
-/* line 330, ../sass/screen.sass */
+/* line 348, ../sass/screen.sass */
 #landing-page h1 {
   margin-top: 50px;
   font-family: "Waiting for the Sunrise", arial, sans-serif;
   font-size: 64px;
   text-align: center;
 }
-/* line 335, ../sass/screen.sass */
+/* line 353, ../sass/screen.sass */
 #landing-page #video {
-  width: 550px;
-  height: 320px;
-  background: gray;
+  width: 600px;
+  height: 400px;
+  background: #eeeeee;
   float: left;
   margin-bottom: 50px;
 }
-/* line 341, ../sass/screen.sass */
+/* line 359, ../sass/screen.sass */
 #landing-page #right-col {
   width: 300px;
   text-align: center;
   float: right;
 }
-/* line 345, ../sass/screen.sass */
+/* line 363, ../sass/screen.sass */
 #landing-page #alpha {
   margin-top: 30px;
-  width: 300px;
-  height: 150px;
-  background: gray;
+  width: 332px;
+  height: 225px;
+  background: url(/images/alpha.png) no-repeat;
 }
-/* line 350, ../sass/screen.sass */
+/* line 368, ../sass/screen.sass */
 #landing-page #sign-up {
   display: block;
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
@@ -619,17 +654,17 @@ form input[type=submit]:hover {
   margin: 30px 50px 5px 50px;
   text-shadow: #378cbb 1px 1px 2px;
 }
-/* line 359, ../sass/screen.sass */
+/* line 377, ../sass/screen.sass */
 #landing-page #sign-in {
   clear: right;
 }
-/* line 361, ../sass/screen.sass */
+/* line 379, ../sass/screen.sass */
 #landing-page ol {
   clear: both;
-  background: url(/images/steps.png) no-repeat 110px 0;
-  padding-top: 65px;
+  background: url(/images/steps.png) no-repeat 160px 0;
+  padding: 65px 0 0 50px;
 }
-/* line 365, ../sass/screen.sass */
+/* line 383, ../sass/screen.sass */
 #landing-page ol li {
   float: left;
   width: 200px;
@@ -637,16 +672,16 @@ form input[type=submit]:hover {
 }
 
 /* Sign up and sign in forms */
-/* line 371, ../sass/screen.sass */
+/* line 389, ../sass/screen.sass */
 #devise {
   padding: 0 200px;
 }
-/* line 373, ../sass/screen.sass */
+/* line 391, ../sass/screen.sass */
 #devise #content {
   margin: 50px 20px;
 }
 
-/* line 377, ../sass/screen.sass */
+/* line 395, ../sass/screen.sass */
 #sign-up-form #content {
   margin: 0;
   -moz-box-shadow: none;
@@ -655,7 +690,7 @@ form input[type=submit]:hover {
   box-shadow: none;
 }
 
-/* line 381, ../sass/screen.sass */
+/* line 399, ../sass/screen.sass */
 .ui-widget-overlay {
   position: absolute;
   top: 0;
@@ -668,7 +703,7 @@ form input[type=submit]:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
 }
 
-/* line 390, ../sass/screen.sass */
+/* line 408, ../sass/screen.sass */
 .ui-dialog {
   padding: 10px;
   background: white;
@@ -684,7 +719,7 @@ form input[type=submit]:hover {
   border-radius: 15px;
 }
 
-/* line 396, ../sass/screen.sass */
+/* line 414, ../sass/screen.sass */
 .ui-icon-closethick {
   display: block;
   width: 25px;

@@ -122,7 +122,8 @@ nav ul
   float: right
 
 #stats-bar
-  margin: 20px
+  float: left
+  margin: 20px 5px 20px 20px
   padding: 15px
   height: $stats_bar_height - 30px
   @include shiny-blue-box
@@ -145,7 +146,7 @@ nav ul
     font-weight: normal
   li
     float: left
-    width: 160px
+    width: 150px
     text-align: center
     p
       font-size: 36px
@@ -164,7 +165,24 @@ nav ul
       .hint
         display: none
 
+#logout
+  display: block
+  margin-top: 20px
+  @include shiny-blue-box
+  height: $stats_bar_height
+  float: left
+  margin-right: 0
+  padding: 0 10px
+  color: white
+  line-height: $stats_bar_height + 5px
+  text-decoration: none
+  @include text-shadow(#378cbb, 1px, 1px, 2px)
+  font-weight: bold
+  &:hover
+    background: #5ebdf1
+
 #content
+  clear: both
   margin: 0 20px
   padding: 20px
   @include border-radius($default_border_radius)
@@ -326,16 +344,16 @@ form
 
 /* Landing page */
 #landing-page
-  padding: 0 50px
+  padding: 0 10px
   h1
     margin-top: 50px
     font-family: 'Waiting for the Sunrise', arial, sans-serif
     font-size: 64px
     text-align: center
   #video
-    width: 550px
-    height: 320px
-    background: gray
+    width: 600px
+    height: 400px
+    background: #eee
     float: left
     margin-bottom: 50px
   #right-col
@@ -344,9 +362,9 @@ form
     float: right
   #alpha
     margin-top: 30px
-    width: 300px
-    height: 150px
-    background: gray
+    width: 332px
+    height: 225px
+    background: url(/images/alpha.png) no-repeat
   #sign-up
     display: block
     @include shiny-blue-box
@@ -360,8 +378,8 @@ form
     clear: right
   ol
     clear: both
-    background: url(/images/steps.png) no-repeat 110px 0
-    padding-top: 65px
+    background: url(/images/steps.png) no-repeat 160px 0
+    padding: 65px 0 0 50px
     li
       float: left
       width: 200px

@@ -24,7 +24,6 @@ $(document).ready(function() {
 
   var sign_up_form = $('<div id="sign-up-form">Loading form...</div>').dialog({
     autoOpen: false,
-    height: 350,
     width: 360,
     modal: true,
     open: function() {

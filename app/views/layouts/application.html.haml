@@ -34,5 +34,6 @@
         #right-col
           #stats-bar
             = yield :stats_bar
+          = link_to 'Logout', destroy_user_session_path, :id => 'logout'
           #content
             = yield
