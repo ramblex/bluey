@@ -34,6 +34,7 @@ namespace :deploy do
 
   task :symlink_shared do
     run "ln -sfn /home/#{user}/public_html/#{application}/shared/database.yml #{release_path}/config/database.yml"
+    run "ln -sfn /home/#{user}/public_html/#{application}/shared/bluey.mov #{release_path}/public/videos/bluey.mov"
   end
 
   after 'deploy:update_code', 'deploy:symlink_shared'
