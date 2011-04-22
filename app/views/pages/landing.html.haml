@@ -9,7 +9,6 @@
     %h1 Can you live past 100 years old?
     #left-col
       = link_to '', '/videos/bluey.flv', :id => 'video'
-      = link_to 'Download in HD', '/videos/bluey.mov', :id => 'hd-video'
       :javascript
         $(document).ready(function() {
           $f('video', {src: '/videos/flowplayer-3.2.7.swf', wmode: 'transparent'});
