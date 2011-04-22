@@ -10,7 +10,7 @@
     = link_to '', '/videos/bluey.flv', :id => 'video'
     :javascript
       $(document).ready(function() {
-        flowplayer('video', '/videos/flowplayer-3.2.7.swf');
+        $f('video', {src: '/videos/flowplayer-3.2.7.swf', wmode: 'transparent'});
       });
     #right-col
       #alpha

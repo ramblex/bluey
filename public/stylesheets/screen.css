@@ -598,39 +598,35 @@ form input[type=submit]:hover {
 }
 
 /* Landing page */
-/* line 346, ../sass/screen.sass */
-#landing-page {
-  padding: 0 10px;
-}
-/* line 348, ../sass/screen.sass */
+/* line 347, ../sass/screen.sass */
 #landing-page h1 {
   margin-top: 50px;
   font-family: "Waiting for the Sunrise", arial, sans-serif;
   font-size: 64px;
   text-align: center;
 }
-/* line 353, ../sass/screen.sass */
+/* line 352, ../sass/screen.sass */
 #landing-page #video {
   display: block;
-  width: 600px;
-  height: 400px;
+  width: 640px;
+  height: 380px;
   float: left;
   margin-bottom: 50px;
 }
-/* line 359, ../sass/screen.sass */
+/* line 358, ../sass/screen.sass */
 #landing-page #right-col {
   width: 332px;
   text-align: center;
   float: right;
 }
-/* line 363, ../sass/screen.sass */
+/* line 362, ../sass/screen.sass */
 #landing-page #alpha {
   margin-top: 30px;
   width: 332px;
   height: 225px;
   background: url(/images/alpha.png) no-repeat;
 }
-/* line 368, ../sass/screen.sass */
+/* line 367, ../sass/screen.sass */
 #landing-page #sign-up {
   display: block;
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
@@ -654,21 +650,22 @@ form input[type=submit]:hover {
   margin: 30px 50px 5px 50px;
   text-shadow: #378cbb 1px 1px 2px;
 }
-/* line 377, ../sass/screen.sass */
+/* line 376, ../sass/screen.sass */
 #landing-page #sign-in {
   clear: right;
 }
-/* line 379, ../sass/screen.sass */
+/* line 378, ../sass/screen.sass */
 #landing-page ol {
   clear: both;
   background: url(/images/steps.png) no-repeat 160px 0;
   padding: 65px 0 0 50px;
 }
-/* line 383, ../sass/screen.sass */
+/* line 382, ../sass/screen.sass */
 #landing-page ol li {
   float: left;
-  width: 200px;
+  width: 195px;
   margin: 0 50px;
+  text-align: center;
 }
 
 /* Sign up and sign in forms */
