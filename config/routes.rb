@@ -1,5 +1,6 @@
 Bluey::Application.routes.draw do
   get "pages/landing"
+  get "pages/dashboard"
 
   devise_for :users
 

@@ -1,14 +1,18 @@
-%h2
-  Edit Profile
+%section
+  = image_tag '', :class => 'large-picture'
+  %h1
+    .editable-text
+      Click here to add your name
+  %p.editable-text.summary Click here to add a summary about yourself
 %ul#user-tabs
   %li= link_to 'Foundation', '', :class => 'selected'
   %li= link_to 'Body Stats', ''
   %li= link_to 'Health Stats', ''
   %li= link_to 'Pictures', ''
-.right-col
+.user-forms
   = form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f|
     = devise_error_messages!
-    = field_set_tag 'Your details' do
+    = field_set_tag 'Email and password' do
       %p
         = f.label :email
         %br/

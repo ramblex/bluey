@@ -1,0 +1,8 @@
+#context-bar
+  %ul.filter-buttons
+    %li=link_to 'Profile', '#', :class => 'profile selected'
+    %li=link_to 'Community', '#', :class => 'community'
+    %li=link_to 'Challenges', '#', :class => 'challenges'
+    %li=link_to 'Financial', '#', :class => 'financial'
+  = text_field_tag 'search', 'Search'
+  #share= link_to 'Share', '#'
