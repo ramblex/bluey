@@ -31,6 +31,7 @@ $link_colour = #5ebdf1
 $link_visited = $link_colour - #101010
 $link_hover = $link_colour - #202020
 $link_active = $link_hover - #202020
+$error_red = #d62300
 
 @mixin shiny-blue-box
   @include linear-gradient(color-stops($blue_bg, $blue_bg 45%, #5ebdf1 45%, #5ebdf1 100%), bottom)
@@ -58,6 +59,16 @@ a
   width: $total_width
   margin: 0 auto
   margin-bottom: 50px
+
+/* Notifications */
+#notifications
+  position: fixed
+  top: 20px
+  left: 20px
+  padding: 10px
+  #alert
+    color: $error_red
+    padding: 20px
 
 /* Left column */
 #left-col
@@ -126,6 +137,7 @@ nav ul
   margin: 20px 5px 20px 20px
   padding: 15px
   height: $stats_bar_height - 30px
+  width: 750px
   @include shiny-blue-box
 
 #badges
@@ -313,6 +325,7 @@ $ctx_bar_height: 65px
 
 /* Forms */
 form
+  clear: both
   margin: 10px 0
   p
     margin-top: 15px
@@ -332,14 +345,16 @@ form
     height: 30px
     &:hover
       background: $link_colour
+  legend
+    font-weight: bold
 
 #error_explanation
   background: #ff9c99
-  border: 1px solid #d62300
+  border: 1px solid $error_red
   padding: 10px
 
 .field_with_errors
-  color: #d62300
+  color: $error_red
   display: inline
 
 /* Landing page */
@@ -421,3 +436,25 @@ form
   outline: 0
   float: right
   margin-left: -3px
+
+/* User edit page */
+#user-tabs
+  float: left
+  margin: 10px 20px 10px 0
+  li a
+    text-align: center
+    margin: 10px 0
+    display: block
+    @include shiny-blue-box
+    padding: 20px
+    width: 120px
+    line-height: 30px
+    color: #dedede
+    font-size: 24px
+    text-decoration: none
+    @include text-shadow(#378cbb, 1px, 1px, 2px)
+    &:hover, &.selected
+      color: white
+
+.right-col
+  float: left

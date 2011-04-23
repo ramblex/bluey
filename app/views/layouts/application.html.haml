@@ -28,12 +28,34 @@
               %li=link_to 'Plans', plans_path, :class => 'plans selected'
               %li=link_to 'Community', '#', :class => 'community'
               %li=link_to 'Challenges', '#', :class => 'challenges'
-              %li=link_to 'Profile', '#', :class => 'profile'
+              %li=link_to 'Profile', edit_user_registration_path, :class => 'profile'
               %li=link_to 'Financial', '#', :class => 'financial'
           = link_to 'Help', '#', :id => 'help'
         #right-col
           #stats-bar
-            = yield :stats_bar
+            %ul#badges
+              %li= image_tag 'badges/ace.png', :alt => 'Ace certified'
+              %li= image_tag 'badges/stress.png', :alt => 'No stress'
+              %li= image_tag 'badges/circles.png', :alt => 'Circle'
+              %li= image_tag 'badges/flu.png', :alt => 'No flu'
+              %li= image_tag 'badges/punch.png', :alt => 'Punching'
+            %ul#stats
+              %li
+                %h2 Wellness points
+                %p 302
+              %li.meter
+                %h2 Goal
+                %span
+                  = image_tag 'meter-stick.png'
+              %li
+                %h2 Weight
+                %p
+                  174
+                  %span lbs
+              %li.meter
+                %h2 Health
+                %span
+                  = image_tag 'meter-stick.png'
           = link_to 'Logout', destroy_user_session_path, :id => 'logout'
           #content
             = yield
