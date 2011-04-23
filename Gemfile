@@ -34,4 +34,7 @@ gem 'capistrano', '2.5.19'
 group :development, :test do
   gem 'hpricot', '0.8.2'
   gem 'ruby_parser', '2.0.4'
+  gem 'cucumber-rails'
+  gem 'capybara'
+  gem 'database_cleaner'
 end

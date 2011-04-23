@@ -7,6 +7,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "should not update without name" do
-    user = users(:valid)
+    user = users(:newly_registered)
+    assert !user.update_attributes
   end
 end
