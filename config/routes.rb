@@ -1,4 +1,6 @@
 Bluey::Application.routes.draw do
+  resources :user_profiles
+
   get "pages/landing"
   get "pages/dashboard"
 
