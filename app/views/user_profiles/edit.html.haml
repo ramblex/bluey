@@ -8,6 +8,8 @@
       %li= image_tag 'badges/ace.png', :alt => 'Ace certified'
 
   %section
+    = link_to 'Cancel my account', user_registration_path, :confirm => 'Are you sure you want to cancel your account?', :method => :delete, :class => 'edit-email'
+    = link_to 'Edit email & password', edit_user_registration_path, :class => 'edit-email'
     %ul#user-tabs
       %li.selected= link_to 'Foundation', '', :name => 'foundation'
       %li= link_to 'Body Stats', ''
@@ -24,7 +26,7 @@
               %li
                 = check_box_tag "user_profile[user_type_ids][]", user_type.id, @user_profile.user_types.include?(user_type)
                 = user_type.name
-        = field_set_tag 'I want:' do
+        = field_set_tag 'I want to:' do
           %em.hint select all that apply
           %ul
             - for user_want in UserWant.all
@@ -40,4 +42,22 @@
             = f.label :city
             %br/
             = f.text_field :city
+        = field_set_tag 'Birthday:' do
+          %p
+            = f.label :dob, 'Date of birth'
+            %br/
+            = f.date_select :dob, :order => [:day, :month, :year], :start_year => Time.now.year - 70
+        = field_set_tag 'Extra information:' do
+          %p
+            = f.label :gym
+            %br/
+            = f.text_field :gym
+          %p
+            = f.label :sports
+            %br/
+            = f.text_area :sports
+          %p
+            = f.label :brands, "Favourite brands"
+            %br/
+            = f.text_area :brands
         %p= f.submit 'Save'

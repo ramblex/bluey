@@ -792,10 +792,10 @@ form input[type=submit]:hover {
 /* User edit page */
 /* line 468, ../sass/screen.sass */
 .edit-email {
-  clear: left;
-  float: left;
-  width: 90px;
+  float: right;
   font-size: 12px;
+  display: block;
+  margin-left: 10px;
 }
 
 /* line 474, ../sass/screen.sass */
@@ -844,10 +844,11 @@ form input[type=submit]:hover {
 
 /* line 492, ../sass/screen.sass */
 #user-tabs {
+  clear: both;
   float: left;
   margin: 35px 0 10px 0;
 }
-/* line 495, ../sass/screen.sass */
+/* line 496, ../sass/screen.sass */
 #user-tabs li {
   padding: 5px 15px 5px 5px;
   -moz-border-radius: 15px;
@@ -870,7 +871,7 @@ form input[type=submit]:hover {
   border-bottom-right-radius: 0;
   margin-bottom: 10px;
 }
-/* line 501, ../sass/screen.sass */
+/* line 502, ../sass/screen.sass */
 #user-tabs li a {
   text-align: center;
   display: block;
@@ -896,22 +897,22 @@ form input[type=submit]:hover {
   text-shadow: #378cbb 1px 1px 2px;
   color: white;
 }
-/* line 512, ../sass/screen.sass */
+/* line 513, ../sass/screen.sass */
 #user-tabs li.selected, #user-tabs li:hover {
   background: #3baeee;
 }
 
-/* line 515, ../sass/screen.sass */
+/* line 516, ../sass/screen.sass */
 .user-forms {
   display: block;
   float: left;
   width: 650px;
 }
-/* line 520, ../sass/screen.sass */
+/* line 521, ../sass/screen.sass */
 .user-forms .hint {
   font-size: 12px;
 }
-/* line 523, ../sass/screen.sass */
+/* line 524, ../sass/screen.sass */
 .user-forms form {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -930,44 +931,50 @@ form input[type=submit]:hover {
   background: #3baeee;
   padding: 10px;
 }
-/* line 527, ../sass/screen.sass */
+/* line 528, ../sass/screen.sass */
 .user-forms form input[type=text] {
   border: 1px solid #3baeee;
 }
-/* line 529, ../sass/screen.sass */
+/* line 530, ../sass/screen.sass */
 .user-forms form fieldset {
   background: #5ebdf1;
   padding: 10px;
   margin: 10px 0;
 }
-/* line 533, ../sass/screen.sass */
+/* line 534, ../sass/screen.sass */
 .user-forms form fieldset ul {
   margin-top: 10px;
 }
-/* line 535, ../sass/screen.sass */
+/* line 536, ../sass/screen.sass */
 .user-forms form fieldset ul li {
   float: left;
   width: 150px;
   margin: 0 40px 20px 0;
 }
-/* line 539, ../sass/screen.sass */
+/* line 540, ../sass/screen.sass */
 .user-forms form legend {
   font-weight: bold;
   color: white;
   text-shadow: #378cbb 1px 1px 2px;
   letter-spacing: 0;
 }
+/* line 545, ../sass/screen.sass */
+.user-forms form textarea {
+  width: 400px;
+  height: 100px;
+  border: 1px solid #3baeee;
+}
 
 /* Editable fields */
-/* line 546, ../sass/screen.sass */
+/* line 551, ../sass/screen.sass */
 .on_the_spot_editing {
   display: block;
 }
-/* line 548, ../sass/screen.sass */
+/* line 553, ../sass/screen.sass */
 .on_the_spot_editing form {
   padding: 10px;
 }
-/* line 550, ../sass/screen.sass */
+/* line 555, ../sass/screen.sass */
 .on_the_spot_editing form input, .on_the_spot_editing form textarea {
   display: block;
   width: 300px !important;
@@ -975,12 +982,12 @@ form input[type=submit]:hover {
   padding: 5px;
   border: 1px solid #cccccc;
 }
-/* line 556, ../sass/screen.sass */
+/* line 561, ../sass/screen.sass */
 .on_the_spot_editing form textarea {
   height: 100px !important;
   margin-bottom: 5px;
 }
-/* line 559, ../sass/screen.sass */
+/* line 564, ../sass/screen.sass */
 .on_the_spot_editing form button[type=submit] {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -1005,7 +1012,7 @@ form input[type=submit]:hover {
   border-radius: 4px;
   cursor: pointer;
 }
-/* line 564, ../sass/screen.sass */
+/* line 569, ../sass/screen.sass */
 .on_the_spot_editing form button[type=cancel] {
   background: none;
   border: 0;
