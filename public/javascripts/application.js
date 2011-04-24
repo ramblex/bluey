@@ -35,4 +35,6 @@ $(document).ready(function() {
     sign_up_form.dialog('open');
     e.preventDefault();
   })
+
+  $('#notifications').fadeOut(5000);
 });

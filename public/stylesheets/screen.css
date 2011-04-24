@@ -260,7 +260,7 @@ nav ul li a:hover, nav ul li a.selected {
 }
 
 /* line 158, ../sass/screen.sass */
-#badges {
+.badges {
   float: left;
   width: 150px;
 }
@@ -525,7 +525,7 @@ h2 {
 }
 
 /* line 304, ../sass/screen.sass */
-.badge, #badges li, .large-picture {
+.badge, .badges li, .large-picture {
   background: #cdedff;
   width: 30px;
   height: 30px;
@@ -785,10 +785,19 @@ form input[type=submit]:hover {
 /* User edit page */
 /* line 463, ../sass/screen.sass */
 .edit-email {
-  float: right;
+  clear: left;
+  float: left;
+  width: 90px;
+  font-size: 12px;
 }
 
-/* line 466, ../sass/screen.sass */
+/* line 469, ../sass/screen.sass */
+#user-profile .badges {
+  float: right;
+  width: 200px;
+}
+
+/* line 473, ../sass/screen.sass */
 .button {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -815,23 +824,23 @@ form input[type=submit]:hover {
   color: white !important;
   text-decoration: none;
 }
-/* line 473, ../sass/screen.sass */
+/* line 480, ../sass/screen.sass */
 .button:hover {
   background: #5ebdf1;
 }
 
-/* line 476, ../sass/screen.sass */
-#name-and-summary {
+/* line 483, ../sass/screen.sass */
+#user-info {
+  width: 450px;
   float: left;
-  width: 400px;
 }
 
-/* line 480, ../sass/screen.sass */
+/* line 487, ../sass/screen.sass */
 #user-tabs {
   float: left;
   margin: 35px 0 10px 0;
 }
-/* line 483, ../sass/screen.sass */
+/* line 490, ../sass/screen.sass */
 #user-tabs li {
   padding: 5px 15px 5px 5px;
   -moz-border-radius: 15px;
@@ -854,7 +863,7 @@ form input[type=submit]:hover {
   border-bottom-right-radius: 0;
   margin-bottom: 10px;
 }
-/* line 489, ../sass/screen.sass */
+/* line 496, ../sass/screen.sass */
 #user-tabs li a {
   text-align: center;
   display: block;
@@ -880,22 +889,22 @@ form input[type=submit]:hover {
   text-shadow: #378cbb 1px 1px 2px;
   color: white;
 }
-/* line 500, ../sass/screen.sass */
+/* line 507, ../sass/screen.sass */
 #user-tabs li.selected, #user-tabs li:hover {
   background: #3baeee;
 }
 
-/* line 503, ../sass/screen.sass */
+/* line 510, ../sass/screen.sass */
 .user-forms {
   display: block;
   float: left;
   width: 650px;
 }
-/* line 508, ../sass/screen.sass */
+/* line 515, ../sass/screen.sass */
 .user-forms .hint {
   font-size: 12px;
 }
-/* line 511, ../sass/screen.sass */
+/* line 518, ../sass/screen.sass */
 .user-forms form {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -914,27 +923,27 @@ form input[type=submit]:hover {
   background: #3baeee;
   padding: 10px;
 }
-/* line 515, ../sass/screen.sass */
+/* line 522, ../sass/screen.sass */
 .user-forms form input[type=text] {
   border: 1px solid #3baeee;
 }
-/* line 517, ../sass/screen.sass */
+/* line 524, ../sass/screen.sass */
 .user-forms form fieldset {
   background: #5ebdf1;
   padding: 10px;
   margin: 10px 0;
 }
-/* line 521, ../sass/screen.sass */
+/* line 528, ../sass/screen.sass */
 .user-forms form fieldset ul {
   margin-top: 10px;
 }
-/* line 523, ../sass/screen.sass */
+/* line 530, ../sass/screen.sass */
 .user-forms form fieldset ul li {
   float: left;
   width: 150px;
   margin: 0 40px 20px 0;
 }
-/* line 527, ../sass/screen.sass */
+/* line 534, ../sass/screen.sass */
 .user-forms form legend {
   font-weight: bold;
   color: white;
@@ -943,15 +952,15 @@ form input[type=submit]:hover {
 }
 
 /* Editable fields */
-/* line 534, ../sass/screen.sass */
+/* line 541, ../sass/screen.sass */
 .on_the_spot_editing {
   display: block;
 }
-/* line 536, ../sass/screen.sass */
+/* line 543, ../sass/screen.sass */
 .on_the_spot_editing form {
   padding: 10px;
 }
-/* line 538, ../sass/screen.sass */
+/* line 545, ../sass/screen.sass */
 .on_the_spot_editing form input, .on_the_spot_editing form textarea {
   display: block;
   width: 300px !important;
@@ -959,12 +968,12 @@ form input[type=submit]:hover {
   padding: 5px;
   border: 1px solid #cccccc;
 }
-/* line 544, ../sass/screen.sass */
+/* line 551, ../sass/screen.sass */
 .on_the_spot_editing form textarea {
   height: 100px !important;
   margin-bottom: 5px;
 }
-/* line 547, ../sass/screen.sass */
+/* line 554, ../sass/screen.sass */
 .on_the_spot_editing form button[type=submit] {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -989,7 +998,7 @@ form input[type=submit]:hover {
   border-radius: 4px;
   cursor: pointer;
 }
-/* line 552, ../sass/screen.sass */
+/* line 559, ../sass/screen.sass */
 .on_the_spot_editing form button[type=cancel] {
   background: none;
   border: 0;

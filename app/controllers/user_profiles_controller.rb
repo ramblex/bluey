@@ -41,11 +41,9 @@ class UserProfilesController < ApplicationController
 
     respond_to do |format|
       if @user_profile.update_attributes(params[:user_profile])
-        format.html { redirect_to(@user_profile, :notice => 'User profile was successfully updated.') }
-        format.xml  { head :ok }
+        format.html { redirect_to(edit_user_profiles_path, :notice => 'User profile was successfully updated.') }
       else
         format.html { render :action => "edit" }
-        format.xml  { render :xml => @user_profile.errors, :status => :unprocessable_entity }
       end
     end
   end

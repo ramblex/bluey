@@ -155,7 +155,7 @@ nav ul
   width: 750px
   @include shiny-blue-box
 
-#badges
+.badges
   float: left
   width: 150px
   li
@@ -461,7 +461,14 @@ form
 
 /* User edit page */
 .edit-email
+  clear: left
+  float: left
+  width: 90px
+  font-size: 12px
+
+#user-profile .badges
   float: right
+  width: 200px
 
 .button
   @include shiny-blue-box
@@ -473,9 +480,9 @@ form
   &:hover
     background: #5ebdf1
 
-#name-and-summary
+#user-info
+  width: 450px
   float: left
-  width: 400px
 
 #user-tabs
   float: left
