@@ -54,6 +54,7 @@ GEM
       rack-test (>= 0.5.4)
       selenium-webdriver (>= 0.0.27)
       xpath (~> 0.1.3)
+    carmen (0.2.7)
     celerity (0.8.9)
     childprocess (0.1.8)
       ffi (~> 1.0.6)
@@ -151,6 +152,7 @@ DEPENDENCIES
   cancan (= 1.5.1)
   capistrano (= 2.5.19)
   capybara
+  carmen (= 0.2.7)
   compass (= 0.10.6)
   cucumber-rails
   database_cleaner

@@ -13,6 +13,7 @@ class User < ActiveRecord::Base
 
 private
   def create_profile
-    UserProfile.create!({:user_id => self.id})
+    user_profile = UserProfile.new(:user_id => self.id)
+    user_profile.save(false)
   end
 end

@@ -59,6 +59,9 @@ hr
   background: #ccc
   height: 1px
 
+em
+  font-style: italic
+
 section
   @include clearfix
 
@@ -343,6 +346,7 @@ $ctx_bar_height: 65px
 
 /* Forms */
 form
+  display: block
   margin: 10px 0
   p
     margin-top: 15px
@@ -364,6 +368,10 @@ form
       background: $link_colour
   legend
     font-weight: bold
+  fieldset
+    background: #eee
+    padding: 10px
+    margin: 10px 0
 
 #error_explanation
   background: #ff9c99
@@ -455,6 +463,23 @@ form
   margin-left: -3px
 
 /* User edit page */
+.edit-email
+  float: right
+
+.button
+  @include shiny-blue-box
+  @include border-radius(4px)
+  @include text-shadow(#378cbb, 1px, 1px, 2px)
+  padding: 5px
+  color: white !important
+  text-decoration: none
+  &:hover
+    background: #5ebdf1
+
+#name-and-summary
+  float: left
+  width: 400px
+
 #user-tabs
   float: left
   margin: 10px 20px 10px 0

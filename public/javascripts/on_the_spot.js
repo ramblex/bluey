@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
-    $(".on_the_spot_editing").mouseover(function() {
-        $(this).css('background-color', '#fffcc3');
-    });
-    $(".on_the_spot_editing").mouseout(function() {
-        $(this).css('background-color', 'inherit');
+    $('.on_the_spot_editing').hover(function() {
+      $(this).css('background-color', '#fffcc3');
+    },
+    function() {
+      $(this).css('background-color', 'inherit');
     });
     $('.on_the_spot_editing').each(function(n){
         var el           = $(this),

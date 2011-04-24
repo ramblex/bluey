@@ -5,8 +5,7 @@ def create_my_user(params)
   end
 end
 
-Given /^I am logged in$/ do
-  email = 'test@blueyfit.com'
+Given /^I am logged in as "(.*)" with name "(.*)"$/ do |email, name|
   password = 'password'
   @current_user = create_my_user(:email => email, :password => password)
   steps %Q{
@@ -16,4 +15,7 @@ Given /^I am logged in$/ do
     And I press "Sign in"
     Then I should see "Signed in successfully"
   }
+  unless name.empty?
+    @current_user.user_profile.update_attributes(:name => name)
+  end
 end

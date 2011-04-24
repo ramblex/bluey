@@ -2,17 +2,6 @@ class UserProfilesController < ApplicationController
 
   can_edit_on_the_spot
 
-  # GET /user_profiles
-  # GET /user_profiles.xml
-  def index
-    @user_profiles = UserProfile.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @user_profiles }
-    end
-  end
-
   # GET /user_profiles/1
   # GET /user_profiles/1.xml
   def show
@@ -24,20 +13,9 @@ class UserProfilesController < ApplicationController
     end
   end
 
-  # GET /user_profiles/new
-  # GET /user_profiles/new.xml
-  def new
-    @user_profile = UserProfile.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @user_profile }
-    end
-  end
-
   # GET /user_profiles/1/edit
   def edit
-    @user_profile = UserProfile.find(params[:id])
+    @user_profile = UserProfile.find(current_user.id)
   end
 
   # POST /user_profiles
@@ -59,7 +37,7 @@ class UserProfilesController < ApplicationController
   # PUT /user_profiles/1
   # PUT /user_profiles/1.xml
   def update
-    @user_profile = UserProfile.find(params[:id])
+    @user_profile = UserProfile.find(current_user)
 
     respond_to do |format|
       if @user_profile.update_attributes(params[:user_profile])

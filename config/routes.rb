@@ -5,9 +5,13 @@ Bluey::Application.routes.draw do
   devise_for :users
 
   resources :plans
-  resources :user_profiles do
+  resources :user_profiles, :except => [:new, :edit] do
     collection do
       post :update_attribute_on_the_spot
+      get :edit
+    end
+
+    member do
     end
   end
 
