@@ -1,9 +1,7 @@
 %section
   = image_tag '', :class => 'large-picture'
-  %h1
-    .editable-text
-      Click here to add your name
-  %p.editable-text.summary Click here to add a summary about yourself
+  %h1= on_the_spot_edit resource.user_profile, :name, :url => '/user_profiles/update_attribute_on_the_spot'
+  %p.summary= on_the_spot_edit resource.user_profile, :summary, :url => '/user_profiles/update_attribute_on_the_spot', :type => :textarea
 %ul#user-tabs
   %li= link_to 'Foundation', '', :class => 'selected'
   %li= link_to 'Body Stats', ''

@@ -1,4 +1,7 @@
 class UserProfilesController < ApplicationController
+
+  can_edit_on_the_spot
+
   # GET /user_profiles
   # GET /user_profiles.xml
   def index

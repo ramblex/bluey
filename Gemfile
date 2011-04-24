@@ -11,7 +11,7 @@ gem 'cancan', '1.5.1'
 gem 'haml', '3.0.25'
 gem 'compass', '0.10.6'
 gem 'jquery-rails', '>= 0.2.6'
-gem 'on_the_spot'
+gem 'on_the_spot', :git => 'git://github.com/bradleypriest/on_the_spot.git'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -38,4 +38,5 @@ group :development, :test do
   gem 'cucumber-rails'
   gem 'capybara'
   gem 'database_cleaner'
+  gem 'rspec-rails'
 end

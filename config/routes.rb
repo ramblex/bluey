@@ -1,12 +1,16 @@
 Bluey::Application.routes.draw do
-  resources :user_profiles
-
   get "pages/landing"
   get "pages/dashboard"
 
   devise_for :users
 
   resources :plans
+  resources :user_profiles do
+    collection do
+      post :update_attribute_on_the_spot
+    end
+  end
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
