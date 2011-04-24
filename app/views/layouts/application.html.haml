@@ -25,7 +25,7 @@
           %h1=link_to 'Bluey health & fitness', root_path
           %nav
             %ul
-              = highlight_current_link :class => 'selected' do |n|
+              - highlight_current_link :class => 'selected' do |n|
                 %li=n.link_to 'Plans', plans_path, :id => 'plans'
                 %li=n.link_to 'Community', '#', :id => 'community'
                 %li=n.link_to 'Challenges', '#', :id => 'challenges'

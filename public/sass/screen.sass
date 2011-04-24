@@ -54,6 +54,11 @@ a
   &:active
     color: #333
 
+hr
+  border: 0
+  background: #ccc
+  height: 1px
+
 section
   @include clearfix
 
@@ -62,6 +67,7 @@ section
   width: $total_width
   margin: 0 auto
   margin-bottom: 50px
+  padding: 0 30px 0 50px
 
 /* Notifications */
 #notifications
@@ -467,26 +473,34 @@ form
     &:hover, &.selected
       color: white
 
-.summary
-  padding: 5px
-
 .user-forms
   display: block
   float: left
+  width: 650px
 
 /* Editable fields */
-.editable-text
-  padding: 2px 0
-
-.editable-text:hover
-  background: #fffcc3
-
-.editable-text input[type=text]
-  border: 1px solid #ccc
-  padding: 5px
-  width: 300px
-
-.edit-text
-  font-style: italic
-  color: #666
-  font-size: 90%
+.on_the_spot_editing
+  display: block
+  form
+    padding: 10px
+    input, textarea
+      display: block
+      width: 300px !important
+      height: 14px !important
+      padding: 5px
+      border: 1px solid #ccc
+    textarea
+      height: 100px !important
+      margin-bottom: 5px
+    button[type=submit]
+      @include shiny-blue-box
+      color: white
+      @include border-radius(4px)
+      cursor: pointer
+    button[type=cancel]
+      background: none
+      border: 0
+      text-decoration: underline
+      cursor: pointer
+      padding: 0
+      color: #900

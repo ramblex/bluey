@@ -1,5 +1,5 @@
 en:
   on_the_spot:
-    ok: Ok
-    cancel: Cancel
+    ok: Save
+    cancel: cancel
     tooltip: Click to edit ...

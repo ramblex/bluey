@@ -1,7 +1,8 @@
 %section
   = image_tag '', :class => 'large-picture'
-  %h1= on_the_spot_edit resource.user_profile, :name, :url => '/user_profiles/update_attribute_on_the_spot'
-  %p.summary= on_the_spot_edit resource.user_profile, :summary, :url => '/user_profiles/update_attribute_on_the_spot', :type => :textarea
+  %section
+    %h1= on_the_spot_edit resource.user_profile, :name, :url => '/user_profiles/update_attribute_on_the_spot', :tooltip => 'Click here to add your name'
+    %p.summary= on_the_spot_edit resource.user_profile, :summary, :url => '/user_profiles/update_attribute_on_the_spot', :type => :textarea, :tooltip => 'Click here to edit your summary'
 %ul#user-tabs
   %li= link_to 'Foundation', '', :class => 'selected'
   %li= link_to 'Body Stats', ''
@@ -10,28 +11,25 @@
 .user-forms
   = form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f|
     = devise_error_messages!
-    = field_set_tag 'Email and password' do
-      %p
-        = f.label :email
-        %br/
-        = f.text_field :email
-      %p
-        = f.label :password
-        %i (leave blank if you don't want to change it)
-        %br/
-        = f.password_field :password
-      %p
-        = f.label :password_confirmation
-        %br/
-        = f.password_field :password_confirmation
-    = field_set_tag 'Submit' do
-      %p
-        = f.label :current_password
-        %i (we need your current password to confirm your changes)
-        %br/
-        = f.password_field :current_password
-      %p= f.submit "Update"
-  %h3 Cancel my account
+    %p
+      = f.label :email
+      %br/
+      = f.text_field :email
+    %p
+      = f.label :password
+      %i (leave blank if you don't want to change it)
+      %br/
+      = f.password_field :password
+    %p
+      = f.label :password_confirmation
+      %br/
+      = f.password_field :password_confirmation
+    %hr
+    %p
+      = f.label :current_password
+      %i (we need your current password to confirm your changes)
+      %br/
+      = f.password_field :current_password
+    %p= f.submit "Update"
   %p
     Unhappy? #{link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete}.
-  = link_to "Back", :back

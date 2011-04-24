@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $(".on_the_spot_editing").mouseover(function() {
-        $(this).css('background-color', '#EEF2A0');
+        $(this).css('background-color', '#fffcc3');
     });
     $(".on_the_spot_editing").mouseout(function() {
         $(this).css('background-color', 'inherit');
@@ -9,9 +9,9 @@ $(document).ready(function() {
     $('.on_the_spot_editing').each(function(n){
         var el           = $(this),
             data_url     = el.attr('data-url'),
-            ok_text      = el.attr('data-ok') || 'OK',
+            ok_text      = el.attr('data-ok') || 'Save',
             cancel_text  = el.attr('data-cancel') || 'Cancel',
-            tooltip_text = el.attr('data-tooltip') || 'Click to edit ...',
+            tooltip_text = el.attr('data-tooltip') || 'click to edit ...',
             edit_type    = el.attr('data-edittype'),
             select_data  = el.attr('data-select'),
             rows         = el.attr('data-rows'),
@@ -23,6 +23,7 @@ $(document).ready(function() {
             placeholder: tooltip_text,
             cancel: cancel_text,
             submit: ok_text,
+            onblur: 'ignore',
             onerror: function (settings, original, xhr) {
                 original.reset();
                 //just show the error-msg for now
