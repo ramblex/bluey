@@ -15,8 +15,10 @@
     = csrf_meta_tag
   %body
     #notifications
-      %span#notice= notice
-      %span#alert= alert
+      - if flash[:alert]
+        #alert= alert
+      - if flash[:notice]
+        #notice= notice
     #wrapper
       - if content_for?(:main_content)
         = yield :main_content

@@ -36,5 +36,5 @@ $(document).ready(function() {
     e.preventDefault();
   })
 
-  $('#notifications').fadeOut(5000);
+  $('#notifications').delay(5000).fadeOut(2000);
 });
