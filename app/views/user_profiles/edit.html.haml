@@ -26,7 +26,11 @@
                 = user_type.name
         = field_set_tag 'I want:' do
           %em.hint select all that apply
-          %p
+          %ul
+            - for user_want in UserWant.all
+              %li
+                = check_box_tag "user_profile[user_want_ids][]", user_want.id, @user_profile.user_wants.include?(user_want)
+                = user_want.name
         = field_set_tag 'Where I live:' do
           %p
             = f.label :country
