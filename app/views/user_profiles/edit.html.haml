@@ -9,20 +9,25 @@
 
 %section
   %ul#user-tabs
-    %li= link_to 'Foundation', '', :class => 'selected', :name => 'foundation'
+    %li.selected= link_to 'Foundation', '', :name => 'foundation'
     %li= link_to 'Body Stats', ''
     %li= link_to 'Health Stats', ''
     %li= link_to 'Pictures', ''
 
   .user-forms
     = form_for @user_profile do |f|
-      = field_set_tag 'I am' do
-        %em select all that apply
+      = render 'shared/form_errors', :object => @user_profile
+      = field_set_tag 'I am:' do
+        %em.hint select all that apply
+        %ul
+          - for user_type in UserType.all
+            %li
+              = check_box_tag "user_profile[user_type_ids][]", user_type.id, @user_profile.user_types.include?(user_type)
+              = user_type.name
+      = field_set_tag 'I want:' do
+        %em.hint select all that apply
         %p
-      = field_set_tag 'I want' do
-        %em select all that apply
-        %p
-      = field_set_tag 'Where I live' do
+      = field_set_tag 'Where I live:' do
         %p
           = f.label :country
           %br/

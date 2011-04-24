@@ -27,6 +27,7 @@ $default_border_radius = 15px
 /* Colours */
 $blue_border = #007cc2
 $blue_bg = #3baeee
+$light_blue_bg = #5ebdf1
 $link_colour = #5ebdf1
 $link_visited = $link_colour - #101010
 $link_hover = $link_colour - #202020
@@ -43,7 +44,6 @@ $error_red = #d62300
 body
   font: 14px Helvetica, Arial, sans-serif
   color: #333
-  letter-spacing: -1px
 
 a
   color: $link_colour
@@ -61,6 +61,9 @@ hr
 
 em
   font-style: italic
+
+input, textarea
+  font-size: 14px
 
 section
   @include clearfix
@@ -349,7 +352,7 @@ form
   display: block
   margin: 10px 0
   p
-    margin-top: 15px
+    margin-bottom: 15px
   input[type=text], input[type=password]
     border: 1px solid #ddd
     padding: 5px
@@ -366,12 +369,6 @@ form
     height: 30px
     &:hover
       background: $link_colour
-  legend
-    font-weight: bold
-  fieldset
-    background: #eee
-    padding: 10px
-    margin: 10px 0
 
 #error_explanation
   background: #ff9c99
@@ -482,26 +479,56 @@ form
 
 #user-tabs
   float: left
-  margin: 10px 20px 10px 0
+  margin: 35px 0 10px 0
+  li
+    padding: 5px 15px 5px 5px
+    @include border-radius(15px)
+    @include border-top-right-radius(0)
+    @include border-bottom-right-radius(0)
+    margin-bottom: 10px
   li a
     text-align: center
-    margin: 10px 0
     display: block
     @include shiny-blue-box
     padding: 10px
     width: 120px
     line-height: 30px
-    color: #dedede
     font-size: 20px
     text-decoration: none
     @include text-shadow(#378cbb, 1px, 1px, 2px)
-    &:hover, &.selected
-      color: white
+    color: white
+  li.selected, li:hover
+    background: $blue_bg
 
 .user-forms
   display: block
   float: left
   width: 650px
+
+  .hint
+    font-size: 12px
+
+  form
+    @include shiny-blue-box
+    background: $blue_bg
+    padding: 10px
+    input[type=text]
+      border: 1px solid $blue_bg
+    fieldset
+      background: $light_blue_bg
+      padding: 10px
+      margin: 10px 0
+      ul
+        margin-top: 10px
+        li
+          float: left
+          width: 150px
+          margin: 0 40px 20px 0
+    legend
+      font-weight: bold
+      color: white
+      @include text-shadow(#378cbb, 1px, 1px, 2px)
+      letter-spacing: 0
 
 /* Editable fields */
 .on_the_spot_editing
