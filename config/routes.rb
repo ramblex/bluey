@@ -10,9 +10,7 @@ Bluey::Application.routes.draw do
       post :update_attribute_on_the_spot
       get :edit
     end
-
-    member do
-    end
+    resources :user_images
   end
 
 

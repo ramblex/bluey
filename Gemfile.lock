@@ -98,6 +98,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.16)
     mysql2 (0.2.7)
+    nested_form (0.1.1)
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-sftp (2.0.5)
@@ -106,6 +107,9 @@ GEM
     net-ssh-gateway (1.0.1)
       net-ssh (>= 1.99.1)
     nokogiri (1.4.4)
+    paperclip (2.3.8)
+      activerecord
+      activesupport
     polyglot (0.3.1)
     rack (1.2.2)
     rack-mount (0.6.14)
@@ -161,6 +165,8 @@ DEPENDENCIES
   hpricot (= 0.8.2)
   jquery-rails (>= 0.2.6)
   mysql2 (= 0.2.7)
+  nested_form
   on_the_spot!
+  paperclip (= 2.3.8)
   rails (= 3.0.5)
   ruby_parser (= 2.0.4)

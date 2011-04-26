@@ -37,4 +37,17 @@ $(document).ready(function() {
   })
 
   $('#notifications').delay(5000).fadeOut(2000);
+
+  $('.user-form').hide();
+  $('#pictures.user-form').show();
+
+  // User profile tabs
+  $('#user-tabs li a').click(function(e) {
+    var form_name = $(this).attr('name');
+    $('#user-tabs li').removeClass('selected');
+    $(this).parent('li').addClass('selected');
+    $('.user-form').hide();
+    $('#'+form_name).show();
+    e.preventDefault();
+  });
 });

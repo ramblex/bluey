@@ -1,0 +1,3 @@
+.user-image
+  = link_to image_tag(user_image.picture.url), user_image.picture.url(:original)
+  %p= user_image.name

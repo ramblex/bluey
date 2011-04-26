@@ -40,6 +40,10 @@ $error_red = #d62300
   @include box-shadow(#454545, 0, 0, 2px, 0px)
   border: 1px solid #666
 
+@mixin blue-text-shadow
+  color: white
+  @include text-shadow(#378cbb, 1px, 1px, 2px)
+
 /* Globals and wrapper */
 body
   font: 14px Helvetica, Arial, sans-serif
@@ -67,6 +71,14 @@ input, textarea
 
 section
   @include clearfix
+
+.cancel
+  background: none
+  border: 0
+  text-decoration: underline
+  cursor: pointer
+  padding: 0
+  color: #900
 
 #wrapper
   @include clearfix
@@ -482,6 +494,7 @@ form
   padding: 5px
   color: white !important
   text-decoration: none
+  display: inline-block
   &:hover
     background: #5ebdf1
 
@@ -499,32 +512,51 @@ form
     @include border-top-right-radius(0)
     @include border-bottom-right-radius(0)
     margin-bottom: 10px
-  li a
-    text-align: center
-    display: block
-    @include shiny-blue-box
-    padding: 10px
-    width: 120px
-    line-height: 30px
-    font-size: 20px
-    text-decoration: none
-    @include text-shadow(#378cbb, 1px, 1px, 2px)
-    color: white
-  li.selected, li:hover
-    background: $blue_bg
+    &.selected, &:hover
+      background: $blue_bg
+    a
+      text-align: center
+      display: block
+      @include shiny-blue-box
+      padding: 10px
+      width: 120px
+      line-height: 30px
+      font-size: 20px
+      text-decoration: none
+      @include text-shadow(#378cbb, 1px, 1px, 2px)
+      color: white
 
 .user-forms
   display: block
   float: left
   width: 650px
+  position: relative
 
   .hint
     font-size: 12px
 
-  form
+  a
+    color: white
+
+  #user-images
+    margin-top: 10px
+
+  .user-image
+    float: none
+    width: 100px
+    height: 100px
+    text-align: center
+    @extend .badge
+    font-size: 12px
+    margin-bottom: 20px
+
+  .user-form
     @include shiny-blue-box
     background: $blue_bg
     padding: 10px
+    margin-top: 10px
+    h2
+      @include blue-text-shadow
     input[type=text]
       border: 1px solid $blue_bg
     fieldset
@@ -534,9 +566,7 @@ form
       ul
         margin-top: 10px
         li
-          float: left
-          width: 150px
-          margin: 0 40px 20px 0
+          margin: 5px 0
     legend
       font-weight: bold
       color: white
@@ -567,9 +597,4 @@ form
       @include border-radius(4px)
       cursor: pointer
     button[type=cancel]
-      background: none
-      border: 0
-      text-decoration: underline
-      cursor: pointer
-      padding: 0
-      color: #900
+      @extend .cancel

@@ -13,6 +13,8 @@ gem 'compass', '0.10.6'
 gem 'jquery-rails', '>= 0.2.6'
 gem 'on_the_spot', :git => 'git://github.com/bradleypriest/on_the_spot.git'
 gem 'carmen', '0.2.7'
+gem 'paperclip', '2.3.8'
+gem 'nested_form'
 
 # Use unicorn as the web server
 # gem 'unicorn'

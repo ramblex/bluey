@@ -10,13 +10,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110424184730) do
+ActiveRecord::Schema.define(:version => 20110424203540) do
 
   create_table "plans", :force => true do |t|
     t.string   "name"
     t.integer  "creator_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "user_images", :force => true do |t|
+    t.string   "name"
+    t.integer  "user_profile_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "picture_file_name"
+    t.string   "picture_content_type"
+    t.integer  "picture_file_size"
+    t.datetime "picture_updated_at"
   end
 
   create_table "user_profiles", :force => true do |t|

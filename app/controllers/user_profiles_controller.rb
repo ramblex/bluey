@@ -16,6 +16,7 @@ class UserProfilesController < ApplicationController
   # GET /user_profiles/1/edit
   def edit
     @user_profile = UserProfile.find(current_user.id)
+    @user_image = @user_profile.user_images.build
   end
 
   # POST /user_profiles
