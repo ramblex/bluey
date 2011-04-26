@@ -1,6 +1,6 @@
 require 'bundler/capistrano'
 set :application, "bluey"
-set :repository,  "git@github.com:ramblex/bluey.git"
+set :repository,  "git://github.com/ramblex/bluey.git"
 set :user, "alexd"
 set :ip, "178.79.132.38"
 ssh_options[:forward_agent] = true
