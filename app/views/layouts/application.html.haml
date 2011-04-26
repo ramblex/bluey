@@ -27,12 +27,6 @@
           %h1=link_to 'Bluey health & fitness', root_path
           %nav
             %ul
-              - highlight_current_link :class => 'selected' do |n|
-                %li=n.link_to 'Plans', plans_path, :id => 'plans'
-                %li=n.link_to 'Community', '#', :id => 'community'
-                %li=n.link_to 'Challenges', '#', :id => 'challenges'
-                %li=n.link_to 'Profile', edit_user_profiles_path, :id => 'profile'
-                %li=n.link_to 'Financial', '#', :id => 'financial'
           = link_to 'Help', '#', :id => 'help'
         #right-col
           #stats-bar
