@@ -4,8 +4,8 @@ development:
   adapter: mysql2
   database: bluey_development
   username: root
-  password:
-  socket: /opt/local/var/run/mysql5/mysqld.sock
+  password: 
+  socket: /var/lib/mysql/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -14,8 +14,8 @@ test: &test
   adapter: mysql2
   database: bluey_test
   username: root
-  password:
-  socket: /opt/local/var/run/mysql5/mysqld.sock
+  password: 
+  socket: /var/lib/mysql/mysql.sock
 
 cucumber:
   <<: *test
