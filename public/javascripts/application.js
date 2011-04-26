@@ -39,7 +39,7 @@ $(document).ready(function() {
   $('#notifications').delay(5000).fadeOut(2000);
 
   $('.user-form').hide();
-  $('#pictures.user-form').show();
+  $('#foundation.user-form').show();
 
   // User profile tabs
   $('#user-tabs li a').click(function(e) {
