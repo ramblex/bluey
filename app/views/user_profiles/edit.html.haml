@@ -25,15 +25,17 @@
             %ul
               - for user_type in UserType.all
                 %li
-                  = check_box_tag "user_profile[user_type_ids][]", user_type.id, @user_profile.user_types.include?(user_type)
-                  = user_type.name
+                  = check_box_tag "user_profile[user_type_ids][]", user_type.id, @user_profile.user_types.include?(user_type),
+                      :id => "user_type_id_#{user_type.id}"
+                  = label_tag "user_type_id_#{user_type.id}", user_type.name
           = field_set_tag 'I want to:' do
             %em.hint select all that apply
             %ul
               - for user_want in UserWant.all
                 %li
-                  = check_box_tag "user_profile[user_want_ids][]", user_want.id, @user_profile.user_wants.include?(user_want)
-                  = user_want.name
+                  = check_box_tag "user_profile[user_want_ids][]", user_want.id, @user_profile.user_wants.include?(user_want),
+                    :id => "user_want_id_#{user_want.id}"
+                  = label_tag "user_want_id_#{user_want.id}", user_want.name
           = field_set_tag 'Where I live:' do
             %p
               = f.label :country
@@ -69,7 +71,7 @@
             %em You haven't uploaded any pictures yet.
           - else
             = render @user_profile.user_images
-        = form_for [@user_profile, @user_image], :html => {:multipart => true} do |f|
+        = form_for [@user_profile, @user_profile.user_images.build], :html => {:multipart => true} do |f|
           = field_set_tag 'Upload a picture' do
             %p
               = f.label :name

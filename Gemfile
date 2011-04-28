@@ -36,6 +36,7 @@ gem 'capistrano', '2.5.19'
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
 group :development, :test do
+  gem 'rspec-rails'
   gem 'hpricot', '0.8.2'
   gem 'ruby_parser', '2.0.4'
   gem 'cucumber-rails'

@@ -22,8 +22,7 @@ Feature: Edit profile
       Then I should see "Hello, this is my summary!" within "#user-info .summary"
 
     Scenario: User fills in foundation information
-      Given I sign up and sign in with name "foo" and email "user@test.com"
-      And I have the following user_type records:
+      Given I have the following user_type records:
         | name                 |
         | A trainer            |
         | Looking for trainers |
@@ -31,9 +30,22 @@ Feature: Edit profile
         | name                 |
         | Lose weight          |
         | Train for sport      |
+      And I sign up and sign in with name "foo" and email "user@test.com"
       When I check "A trainer"
-      And I check "Looking for trainers"
+      And I check "Lose weight"
       And I select "United Kingdom" from "Country"
       And I fill in "City" with "Bristol"
       And I press "Save"
       Then I should see "User profile was successfully updated"
+      And the "City" field should contain "Bristol"
+      And the "Country" field should contain "GB"
+      And the "Lose weight" checkbox should be checked
+      And the "A trainer" checkbox should be checked
+
+    @javascript
+    Scenario: User uploads a picture
+      Given I sign up and sign in with name "foo" and email "user@test.com"
+      And I have no user pictures
+      And I follow "Pictures"
+      Then I should see "Your pictures"
+      And I should see "You haven't uploaded any pictures yet"

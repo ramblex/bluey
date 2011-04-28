@@ -83,3 +83,7 @@ end
 When /^(?:|I )click on "([^"]*)"$/ do |selector|
   find(selector).click
 end
+
+Given /^I have no user pictures$/ do
+  assert_equal 0, UserProfile.first.user_images.count
+end
