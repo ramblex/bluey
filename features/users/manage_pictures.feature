@@ -66,4 +66,5 @@ Feature: Manage user pictures
       And I press "Upload picture"
       Then I should see "Successfully uploaded picture"
       When I follow "Use for profile"
-      Then I should see "test/fixtures/sample.png" within "#profile-picture"
+      Then show me the page
+      Then I should see image "sample.png" within "#profile-picture"

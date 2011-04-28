@@ -1,6 +1,6 @@
 #user-profile
   %section
-    = image_tag 'default-profile.png', :class => 'large-picture', :id => 'profile-picture'
+    = image_tag @user_profile_picture.picture.url, :class => 'large-picture', :id => 'profile-picture'
     #user-info
       %h1= on_the_spot_edit @user_profile, :name, :url => '/profile/quickedit', :tooltip => 'Click here to update your name'
       %p.summary= on_the_spot_edit @user_profile, :summary, :url => '/profile/quickedit', :type => :textarea, :tooltip => 'Click here to edit your summary'

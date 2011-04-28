@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110424203540) do
+ActiveRecord::Schema.define(:version => 20110428232045) do
 
   create_table "plans", :force => true do |t|
     t.string   "name"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(:version => 20110424203540) do
     t.string   "picture_content_type"
     t.integer  "picture_file_size"
     t.datetime "picture_updated_at"
+    t.boolean  "is_profile_picture",   :default => false
   end
 
   create_table "user_profiles", :force => true do |t|

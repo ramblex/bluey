@@ -16,6 +16,8 @@ class UserProfilesController < ApplicationController
   # GET /user_profiles/1/edit
   def edit
     @user_profile = UserProfile.find(current_user.id)
+    @user_profile_picture = @user_profile.user_images.find(:first, :conditions => {:is_profile_picture => true})
+    @user_profile_picture ||= UserImage.new(:picture_file_name => 'default-user.png');
   end
 
   # POST /user_profiles

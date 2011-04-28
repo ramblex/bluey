@@ -87,3 +87,8 @@ end
 Given /^I have no user pictures$/ do
   assert_equal 0, UserProfile.first.user_images.count
 end
+
+Then /^(?:|I )should see image "([^"]*)"$/ do |image|
+  page.should have_xpath("//img[contains(@src, \"#{image}\")]")
+end
+

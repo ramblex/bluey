@@ -32,8 +32,11 @@ class UserImagesController < ApplicationController
 
   def update_profile_picture
     @user_image = UserImage.find(params[:id])
+    other_images = current_user.user_profile.user_images.each do |i|
+      i.update_attributes(:is_profile_picture => false)
+    end
 
-    if @user_image.update_attributes(:is_profile_pic => true)
+    if other_images && @user_image.update_attributes(:is_profile_picture => true)
       redirect_to profile_edit_path, :notice => 'Updated profile picture'
     else
       redirect_to :back, :alert => 'Could not update profile picture. Please try again.'
