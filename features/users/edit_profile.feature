@@ -41,11 +41,3 @@ Feature: Edit profile
       And the "Country" field should contain "GB"
       And the "Lose weight" checkbox should be checked
       And the "A trainer" checkbox should be checked
-
-    @javascript
-    Scenario: User uploads a picture
-      Given I sign up and sign in with name "foo" and email "user@test.com"
-      And I have no user pictures
-      And I follow "Pictures"
-      Then I should see "Your pictures"
-      And I should see "You haven't uploaded any pictures yet"

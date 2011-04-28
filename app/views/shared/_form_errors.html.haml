@@ -1,6 +1,6 @@
 - if object.errors.any?
   #error_explanation
-    %h2 Please fix the following #{pluralize(object.errors.count, "error")}:
+    %h3 Please fix the following #{pluralize(object.errors.count, "error")}:
     %ul
       - object.errors.full_messages.each do |msg|
         %li= msg

@@ -7,7 +7,7 @@
  * - Left column
  * - Right column
  */
-/* line 14, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 14, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,42 +27,42 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
 }
 
-/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
   color: black;
   background: white;
 }
 
-/* line 19, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 19, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 21, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: separate;
   border-spacing: 0;
   vertical-align: middle;
 }
 
-/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 23, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 25, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 25, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: "" "";
 }
-/* line 96, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 96, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
 }
 
-/* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 27, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
@@ -381,30 +381,33 @@ nav ul li a:hover, nav ul li a.selected {
 }
 
 /* line 236, ../sass/screen.sass */
-h1 {
-  font-size: 24px;
+h1, h2, h3 {
   font-weight: bold;
 }
 
-/* line 240, ../sass/screen.sass */
+/* line 239, ../sass/screen.sass */
+h1 {
+  font-size: 24px;
+}
+
+/* line 242, ../sass/screen.sass */
 h2 {
-  font-weight: bold;
   font-size: 110%;
 }
 
-/* line 244, ../sass/screen.sass */
+/* line 246, ../sass/screen.sass */
 .large-picture {
   width: 100px !important;
   height: 100px !important;
   margin-right: 20px !important;
 }
 
-/* line 257, ../sass/screen.sass */
+/* line 259, ../sass/screen.sass */
 #context-bar {
   height: 65px;
   margin-bottom: 20px;
 }
-/* line 260, ../sass/screen.sass */
+/* line 262, ../sass/screen.sass */
 #context-bar ul.filter-buttons {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -424,11 +427,11 @@ h2 {
   padding: 0 10px;
   width: 225px;
 }
-/* line 265, ../sass/screen.sass */
+/* line 267, ../sass/screen.sass */
 #context-bar ul.filter-buttons li {
   float: left;
 }
-/* line 267, ../sass/screen.sass */
+/* line 269, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a {
   background: url(/images/plan-filter-icons.png) no-repeat 0 -50px;
   width: 55px;
@@ -439,39 +442,39 @@ h2 {
   text-indent: -30000px;
   color: #add8f1;
 }
-/* line 276, ../sass/screen.sass */
+/* line 278, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.profile {
   background-position: 0 -50px;
 }
-/* line 254, ../sass/screen.sass */
+/* line 256, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.profile:hover, #context-bar ul.filter-buttons li a.profile.selected {
   background-position: 0 0;
 }
-/* line 278, ../sass/screen.sass */
+/* line 280, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.community {
   background-position: -55px -50px;
 }
-/* line 254, ../sass/screen.sass */
+/* line 256, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.community:hover, #context-bar ul.filter-buttons li a.community.selected {
   background-position: -55px 0;
 }
-/* line 280, ../sass/screen.sass */
+/* line 282, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.challenges {
   background-position: -110px -50px;
 }
-/* line 254, ../sass/screen.sass */
+/* line 256, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.challenges:hover, #context-bar ul.filter-buttons li a.challenges.selected {
   background-position: -110px 0;
 }
-/* line 282, ../sass/screen.sass */
+/* line 284, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.financial {
   background-position: -165px -50px;
 }
-/* line 254, ../sass/screen.sass */
+/* line 256, ../sass/screen.sass */
 #context-bar ul.filter-buttons li a.financial:hover, #context-bar ul.filter-buttons li a.financial.selected {
   background-position: -165px 0;
 }
-/* line 284, ../sass/screen.sass */
+/* line 286, ../sass/screen.sass */
 #context-bar input {
   border: 1px solid #666666;
   height: 30px;
@@ -493,11 +496,11 @@ h2 {
   font-weight: bold;
   color: #dddddd;
 }
-/* line 296, ../sass/screen.sass */
+/* line 298, ../sass/screen.sass */
 #context-bar input:focus {
   outline: none;
 }
-/* line 298, ../sass/screen.sass */
+/* line 300, ../sass/screen.sass */
 #context-bar #share {
   float: right;
   width: 245px;
@@ -516,7 +519,7 @@ h2 {
   box-shadow: #454545 0 0 2px 0px;
   border: 1px solid #666666;
 }
-/* line 302, ../sass/screen.sass */
+/* line 304, ../sass/screen.sass */
 #context-bar #share a {
   background: url(/images/share-icon.png) no-repeat 150px 5px;
   line-height: 40px;
@@ -530,19 +533,19 @@ h2 {
   font-size: 35px;
   font-weight: 550;
 }
-/* line 314, ../sass/screen.sass */
+/* line 316, ../sass/screen.sass */
 #context-bar #share a:active {
   padding-top: 16px;
   height: 49px;
 }
 
-/* line 318, ../sass/screen.sass */
+/* line 320, ../sass/screen.sass */
 #plans {
   clear: both;
 }
 
-/* line 321, ../sass/screen.sass */
-.badge, .badges li, .large-picture, .user-forms .user-image {
+/* line 323, ../sass/screen.sass */
+.badge, .badges li, .large-picture, .user-forms .user-image img {
   background: #cdedff;
   width: 30px;
   height: 30px;
@@ -555,7 +558,7 @@ h2 {
   margin: 0 5px 5px 0;
 }
 
-/* line 333, ../sass/screen.sass */
+/* line 335, ../sass/screen.sass */
 .plan {
   margin-right: 1px;
   display: block;
@@ -567,18 +570,18 @@ h2 {
   padding: 10px;
   position: relative;
 }
-/* line 343, ../sass/screen.sass */
+/* line 345, ../sass/screen.sass */
 .plan header {
   color: #077cbe;
   font-weight: bold;
 }
-/* line 346, ../sass/screen.sass */
+/* line 348, ../sass/screen.sass */
 .plan header .date {
   font-size: 80%;
   color: #8b8b8b;
   letter-spacing: 0;
 }
-/* line 350, ../sass/screen.sass */
+/* line 352, ../sass/screen.sass */
 .plan footer {
   width: 284px;
   padding: 0 5px;
@@ -590,35 +593,35 @@ h2 {
   background: #484848;
   font-weight: bold;
 }
-/* line 360, ../sass/screen.sass */
+/* line 362, ../sass/screen.sass */
 .plan footer a {
   color: white;
   text-decoration: none;
   font-size: 90%;
 }
-/* line 364, ../sass/screen.sass */
+/* line 366, ../sass/screen.sass */
 .plan footer a:hover {
   text-decoration: underline;
 }
 
 /* Forms */
-/* line 368, ../sass/screen.sass */
+/* line 370, ../sass/screen.sass */
 form {
   display: block;
   margin: 10px 0;
 }
-/* line 371, ../sass/screen.sass */
+/* line 373, ../sass/screen.sass */
 form p {
   margin-bottom: 15px;
 }
-/* line 373, ../sass/screen.sass */
+/* line 375, ../sass/screen.sass */
 form input[type=text], form input[type=password] {
   border: 1px solid #dddddd;
   padding: 5px;
   width: 300px;
   font-size: 100%;
 }
-/* line 378, ../sass/screen.sass */
+/* line 380, ../sass/screen.sass */
 form input[type=submit] {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -647,57 +650,57 @@ form input[type=submit] {
   cursor: pointer;
   height: 30px;
 }
-/* line 387, ../sass/screen.sass */
+/* line 389, ../sass/screen.sass */
 form input[type=submit]:hover {
   background: #5ebdf1;
 }
 
-/* line 390, ../sass/screen.sass */
+/* line 392, ../sass/screen.sass */
 #error_explanation {
   background: #ff9c99;
   border: 1px solid #d62300;
   padding: 10px;
 }
 
-/* line 395, ../sass/screen.sass */
+/* line 397, ../sass/screen.sass */
 .field_with_errors {
   color: #d62300;
   display: inline;
 }
 
 /* Landing page */
-/* line 401, ../sass/screen.sass */
+/* line 403, ../sass/screen.sass */
 #landing-page h1 {
   margin-top: 50px;
   font-family: "Waiting for the Sunrise", arial, sans-serif;
   font-size: 64px;
   text-align: center;
 }
-/* line 406, ../sass/screen.sass */
+/* line 408, ../sass/screen.sass */
 #landing-page #left-col {
   float: left;
   margin-bottom: 50px;
 }
-/* line 409, ../sass/screen.sass */
+/* line 411, ../sass/screen.sass */
 #landing-page #video {
   display: block;
   width: 640px;
   height: 380px;
 }
-/* line 413, ../sass/screen.sass */
+/* line 415, ../sass/screen.sass */
 #landing-page #right-col {
   width: 332px;
   text-align: center;
   float: right;
 }
-/* line 417, ../sass/screen.sass */
+/* line 419, ../sass/screen.sass */
 #landing-page #alpha {
   margin-top: 30px;
   width: 332px;
   height: 225px;
   background: url(/images/alpha.png) no-repeat;
 }
-/* line 422, ../sass/screen.sass */
+/* line 424, ../sass/screen.sass */
 #landing-page #sign-up {
   display: block;
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
@@ -721,17 +724,17 @@ form input[type=submit]:hover {
   margin: 30px 50px 5px 50px;
   text-shadow: #378cbb 1px 1px 2px;
 }
-/* line 431, ../sass/screen.sass */
+/* line 433, ../sass/screen.sass */
 #landing-page #sign-in {
   clear: right;
 }
-/* line 433, ../sass/screen.sass */
+/* line 435, ../sass/screen.sass */
 #landing-page ol {
   clear: both;
   background: url(/images/steps.png) no-repeat 160px 0;
   padding: 65px 0 0 50px;
 }
-/* line 437, ../sass/screen.sass */
+/* line 439, ../sass/screen.sass */
 #landing-page ol li {
   float: left;
   width: 195px;
@@ -740,16 +743,16 @@ form input[type=submit]:hover {
 }
 
 /* Sign up and sign in forms */
-/* line 444, ../sass/screen.sass */
+/* line 446, ../sass/screen.sass */
 #devise {
   padding: 0 200px;
 }
-/* line 446, ../sass/screen.sass */
+/* line 448, ../sass/screen.sass */
 #devise #content {
   margin: 50px 20px;
 }
 
-/* line 450, ../sass/screen.sass */
+/* line 452, ../sass/screen.sass */
 #sign-up-form #content {
   margin: 0;
   -moz-box-shadow: none;
@@ -758,7 +761,7 @@ form input[type=submit]:hover {
   box-shadow: none;
 }
 
-/* line 454, ../sass/screen.sass */
+/* line 456, ../sass/screen.sass */
 .ui-widget-overlay {
   position: absolute;
   top: 0;
@@ -771,7 +774,7 @@ form input[type=submit]:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
 }
 
-/* line 463, ../sass/screen.sass */
+/* line 465, ../sass/screen.sass */
 .ui-dialog {
   padding: 10px;
   background: white;
@@ -787,7 +790,7 @@ form input[type=submit]:hover {
   border-radius: 15px;
 }
 
-/* line 469, ../sass/screen.sass */
+/* line 471, ../sass/screen.sass */
 .ui-icon-closethick {
   display: block;
   width: 25px;
@@ -800,7 +803,7 @@ form input[type=submit]:hover {
 }
 
 /* User edit page */
-/* line 480, ../sass/screen.sass */
+/* line 482, ../sass/screen.sass */
 .edit-email {
   float: right;
   font-size: 12px;
@@ -808,13 +811,13 @@ form input[type=submit]:hover {
   margin-left: 10px;
 }
 
-/* line 486, ../sass/screen.sass */
+/* line 488, ../sass/screen.sass */
 #user-profile .badges {
   float: right;
   width: 200px;
 }
 
-/* line 490, ../sass/screen.sass */
+/* line 492, ../sass/screen.sass */
 .button {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -842,24 +845,24 @@ form input[type=submit]:hover {
   text-decoration: none;
   display: inline-block;
 }
-/* line 498, ../sass/screen.sass */
+/* line 500, ../sass/screen.sass */
 .button:hover {
   background: #5ebdf1;
 }
 
-/* line 501, ../sass/screen.sass */
+/* line 503, ../sass/screen.sass */
 #user-info {
   width: 450px;
   float: left;
 }
 
-/* line 505, ../sass/screen.sass */
+/* line 507, ../sass/screen.sass */
 #user-tabs {
   clear: both;
   float: left;
   margin: 35px 0 10px 0;
 }
-/* line 509, ../sass/screen.sass */
+/* line 511, ../sass/screen.sass */
 #user-tabs li {
   padding: 5px 15px 5px 5px;
   -moz-border-radius: 15px;
@@ -882,11 +885,11 @@ form input[type=submit]:hover {
   border-bottom-right-radius: 0;
   margin-bottom: 10px;
 }
-/* line 515, ../sass/screen.sass */
+/* line 517, ../sass/screen.sass */
 #user-tabs li.selected, #user-tabs li:hover {
   background: #3baeee;
 }
-/* line 517, ../sass/screen.sass */
+/* line 519, ../sass/screen.sass */
 #user-tabs li a {
   text-align: center;
   display: block;
@@ -913,35 +916,63 @@ form input[type=submit]:hover {
   color: white;
 }
 
-/* line 529, ../sass/screen.sass */
+/* line 531, ../sass/screen.sass */
 .user-forms {
   display: block;
   float: left;
   width: 650px;
   position: relative;
 }
-/* line 535, ../sass/screen.sass */
+/* line 537, ../sass/screen.sass */
 .user-forms .hint {
   font-size: 12px;
 }
-/* line 538, ../sass/screen.sass */
+/* line 540, ../sass/screen.sass */
 .user-forms a {
   color: white;
 }
-/* line 541, ../sass/screen.sass */
+/* line 543, ../sass/screen.sass */
 .user-forms #user-images {
   margin-top: 10px;
+  min-height: 100px;
 }
-/* line 544, ../sass/screen.sass */
+/* line 547, ../sass/screen.sass */
 .user-forms .user-image {
-  float: none;
+  width: 100px;
+  margin: 0 20px 20px 0;
+  float: left;
+  position: relative;
+}
+/* line 552, ../sass/screen.sass */
+.user-forms .user-image img {
   width: 100px;
   height: 100px;
   text-align: center;
   font-size: 12px;
-  margin-bottom: 20px;
 }
-/* line 553, ../sass/screen.sass */
+/* line 558, ../sass/screen.sass */
+.user-forms .user-image p {
+  text-align: center;
+}
+/* line 560, ../sass/screen.sass */
+.user-forms .user-image .delete-image a {
+  position: absolute;
+  top: -10px;
+  right: -15px;
+  background: url(/images/close.png) no-repeat 0 0;
+  width: 25px;
+  height: 25px;
+  display: block;
+  z-index: 10000;
+  text-indent: -30000px;
+  outline: 0;
+  cursor: pointer;
+}
+/* line 573, ../sass/screen.sass */
+.user-forms #new_user_image {
+  clear: both;
+}
+/* line 576, ../sass/screen.sass */
 .user-forms .user-form {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -961,37 +992,37 @@ form input[type=submit]:hover {
   padding: 10px;
   margin-top: 10px;
 }
-/* line 558, ../sass/screen.sass */
+/* line 581, ../sass/screen.sass */
 .user-forms .user-form h2 {
   color: white;
   text-shadow: #378cbb 1px 1px 2px;
 }
-/* line 560, ../sass/screen.sass */
+/* line 583, ../sass/screen.sass */
 .user-forms .user-form input[type=text] {
   border: 1px solid #3baeee;
 }
-/* line 562, ../sass/screen.sass */
+/* line 585, ../sass/screen.sass */
 .user-forms .user-form fieldset {
   background: #5ebdf1;
   padding: 10px;
   margin: 10px 0;
 }
-/* line 566, ../sass/screen.sass */
+/* line 589, ../sass/screen.sass */
 .user-forms .user-form fieldset ul {
   margin-top: 10px;
 }
-/* line 568, ../sass/screen.sass */
+/* line 591, ../sass/screen.sass */
 .user-forms .user-form fieldset ul li {
   margin: 5px 0;
 }
-/* line 570, ../sass/screen.sass */
+/* line 593, ../sass/screen.sass */
 .user-forms .user-form legend {
   font-weight: bold;
   color: white;
   text-shadow: #378cbb 1px 1px 2px;
   letter-spacing: 0;
 }
-/* line 575, ../sass/screen.sass */
+/* line 598, ../sass/screen.sass */
 .user-forms .user-form textarea {
   width: 400px;
   height: 100px;
@@ -999,15 +1030,15 @@ form input[type=submit]:hover {
 }
 
 /* Editable fields */
-/* line 581, ../sass/screen.sass */
+/* line 604, ../sass/screen.sass */
 .on_the_spot_editing {
   display: block;
 }
-/* line 583, ../sass/screen.sass */
+/* line 606, ../sass/screen.sass */
 .on_the_spot_editing form {
   padding: 10px;
 }
-/* line 585, ../sass/screen.sass */
+/* line 608, ../sass/screen.sass */
 .on_the_spot_editing form input, .on_the_spot_editing form textarea {
   display: block;
   width: 300px !important;
@@ -1015,12 +1046,12 @@ form input[type=submit]:hover {
   padding: 5px;
   border: 1px solid #cccccc;
 }
-/* line 591, ../sass/screen.sass */
+/* line 614, ../sass/screen.sass */
 .on_the_spot_editing form textarea {
   height: 100px !important;
   margin-bottom: 5px;
 }
-/* line 594, ../sass/screen.sass */
+/* line 617, ../sass/screen.sass */
 .on_the_spot_editing form button[type=submit] {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);

@@ -1,4 +1,5 @@
 class UserImage < ActiveRecord::Base
+  belongs_to :user_profile
   validates_presence_of :name
   validates_attachment_presence :picture
   has_attached_file :picture,

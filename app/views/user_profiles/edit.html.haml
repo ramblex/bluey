@@ -1,6 +1,6 @@
 #user-profile
   %section
-    = image_tag 'default-profile.png', :class => 'large-picture'
+    = image_tag 'default-profile.png', :class => 'large-picture', :id => 'profile-picture'
     #user-info
       %h1= on_the_spot_edit @user_profile, :name, :url => '/user_profiles/update_attribute_on_the_spot', :tooltip => 'Click here to update your name'
       %p.summary= on_the_spot_edit @user_profile, :summary, :url => '/user_profiles/update_attribute_on_the_spot', :type => :textarea, :tooltip => 'Click here to edit your summary'
@@ -14,7 +14,7 @@
       %li.selected= link_to 'Foundation', '', :name => 'foundation'
       %li= link_to 'Body Stats', ''
       %li= link_to 'Health Stats', ''
-      %li= link_to 'Pictures', '', :name => 'pictures'
+      %li= link_to 'Pictures', user_profile_user_images_path(current_user.id), :name => 'pictures'
 
     .user-forms
       #foundation.user-form
@@ -64,21 +64,4 @@
               %br/
               = f.text_area :brands
           %p= f.submit 'Save'
-      #pictures.user-form
-        %h2 Your pictures
-        #user-images
-          - if @user_profile.user_images.empty?
-            %em You haven't uploaded any pictures yet.
-          - else
-            = render @user_profile.user_images
-        = form_for [@user_profile, @user_profile.user_images.build], :html => {:multipart => true} do |f|
-          = field_set_tag 'Upload a picture' do
-            %p
-              = f.label :name
-              %br/
-              = f.text_field :name
-            %p
-              = f.label :picture
-              %br/
-              = f.file_field :picture
-            = f.submit 'Upload picture'
+      #loaded-form.user-form

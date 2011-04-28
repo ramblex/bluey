@@ -15,6 +15,7 @@ gem 'on_the_spot', :git => 'git://github.com/bradleypriest/on_the_spot.git'
 gem 'carmen', '0.2.7'
 gem 'paperclip', '2.3.8'
 gem 'nested_form'
+gem 'remotipart', '0.3.1'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -43,4 +44,5 @@ group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'factory_girl_rails'
+  gem 'launchy'
 end

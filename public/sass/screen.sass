@@ -233,13 +233,15 @@ nav ul
   @include box-shadow(#ccc, 0, 0, 3px, 1px)
   @include clearfix
 
-h1
-  font-size: 24px
+h1, h2, h3
   font-weight: bold
 
+h1
+  font-size: 24px
+
 h2
-  font-weight: bold
   font-size: 110%
+
 
 .large-picture
   @extend .badge
@@ -540,15 +542,36 @@ form
 
   #user-images
     margin-top: 10px
+    min-height: 100px
 
   .user-image
-    float: none
     width: 100px
-    height: 100px
-    text-align: center
-    @extend .badge
-    font-size: 12px
-    margin-bottom: 20px
+    margin: 0 20px 20px 0
+    float: left
+    position: relative
+    img
+      width: 100px
+      height: 100px
+      text-align: center
+      @extend .badge
+      font-size: 12px
+    p
+      text-align: center
+    .delete-image a
+      position: absolute
+      top: -10px
+      right: -15px
+      background: url(/images/close.png) no-repeat 0 0
+      width: 25px
+      height: 25px
+      display: block
+      z-index: 10000
+      text-indent: -30000px
+      outline: 0
+      cursor: pointer
+
+  #new_user_image
+    clear: both
 
   .user-form
     @include shiny-blue-box

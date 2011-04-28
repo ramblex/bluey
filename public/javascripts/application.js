@@ -36,6 +36,10 @@ $(document).ready(function() {
     e.preventDefault();
   })
 
+  $('#profile-picture').click(function(e) {
+    $('#user-tabs li a[name="pictures"]').click();
+  });
+
   $('#notifications').delay(5000).fadeOut(2000);
 
   $('.user-form').hide();
@@ -47,7 +51,13 @@ $(document).ready(function() {
     $('#user-tabs li').removeClass('selected');
     $(this).parent('li').addClass('selected');
     $('.user-form').hide();
-    $('#'+form_name).show();
+    var href = $(this).attr('href');
+    if (href === "") {
+      $('#'+form_name).show();
+    } else {
+      $('#loaded-form').show().html('Loading form...');
+      $('#loaded-form').load(href + ' #load');
+    }
     e.preventDefault();
   });
 });

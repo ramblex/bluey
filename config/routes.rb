@@ -10,9 +10,12 @@ Bluey::Application.routes.draw do
       post :update_attribute_on_the_spot
       get :edit
     end
-    resources :user_images
+    resources :user_images, :only => [:index, :create, :destroy] do
+      member do
+        post :update_profile_picture
+      end
+    end
   end
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
