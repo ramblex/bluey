@@ -14,7 +14,7 @@
       %li.selected= link_to 'Foundation', '', :name => 'foundation'
       %li= link_to 'Body Stats', ''
       %li= link_to 'Health Stats', ''
-      %li= link_to 'Pictures', user_profile_user_images_path(current_user.id), :name => 'pictures'
+      %li= link_to 'Pictures', user_images_path(current_user.id), :name => 'pictures'
 
     .user-forms
       #foundation.user-form

@@ -10,10 +10,11 @@ Bluey::Application.routes.draw do
       post :update_attribute_on_the_spot
       get :edit
     end
-    resources :user_images, :only => [:index, :create, :destroy] do
-      member do
-        post :update_profile_picture
-      end
+  end
+
+  resources :user_images, :only => [:index, :create, :destroy] do
+    member do
+      get :update_profile_picture
     end
   end
 
