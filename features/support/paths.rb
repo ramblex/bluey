@@ -10,8 +10,14 @@ module NavigationHelpers
 
     when /the home\s?page/
       '/'
-    when /the new user_profile page/
-      new_user_profile_path
+    when /the sign up page/
+      new_user_registration_path
+    when /the sign in page/
+      new_user_session_path
+    when /the edit profile page/
+      edit_user_profiles_path
+    when /the dashboard page/
+      pages_dashboard_path
 
 
     # Add more mappings here.

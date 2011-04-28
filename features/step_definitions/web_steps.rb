@@ -209,3 +209,9 @@ end
 Then /^show me the page$/ do
   save_and_open_page
 end
+
+Given /^I have the following (.+) records?:$/ do |factory, table|
+  table.hashes.each do |hash|
+    Factory(factory.to_sym, hash)
+  end
+end
