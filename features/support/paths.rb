@@ -15,7 +15,7 @@ module NavigationHelpers
     when /the sign in page/
       new_user_session_path
     when /the edit profile page/
-      edit_user_profiles_path
+      profile_edit_path
     when /the dashboard page/
       pages_dashboard_path
 

@@ -41,7 +41,7 @@ class UserProfilesController < ApplicationController
 
     respond_to do |format|
       if @user_profile.update_attributes(params[:user_profile])
-        format.html { redirect_to(edit_user_profiles_path, :notice => 'User profile was successfully updated.') }
+        format.html { redirect_to(profile_edit_path, :notice => 'User profile was successfully updated.') }
       else
         format.html { render :action => "edit" }
       end

@@ -27,14 +27,14 @@ class UserImagesController < ApplicationController
     @user_image = UserImage.find(params[:id])
     @user_image.destroy
 
-    redirect_to edit_user_profiles_path, :notice => 'Successfully deleted picture'
+    redirect_to profile_edit_path, :notice => 'Successfully deleted picture'
   end
 
   def update_profile_picture
     @user_image = UserImage.find(params[:id])
 
     if @user_image.update_attributes(:is_profile_pic => true)
-      redirect_to edit_profiles_path, :notice => 'Updated profile picture'
+      redirect_to profile_edit_path, :notice => 'Updated profile picture'
     else
       redirect_to :back, :alert => 'Could not update profile picture. Please try again.'
     end

@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
 
   def after_sign_in_path_for(resource)
     if resource.sign_in_count == 1
-      default_path = edit_user_profiles_path
+      default_path = profile_edit_path
     else
       default_path = pages_dashboard_path
     end

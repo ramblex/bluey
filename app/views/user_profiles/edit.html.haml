@@ -2,8 +2,8 @@
   %section
     = image_tag 'default-profile.png', :class => 'large-picture', :id => 'profile-picture'
     #user-info
-      %h1= on_the_spot_edit @user_profile, :name, :url => '/user_profiles/update_attribute_on_the_spot', :tooltip => 'Click here to update your name'
-      %p.summary= on_the_spot_edit @user_profile, :summary, :url => '/user_profiles/update_attribute_on_the_spot', :type => :textarea, :tooltip => 'Click here to edit your summary'
+      %h1= on_the_spot_edit @user_profile, :name, :url => '/profile/quickedit', :tooltip => 'Click here to update your name'
+      %p.summary= on_the_spot_edit @user_profile, :summary, :url => '/profile/quickedit', :type => :textarea, :tooltip => 'Click here to edit your summary'
     %ul.badges
       %li= image_tag 'badges/ace.png', :alt => 'Ace certified'
 
@@ -18,7 +18,7 @@
 
     .user-forms
       #foundation.user-form
-        = form_for @user_profile do |f|
+        = form_for @user_profile, :url => "/profile" do |f|
           = render 'shared/form_errors', :object => @user_profile
           = field_set_tag 'I am:' do
             %em.hint select all that apply

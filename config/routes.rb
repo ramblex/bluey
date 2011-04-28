@@ -1,17 +1,13 @@
 Bluey::Application.routes.draw do
   get "pages/landing"
   get "pages/dashboard"
+  match "profile/edit", :to => "user_profiles#edit", :via => "get"
+  match "profile", :to => "user_profiles#update", :via => "put"
+  match "profile/quickedit", :to => "user_profiles#update_attribute_on_the_spot", :via => "post"
 
   devise_for :users
 
   resources :plans
-  resources :user_profiles, :except => [:new, :edit] do
-    collection do
-      post :update_attribute_on_the_spot
-      get :edit
-    end
-  end
-
   resources :user_images, :only => [:index, :create, :destroy] do
     member do
       get :update_profile_picture
