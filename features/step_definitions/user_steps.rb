@@ -92,3 +92,12 @@ Then /^(?:|I )should see image "([^"]*)"$/ do |image|
   page.should have_xpath("//img[contains(@src, \"#{image}\")]")
 end
 
+Given /^(?:|I )try to access (.+) when unauthorised$/ do |page|
+  Given %{I am not logged in}
+  When %{I go to #{page}}
+end
+
+Then /^(?:|I )should be told to sign in$/ do
+  Then %{I should see "You need to sign in or sign up before continuing"}
+  And %{I should be on the sign in page}
+end

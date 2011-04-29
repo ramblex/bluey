@@ -18,6 +18,8 @@ module NavigationHelpers
       profile_edit_path
     when /the dashboard page/
       pages_dashboard_path
+    when /the user stats page/
+      user_stats_path
 
 
     # Add more mappings here.

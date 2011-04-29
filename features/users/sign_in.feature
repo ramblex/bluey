@@ -3,17 +3,17 @@ Feature: Sign in
   A user
   Should be able to sign in
 
+    Scenario: Guest tries to access user stats page
+      Given I try to access the user stats page when unauthorised
+      Then I should be told to sign in
+
     Scenario: Guest tries to access edit profile page
-      Given I am not logged in
-      When I go to the edit profile page
-      Then I should see "You need to sign in or sign up before continuing"
-      And I should be on the sign in page
+      Given I try to access the edit profile page when unauthorised
+      Then I should be told to sign in
 
     Scenario: Guest tries to access dashboard page
-      Given I am not logged in
-      When I go to the dashboard page
-      Then I should see "You need to sign in or sign up before continuing"
-      And I should be on the sign in page
+      Given I try to access the edit profile page when unauthorised
+      Then I should be told to sign in
 
     Scenario: Guest visits the home page
       Given I am not logged in
