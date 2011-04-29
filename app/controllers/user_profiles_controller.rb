@@ -1,5 +1,7 @@
 class UserProfilesController < ApplicationController
 
+  before_filter :authenticate_user!
+
   can_edit_on_the_spot
 
   # GET /user_profiles/1

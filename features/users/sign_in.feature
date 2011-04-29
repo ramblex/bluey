@@ -3,6 +3,12 @@ Feature: Sign in
   A user
   Should be able to sign in
 
+    Scenario: Guest tries to access edit profile page
+      Given I am not logged in
+      When I go to the edit profile page
+      Then I should see "You need to sign in or sign up before continuing"
+      And I should be on the sign in page
+
     Scenario: User is not signed up
       Given I am not logged in
       And no user exists with an email of "user@test.com"
