@@ -2,7 +2,9 @@
   <% if @user_image.errors.any? %>
     $('#picture-errors').html('<%= escape_javascript render('shared/form_errors', :object => @user_image) %>')
   <% else %>
-    $('#notifications').append('<div id="notice">Successfully uploaded picture</div>');
+    $('#notifications')
+      .append('<div id="notice">Successfully uploaded picture</div>')
+      .delay(5000).fadeOut(2000);
     $('#user-images em').remove();
     $('#user-images').append('<%= escape_javascript(render(:partial => @user_image)) %>')
     $('#new_user_image').resetForm();

@@ -7,7 +7,7 @@
  * - Left column
  * - Right column
  */
-/* line 14, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 14, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,42 +27,42 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
 }
 
-/* line 17, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
   color: black;
   background: white;
 }
 
-/* line 19, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 19, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 21, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: separate;
   border-spacing: 0;
   vertical-align: middle;
 }
 
-/* line 23, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 25, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 25, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: "" "";
 }
-/* line 96, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 96, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
 }
 
-/* line 27, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
@@ -944,22 +944,25 @@ form input[type=submit]:hover {
 /* line 550, ../sass/screen.sass */
 .user-forms .user-image {
   width: 100px;
-  margin: 0 20px 20px 0;
+  margin: 0 25px 20px 0;
   float: left;
   position: relative;
+  font-size: 12px;
 }
-/* line 555, ../sass/screen.sass */
+/* line 556, ../sass/screen.sass */
 .user-forms .user-image img {
   width: 100px;
   height: 100px;
   text-align: center;
-  font-size: 12px;
 }
 /* line 561, ../sass/screen.sass */
 .user-forms .user-image p {
   text-align: center;
+  background: #5ebdf1;
+  display: block;
+  width: 104px;
 }
-/* line 563, ../sass/screen.sass */
+/* line 566, ../sass/screen.sass */
 .user-forms .user-image .delete-image a {
   position: absolute;
   top: -10px;
@@ -973,11 +976,16 @@ form input[type=submit]:hover {
   outline: 0;
   cursor: pointer;
 }
-/* line 576, ../sass/screen.sass */
+/* line 578, ../sass/screen.sass */
+.user-forms .user-image .use-for-profile {
+  font-size: 11px;
+  padding-bottom: 5px;
+}
+/* line 582, ../sass/screen.sass */
 .user-forms #new_user_image {
   clear: both;
 }
-/* line 579, ../sass/screen.sass */
+/* line 585, ../sass/screen.sass */
 .user-forms .user-form {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -997,37 +1005,37 @@ form input[type=submit]:hover {
   padding: 10px;
   margin-top: 10px;
 }
-/* line 584, ../sass/screen.sass */
+/* line 590, ../sass/screen.sass */
 .user-forms .user-form h2 {
   color: white;
   text-shadow: #378cbb 1px 1px 2px;
 }
-/* line 586, ../sass/screen.sass */
+/* line 592, ../sass/screen.sass */
 .user-forms .user-form input[type=text] {
   border: 1px solid #3baeee;
 }
-/* line 588, ../sass/screen.sass */
+/* line 594, ../sass/screen.sass */
 .user-forms .user-form fieldset {
   background: #5ebdf1;
   padding: 10px;
   margin: 10px 0;
 }
-/* line 592, ../sass/screen.sass */
+/* line 598, ../sass/screen.sass */
 .user-forms .user-form fieldset ul {
   margin-top: 10px;
 }
-/* line 594, ../sass/screen.sass */
+/* line 600, ../sass/screen.sass */
 .user-forms .user-form fieldset ul li {
   margin: 5px 0;
 }
-/* line 596, ../sass/screen.sass */
+/* line 602, ../sass/screen.sass */
 .user-forms .user-form legend {
   font-weight: bold;
   color: white;
   text-shadow: #378cbb 1px 1px 2px;
   letter-spacing: 0;
 }
-/* line 601, ../sass/screen.sass */
+/* line 607, ../sass/screen.sass */
 .user-forms .user-form textarea {
   width: 400px;
   height: 100px;
@@ -1035,15 +1043,15 @@ form input[type=submit]:hover {
 }
 
 /* Editable fields */
-/* line 607, ../sass/screen.sass */
+/* line 613, ../sass/screen.sass */
 .on_the_spot_editing {
   display: block;
 }
-/* line 609, ../sass/screen.sass */
+/* line 615, ../sass/screen.sass */
 .on_the_spot_editing form {
   padding: 10px;
 }
-/* line 611, ../sass/screen.sass */
+/* line 617, ../sass/screen.sass */
 .on_the_spot_editing form input, .on_the_spot_editing form textarea {
   display: block;
   width: 300px !important;
@@ -1051,12 +1059,12 @@ form input[type=submit]:hover {
   padding: 5px;
   border: 1px solid #cccccc;
 }
-/* line 617, ../sass/screen.sass */
+/* line 623, ../sass/screen.sass */
 .on_the_spot_editing form textarea {
   height: 100px !important;
   margin-bottom: 5px;
 }
-/* line 620, ../sass/screen.sass */
+/* line 626, ../sass/screen.sass */
 .on_the_spot_editing form button[type=submit] {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);

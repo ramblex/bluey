@@ -1,5 +1,5 @@
 .user-image
   = link_to image_tag(user_image.picture.url), user_image.picture.url(:original)
   %p= truncate user_image.name, :length => 15
-  %p.delete-image= link_to 'Delete', user_image_path(user_image), :method => :delete, :confirm => 'Are you sure?'
-  %p=link_to 'Use for profile', update_profile_picture_user_image_path(user_image)
+  %p.delete-image= link_to 'Delete', user_image_path(user_image), :method => :delete
+  %p.use-for-profile=link_to 'Use for profile', update_profile_picture_user_image_path(user_image)
