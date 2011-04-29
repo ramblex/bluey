@@ -11,3 +11,7 @@ Factory.define :user_image do |f|
   f.picture_file_name "foo.png"
   f.user_profile_id 1
 end
+
+Factory.define :body_part do |f|
+  f.name "foo"
+end

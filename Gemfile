@@ -16,6 +16,7 @@ gem 'carmen', '0.2.7'
 gem 'paperclip', '2.3.8'
 gem 'nested_form'
 gem 'remotipart', '0.3.1'
+gem 'slugify', '1.0.4'
 
 # Use unicorn as the web server
 # gem 'unicorn'

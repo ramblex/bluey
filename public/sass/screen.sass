@@ -388,11 +388,17 @@ form
     height: 30px
     &:hover
       background: $link_colour
+  input.number
+    width: 50px !important
+  p.number
+    float: left
+    margin-right: 50px
 
 #error_explanation
   background: #ff9c99
   border: 1px solid $error_red
   padding: 10px
+  margin-bottom: 10px
 
 .field_with_errors
   color: $error_red
@@ -583,6 +589,7 @@ form
     clear: both
 
   .user-form
+    @include clearfix
     @include shiny-blue-box
     background: $blue_bg
     padding: 10px
@@ -632,5 +639,23 @@ form
       @extend .cancel
 
 /* Body stats */
-area
-  background: red
+.person
+  position: relative
+  width: 250px
+  height: 550px
+  float: left
+#man
+  background: url(/images/man.png)
+  li
+    position: absolute
+    width: 20px
+    height: 20px
+    background: url(/images/circle.png) no-repeat
+    text-indent: -30000px
+    overflow: hidden
+    cursor: pointer
+    &.selected, &:hover
+      background-position: 0 -20px
+#parts
+  float: right
+  width: 350px

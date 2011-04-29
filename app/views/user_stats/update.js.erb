@@ -1,0 +1,16 @@
+$('.form_errors').html('');
+<% if @errors %>
+  $('#notifications').html('').show();
+  $('<div id="alert">Could not update your stats</div>')
+    .appendTo('#notifications').delay(5000).fadeOut(2000);
+  <% @user_stats.each_with_index do |stat, idx| %>
+    <% if stat.errors.any? %>
+      var form_errors = $('.form_errors').get(<%= idx %>);
+      $(form_errors).html('<%= escape_javascript(render('shared/form_errors', :object => stat)) %>');
+    <% end %>
+  <% end %>
+<% else %>
+  $('#notifications').html('').show();
+  $('<div id="notice">Updated your stats</div>')
+    .appendTo('#notifications').delay(5000).fadeOut(2000);
+<% end %>

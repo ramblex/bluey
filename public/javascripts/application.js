@@ -56,7 +56,39 @@ $(document).ready(function() {
       $('#'+form_name).show();
     } else {
       $('#loaded-form').show().html('Loading form...');
-      $('#loaded-form').load(href + ' #load');
+      $('#loaded-form').load(href + ' #load', function() {
+        if (href === "/user_stats") {
+          // Body stats
+          $('.body-part-form').hide();
+          $('.body-part-form:first').show();
+          $('input[id$=goal_value]').each(function() {
+            var fieldset = $(this).closest('fieldset');
+            if ($('input:checked', fieldset).length > 0) {
+              $(this).parent().show();
+            } else {
+              $(this).parent().hide();
+            }
+          });
+
+          $('input[id$=is_goal]').click(function() {
+            var fieldset = $(this).closest('fieldset');
+            var nearest_goal = $('input[id$=goal_value]', fieldset).parent();
+            if ($(this).is(':checked')) {
+              nearest_goal.show();
+            } else {
+              nearest_goal.hide();
+            }
+          });
+          $('.person li').click(function() {
+            var form_name = $(this).attr('name');
+            $('.body-part-form').hide();
+            $('.body-part-form[name="'+form_name+'"]').show();
+            $('.person li').removeClass('selected');
+            $(this).addClass('selected');
+          });
+          $('.person li:first').addClass('selected');
+        }
+      });
     }
     e.preventDefault();
   });

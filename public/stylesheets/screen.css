@@ -654,53 +654,63 @@ form input[type=submit] {
 form input[type=submit]:hover {
   background: #5ebdf1;
 }
+/* line 391, ../sass/screen.sass */
+form input.number {
+  width: 50px !important;
+}
+/* line 393, ../sass/screen.sass */
+form p.number {
+  float: left;
+  margin-right: 50px;
+}
 
-/* line 392, ../sass/screen.sass */
+/* line 397, ../sass/screen.sass */
 #error_explanation {
   background: #ff9c99;
   border: 1px solid #d62300;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
-/* line 397, ../sass/screen.sass */
+/* line 403, ../sass/screen.sass */
 .field_with_errors {
   color: #d62300;
   display: inline;
 }
 
 /* Landing page */
-/* line 403, ../sass/screen.sass */
+/* line 409, ../sass/screen.sass */
 #landing-page h1 {
   margin-top: 50px;
   font-family: "Waiting for the Sunrise", arial, sans-serif;
   font-size: 64px;
   text-align: center;
 }
-/* line 408, ../sass/screen.sass */
+/* line 414, ../sass/screen.sass */
 #landing-page #left-col {
   float: left;
   margin-bottom: 50px;
 }
-/* line 411, ../sass/screen.sass */
+/* line 417, ../sass/screen.sass */
 #landing-page #video {
   display: block;
   width: 640px;
   height: 380px;
 }
-/* line 415, ../sass/screen.sass */
+/* line 421, ../sass/screen.sass */
 #landing-page #right-col {
   width: 332px;
   text-align: center;
   float: right;
 }
-/* line 419, ../sass/screen.sass */
+/* line 425, ../sass/screen.sass */
 #landing-page #alpha {
   margin-top: 30px;
   width: 332px;
   height: 225px;
   background: url(/images/alpha.png) no-repeat;
 }
-/* line 424, ../sass/screen.sass */
+/* line 430, ../sass/screen.sass */
 #landing-page #sign-up {
   display: block;
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
@@ -724,17 +734,17 @@ form input[type=submit]:hover {
   margin: 30px 50px 5px 50px;
   text-shadow: #378cbb 1px 1px 2px;
 }
-/* line 433, ../sass/screen.sass */
+/* line 439, ../sass/screen.sass */
 #landing-page #sign-in {
   clear: right;
 }
-/* line 435, ../sass/screen.sass */
+/* line 441, ../sass/screen.sass */
 #landing-page ol {
   clear: both;
   background: url(/images/steps.png) no-repeat 160px 0;
   padding: 65px 0 0 50px;
 }
-/* line 439, ../sass/screen.sass */
+/* line 445, ../sass/screen.sass */
 #landing-page ol li {
   float: left;
   width: 195px;
@@ -743,16 +753,16 @@ form input[type=submit]:hover {
 }
 
 /* Sign up and sign in forms */
-/* line 446, ../sass/screen.sass */
+/* line 452, ../sass/screen.sass */
 #devise {
   padding: 0 200px;
 }
-/* line 448, ../sass/screen.sass */
+/* line 454, ../sass/screen.sass */
 #devise #content {
   margin: 50px 20px;
 }
 
-/* line 452, ../sass/screen.sass */
+/* line 458, ../sass/screen.sass */
 #sign-up-form #content {
   margin: 0;
   -moz-box-shadow: none;
@@ -761,7 +771,7 @@ form input[type=submit]:hover {
   box-shadow: none;
 }
 
-/* line 456, ../sass/screen.sass */
+/* line 462, ../sass/screen.sass */
 .ui-widget-overlay {
   position: absolute;
   top: 0;
@@ -774,7 +784,7 @@ form input[type=submit]:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
 }
 
-/* line 465, ../sass/screen.sass */
+/* line 471, ../sass/screen.sass */
 .ui-dialog {
   padding: 10px;
   background: white;
@@ -790,7 +800,7 @@ form input[type=submit]:hover {
   border-radius: 15px;
 }
 
-/* line 471, ../sass/screen.sass */
+/* line 477, ../sass/screen.sass */
 .ui-icon-closethick {
   display: block;
   width: 25px;
@@ -803,7 +813,7 @@ form input[type=submit]:hover {
 }
 
 /* User edit page */
-/* line 482, ../sass/screen.sass */
+/* line 488, ../sass/screen.sass */
 .edit-email {
   float: right;
   font-size: 12px;
@@ -811,18 +821,18 @@ form input[type=submit]:hover {
   margin-left: 10px;
 }
 
-/* line 488, ../sass/screen.sass */
+/* line 494, ../sass/screen.sass */
 #user-profile .badges {
   float: right;
   width: 200px;
 }
 
-/* line 492, ../sass/screen.sass */
+/* line 498, ../sass/screen.sass */
 #profile-picture {
   cursor: pointer;
 }
 
-/* line 495, ../sass/screen.sass */
+/* line 501, ../sass/screen.sass */
 .button {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -850,24 +860,24 @@ form input[type=submit]:hover {
   text-decoration: none;
   display: inline-block;
 }
-/* line 503, ../sass/screen.sass */
+/* line 509, ../sass/screen.sass */
 .button:hover {
   background: #5ebdf1;
 }
 
-/* line 506, ../sass/screen.sass */
+/* line 512, ../sass/screen.sass */
 #user-info {
   width: 450px;
   float: left;
 }
 
-/* line 510, ../sass/screen.sass */
+/* line 516, ../sass/screen.sass */
 #user-tabs {
   clear: both;
   float: left;
   margin: 35px 0 10px 0;
 }
-/* line 514, ../sass/screen.sass */
+/* line 520, ../sass/screen.sass */
 #user-tabs li {
   padding: 5px 15px 5px 5px;
   -moz-border-radius: 15px;
@@ -890,11 +900,11 @@ form input[type=submit]:hover {
   border-bottom-right-radius: 0;
   margin-bottom: 10px;
 }
-/* line 520, ../sass/screen.sass */
+/* line 526, ../sass/screen.sass */
 #user-tabs li.selected, #user-tabs li:hover {
   background: #3baeee;
 }
-/* line 522, ../sass/screen.sass */
+/* line 528, ../sass/screen.sass */
 #user-tabs li a {
   text-align: center;
   display: block;
@@ -921,27 +931,27 @@ form input[type=submit]:hover {
   color: white;
 }
 
-/* line 534, ../sass/screen.sass */
+/* line 540, ../sass/screen.sass */
 .user-forms {
   display: block;
   float: left;
   width: 650px;
   position: relative;
 }
-/* line 540, ../sass/screen.sass */
+/* line 546, ../sass/screen.sass */
 .user-forms .hint {
   font-size: 12px;
 }
-/* line 543, ../sass/screen.sass */
+/* line 549, ../sass/screen.sass */
 .user-forms a {
   color: white;
 }
-/* line 546, ../sass/screen.sass */
+/* line 552, ../sass/screen.sass */
 .user-forms #user-images {
   margin-top: 10px;
   min-height: 100px;
 }
-/* line 550, ../sass/screen.sass */
+/* line 556, ../sass/screen.sass */
 .user-forms .user-image {
   width: 100px;
   margin: 0 25px 20px 0;
@@ -949,20 +959,20 @@ form input[type=submit]:hover {
   position: relative;
   font-size: 12px;
 }
-/* line 556, ../sass/screen.sass */
+/* line 562, ../sass/screen.sass */
 .user-forms .user-image img {
   width: 100px;
   height: 100px;
   text-align: center;
 }
-/* line 561, ../sass/screen.sass */
+/* line 567, ../sass/screen.sass */
 .user-forms .user-image p {
   text-align: center;
   background: #5ebdf1;
   display: block;
   width: 104px;
 }
-/* line 566, ../sass/screen.sass */
+/* line 572, ../sass/screen.sass */
 .user-forms .user-image .delete-image a {
   position: absolute;
   top: -10px;
@@ -976,17 +986,19 @@ form input[type=submit]:hover {
   outline: 0;
   cursor: pointer;
 }
-/* line 578, ../sass/screen.sass */
+/* line 584, ../sass/screen.sass */
 .user-forms .user-image .use-for-profile {
   font-size: 11px;
   padding-bottom: 5px;
 }
-/* line 582, ../sass/screen.sass */
+/* line 588, ../sass/screen.sass */
 .user-forms #new_user_image {
   clear: both;
 }
-/* line 585, ../sass/screen.sass */
+/* line 591, ../sass/screen.sass */
 .user-forms .user-form {
+  overflow: hidden;
+  *zoom: 1;
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
   background-image: linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -1005,37 +1017,37 @@ form input[type=submit]:hover {
   padding: 10px;
   margin-top: 10px;
 }
-/* line 590, ../sass/screen.sass */
+/* line 597, ../sass/screen.sass */
 .user-forms .user-form h2 {
   color: white;
   text-shadow: #378cbb 1px 1px 2px;
 }
-/* line 592, ../sass/screen.sass */
+/* line 599, ../sass/screen.sass */
 .user-forms .user-form input[type=text] {
   border: 1px solid #3baeee;
 }
-/* line 594, ../sass/screen.sass */
+/* line 601, ../sass/screen.sass */
 .user-forms .user-form fieldset {
   background: #5ebdf1;
   padding: 10px;
   margin: 10px 0;
 }
-/* line 598, ../sass/screen.sass */
+/* line 605, ../sass/screen.sass */
 .user-forms .user-form fieldset ul {
   margin-top: 10px;
 }
-/* line 600, ../sass/screen.sass */
+/* line 607, ../sass/screen.sass */
 .user-forms .user-form fieldset ul li {
   margin: 5px 0;
 }
-/* line 602, ../sass/screen.sass */
+/* line 609, ../sass/screen.sass */
 .user-forms .user-form legend {
   font-weight: bold;
   color: white;
   text-shadow: #378cbb 1px 1px 2px;
   letter-spacing: 0;
 }
-/* line 607, ../sass/screen.sass */
+/* line 614, ../sass/screen.sass */
 .user-forms .user-form textarea {
   width: 400px;
   height: 100px;
@@ -1043,15 +1055,15 @@ form input[type=submit]:hover {
 }
 
 /* Editable fields */
-/* line 613, ../sass/screen.sass */
+/* line 620, ../sass/screen.sass */
 .on_the_spot_editing {
   display: block;
 }
-/* line 615, ../sass/screen.sass */
+/* line 622, ../sass/screen.sass */
 .on_the_spot_editing form {
   padding: 10px;
 }
-/* line 617, ../sass/screen.sass */
+/* line 624, ../sass/screen.sass */
 .on_the_spot_editing form input, .on_the_spot_editing form textarea {
   display: block;
   width: 300px !important;
@@ -1059,12 +1071,12 @@ form input[type=submit]:hover {
   padding: 5px;
   border: 1px solid #cccccc;
 }
-/* line 623, ../sass/screen.sass */
+/* line 630, ../sass/screen.sass */
 .on_the_spot_editing form textarea {
   height: 100px !important;
   margin-bottom: 5px;
 }
-/* line 626, ../sass/screen.sass */
+/* line 633, ../sass/screen.sass */
 .on_the_spot_editing form button[type=submit] {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -1091,7 +1103,35 @@ form input[type=submit]:hover {
 }
 
 /* Body stats */
-/* line 635, ../sass/screen.sass */
-area {
-  background: red;
+/* line 642, ../sass/screen.sass */
+.person {
+  position: relative;
+  width: 250px;
+  height: 550px;
+  float: left;
+}
+
+/* line 647, ../sass/screen.sass */
+#man {
+  background: url(/images/man.png);
+}
+/* line 649, ../sass/screen.sass */
+#man li {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url(/images/circle.png) no-repeat;
+  text-indent: -30000px;
+  overflow: hidden;
+  cursor: pointer;
+}
+/* line 657, ../sass/screen.sass */
+#man li.selected, #man li:hover {
+  background-position: 0 -20px;
+}
+
+/* line 659, ../sass/screen.sass */
+#parts {
+  float: right;
+  width: 350px;
 }

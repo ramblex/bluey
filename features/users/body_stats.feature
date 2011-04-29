@@ -5,12 +5,45 @@ Feature: Manage body goals
 
     @javascript
     Scenario: User sets a valid goal for their left arm bicep
-      Given I sign up and sign in with name "foo" and email "user@test.com"
+      Given I have the following body_part records:
+        | name      |
+        | Left Arm  |
+        | Right Arm |
+        | Left Leg  |
+        | Right Leg |
+        | Chest |
+        | Waist |
+      And I sign up and sign in with name "foo" and email "user@test.com"
       And I follow "Body Stats"
-      Then I should see image "man.png" within "#person"
-      When I follow "Left Arm" within "#person"
-      And I fill in "Bicep" with "3"
+      When I follow "Left Arm" within ".person"
+      When I fill in "Current" with "3" within "fieldset#Bicep"
+      And I check "Add goal?"
+      And I fill in "Goal" with "4" within "fieldset#Bicep"
       And I press "Update"
-      Then I should see "Successfully updated your stats"
-      And the "Bicep" field should contain "3"
+      Then I should see "Updated your stats"
+      And the "Current" field should contain "3" within "fieldset#Bicep"
+      And the "Goal" field should contain "4" within "fieldset#Bicep"
+      And I should be on the edit profile page
+
+    @javascript
+    Scenario: User sets a invalid goal for their left arm bicep
+      Given I have the following body_part records:
+        | name     |
+        | Left Arm |
+        | Right Arm |
+        | Left Leg  |
+        | Right Leg |
+        | Chest |
+        | Waist |
+      And I sign up and sign in with name "foo" and email "user@test.com"
+      And I follow "Body Stats"
+      When I follow "Left Arm" within ".person"
+      When I fill in "Current" with "blah blah" within "fieldset#Bicep"
+      And I check "Add goal?"
+      And I fill in "Goal" with "blahsadflkjf" within "fieldset#Bicep"
+      And I press "Update"
+      Then I should see "Could not update your stats"
+      And I should see "Current value is not a number"
+      And the "Current" field should contain "" within "fieldset#Bicep"
+      And the "Goal" field should contain "" within "fieldset#Bicep"
       And I should be on the edit profile page

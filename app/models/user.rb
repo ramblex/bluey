@@ -15,5 +15,31 @@ private
   def create_profile
     user_profile = UserProfile.new(:user_id => self.id)
     user_profile.save(:validate => false)
+
+    ['Left Arm', 'Right Arm'].each do |arm|
+      user_profile.user_stats.create!(:name => 'Bicep',
+                                      :body_part => BodyPart.find_by_name(arm),
+                                      :unit => 'inches')
+      user_profile.user_stats.create!(:name => 'Tricep',
+                                      :body_part => BodyPart.find_by_name(arm),
+                                      :unit => 'inches')
+      user_profile.user_stats.create!(:name => 'Forearm',
+                                      :body_part => BodyPart.find_by_name(arm),
+                                      :unit => 'inches')
+    end
+    ['Left Leg', 'Right Leg'].each do |leg|
+      user_profile.user_stats.create!(:name => 'Upper leg',
+                                      :body_part => BodyPart.find_by_name(leg),
+                                      :unit => 'inches')
+      user_profile.user_stats.create!(:name => 'Lower leg',
+                                      :body_part => BodyPart.find_by_name(leg),
+                                      :unit => 'inches')
+    end
+    user_profile.user_stats.create!(:name => 'Chest',
+                                    :body_part => BodyPart.find_by_name('Chest'),
+                                    :unit => 'inches')
+    user_profile.user_stats.create!(:name => 'Waist',
+                                    :body_part => BodyPart.find_by_name('Waist'),
+                                    :unit => 'inches')
   end
 end
