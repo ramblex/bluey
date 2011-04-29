@@ -1,4 +1,6 @@
 class UserStatsController < ApplicationController
+  before_filter :authenticate_user!
+
   def index
     @user_stats = current_user.user_profile.user_stats
   end

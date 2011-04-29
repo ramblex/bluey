@@ -20,6 +20,8 @@ module NavigationHelpers
       pages_dashboard_path
     when /the user stats page/
       user_stats_path
+    when /the user pictures page/
+      user_images_path
 
 
     # Add more mappings here.

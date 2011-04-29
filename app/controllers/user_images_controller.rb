@@ -1,4 +1,5 @@
 class UserImagesController < ApplicationController
+  before_filter :authenticate_user!
 
   # This also shows the upload form
   def index

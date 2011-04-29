@@ -3,6 +3,10 @@ Feature: Sign in
   A user
   Should be able to sign in
 
+    Scenario: Guest tries to access user pictures page
+      Given I try to access the user pictures page when unauthorised
+      Then I should be told to sign in
+
     Scenario: Guest tries to access user stats page
       Given I try to access the user stats page when unauthorised
       Then I should be told to sign in
