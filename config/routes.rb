@@ -7,6 +7,7 @@ Bluey::Application.routes.draw do
 
   devise_for :users
 
+  resources :user_stats, :only => [:index, :update]
   resources :plans
   resources :user_images, :only => [:index, :create, :destroy] do
     member do

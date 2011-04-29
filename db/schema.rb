@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110428232045) do
+ActiveRecord::Schema.define(:version => 20110429110731) do
 
   create_table "plans", :force => true do |t|
     t.string   "name"
@@ -53,6 +53,16 @@ ActiveRecord::Schema.define(:version => 20110428232045) do
   create_table "user_profiles_user_wants", :id => false, :force => true do |t|
     t.integer "user_profile_id"
     t.integer "user_want_id"
+  end
+
+  create_table "user_stats", :force => true do |t|
+    t.string   "name"
+    t.decimal  "current_value", :precision => 16, :scale => 2
+    t.decimal  "goal_value",    :precision => 16, :scale => 2
+    t.string   "unit"
+    t.boolean  "is_goal",                                      :default => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "user_types", :force => true do |t|

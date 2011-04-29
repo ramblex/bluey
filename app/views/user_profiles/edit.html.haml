@@ -12,7 +12,7 @@
     = link_to 'Edit email & password', edit_user_registration_path, :class => 'edit-email'
     %ul#user-tabs
       %li.selected= link_to 'Foundation', '', :name => 'foundation'
-      %li= link_to 'Body Stats', ''
+      %li= link_to 'Body Stats', user_stats_path(current_user.id), :name => 'body stats'
       %li= link_to 'Health Stats', ''
       %li= link_to 'Pictures', user_images_path(current_user.id), :name => 'pictures'
 
