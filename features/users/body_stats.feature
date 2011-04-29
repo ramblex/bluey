@@ -5,16 +5,7 @@ Feature: Manage body goals
 
     @javascript
     Scenario: User sets a valid goal for their left arm bicep
-      Given I have the following body_part records:
-        | name      |
-        | Left Arm  |
-        | Right Arm |
-        | Left Leg  |
-        | Right Leg |
-        | Chest |
-        | Waist |
-      And I sign up and sign in with name "foo" and email "user@test.com"
-      And I follow "Body Stats"
+      Given I am authenticated on the body stats tab
       When I follow "Left Arm" within ".person"
       When I fill in "Current" with "3" within "fieldset#Bicep"
       And I check "Add goal?"
@@ -27,16 +18,7 @@ Feature: Manage body goals
 
     @javascript
     Scenario: User sets a invalid goal for their left arm bicep
-      Given I have the following body_part records:
-        | name     |
-        | Left Arm |
-        | Right Arm |
-        | Left Leg  |
-        | Right Leg |
-        | Chest |
-        | Waist |
-      And I sign up and sign in with name "foo" and email "user@test.com"
-      And I follow "Body Stats"
+      Given I am authenticated on the body stats tab
       When I follow "Left Arm" within ".person"
       When I fill in "Current" with "blah blah" within "fieldset#Bicep"
       And I check "Add goal?"
