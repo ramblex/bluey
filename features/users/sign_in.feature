@@ -9,6 +9,17 @@ Feature: Sign in
       Then I should see "You need to sign in or sign up before continuing"
       And I should be on the sign in page
 
+    Scenario: Guest tries to access dashboard page
+      Given I am not logged in
+      When I go to the dashboard page
+      Then I should see "You need to sign in or sign up before continuing"
+      And I should be on the sign in page
+
+    Scenario: Guest visits the home page
+      Given I am not logged in
+      When I go to the home page
+      Then I should see "Can you live past 100 years old?"
+
     Scenario: User is not signed up
       Given I am not logged in
       And no user exists with an email of "user@test.com"
