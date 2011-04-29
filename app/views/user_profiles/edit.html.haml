@@ -11,9 +11,9 @@
     = link_to 'Cancel my account', user_registration_path, :confirm => 'Are you sure you want to cancel your account?', :method => :delete, :class => 'edit-email'
     = link_to 'Edit email & password', edit_user_registration_path, :class => 'edit-email'
     %ul#user-tabs
-      %li.selected= link_to 'Foundation', '', :name => 'foundation'
-      %li= link_to 'Body Stats', user_stats_path, :name => 'body stats'
-      %li= link_to 'Health Stats', ''
+      %li.selected= link_to 'About me', '', :name => 'foundation'
+      %li= link_to 'Goals', user_stats_path, :name => 'body stats'
+      %li= link_to 'Symptoms', ''
       %li= link_to 'Pictures', user_images_path(current_user.id), :name => 'pictures'
 
     .user-forms
