@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110429134304) do
+ActiveRecord::Schema.define(:version => 20110429232934) do
 
   create_table "body_parts", :force => true do |t|
     t.string   "name"
@@ -25,6 +25,18 @@ ActiveRecord::Schema.define(:version => 20110429134304) do
     t.integer  "creator_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "user_goals", :force => true do |t|
+    t.string   "name"
+    t.decimal  "current_value",   :precision => 16, :scale => 2
+    t.decimal  "goal_value",      :precision => 16, :scale => 2
+    t.string   "unit"
+    t.boolean  "is_goal",                                        :default => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_profile_id"
+    t.integer  "body_part_id"
   end
 
   create_table "user_images", :force => true do |t|
@@ -61,18 +73,6 @@ ActiveRecord::Schema.define(:version => 20110429134304) do
   create_table "user_profiles_user_wants", :id => false, :force => true do |t|
     t.integer "user_profile_id"
     t.integer "user_want_id"
-  end
-
-  create_table "user_stats", :force => true do |t|
-    t.string   "name"
-    t.decimal  "current_value",   :precision => 16, :scale => 2
-    t.decimal  "goal_value",      :precision => 16, :scale => 2
-    t.string   "unit"
-    t.boolean  "is_goal",                                        :default => false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "user_profile_id"
-    t.integer  "body_part_id"
   end
 
   create_table "user_types", :force => true do |t|

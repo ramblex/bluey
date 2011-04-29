@@ -7,8 +7,8 @@ Feature: Sign in
       Given I try to access the user pictures page when unauthorised
       Then I should be told to sign in
 
-    Scenario: Guest tries to access user stats page
-      Given I try to access the user stats page when unauthorised
+    Scenario: Guest tries to access user goals page
+      Given I try to access the user goals page when unauthorised
       Then I should be told to sign in
 
     Scenario: Guest tries to access edit profile page

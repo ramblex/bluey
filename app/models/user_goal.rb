@@ -1,4 +1,4 @@
-class UserStat < ActiveRecord::Base
+class UserGoal < ActiveRecord::Base
   belongs_to :body_part
   belongs_to :user_profile
 

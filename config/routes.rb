@@ -7,8 +7,8 @@ Bluey::Application.routes.draw do
 
   devise_for :users
 
-  resources :user_stats, :only => :index
-  match "user_stats", :to => "user_stats#update", :via => "put"
+  resources :user_goals, :only => :index
+  match "user_goals", :to => "user_goals#update", :via => "put"
   resources :plans
   resources :user_images, :only => [:index, :create, :destroy] do
     member do

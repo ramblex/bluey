@@ -3,25 +3,25 @@
     - BodyPart.all.each do |part|
       %li{:style => "top: #{part.y}px; left: #{part.x}px", :name => part.name}= link_to part.name, '#'
   #parts
-    - @user_stats.group_by(&:body_part).each do |part, stats|
+    - @user_goals.group_by(&:body_part).each do |part, goals|
       %div{:name => part.name, :class => 'body-part-form'}
         %h3= part.name
-        = form_tag(user_stats_path, :remote => true, :id => 'edit_user_stats', :method => :put) do
-          - stats.each do |stat|
-            = fields_for "user_stats[]", stat do |f|
-              = field_set_tag stat.name, :id => stat.name do
+        = form_tag(user_goals_path, :remote => true, :id => 'edit_user_goals', :method => :put) do
+          - goals.each do |goal|
+            = fields_for "user_goals[]", goal do |f|
+              = field_set_tag goal.name, :id => goal.name do
                 %div{:class => 'form_errors'}
-                  = render 'shared/form_errors', :object => stat
+                  = render 'shared/form_errors', :object => goal
                 %p.number
                   = f.label :current_value, 'Current'
                   %br/
                   = f.text_field :current_value, :class => 'number'
-                  = stat.unit
+                  = goal.unit
                 %p.number
                   = f.label :goal_value, 'Goal'
                   %br/
                   = f.text_field :goal_value, :class => 'number'
-                  = stat.unit
+                  = goal.unit
                 %p
                   = f.label :is_goal, 'Add goal?'
                   = f.check_box :is_goal
