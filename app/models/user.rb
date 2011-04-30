@@ -17,29 +17,26 @@ private
     user_profile.save(:validate => false)
 
     ['Left Arm', 'Right Arm'].each do |arm|
-      user_profile.user_goals.create!(:name => 'Bicep',
-                                      :body_part => BodyPart.find_by_name(arm),
-                                      :unit => 'inches')
-      user_profile.user_goals.create!(:name => 'Tricep',
-                                      :body_part => BodyPart.find_by_name(arm),
-                                      :unit => 'inches')
-      user_profile.user_goals.create!(:name => 'Forearm',
-                                      :body_part => BodyPart.find_by_name(arm),
-                                      :unit => 'inches')
+      user_profile.user_goals.create([
+        {:name => 'Bicep', :body_part => BodyPart.find_by_name(arm), :unit => 'inches'},
+        {:name => 'Tricep', :body_part => BodyPart.find_by_name(arm), :unit => 'inches'},
+        {:name => 'Forearm', :body_part => BodyPart.find_by_name(arm), :unit => 'inches'}
+      ])
     end
     ['Left Leg', 'Right Leg'].each do |leg|
-      user_profile.user_goals.create!(:name => 'Upper leg',
-                                      :body_part => BodyPart.find_by_name(leg),
-                                      :unit => 'inches')
-      user_profile.user_goals.create!(:name => 'Lower leg',
-                                      :body_part => BodyPart.find_by_name(leg),
-                                      :unit => 'inches')
+      user_profile.user_goals.create([
+        {:name => 'Upper leg', :body_part => BodyPart.find_by_name(leg), :unit => 'inches'},
+        {:name => 'Lower leg', :body_part => BodyPart.find_by_name(leg), :unit => 'inches'}
+      ])
     end
-    user_profile.user_goals.create!(:name => 'Chest',
-                                    :body_part => BodyPart.find_by_name('Chest'),
-                                    :unit => 'inches')
-    user_profile.user_goals.create!(:name => 'Waist',
-                                    :body_part => BodyPart.find_by_name('Waist'),
-                                    :unit => 'inches')
+    general = BodyPart.find_by_name('General')
+    user_profile.user_goals.create([
+      {:name => 'Chest', :body_part => BodyPart.find_by_name('Chest'), :unit => 'inches'},
+      {:name => 'Waist', :body_part => BodyPart.find_by_name('Waist'), :unit => 'inches'},
+      {:name => 'Weight', :body_part => general, :unit => 'lbs'},
+      {:name => 'Blood pressure', :body_part => general, :unit => 'mmHg'},
+      {:name => 'Heart rate', :body_part => general, :unit => 'bpm'},
+      {:name => 'Body fat', :body_part => general, :unit => '%'}
+    ])
   end
 end

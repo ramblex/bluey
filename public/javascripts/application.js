@@ -57,8 +57,9 @@ $(document).ready(function() {
     } else {
       $('#loaded-form').show().html('Loading form...');
       $('#loaded-form').load(href + ' #load', function() {
-        if (href === "/user_stats") {
-          // Body stats
+        if (href === "/user_goals") {
+          // Body goals
+          $('.person li[name=General]').attr('id', 'general');
           $('.body-part-form').hide();
           $('.body-part-form:first').show();
           $('input[id$=goal_value]').each(function() {

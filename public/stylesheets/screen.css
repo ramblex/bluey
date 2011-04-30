@@ -1129,8 +1129,16 @@ form p.number {
 #man li.selected, #man li:hover {
   background-position: 0 -20px;
 }
-
 /* line 659, ../sass/screen.sass */
+#man li#general {
+  text-indent: 0;
+  width: 50px;
+  padding-left: 25px;
+  font-size: 11px;
+  line-height: 20px;
+}
+
+/* line 665, ../sass/screen.sass */
 #parts {
   float: right;
   width: 350px;

@@ -6,7 +6,8 @@ Given /^I am authenticated on the goals tab$/ do
     | Left Leg  |
     | Right Leg |
     | Chest |
-    | Waist |})
+    | Waist |
+    | General |})
   And %{I sign up and sign in with name "foo" and email "user@test.com"}
   And %{I follow "Goals"}
 end
