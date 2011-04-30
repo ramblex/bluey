@@ -995,7 +995,12 @@ form p.number {
 .user-forms #new_user_image {
   clear: both;
 }
-/* line 591, ../sass/screen.sass */
+/* line 592, ../sass/screen.sass */
+.user-forms #edit-symptoms textarea {
+  height: 200px;
+  width: 600px;
+}
+/* line 596, ../sass/screen.sass */
 .user-forms .user-form {
   overflow: hidden;
   *zoom: 1;
@@ -1017,37 +1022,37 @@ form p.number {
   padding: 10px;
   margin-top: 10px;
 }
-/* line 597, ../sass/screen.sass */
+/* line 602, ../sass/screen.sass */
 .user-forms .user-form h2 {
   color: white;
   text-shadow: #378cbb 1px 1px 2px;
 }
-/* line 599, ../sass/screen.sass */
+/* line 604, ../sass/screen.sass */
 .user-forms .user-form input[type=text] {
   border: 1px solid #3baeee;
 }
-/* line 601, ../sass/screen.sass */
+/* line 606, ../sass/screen.sass */
 .user-forms .user-form fieldset {
   background: #5ebdf1;
   padding: 10px;
   margin: 10px 0;
 }
-/* line 605, ../sass/screen.sass */
+/* line 610, ../sass/screen.sass */
 .user-forms .user-form fieldset ul {
   margin-top: 10px;
 }
-/* line 607, ../sass/screen.sass */
+/* line 612, ../sass/screen.sass */
 .user-forms .user-form fieldset ul li {
   margin: 5px 0;
 }
-/* line 609, ../sass/screen.sass */
+/* line 614, ../sass/screen.sass */
 .user-forms .user-form legend {
   font-weight: bold;
   color: white;
   text-shadow: #378cbb 1px 1px 2px;
   letter-spacing: 0;
 }
-/* line 614, ../sass/screen.sass */
+/* line 619, ../sass/screen.sass */
 .user-forms .user-form textarea {
   width: 400px;
   height: 100px;
@@ -1055,15 +1060,15 @@ form p.number {
 }
 
 /* Editable fields */
-/* line 620, ../sass/screen.sass */
+/* line 625, ../sass/screen.sass */
 .on_the_spot_editing {
   display: block;
 }
-/* line 622, ../sass/screen.sass */
+/* line 627, ../sass/screen.sass */
 .on_the_spot_editing form {
   padding: 10px;
 }
-/* line 624, ../sass/screen.sass */
+/* line 629, ../sass/screen.sass */
 .on_the_spot_editing form input, .on_the_spot_editing form textarea {
   display: block;
   width: 300px !important;
@@ -1071,12 +1076,12 @@ form p.number {
   padding: 5px;
   border: 1px solid #cccccc;
 }
-/* line 630, ../sass/screen.sass */
+/* line 635, ../sass/screen.sass */
 .on_the_spot_editing form textarea {
   height: 100px !important;
   margin-bottom: 5px;
 }
-/* line 633, ../sass/screen.sass */
+/* line 638, ../sass/screen.sass */
 .on_the_spot_editing form button[type=submit] {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -1103,7 +1108,7 @@ form p.number {
 }
 
 /* Body stats */
-/* line 642, ../sass/screen.sass */
+/* line 647, ../sass/screen.sass */
 .person {
   position: relative;
   width: 250px;
@@ -1111,11 +1116,11 @@ form p.number {
   float: left;
 }
 
-/* line 647, ../sass/screen.sass */
+/* line 652, ../sass/screen.sass */
 #man {
   background: url(/images/man.png);
 }
-/* line 649, ../sass/screen.sass */
+/* line 654, ../sass/screen.sass */
 #man li {
   position: absolute;
   width: 20px;
@@ -1125,11 +1130,11 @@ form p.number {
   overflow: hidden;
   cursor: pointer;
 }
-/* line 657, ../sass/screen.sass */
+/* line 662, ../sass/screen.sass */
 #man li.selected, #man li:hover {
   background-position: 0 -20px;
 }
-/* line 659, ../sass/screen.sass */
+/* line 664, ../sass/screen.sass */
 #man li#general {
   text-indent: 0;
   width: 50px;
@@ -1138,7 +1143,7 @@ form p.number {
   line-height: 20px;
 }
 
-/* line 665, ../sass/screen.sass */
+/* line 670, ../sass/screen.sass */
 #parts {
   float: right;
   width: 350px;

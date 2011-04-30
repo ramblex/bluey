@@ -13,7 +13,7 @@
     %ul#user-tabs
       %li.selected= link_to 'About me', '', :name => 'foundation'
       %li= link_to 'Goals', user_goals_path
-      %li= link_to 'Symptoms', ''
+      %li= link_to 'Symptoms', '', :name => 'symptoms'
       %li= link_to 'Pictures', user_images_path(current_user.id), :name => 'pictures'
 
     .user-forms
@@ -65,3 +65,10 @@
               = f.text_area :brands
           %p= f.submit 'Save'
       #loaded-form.user-form
+      #symptoms.user-form
+        = form_for @user_profile, :url => "/profile", :html => { :id => 'edit-symptoms' } do |f|
+          = render 'shared/form_errors', :object => @user_profile
+          = field_set_tag 'Describe your symptoms:' do
+            = f.text_area :symptoms
+          %p
+            = f.submit 'Save'
