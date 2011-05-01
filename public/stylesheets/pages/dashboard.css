@@ -1,0 +1,50 @@
+/* line 1, ../../sass/pages/dashboard.sass */
+#plans {
+  clear: both;
+}
+
+/* line 4, ../../sass/pages/dashboard.sass */
+.plan {
+  margin-right: 1px;
+  display: block;
+  float: left;
+  overflow: hidden;
+  width: 250px;
+  height: 153px;
+  background: #cdedff;
+  padding: 10px;
+  position: relative;
+}
+/* line 14, ../../sass/pages/dashboard.sass */
+.plan header {
+  color: #077cbe;
+  font-weight: bold;
+}
+/* line 17, ../../sass/pages/dashboard.sass */
+.plan header .date {
+  font-size: 80%;
+  color: #8b8b8b;
+  letter-spacing: 0;
+}
+/* line 21, ../../sass/pages/dashboard.sass */
+.plan footer {
+  width: 284px;
+  padding: 0 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 25px;
+  line-height: 25px;
+  background: #484848;
+  font-weight: bold;
+}
+/* line 31, ../../sass/pages/dashboard.sass */
+.plan footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 90%;
+}
+/* line 35, ../../sass/pages/dashboard.sass */
+.plan footer a:hover {
+  text-decoration: underline;
+}

@@ -16,7 +16,7 @@
       %li= link_to 'Symptoms', '', :name => 'symptoms'
       %li= link_to 'Pictures', user_images_path(current_user.id), :name => 'pictures'
 
-    .user-forms
+    #user-forms
       #foundation.user-form
         = form_for @user_profile, :url => "/profile" do |f|
           = render 'shared/form_errors', :object => @user_profile

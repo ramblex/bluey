@@ -1,11 +1,5 @@
 $(document).ready(function() {
 
-    $(".on_the_spot_editing").mouseover(function() {
-        $(this).css('background-color', '#EEF2A0');
-    });
-    $(".on_the_spot_editing").mouseout(function() {
-        $(this).css('background-color', 'inherit');
-    });
     $('.on_the_spot_editing').each(function(n){
         var el           = $(this),
             auth_token   = el.attr('data-auth'),

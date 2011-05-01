@@ -1,0 +1,104 @@
+/**
+ * Form styling for Bluey health + fitness
+ * Author: Alex Duller
+ * Contents:
+ * - Global form styling
+ * - Devise forms
+ * - User profile forms
+ * - Editable fields
+ */
+
+form
+  display: block
+  margin: 10px 0
+  p
+    margin-bottom: 15px
+  input[type=text], input[type=password]
+    border: 1px solid #ddd
+    padding: 5px
+    width: 300px
+    font-size: 100%
+  input[type=submit], button[type=submit]
+    font-size: 13px
+    @include shiny-blue-box
+    @include blue-text-shadow
+    @include border-radius(4px)
+    padding: 5px
+    color: white !important
+    text-decoration: none
+    display: inline-block
+    cursor: pointer
+    &:hover
+      background: $light_blue_bg
+  input.number
+    width: 50px !important
+  p.number
+    float: left
+    margin-right: 50px
+
+#error_explanation
+  background: #ff9c99
+  border: 1px solid $error_red
+  padding: 10px
+  margin-bottom: 10px
+
+.field_with_errors
+  color: $error_red
+  display: inline
+
+/* Devise forms */
+#devise
+  padding: 0 200px
+  #content
+    margin: 50px 20px
+
+#sign-up-form
+  #content
+    margin: 0
+    @include box-shadow(none)
+
+/* User profile forms */
+.user-form
+  @include clearfix
+  @include shiny-blue-box
+  background: $blue_bg
+  padding: 10px
+  margin-top: 10px
+  h2, legend
+    font-weight: bold
+    @include blue-text-shadow
+  input[type=text]
+    border: 1px solid $blue_bg
+  fieldset
+    background: $light_blue_bg
+    padding: 10px
+    margin: 10px 0
+    ul
+      margin-top: 10px
+      li
+        margin: 5px 0
+  textarea
+    width: 400px
+    height: 100px
+    border: 1px solid $blue_bg
+
+/* Editable fields */
+.on_the_spot_editing
+  display: block
+  &:hover
+    background: #fffcc3
+  form
+    padding: 10px
+    input, textarea
+      display: block
+      width: 300px !important
+      height: 14px !important
+      padding: 5px
+      border: 1px solid #ccc
+    textarea
+      height: 100px !important
+      margin-bottom: 5px
+    button[type=submit]
+      font-size: 11px
+    button[type=cancel]
+      @extend .cancel
