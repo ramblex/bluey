@@ -80,6 +80,9 @@ $(document).ready(function() {
               nearest_goal.hide();
             }
           });
+          $('.person li a').click(function(e) {
+            e.preventDefault();
+          });
           $('.person li').click(function() {
             var form_name = $(this).attr('name');
             $('.body-part-form').hide();
