@@ -11,6 +11,9 @@ Feature: Edit profile
       And I fill in "value" with "My name"
       And I press "Save" within "#user-info h1"
       Then I should see "My name" within "#user-info h1"
+      Then show me the page
+      When I go to the edit profile page
+      Then I should see "My name" within "#user-info h1"
 
     @javascript
     Scenario: User signs in and edits their summary

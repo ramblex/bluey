@@ -3,9 +3,7 @@ Bluey::Application.routes.draw do
   get "pages/dashboard"
   match "profile/edit", :to => "user_profiles#edit", :via => "get"
   match "profile", :to => "user_profiles#update", :via => "put"
-  match "profile/quickedit", :to => "user_profiles#update_attribute_on_the_spot", :via => "post"
-
-  devise_for :users
+  match "profile", :to => "user_profiles#update_attribute_on_the_spot", :via => "post"
 
   resources :user_goals, :only => :index
   match "user_goals", :to => "user_goals#update", :via => "put"
@@ -15,6 +13,8 @@ Bluey::Application.routes.draw do
       get :update_profile_picture
     end
   end
+
+  devise_for :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
