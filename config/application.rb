@@ -32,6 +32,7 @@ module Bluey
 
     # JavaScript files you want as :defaults (application.js is always included).
     # config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
+    config.action_view.javascript_expansions[:jquery_plugins] = %w(jquery.rotate jquery-ui jquery.form jquery.remotipart)
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
