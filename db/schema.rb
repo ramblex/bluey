@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110430092837) do
+ActiveRecord::Schema.define(:version => 20110501095421) do
 
   create_table "body_parts", :force => true do |t|
     t.string   "name"
@@ -49,6 +49,13 @@ ActiveRecord::Schema.define(:version => 20110430092837) do
     t.integer  "picture_file_size"
     t.datetime "picture_updated_at"
     t.boolean  "is_profile_picture",   :default => false
+  end
+
+  create_table "user_pains", :force => true do |t|
+    t.integer  "user_profile_id"
+    t.integer  "body_part_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "user_profiles", :force => true do |t|

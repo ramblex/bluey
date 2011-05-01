@@ -1,4 +1,4 @@
-Given /^I am authenticated on the goals tab$/ do
+Given /^I have the default body parts$/ do
   Given "I have the following body_part records:", table(%{
     | name      |
     | Left Arm  |
@@ -8,6 +8,10 @@ Given /^I am authenticated on the goals tab$/ do
     | Chest |
     | Waist |
     | General |})
+end
+
+Given /^I am authenticated on the goals tab$/ do
+  Given %{I have the default body parts}
   And %{I sign up and sign in with name "foo" and email "user@test.com"}
   And %{I follow "Goals"}
 end

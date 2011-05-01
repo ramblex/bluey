@@ -68,6 +68,12 @@
       #symptoms.user-form
         = form_for @user_profile, :url => "/profile", :html => { :id => 'edit-symptoms' } do |f|
           = render 'shared/form_errors', :object => @user_profile
+          = field_set_tag 'Pain areas:' do
+            %ul
+              - BodyPart.all.each do |part|
+                %li
+                  = check_box_tag "user_profile[body_part_ids][]", part.id, @user_profile.body_parts.include?(part), :id => "user_pain_id_#{part.id}"
+                  = label_tag "user_pain_id_#{part.id}", part.name
           = field_set_tag 'Describe your symptoms:' do
             = f.text_area :symptoms
           %p

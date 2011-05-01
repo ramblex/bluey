@@ -12,8 +12,9 @@ Feature: Manage symptoms
 
     @javascript
     Scenario: User adds some pain areas
-      Given I am authenticated on the symptoms tab
+      Given I have the default body parts
+      And I am authenticated on the symptoms tab
       When I check "Left Arm"
-      And the "Right Arm" checkbox should be checked
+      And I check "Right Arm"
       And I press "Save" within "#edit-symptoms"
       Then I should see "User profile was successfully updated"
