@@ -1,6 +1,6 @@
 class UserProfilesController < ApplicationController
 
-  before_filter :authenticate_user!
+  before_filter :authenticate_user!, :except => [:update_attribute_on_the_spot]
 
   can_edit_on_the_spot
 
