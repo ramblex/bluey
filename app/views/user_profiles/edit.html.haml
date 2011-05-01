@@ -2,8 +2,8 @@
   %section
     = image_tag @user_profile_picture.picture.url, :class => 'large-picture', :id => 'profile-picture'
     #user-info
-      %h1= on_the_spot_edit @user_profile, :name, :tooltip => 'Click here to update your name'
-      %p.summary= on_the_spot_edit @user_profile, :summary, :type => :textarea, :tooltip => 'Click here to edit your summary'
+      %h1= on_the_spot_edit @user_profile, :name, :tooltip => 'Click here to update your name', :url => '/profile/quickedit'
+      %p.summary= on_the_spot_edit @user_profile, :summary, :type => :textarea, :tooltip => 'Click here to edit your summary', :url => '/profile/quickedit'
     %ul.badges
       %li= image_tag 'badges/ace.png', :alt => 'Ace certified'
 

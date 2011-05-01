@@ -3,7 +3,7 @@ Bluey::Application.routes.draw do
   get "pages/dashboard"
   match "profile/edit", :to => "user_profiles#edit", :via => "get"
   match "profile", :to => "user_profiles#update", :via => "put"
-  match "profile", :to => "user_profiles#update_attribute_on_the_spot", :via => "post"
+  match "profile/quickedit", :to => "user_profiles#update_attribute_on_the_spot", :via => "put"
 
   resources :user_goals, :only => :index
   match "user_goals", :to => "user_goals#update", :via => "put"
