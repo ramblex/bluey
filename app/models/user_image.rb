@@ -8,4 +8,5 @@ class UserImage < ActiveRecord::Base
       :badge => '30x30'
     },
     :default_style => :large
+  attr_accessible :picture, :name, :is_profile_picture
 end

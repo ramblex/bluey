@@ -15,7 +15,7 @@
         });
     #right-col
       #alpha
-      = link_to 'Sign up', new_user_registration_path, :id => 'sign-up'
+      = link_to 'Sign up', new_user_registration_path, :id => 'sign-up', :class => 'dialog'
       %p 
         Already registered?
         = link_to 'Sign in', new_user_session_path, :id => 'sign-in'

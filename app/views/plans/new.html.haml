@@ -1,0 +1,13 @@
+%h2 Create an exercise plan
+= form_for @plan do |f|
+  = render 'shared/form_errors', :object => @plan
+  %p
+    = f.label :name
+    %br/
+    = f.text_field :name
+  %p
+    = f.label :description
+    %br/
+    = f.text_area :description
+  %p
+    = f.submit 'Create'

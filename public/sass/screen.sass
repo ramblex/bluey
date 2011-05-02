@@ -314,21 +314,27 @@ nav ul
     &:focus
       outline: none
   /* Share button */
-  #share
+  #button
     float: right
     width: 245px
     @include shiny-blue-box
+    &:hover
+      background: $light_blue_bg
     a
-      background: url(/images/share-icon.png) no-repeat 150px 5px
-      line-height: 40px
       display: block
-      width: 195px
-      height: $ctx_bar_height - 15px
-      padding: 15px 0 0 50px
       @include blue-text-shadow
       color: white
       text-decoration: none
-      font-size: 35px
-      &:active
-        padding-top: 16px
-        height: $ctx_bar_height - 16px
+      cursor: pointer
+  #share
+    width: 195px
+    background: url(/images/share-icon.png) no-repeat 150px 5px
+    line-height: 40px
+    font-size: 35px
+    padding: 15px 0 0 50px
+    height: $ctx_bar_height - 15px
+  #create-plan
+    height: $ctx_bar_height
+    line-height: $ctx_bar_height
+    font-size: 30px
+    text-align: center

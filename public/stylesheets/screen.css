@@ -80,23 +80,27 @@ a img {
  * - User profile forms
  * - Editable fields
  */
-/* line 11, ../sass/forms.sass */
+/* line 13, ../sass/forms.sass */
 form {
   display: block;
   margin: 10px 0;
 }
-/* line 14, ../sass/forms.sass */
+/* line 16, ../sass/forms.sass */
 form p {
   margin-bottom: 15px;
 }
-/* line 16, ../sass/forms.sass */
-form input[type=text], form input[type=password] {
+/* line 18, ../sass/forms.sass */
+form textarea {
+  height: 100px;
+}
+/* line 20, ../sass/forms.sass */
+form input[type=text], form input[type=password], form textarea {
   border: 1px solid #dddddd;
   padding: 5px;
   width: 300px;
   font-size: 100%;
 }
-/* line 21, ../sass/forms.sass */
+/* line 25, ../sass/forms.sass */
 form input[type=submit], form button[type=submit] {
   font-size: 13px;
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
@@ -127,21 +131,21 @@ form input[type=submit], form button[type=submit] {
   display: inline-block;
   cursor: pointer;
 }
-/* line 31, ../sass/forms.sass */
+/* line 35, ../sass/forms.sass */
 form input[type=submit]:hover, form button[type=submit]:hover {
   background: #5ebdf1;
 }
-/* line 33, ../sass/forms.sass */
+/* line 37, ../sass/forms.sass */
 form input.number {
   width: 50px !important;
 }
-/* line 35, ../sass/forms.sass */
+/* line 39, ../sass/forms.sass */
 form p.number {
   float: left;
   margin-right: 50px;
 }
 
-/* line 39, ../sass/forms.sass */
+/* line 43, ../sass/forms.sass */
 #error_explanation {
   background: #ff9c99;
   border: 1px solid #990000;
@@ -149,24 +153,24 @@ form p.number {
   margin-bottom: 10px;
 }
 
-/* line 45, ../sass/forms.sass */
+/* line 49, ../sass/forms.sass */
 .field_with_errors {
   color: #990000;
   display: inline;
 }
 
 /* Devise forms */
-/* line 50, ../sass/forms.sass */
+/* line 54, ../sass/forms.sass */
 #devise {
   padding: 0 200px;
 }
-/* line 52, ../sass/forms.sass */
+/* line 56, ../sass/forms.sass */
 #devise #content {
   margin: 50px 20px;
 }
 
-/* line 56, ../sass/forms.sass */
-#sign-up-form #content {
+/* line 60, ../sass/forms.sass */
+#dialog-form #content {
   margin: 0;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -175,7 +179,7 @@ form p.number {
 }
 
 /* User profile forms */
-/* line 61, ../sass/forms.sass */
+/* line 65, ../sass/forms.sass */
 .user-form {
   overflow: hidden;
   *zoom: 1;
@@ -197,31 +201,31 @@ form p.number {
   padding: 10px;
   margin-top: 10px;
 }
-/* line 67, ../sass/forms.sass */
+/* line 71, ../sass/forms.sass */
 .user-form h2, .user-form legend {
   font-weight: bold;
   color: white;
   text-shadow: #378cbb 1px 1px 2px;
 }
-/* line 70, ../sass/forms.sass */
+/* line 74, ../sass/forms.sass */
 .user-form input[type=text] {
   border: 1px solid #3baeee;
 }
-/* line 72, ../sass/forms.sass */
+/* line 76, ../sass/forms.sass */
 .user-form fieldset {
   background: #5ebdf1;
   padding: 10px;
   margin: 10px 0;
 }
-/* line 76, ../sass/forms.sass */
+/* line 80, ../sass/forms.sass */
 .user-form fieldset ul {
   margin-top: 10px;
 }
-/* line 78, ../sass/forms.sass */
+/* line 82, ../sass/forms.sass */
 .user-form fieldset ul li {
   margin: 5px 0;
 }
-/* line 80, ../sass/forms.sass */
+/* line 84, ../sass/forms.sass */
 .user-form textarea {
   width: 400px;
   height: 100px;
@@ -229,32 +233,32 @@ form p.number {
 }
 
 /* Editable fields */
-/* line 86, ../sass/forms.sass */
+/* line 90, ../sass/forms.sass */
 .on_the_spot_editing {
   display: block;
 }
-/* line 88, ../sass/forms.sass */
+/* line 92, ../sass/forms.sass */
 .on_the_spot_editing:hover {
   background: #fffcc3;
 }
-/* line 90, ../sass/forms.sass */
+/* line 94, ../sass/forms.sass */
 .on_the_spot_editing form {
   padding: 10px;
 }
-/* line 92, ../sass/forms.sass */
+/* line 96, ../sass/forms.sass */
 .on_the_spot_editing form input, .on_the_spot_editing form textarea {
   display: block;
   width: 300px !important;
   height: 14px !important;
   padding: 5px;
-  border: 1px solid #cccccc;
+  border: 1px solid #dddddd;
 }
-/* line 98, ../sass/forms.sass */
+/* line 102, ../sass/forms.sass */
 .on_the_spot_editing form textarea {
   height: 100px !important;
   margin-bottom: 5px;
 }
-/* line 101, ../sass/forms.sass */
+/* line 105, ../sass/forms.sass */
 .on_the_spot_editing form button[type=submit] {
   font-size: 11px;
 }
@@ -1026,7 +1030,7 @@ nav ul li a:hover, nav ul li a.selected {
   outline: none;
 }
 /* line 317, ../sass/screen.sass */
-#context-bar #share {
+#context-bar #button {
   float: right;
   width: 245px;
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
@@ -1045,21 +1049,31 @@ nav ul li a:hover, nav ul li a.selected {
   border: 1px solid #666666;
 }
 /* line 321, ../sass/screen.sass */
-#context-bar #share a {
-  background: url(/images/share-icon.png) no-repeat 150px 5px;
-  line-height: 40px;
+#context-bar #button:hover {
+  background: #5ebdf1;
+}
+/* line 323, ../sass/screen.sass */
+#context-bar #button a {
   display: block;
-  width: 195px;
-  height: 50px;
-  padding: 15px 0 0 50px;
   color: white;
   text-shadow: #378cbb 1px 1px 2px;
   color: white;
   text-decoration: none;
-  font-size: 35px;
+  cursor: pointer;
 }
-/* line 332, ../sass/screen.sass */
-#context-bar #share a:active {
-  padding-top: 16px;
-  height: 49px;
+/* line 329, ../sass/screen.sass */
+#context-bar #share {
+  width: 195px;
+  background: url(/images/share-icon.png) no-repeat 150px 5px;
+  line-height: 40px;
+  font-size: 35px;
+  padding: 15px 0 0 50px;
+  height: 50px;
+}
+/* line 336, ../sass/screen.sass */
+#context-bar #create-plan {
+  height: 65px;
+  line-height: 65px;
+  font-size: 30px;
+  text-align: center;
 }

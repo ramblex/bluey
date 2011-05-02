@@ -10,4 +10,6 @@ class UserGoal < ActiveRecord::Base
     :format => { :with => /^\d+??(?:\.\d{0,2})?$/ },
     :numericality => {:greater_than => 0},
     :allow_nil => true
+
+  attr_accessible :current_value, :goal_value, :is_goal
 end

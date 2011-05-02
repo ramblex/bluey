@@ -44,7 +44,7 @@ class PlansController < ApplicationController
 
     respond_to do |format|
       if @plan.save
-        format.html { redirect_to(@plan, :notice => 'Plan was successfully created.') }
+        format.html { redirect_to(@plan, :notice => 'Successfully created plan') }
         format.xml  { render :xml => @plan, :status => :created, :location => @plan }
       else
         format.html { render :action => "new" }

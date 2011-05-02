@@ -1,23 +1,23 @@
 /*
 Syntax error: Undefined mixin 'shiny-blue-box'.
-        on line 23 of /Users/alexduller/www/bluey/public/sass/forms.sass, in `shiny-blue-box'
-        from line 23 of /Users/alexduller/www/bluey/public/sass/forms.sass
+        on line 27 of /Users/alexduller/www/bluey/public/sass/forms.sass, in `shiny-blue-box'
+        from line 27 of /Users/alexduller/www/bluey/public/sass/forms.sass
 
-18:     padding: 5px
-19:     width: 300px
-20:     font-size: 100%
-21:   input[type=submit], button[type=submit]
-22:     font-size: 13px
-23:     @include shiny-blue-box
-24:     @include blue-text-shadow
-25:     @include border-radius(4px)
-26:     padding: 5px
-27:     color: white !important
-28:     text-decoration: none
+22:     padding: 5px
+23:     width: 300px
+24:     font-size: 100%
+25:   input[type=submit], button[type=submit]
+26:     font-size: 13px
+27:     @include shiny-blue-box
+28:     @include blue-text-shadow
+29:     @include border-radius(4px)
+30:     padding: 5px
+31:     color: white !important
+32:     text-decoration: none
 
 Backtrace:
-/Users/alexduller/www/bluey/public/sass/forms.sass:23:in `shiny-blue-box'
-/Users/alexduller/www/bluey/public/sass/forms.sass:23
+/Users/alexduller/www/bluey/public/sass/forms.sass:27:in `shiny-blue-box'
+/Users/alexduller/www/bluey/public/sass/forms.sass:27
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/mixin_node.rb:62:in `perform!'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
@@ -108,4 +108,4 @@ script/rails:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'shiny-blue-box'.\A         on line 23 of /Users/alexduller/www/bluey/public/sass/forms.sass, in `shiny-blue-box'\A         from line 23 of /Users/alexduller/www/bluey/public/sass/forms.sass\A \A 18:     padding: 5px\A 19:     width: 300px\A 20:     font-size: 100%\A 21:   input[type=submit], button[type=submit]\A 22:     font-size: 13px\A 23:     @include shiny-blue-box\A 24:     @include blue-text-shadow\A 25:     @include border-radius(4px)\A 26:     padding: 5px\A 27:     color: white !important\A 28:     text-decoration: none"; }
+  content: "Syntax error: Undefined mixin 'shiny-blue-box'.\A         on line 27 of /Users/alexduller/www/bluey/public/sass/forms.sass, in `shiny-blue-box'\A         from line 27 of /Users/alexduller/www/bluey/public/sass/forms.sass\A \A 22:     padding: 5px\A 23:     width: 300px\A 24:     font-size: 100%\A 25:   input[type=submit], button[type=submit]\A 26:     font-size: 13px\A 27:     @include shiny-blue-box\A 28:     @include blue-text-shadow\A 29:     @include border-radius(4px)\A 30:     padding: 5px\A 31:     color: white !important\A 32:     text-decoration: none"; }

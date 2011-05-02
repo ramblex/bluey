@@ -1,0 +1,8 @@
+#context-bar
+  %ul
+    %li=link_to 'Exercise', '#', :class => 'exercise selected'
+    %li=link_to 'Nutrition', '#', :class => 'nutrition'
+    %li=link_to 'Supplement', '#', :class => 'supplement'
+    %li=link_to 'Health', '#', :class => 'health'
+  = text_field_tag 'search', 'Search'
+  #button= link_to 'Create a plan', new_plan_path, :id => 'create-plan', :class => 'dialog'

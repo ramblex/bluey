@@ -18,3 +18,6 @@ Feature: Manage symptoms
       And I check "Right Arm"
       And I press "Save" within "#edit-symptoms"
       Then I should see "User profile was successfully updated"
+      When I follow "Symptoms"
+      Then the "Left Arm" checkbox should be checked
+      And the "Right Arm" checkbox should be checked

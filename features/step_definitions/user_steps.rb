@@ -15,8 +15,8 @@ Given /^I am a new, authenticated user$/ do
   login = 'Testing man'
   password = 'secretpass'
 
-  Given %{I have one user "#{email}" with password "#{password}"}
-  And %{I go to login}
+  Given %{I am a user named "" with an email "#{email}" and password "#{password}"}
+  And %{I go to the sign in page}
   And %{I fill in "user_email" with "#{email}"}
   And %{I fill in "user_password" with "#{password}"}
   And %{I press "Sign in"}
