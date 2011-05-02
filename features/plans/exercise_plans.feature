@@ -22,4 +22,5 @@ Feature: Manage exercise plans
       And I press "Create"
       Then I should see "Successfully created plan"
       When I follow "Add a day to this plan"
+      Then I should see "Day 1"
       And I follow "Add an item" within "#day-1"

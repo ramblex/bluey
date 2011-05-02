@@ -10,12 +10,32 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110502195537) do
+ActiveRecord::Schema.define(:version => 20110502215932) do
 
   create_table "body_parts", :force => true do |t|
     t.string   "name"
     t.integer  "x"
     t.integer  "y"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "plan_days", :force => true do |t|
+    t.integer  "day"
+    t.integer  "plan_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "plan_days_plan_items", :id => false, :force => true do |t|
+    t.integer "plan_day_id"
+    t.integer "plan_item_id"
+  end
+
+  create_table "plan_items", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "plan_day"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
