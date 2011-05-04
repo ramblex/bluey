@@ -1,13 +1,17 @@
+= render :partial => 'context_bar'
 %h2 Create an exercise plan
-= form_for @plan do |f|
+= nested_form_for @plan do |f|
   = render 'shared/form_errors', :object => @plan
   %p
     = f.label :name
     %br/
-    = f.text_field :name
+    = f.text_field :name, :class => 'wide'
   %p
     = f.label :description
     %br/
-    = f.text_area :description
+    = f.text_area :description, :class => 'small wide'
+  %p=f.link_to_add "Add a day to this plan", :plan_days, :class => 'button', :id => 'add-day'
+  = f.fields_for :plan_days do |day_form|
+    = render :partial => 'plan_day', :locals => {:f => day_form}
   %p
     = f.submit 'Create'

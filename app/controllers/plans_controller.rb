@@ -14,6 +14,7 @@ class PlansController < ApplicationController
   # GET /plans/1.xml
   def show
     @plan = Plan.find(params[:id])
+    @current_day = @plan.plan_days.count + 1
 
     respond_to do |format|
       format.html # show.html.erb

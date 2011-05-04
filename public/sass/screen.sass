@@ -25,6 +25,7 @@ $right_col_width = $total_width - $left_col_width
 $stats_bar_height = 107px
 $default_border_radius = 15px
 $ctx_bar_height = 65px
+$content_width = $right_col_width - 80px
 
 /* Colours */
 $blue_border = #007cc2
@@ -59,6 +60,7 @@ $error_red = #900
 @import "forms"
 @import "pages/user-profile"
 @import "pages/landing"
+@import "pages/plans"
 
 /* Globals and wrapper */
 body
@@ -96,6 +98,19 @@ h1
 
 h2
   font-size: 110%
+
+.button
+  font-size: 13px
+  @include shiny-blue-box
+  @include blue-text-shadow
+  @include border-radius(4px)
+  padding: 5px
+  color: white !important
+  text-decoration: none
+  display: inline-block
+  cursor: pointer
+  &:hover
+    background: $light_blue_bg
 
 .cancel
   background: none

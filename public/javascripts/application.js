@@ -97,4 +97,18 @@ $(document).ready(function() {
     }
     e.preventDefault();
   });
+
+  // Plan days
+  function updatePlanDays() {
+    $('.plan-day').each(function(idx) {
+      var day = (idx + 1);
+      $(this).find('span').text('Day ' + day);
+      $('input:first', this).attr('value', day);
+    });
+  }
+
+  $('#new_plan')
+    .bind('nested:fieldAdded', updatePlanDays)
+    .bind('nested:fieldRemoved', updatePlanDays);
+
 });

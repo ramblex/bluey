@@ -17,23 +17,15 @@ form
     margin-bottom: 15px
   textarea
     height: 100px
+  textarea.small
+    height: 60px
   input[type=text], input[type=password], textarea
     border: 1px solid $form_input_border
     padding: 5px
     width: 300px
     font-size: 100%
   input[type=submit], button[type=submit]
-    font-size: 13px
-    @include shiny-blue-box
-    @include blue-text-shadow
-    @include border-radius(4px)
-    padding: 5px
-    color: white !important
-    text-decoration: none
-    display: inline-block
-    cursor: pointer
-    &:hover
-      background: $light_blue_bg
+    @extend .button
   input.number
     width: 50px !important
   p.number
@@ -106,3 +98,10 @@ form
       font-size: 11px
     button[type=cancel]
       @extend .cancel
+
+
+/* New plans form */
+#new_plan
+  input[type=text].wide, textarea.wide
+    // Input padding is 10px
+    width: $content_width - 10px

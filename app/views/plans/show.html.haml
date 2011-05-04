@@ -1,3 +1,3 @@
 = render :partial => 'context_bar'
 %h2= @plan.name
-= link_to 'Add a day to this plan', '#'
+= render :partial => @plan.plan_days

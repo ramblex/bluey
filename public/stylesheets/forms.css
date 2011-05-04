@@ -1,31 +1,26 @@
 /*
-Syntax error: Undefined mixin 'shiny-blue-box'.
-        on line 27 of /Users/alexduller/www/bluey/public/sass/forms.sass, in `shiny-blue-box'
-        from line 27 of /Users/alexduller/www/bluey/public/sass/forms.sass
+Syntax error: Undefined variable: "$error_red".
+        on line 37 of /Users/alexduller/www/bluey/public/sass/forms.sass
 
-22:     padding: 5px
-23:     width: 300px
-24:     font-size: 100%
-25:   input[type=submit], button[type=submit]
-26:     font-size: 13px
-27:     @include shiny-blue-box
-28:     @include blue-text-shadow
-29:     @include border-radius(4px)
-30:     padding: 5px
-31:     color: white !important
-32:     text-decoration: none
+32:     float: left
+33:     margin-right: 50px
+34: 
+35: #error_explanation
+36:   background: #ff9c99
+37:   border: 1px solid $error_red
+38:   padding: 10px
+39:   margin-bottom: 10px
+40: 
+41: .field_with_errors
+42:   color: $error_red
 
 Backtrace:
-/Users/alexduller/www/bluey/public/sass/forms.sass:27:in `shiny-blue-box'
-/Users/alexduller/www/bluey/public/sass/forms.sass:27
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/mixin_node.rb:62:in `perform!'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/rule_node.rb:191:in `perform!'
+/Users/alexduller/www/bluey/public/sass/forms.sass:37
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/script/variable.rb:39:in `_perform'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/script/node.rb:61:in `perform'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/script/operation.rb:67:in `_perform'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/script/node.rb:61:in `perform'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/prop_node.rb:132:in `perform!'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
@@ -108,4 +103,4 @@ script/rails:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'shiny-blue-box'.\A         on line 27 of /Users/alexduller/www/bluey/public/sass/forms.sass, in `shiny-blue-box'\A         from line 27 of /Users/alexduller/www/bluey/public/sass/forms.sass\A \A 22:     padding: 5px\A 23:     width: 300px\A 24:     font-size: 100%\A 25:   input[type=submit], button[type=submit]\A 26:     font-size: 13px\A 27:     @include shiny-blue-box\A 28:     @include blue-text-shadow\A 29:     @include border-radius(4px)\A 30:     padding: 5px\A 31:     color: white !important\A 32:     text-decoration: none"; }
+  content: "Syntax error: Undefined variable: \"$error_red\".\A         on line 37 of /Users/alexduller/www/bluey/public/sass/forms.sass\A \A 32:     float: left\A 33:     margin-right: 50px\A 34: \A 35: #error_explanation\A 36:   background: #ff9c99\A 37:   border: 1px solid $error_red\A 38:   padding: 10px\A 39:   margin-bottom: 10px\A 40: \A 41: .field_with_errors\A 42:   color: $error_red"; }
