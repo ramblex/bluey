@@ -14,6 +14,9 @@ Feature: Manage exercise plans
 
     @javascript
     Scenario: Creating a plan with a single day
+      Given I have the following plan_items:
+        | Name        |
+        | Bench press |
       Given I am a new, authenticated user
       And I follow "Plans" within "nav"
       And I follow "Create a plan"

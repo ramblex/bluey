@@ -1,0 +1,9 @@
+.plan-day
+  = f.hidden_field :day
+  %h3
+    %span
+    = f.link_to_remove "Remove"
+  %section
+    = f.link_to_add "Add an item", :plan_items, :class => 'button'
+    = f.fields_for :plan_items do |item_form|
+      = render :partial => 'plan_item', :locals => {:f => item_form}
