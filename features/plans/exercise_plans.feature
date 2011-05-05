@@ -14,9 +14,10 @@ Feature: Manage exercise plans
 
     @javascript
     Scenario: Creating a plan with a single day
-      Given I have the following plan_items:
-        | Name        |
+      Given I have the following plan_item records:
+        | name        |
         | Bench press |
+        | Sit-ups     |
       Given I am a new, authenticated user
       And I follow "Plans" within "nav"
       And I follow "Create a plan"
@@ -25,7 +26,7 @@ Feature: Manage exercise plans
       When I follow "Add a day to this plan"
       Then I should see "Day 1"
       When I follow "Add an item"
-      And I fill in "Name" with "My Item name" within ".plan-day"
+      And I select "Bench press" from "Choose an activity"
       When I press "Create"
       Then show me the page
       Then I should see "Successfully created plan"

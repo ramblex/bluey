@@ -10,8 +10,6 @@
     = f.label :description
     %br/
     = f.text_area :description, :class => 'small wide'
-  %p=f.link_to_add "Add a day to this plan", :plan_days, :class => 'button', :id => 'add-day'
-  = f.fields_for :plan_days do |day_form|
-    = render :partial => 'plan_day', :locals => {:f => day_form}
+  %p=link_to "Add a day to this plan", :class => 'button', :id => 'add-day'
   %p
     = f.submit 'Create'

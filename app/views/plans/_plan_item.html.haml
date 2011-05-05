@@ -1,4 +1,5 @@
 .plan-item
-  = f.label :name
-  = f.text_field :name
+  = f.hidden_field :day
+  = f.label :id, 'Choose an exercise'
+  = f.collection_select :exercise_id, Exercise.all, :id, :name
   = f.link_to_remove "Remove this item"
