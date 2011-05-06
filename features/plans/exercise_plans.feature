@@ -3,24 +3,27 @@ Feature: Manage exercise plans
   A user
   Should be able to manage their exercise plans
 
+    Background:
+      Given I am a new, authenticated user
+      And I have the following exercise records:
+        | name        |
+        | Bench press |
+        | Sit-ups     |
+        | Hello world |
+
+
     @javascript
     Scenario: View an existing plan
-      Given I have the following plans:
+      Given I have the following plan records:
         | name    |
         | My plan |
-      And I am a new, authenticated user
       And I follow "Plans" within "nav"
       And I follow "My plan"
       Then I should see "Bench press"
 
     @javascript
     Scenario: Creating a plan with some items but without a name
-      Given I have the following exercise records:
-        | name        |
-        | Bench press |
-        | Sit-ups     |
-      And I am a new, authenticated user
-      And I follow "Plans" within "nav"
+      Given I follow "Plans" within "nav"
       And I follow "Create a plan"
       And I fill in "Description" with "My description"
       When I add the following days to the plan:
@@ -36,13 +39,7 @@ Feature: Manage exercise plans
 
     @javascript
     Scenario: Creating a plan with a single day and some items
-      Given I have the following exercise records:
-        | name        |
-        | Bench press |
-        | Sit-ups     |
-        | Hello world     |
-      Given I am a new, authenticated user
-      And I follow "Plans" within "nav"
+      Given I follow "Plans" within "nav"
       And I follow "Create a plan"
       When I fill in "Name" with "My plan"
       And I fill in "Description" with "My description"

@@ -19,3 +19,8 @@ end
 Factory.define :exercise do |f|
   f.name "Exercise"
 end
+
+Factory.define :plan do |f|
+  f.name "Plan name"
+  f.description "Plan description"
+end
