@@ -44,7 +44,6 @@ Feature: Manage exercise plans
       When I press "Create"
       Then I should see "Successfully created plan"
       And I should see "My plan"
-      When I follow "Show" within ".plan-day"
       Then I should see the following days in the plan:
         | day   | exercises            |
         | 1     | Bench press, Sit-ups |

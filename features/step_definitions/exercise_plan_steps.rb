@@ -7,7 +7,7 @@ When /^(.*) inside item (\d+) in day (\d+)$/ do |step, item, day|
 end
 
 Then /^(?:|I )should see (\d+) items in day (\d+)$/ do |num_items, day|
-  page.find(:xpath, "//div[@class='plan-day'][#{day}]//div[@class='fields']", :count => num_items)
+  page.find(:xpath, "//div[@class='plan-day'][#{day}]//div[@class='plan-item']", :count => num_items)
 end
 
 When /^(?:|I )add the following days to the plan:$/ do |table|

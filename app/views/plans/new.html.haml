@@ -15,7 +15,6 @@
       %h3
         %span
           Day #{day}
-        = link_to "Remove"
       %section
         = f.fields_for :plan_items, plan_items.sort_by(&:position) do |item_form|
           = render :partial => 'plan_item', :locals => {:f => item_form}
