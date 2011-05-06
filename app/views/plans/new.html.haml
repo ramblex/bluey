@@ -10,6 +10,16 @@
     = f.label :description
     %br/
     = f.text_area :description, :class => 'small wide'
-  %p=link_to "Add a day to this plan", :class => 'button', :id => 'add-day'
+  - @plan.plan_items.group_by(&:day).sort.each do |day, plan_items|
+    .plan-day
+      %h3
+        %span
+          Day #{day}
+        = link_to "Remove"
+      %section
+        = f.fields_for :plan_items, plan_items.sort_by(&:position) do |item_form|
+          = render :partial => 'plan_item', :locals => {:f => item_form}
+        = f.link_to_add "Add an item", :plan_items, :class => 'button'
+  %p=link_to "Add a day to this plan", '#', :class => 'button', :id => 'add-day'
   %p
     = f.submit 'Create'

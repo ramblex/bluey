@@ -100,10 +100,13 @@ $(document).ready(function() {
 
   // Plan days
   function updatePlanDays() {
-    $('.plan-day').each(function(idx) {
+    $('.plan-day:visible').each(function(idx) {
       var day = (idx + 1);
       $(this).find('span').text('Day ' + day);
-      $('input:first', this).attr('value', day);
+      $(this).find('input[id$=_day]').attr('value', day);
+      $(this).find('.fields').each(function(pos) {
+        $(this).find('input[id$=_position]').attr('value', pos);
+      });
     });
   }
 
@@ -111,4 +114,11 @@ $(document).ready(function() {
     .bind('nested:fieldAdded', updatePlanDays)
     .bind('nested:fieldRemoved', updatePlanDays);
 
+  $('#add-day').click(function(e) {
+    var content = $('.plan-day').clone(); // Day template
+    content.find('span').text('Day '+($('.plan-day').length + 1));
+    content.find('.fields').remove();
+    $(this).parent().before('<div class="plan-day">'+$(content).html()+'</div>');
+    e.preventDefault();
+  });
 });

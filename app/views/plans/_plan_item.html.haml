@@ -1,5 +1,6 @@
 .plan-item
   = f.hidden_field :day
-  = f.label :id, 'Choose an exercise'
+  = f.hidden_field :position
+  = f.label :exercise_id, 'Choose an exercise'
   = f.collection_select :exercise_id, Exercise.all, :id, :name
   = f.link_to_remove "Remove this item"

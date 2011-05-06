@@ -1,3 +1,8 @@
 = render :partial => 'context_bar'
 %h2= @plan.name
-= render :partial => @plan.plan_days
+- @plan.plan_items.group_by(&:day).sort.each do |day, plan_items|
+  .plan-day
+    %h3
+      %span Day #{day}
+    %section
+      = render plan_items
