@@ -557,11 +557,11 @@ form p.number {
  * Contents:
  * - 
  */
-/* line 8, ../sass/pages/plans.sass */
+/* line 11, ../sass/pages/plans.sass */
 .plan-day {
   margin-bottom: 10px;
 }
-/* line 10, ../sass/pages/plans.sass */
+/* line 13, ../sass/pages/plans.sass */
 .plan-day h3 {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -589,16 +589,29 @@ form p.number {
   color: white;
   font-size: 18px;
 }
-/* line 17, ../sass/pages/plans.sass */
+/* line 20, ../sass/pages/plans.sass */
 .plan-day h3 a {
   color: white;
   float: right;
   font-size: 14px;
 }
-/* line 21, ../sass/pages/plans.sass */
+/* line 24, ../sass/pages/plans.sass */
 .plan-day section {
   background: #cdedff;
   padding: 10px;
+}
+
+/* line 28, ../sass/pages/plans.sass */
+.exercise {
+  width: 120px;
+  float: left;
+  margin: 0 10px 10px 0;
+  text-align: center;
+}
+/* line 33, ../sass/pages/plans.sass */
+.exercise img {
+  width: 120px;
+  height: 120px;
 }
 
 /* Globals and wrapper */

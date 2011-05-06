@@ -4,6 +4,16 @@ Feature: Manage exercise plans
   Should be able to manage their exercise plans
 
     @javascript
+    Scenario: View an existing plan
+      Given I have the following plans:
+        | name    |
+        | My plan |
+      And I am a new, authenticated user
+      And I follow "Plans" within "nav"
+      And I follow "My plan"
+      Then I should see "Bench press"
+
+    @javascript
     Scenario: Creating a plan with some items but without a name
       Given I have the following exercise records:
         | name        |

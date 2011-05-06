@@ -1,23 +1,23 @@
 /*
 Syntax error: Undefined mixin 'shiny-blue-box'.
-        on line 11 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass, in `shiny-blue-box'
-        from line 11 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass
+        on line 14 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass, in `shiny-blue-box'
+        from line 14 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass
 
-6:  */
-7: 
-8: .plan-day
-9:   margin-bottom: 10px
-10:   h3
-11:     @include shiny-blue-box
-12:     @include border-radius(4px)
-13:     @include blue-text-shadow
-14:     padding: 10px
-15:     color: white
-16:     font-size: 18px
+9:   
+10: 
+11: .plan-day
+12:   margin-bottom: 10px
+13:   h3
+14:     @include shiny-blue-box
+15:     @include border-radius(4px)
+16:     @include blue-text-shadow
+17:     padding: 10px
+18:     color: white
+19:     font-size: 18px
 
 Backtrace:
-/Users/alexduller/www/bluey/public/sass/pages/plans.sass:11:in `shiny-blue-box'
-/Users/alexduller/www/bluey/public/sass/pages/plans.sass:11
+/Users/alexduller/www/bluey/public/sass/pages/plans.sass:14:in `shiny-blue-box'
+/Users/alexduller/www/bluey/public/sass/pages/plans.sass:14
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/mixin_node.rb:62:in `perform!'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
@@ -52,9 +52,9 @@ Backtrace:
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/plugin.rb:79:in `update_stylesheets'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/plugin.rb:50:in `check_for_updates'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/plugin/rack.rb:40:in `call'
-/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:35:in `call'
-/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:34:in `catch'
-/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:34:in `call'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.4/lib/warden/manager.rb:35:in `call'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.4/lib/warden/manager.rb:34:in `catch'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.4/lib/warden/manager.rb:34:in `call'
 /Library/Ruby/Gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
 /Library/Ruby/Gems/1.8/gems/actionpack-3.0.7/lib/action_dispatch/middleware/head.rb:14:in `call'
 /Library/Ruby/Gems/1.8/gems/rack-1.2.2/lib/rack/methodoverride.rb:24:in `call'
@@ -108,4 +108,4 @@ script/rails:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'shiny-blue-box'.\A         on line 11 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass, in `shiny-blue-box'\A         from line 11 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass\A \A 6:  */\A 7: \A 8: .plan-day\A 9:   margin-bottom: 10px\A 10:   h3\A 11:     @include shiny-blue-box\A 12:     @include border-radius(4px)\A 13:     @include blue-text-shadow\A 14:     padding: 10px\A 15:     color: white\A 16:     font-size: 18px"; }
+  content: "Syntax error: Undefined mixin 'shiny-blue-box'.\A         on line 14 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass, in `shiny-blue-box'\A         from line 14 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass\A \A 9:   \A 10: \A 11: .plan-day\A 12:   margin-bottom: 10px\A 13:   h3\A 14:     @include shiny-blue-box\A 15:     @include border-radius(4px)\A 16:     @include blue-text-shadow\A 17:     padding: 10px\A 18:     color: white\A 19:     font-size: 18px"; }

@@ -1,10 +1,5 @@
 /* line 1, ../../sass/pages/dashboard.sass */
-#plans {
-  clear: both;
-}
-
-/* line 4, ../../sass/pages/dashboard.sass */
-.plan {
+.dashboard-item {
   margin-right: 1px;
   display: block;
   float: left;
@@ -15,19 +10,19 @@
   padding: 10px;
   position: relative;
 }
-/* line 14, ../../sass/pages/dashboard.sass */
-.plan header {
+/* line 11, ../../sass/pages/dashboard.sass */
+.dashboard-item header {
   color: #077cbe;
   font-weight: bold;
 }
-/* line 17, ../../sass/pages/dashboard.sass */
-.plan header .date {
+/* line 14, ../../sass/pages/dashboard.sass */
+.dashboard-item header .date {
   font-size: 80%;
   color: #8b8b8b;
   letter-spacing: 0;
 }
-/* line 21, ../../sass/pages/dashboard.sass */
-.plan footer {
+/* line 18, ../../sass/pages/dashboard.sass */
+.dashboard-item footer {
   width: 284px;
   padding: 0 5px;
   position: absolute;
@@ -38,13 +33,13 @@
   background: #484848;
   font-weight: bold;
 }
-/* line 31, ../../sass/pages/dashboard.sass */
-.plan footer a {
+/* line 28, ../../sass/pages/dashboard.sass */
+.dashboard-item footer a {
   color: white;
   text-decoration: none;
   font-size: 90%;
 }
-/* line 35, ../../sass/pages/dashboard.sass */
-.plan footer a:hover {
+/* line 32, ../../sass/pages/dashboard.sass */
+.dashboard-item footer a:hover {
   text-decoration: underline;
 }

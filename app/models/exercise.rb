@@ -1,7 +1,7 @@
 class Exercise < ActiveRecord::Base
   has_attached_file :picture,
     :styles => {
-      :large => '100x100#',
+      :large => '120x120#',
       :badge => '30x30'
     },
     :default_style => :large
