@@ -2,4 +2,4 @@
   %header
     = link_to plan.name, plan
     .date= l plan.created_at, :format => :short
-    .creator= plan.creator.user_profile.name
+    .creator= plan.creator.user_profile.name unless plan.creator.nil?

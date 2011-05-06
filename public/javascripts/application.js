@@ -1,124 +1,44 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+/* DO NOT MODIFY. This file was compiled Fri, 06 May 2011 20:40:15 GMT from
+ * /Users/alexduller/www/bluey/app/coffeescripts/application.coffee
+ */
 
-function animate_progress(meter_id, percentage, append) {
-  var meter = $('.meter:eq('+meter_id+')');
-  var stick =  $('img', meter);
-  stick.rotate(-180);
-  stick.rotate({animateTo: ((percentage / 100) * 180) - 180});
-  var hint = $('<div class="hint">'+percentage+'%</div>');
-  if (append === true) {
-    meter.append(hint);
-    meter.hover(function() {
-      hint.fadeIn();
-    },
-    function() {
-      hint.fadeOut();
+(function() {
+  var animate_progress;
+  animate_progress = function(meter_idx, percentage, append_hint) {
+    var hint, meter, stick;
+    meter = $(".meter:eq(" + meter_idx + ")");
+    stick = $(meter).find('img');
+    stick.rotate(-180);
+    stick.rotate({
+      animateTo: ((percentage / 100) * 180) - 180
     });
-  }
-}
-
-$(document).ready(function() {
-  animate_progress(0, 30, true);
-  animate_progress(1, 50, false);
-
-  // Dialog forms
-  $('.dialog').click(function(e) {
-    e.preventDefault();
-    var url = $(this).attr('href');
-    var dialog_form = $('<div id="dialog-form">Loading form...</div>').dialog({
-      autoOpen: false,
-      width: 360,
-      modal: true,
-      open: function() {
-        $(this).load(url+' #content');
-      }
-    });
-    dialog_form.dialog('open');
-  });
-
-  $('#profile-picture').click(function(e) {
-    $('#user-tabs li a[name="pictures"]').click();
-  });
-
-  $('#notifications').delay(5000).fadeOut(2000);
-
-  $('.user-form').hide();
-  $('#foundation.user-form').show();
-
-  // User profile tabs
-  $('#user-tabs li a').click(function(e) {
-    var form_name = $(this).attr('name');
-    $('#user-tabs li').removeClass('selected');
-    $(this).parent('li').addClass('selected');
-    $('.user-form').hide();
-    var href = $(this).attr('href');
-    if (href === "") {
-      $('#'+form_name).show();
-    } else {
-      $('#loaded-form').show().html('Loading form...');
-      $('#loaded-form').load(href + ' #load', function() {
-        if (href === "/user_goals") {
-          // Body goals
-          $('.person li[name=General]').attr('id', 'general');
-          $('.body-part-form').hide();
-          $('.body-part-form:first').show();
-          $('input[id$=goal_value]').each(function() {
-            var fieldset = $(this).closest('fieldset');
-            if ($('input:checked', fieldset).length > 0) {
-              $(this).parent().show();
-            } else {
-              $(this).parent().hide();
-            }
-          });
-
-          $('input[id$=is_goal]').click(function() {
-            var fieldset = $(this).closest('fieldset');
-            var nearest_goal = $('input[id$=goal_value]', fieldset).parent();
-            if ($(this).is(':checked')) {
-              nearest_goal.show();
-            } else {
-              nearest_goal.hide();
-            }
-          });
-          $('.person li a').click(function(e) {
-            e.preventDefault();
-          });
-          $('.person li').click(function() {
-            var form_name = $(this).attr('name');
-            $('.body-part-form').hide();
-            $('.body-part-form[name="'+form_name+'"]').show();
-            $('.person li').removeClass('selected');
-            $(this).addClass('selected');
-          });
-          $('.person li:first').addClass('selected');
-        }
+    if (append_hint) {
+      hint = $("<div class=\"hint\">" + percentage + "%</div>");
+      meter.append(hint);
+      return meter.hover(function() {
+        return hint.fadeIn();
+      }, function() {
+        return hint.fadeOut();
       });
     }
-    e.preventDefault();
-  });
-
-  // Plan days
-  function updatePlanDays() {
-    $('.plan-day:visible').each(function(idx) {
-      var day = (idx + 1);
-      $(this).find('span').text('Day ' + day);
-      $(this).find('input[id$=_day]').attr('value', day);
-      $(this).find('.fields').each(function(pos) {
-        $(this).find('input[id$=_position]').attr('value', pos);
+  };
+  $(document).ready(function() {
+    animate_progress(0, 30, true);
+    animate_progress(1, 50, false);
+    $('.dialog').click(function(event) {
+      var dialog_form, url;
+      event.preventDefault();
+      url = $(this).attr('href');
+      dialog_form = $('<div id="dialog-form">Loading form...</div>').dialog({
+        autoOpen: false,
+        width: 360,
+        modal: true,
+        open: function() {
+          return $(this).load(url + ' #content');
+        }
       });
+      return dialog_form.dialog('open');
     });
-  }
-
-  $('#new_plan')
-    .bind('nested:fieldAdded', updatePlanDays)
-    .bind('nested:fieldRemoved', updatePlanDays);
-
-  $('#add-day').click(function(e) {
-    var content = $('.plan-day').clone(); // Day template
-    content.find('span').text('Day '+($('.plan-day').length + 1));
-    content.find('.fields').remove();
-    $(this).parent().before('<div class="plan-day">'+$(content).html()+'</div>');
-    e.preventDefault();
+    return $('#notifications').delay(5000).fadeOut(2000);
   });
-});
+}).call(this);
