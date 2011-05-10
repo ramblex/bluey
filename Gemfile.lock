@@ -185,8 +185,10 @@ DEPENDENCIES
   capistrano (= 2.5.19)
   capybara
   carmen (= 0.2.7)
+  celerity
   compass (= 0.10.6)
   cucumber-rails
+  culerity
   database_cleaner
   devise (= 1.1.5)
   factory_girl_rails

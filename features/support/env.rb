@@ -11,6 +11,8 @@ if RUBY_VERSION =~ /1.8/
   Test::Unit.run = true
 end
 
+Culerity.jruby_invocation = File.expand_path("~/.rvm/bin/celerity_jruby")
+
 # Capybara defaults to XPath selectors rather than Webrat's default of CSS3. In
 # order to ease the transition to Capybara we set the default here. If you'd
 # prefer to use XPath just remove this line and adjust any selectors in your

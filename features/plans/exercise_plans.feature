@@ -15,21 +15,25 @@ Feature: Manage exercise plans
       Given I have the following users:
         | name         | email         | password   |
         | Alex         | alex@test.com | mypassword |
+      And I sign in as "alex@test.com/mypassword"
       And I have the following plans created by Alex:
         | name         | day | exercises            |
         | Alex's plan  | 1   | Bench press, Sit-ups |
         |              | 2   | Sit-ups              |
       When I follow "Plans" within "nav"
-      Then show me the page
       Then I should see the following list of plans:
         | creator | name        |
         | Alex    | Alex's plan |
 
     @javascript
     Scenario: View an existing plan
-      Given I have the following plan records:
-        | name    |
-        | My plan |
+      Given I have the following users:
+        | name         | email         | password   |
+        | Dave         | dave@dave.com | mypassword |
+      And I sign in as "dave@dave.com/mypassword"
+      And I have the following plans created by Dave:
+        | name    | day | exercises     |
+        | My plan | 1   | Bench press   |
       And I follow "Plans" within "nav"
       And I follow "My plan"
       Then I should see "Bench press"

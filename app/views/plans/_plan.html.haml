@@ -3,5 +3,5 @@
     = link_to plan.name, plan
     %p
       Created
-      #{"by #{plan.creator.user_profile.name}" unless plan.creator.nil?} 
+      = "by #{plan.creator.user_profile.name}"
       on #{l plan.created_at, :format => :short}

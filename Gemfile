@@ -49,4 +49,6 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'launchy'
   gem 'autotest'
+  gem 'culerity'
+  gem 'celerity', :require => nil
 end
