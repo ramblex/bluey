@@ -1,5 +1,7 @@
 %article.plan
   %header
     = link_to plan.name, plan
-    .date= l plan.created_at, :format => :short
-    .creator= plan.creator.user_profile.name unless plan.creator.nil?
+    %p
+      Created
+      #{"by #{plan.creator.user_profile.name}" unless plan.creator.nil?} 
+      on #{l plan.created_at, :format => :short}

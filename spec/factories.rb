@@ -24,3 +24,16 @@ Factory.define :plan do |f|
   f.name "Plan name"
   f.description "Plan description"
 end
+
+Factory.define :plan_item do |f|
+end
+
+Factory.define :user do |f|
+  f.email "test@test.com"
+  f.password "password"
+  f.association :user_profile, :factory => :user_profile
+end
+
+Factory.define :user_profile do |f|
+  f.name "My name"
+end

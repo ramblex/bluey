@@ -557,11 +557,34 @@ form p.number {
  * Contents:
  * - 
  */
-/* line 11, ../sass/pages/plans.sass */
+/* line 8, ../sass/pages/plans.sass */
+.plan {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 115px;
+  padding: 10px;
+  background: url(/images/plan.png) no-repeat;
+  margin: 0 20px;
+}
+/* line 10, ../sass/pages/plans.sass */
+.plan a {
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 19, ../sass/pages/plans.sass */
+.plan .date {
+  position: absolute;
+  bottom: 10px;
+  font-size: 11px;
+  color: #666666;
+}
+
+/* line 25, ../sass/pages/plans.sass */
 .plan-day {
   margin-bottom: 10px;
 }
-/* line 13, ../sass/pages/plans.sass */
+/* line 27, ../sass/pages/plans.sass */
 .plan-day h3 {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -589,26 +612,26 @@ form p.number {
   color: white;
   font-size: 18px;
 }
-/* line 20, ../sass/pages/plans.sass */
+/* line 34, ../sass/pages/plans.sass */
 .plan-day h3 a {
   color: white;
   float: right;
   font-size: 14px;
 }
-/* line 24, ../sass/pages/plans.sass */
+/* line 38, ../sass/pages/plans.sass */
 .plan-day section {
   background: #cdedff;
   padding: 10px;
 }
 
-/* line 28, ../sass/pages/plans.sass */
+/* line 42, ../sass/pages/plans.sass */
 .exercise {
   width: 120px;
   float: left;
   margin: 0 10px 10px 0;
   text-align: center;
 }
-/* line 33, ../sass/pages/plans.sass */
+/* line 47, ../sass/pages/plans.sass */
 .exercise img {
   width: 120px;
   height: 120px;
@@ -674,9 +697,10 @@ h1 {
 /* line 99, ../sass/screen.sass */
 h2 {
   font-size: 110%;
+  margin-bottom: 10px;
 }
 
-/* line 102, ../sass/screen.sass */
+/* line 103, ../sass/screen.sass */
 .button, form input[type=submit], form button[type=submit] {
   font-size: 13px;
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
@@ -707,12 +731,12 @@ h2 {
   display: inline-block;
   cursor: pointer;
 }
-/* line 112, ../sass/screen.sass */
+/* line 113, ../sass/screen.sass */
 .button:hover, form input[type=submit]:hover, form button[type=submit]:hover {
   background: #5ebdf1;
 }
 
-/* line 115, ../sass/screen.sass */
+/* line 116, ../sass/screen.sass */
 .cancel, .on_the_spot_editing form button[type=cancel] {
   background: none;
   border: 0;
@@ -722,7 +746,7 @@ h2 {
   color: #990000;
 }
 
-/* line 123, ../sass/screen.sass */
+/* line 124, ../sass/screen.sass */
 .badge, .large-picture, .badges li {
   background: #cdedff;
   display: block;
@@ -734,20 +758,20 @@ h2 {
   margin: 0 5px 5px 0;
 }
 
-/* line 133, ../sass/screen.sass */
+/* line 134, ../sass/screen.sass */
 .badge, .badges li {
   width: 30px;
   height: 30px;
 }
 
-/* line 137, ../sass/screen.sass */
+/* line 138, ../sass/screen.sass */
 .large-picture {
   width: 100px;
   height: 100px;
   margin-right: 20px !important;
 }
 
-/* line 142, ../sass/screen.sass */
+/* line 143, ../sass/screen.sass */
 #wrapper {
   overflow: hidden;
   *zoom: 1;
@@ -758,20 +782,20 @@ h2 {
 }
 
 /* Notifications */
-/* line 150, ../sass/screen.sass */
+/* line 151, ../sass/screen.sass */
 #notifications {
   position: fixed;
   top: 20px;
   left: -1px;
   font-size: 12px;
 }
-/* line 155, ../sass/screen.sass */
+/* line 156, ../sass/screen.sass */
 #notifications #alert {
   border: 1px solid #990000;
   background: #e5b6b6;
   padding: 10px;
 }
-/* line 159, ../sass/screen.sass */
+/* line 160, ../sass/screen.sass */
 #notifications #notice {
   border: 1px solid #558108;
   background: #bcdd9f;
@@ -779,13 +803,13 @@ h2 {
 }
 
 /* Left column */
-/* line 165, ../sass/screen.sass */
+/* line 166, ../sass/screen.sass */
 #left-col {
   width: 107px;
   float: left;
 }
 
-/* line 170, ../sass/screen.sass */
+/* line 171, ../sass/screen.sass */
 h1 a {
   margin: 20px 0;
   height: 107px;
@@ -795,7 +819,7 @@ h1 a {
   outline: 0;
 }
 
-/* line 177, ../sass/screen.sass */
+/* line 178, ../sass/screen.sass */
 nav ul {
   width: 107px;
   background: url(/images/nav-shine.png) no-repeat 1px 1px #3baeee;
@@ -812,13 +836,13 @@ nav ul {
   border-radius: 15px;
   padding: 10px 0;
 }
-/* line 184, ../sass/screen.sass */
+/* line 185, ../sass/screen.sass */
 nav ul li {
   text-align: center;
   list-style: none;
   margin: 0;
 }
-/* line 188, ../sass/screen.sass */
+/* line 189, ../sass/screen.sass */
 nav ul li a {
   padding: 5px 0;
   height: 90px;
@@ -827,36 +851,36 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
 }
-/* line 195, ../sass/screen.sass */
+/* line 196, ../sass/screen.sass */
 nav ul li a#plans {
   background: url(/images/plans.png) no-repeat center 20px;
 }
-/* line 197, ../sass/screen.sass */
+/* line 198, ../sass/screen.sass */
 nav ul li a#community {
   background: url(/images/community.png) no-repeat center 20px;
 }
-/* line 199, ../sass/screen.sass */
+/* line 200, ../sass/screen.sass */
 nav ul li a#challenges {
   background: url(/images/challenges.png) no-repeat center 25px;
 }
-/* line 201, ../sass/screen.sass */
+/* line 202, ../sass/screen.sass */
 nav ul li a#profile {
   background: url(/images/profile.png) no-repeat center 15px;
 }
-/* line 203, ../sass/screen.sass */
+/* line 204, ../sass/screen.sass */
 nav ul li a#financial {
   background: url(/images/financial.png) no-repeat center 20px;
 }
-/* line 205, ../sass/screen.sass */
+/* line 206, ../sass/screen.sass */
 nav ul li a:visited {
   color: #333333;
 }
-/* line 207, ../sass/screen.sass */
+/* line 208, ../sass/screen.sass */
 nav ul li a:hover, nav ul li a.selected {
   color: white;
 }
 
-/* line 210, ../sass/screen.sass */
+/* line 211, ../sass/screen.sass */
 #help {
   display: block;
   width: 107px;
@@ -868,13 +892,13 @@ nav ul li a:hover, nav ul li a.selected {
 }
 
 /* Right column */
-/* line 219, ../sass/screen.sass */
+/* line 220, ../sass/screen.sass */
 #right-col {
   width: 893px;
   float: right;
 }
 
-/* line 223, ../sass/screen.sass */
+/* line 224, ../sass/screen.sass */
 #stats-bar {
   float: left;
   margin: 20px 5px 20px 20px;
@@ -897,13 +921,13 @@ nav ul li a:hover, nav ul li a.selected {
   border: 1px solid #666666;
 }
 
-/* line 231, ../sass/screen.sass */
+/* line 232, ../sass/screen.sass */
 .badges {
   float: left;
   width: 150px;
 }
 
-/* line 235, ../sass/screen.sass */
+/* line 236, ../sass/screen.sass */
 #stats {
   color: white;
   float: right;
@@ -911,32 +935,32 @@ nav ul li a:hover, nav ul li a.selected {
   color: white;
   text-shadow: #378cbb 1px 1px 2px;
 }
-/* line 240, ../sass/screen.sass */
+/* line 241, ../sass/screen.sass */
 #stats h2 {
   letter-spacing: 0;
   margin: 5px 0;
   font-size: 18px;
   font-weight: normal;
 }
-/* line 245, ../sass/screen.sass */
+/* line 246, ../sass/screen.sass */
 #stats li {
   float: left;
   width: 150px;
   text-align: center;
 }
-/* line 249, ../sass/screen.sass */
+/* line 250, ../sass/screen.sass */
 #stats li p {
   font-size: 36px;
 }
-/* line 251, ../sass/screen.sass */
+/* line 252, ../sass/screen.sass */
 #stats li p span {
   font-size: 24px;
 }
-/* line 254, ../sass/screen.sass */
+/* line 255, ../sass/screen.sass */
 #stats li.meter h2 {
   margin-bottom: 0;
 }
-/* line 256, ../sass/screen.sass */
+/* line 257, ../sass/screen.sass */
 #stats li.meter span {
   margin-left: 52px;
   float: left;
@@ -945,12 +969,12 @@ nav ul li a:hover, nav ul li a.selected {
   background: url(/images/meter-bg.png) no-repeat;
   display: block;
 }
-/* line 263, ../sass/screen.sass */
+/* line 264, ../sass/screen.sass */
 #stats li.meter .hint {
   display: none;
 }
 
-/* line 266, ../sass/screen.sass */
+/* line 267, ../sass/screen.sass */
 #logout {
   display: block;
   margin-top: 20px;
@@ -979,12 +1003,12 @@ nav ul li a:hover, nav ul li a.selected {
   text-shadow: #378cbb 1px 1px 2px;
   font-weight: bold;
 }
-/* line 279, ../sass/screen.sass */
+/* line 280, ../sass/screen.sass */
 #logout:hover {
   background: #5ebdf1;
 }
 
-/* line 282, ../sass/screen.sass */
+/* line 283, ../sass/screen.sass */
 #content {
   clear: both;
   margin: 0 20px 10px 20px;
@@ -1003,7 +1027,7 @@ nav ul li a:hover, nav ul li a.selected {
   *zoom: 1;
 }
 
-/* line 290, ../sass/screen.sass */
+/* line 291, ../sass/screen.sass */
 #context-bar {
   height: 65px;
   margin-bottom: 20px;
@@ -1012,7 +1036,7 @@ nav ul li a:hover, nav ul li a.selected {
   /* Search bar */
   /* Share button */
 }
-/* line 295, ../sass/screen.sass */
+/* line 296, ../sass/screen.sass */
 #context-bar ul {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -1032,11 +1056,11 @@ nav ul li a:hover, nav ul li a.selected {
   padding: 0 10px;
   width: 225px;
 }
-/* line 300, ../sass/screen.sass */
+/* line 301, ../sass/screen.sass */
 #context-bar ul li {
   float: left;
 }
-/* line 302, ../sass/screen.sass */
+/* line 303, ../sass/screen.sass */
 #context-bar ul li a {
   text-indent: -30000px;
   outline: 0;
@@ -1046,7 +1070,7 @@ nav ul li a:hover, nav ul li a.selected {
   display: block;
   margin: 7px 0;
 }
-/* line 309, ../sass/screen.sass */
+/* line 310, ../sass/screen.sass */
 #context-bar ul li a.profile {
   background-position: 0 -50px;
 }
@@ -1054,7 +1078,7 @@ nav ul li a:hover, nav ul li a.selected {
 #context-bar ul li a.profile:hover, #context-bar ul li a.profile.selected {
   background-position: 0 0;
 }
-/* line 311, ../sass/screen.sass */
+/* line 312, ../sass/screen.sass */
 #context-bar ul li a.community {
   background-position: -55px -50px;
 }
@@ -1062,7 +1086,7 @@ nav ul li a:hover, nav ul li a.selected {
 #context-bar ul li a.community:hover, #context-bar ul li a.community.selected {
   background-position: -55px 0;
 }
-/* line 313, ../sass/screen.sass */
+/* line 314, ../sass/screen.sass */
 #context-bar ul li a.challenges {
   background-position: -110px -50px;
 }
@@ -1070,7 +1094,7 @@ nav ul li a:hover, nav ul li a.selected {
 #context-bar ul li a.challenges:hover, #context-bar ul li a.challenges.selected {
   background-position: -110px 0;
 }
-/* line 315, ../sass/screen.sass */
+/* line 316, ../sass/screen.sass */
 #context-bar ul li a.financial {
   background-position: -165px -50px;
 }
@@ -1078,7 +1102,7 @@ nav ul li a:hover, nav ul li a.selected {
 #context-bar ul li a.financial:hover, #context-bar ul li a.financial.selected {
   background-position: -165px 0;
 }
-/* line 318, ../sass/screen.sass */
+/* line 319, ../sass/screen.sass */
 #context-bar input {
   width: 235px;
   height: 30px;
@@ -1099,11 +1123,11 @@ nav ul li a:hover, nav ul li a.selected {
   font-size: 18px;
   color: #dddddd;
 }
-/* line 329, ../sass/screen.sass */
+/* line 330, ../sass/screen.sass */
 #context-bar input:focus {
   outline: none;
 }
-/* line 332, ../sass/screen.sass */
+/* line 333, ../sass/screen.sass */
 #context-bar #button {
   float: right;
   width: 245px;
@@ -1122,11 +1146,11 @@ nav ul li a:hover, nav ul li a.selected {
   box-shadow: #454545 0 0 2px 0px;
   border: 1px solid #666666;
 }
-/* line 336, ../sass/screen.sass */
+/* line 337, ../sass/screen.sass */
 #context-bar #button:hover {
   background: #5ebdf1;
 }
-/* line 338, ../sass/screen.sass */
+/* line 339, ../sass/screen.sass */
 #context-bar #button a {
   display: block;
   color: white;
@@ -1135,7 +1159,7 @@ nav ul li a:hover, nav ul li a.selected {
   text-decoration: none;
   cursor: pointer;
 }
-/* line 344, ../sass/screen.sass */
+/* line 345, ../sass/screen.sass */
 #context-bar #share {
   width: 195px;
   background: url(/images/share-icon.png) no-repeat 150px 5px;
@@ -1144,7 +1168,7 @@ nav ul li a:hover, nav ul li a.selected {
   padding: 15px 0 0 50px;
   height: 50px;
 }
-/* line 351, ../sass/screen.sass */
+/* line 352, ../sass/screen.sass */
 #context-bar #create-plan {
   height: 65px;
   line-height: 65px;

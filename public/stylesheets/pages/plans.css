@@ -1,23 +1,23 @@
 /*
 Syntax error: Undefined mixin 'shiny-blue-box'.
-        on line 14 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass, in `shiny-blue-box'
-        from line 14 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass
+        on line 28 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass, in `shiny-blue-box'
+        from line 28 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass
 
-9:   
-10: 
-11: .plan-day
-12:   margin-bottom: 10px
-13:   h3
-14:     @include shiny-blue-box
-15:     @include border-radius(4px)
-16:     @include blue-text-shadow
-17:     padding: 10px
-18:     color: white
-19:     font-size: 18px
+23:     color: #666
+24: 
+25: .plan-day
+26:   margin-bottom: 10px
+27:   h3
+28:     @include shiny-blue-box
+29:     @include border-radius(4px)
+30:     @include blue-text-shadow
+31:     padding: 10px
+32:     color: white
+33:     font-size: 18px
 
 Backtrace:
-/Users/alexduller/www/bluey/public/sass/pages/plans.sass:14:in `shiny-blue-box'
-/Users/alexduller/www/bluey/public/sass/pages/plans.sass:14
+/Users/alexduller/www/bluey/public/sass/pages/plans.sass:28:in `shiny-blue-box'
+/Users/alexduller/www/bluey/public/sass/pages/plans.sass:28
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/mixin_node.rb:62:in `perform!'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
@@ -108,4 +108,4 @@ script/rails:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'shiny-blue-box'.\A         on line 14 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass, in `shiny-blue-box'\A         from line 14 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass\A \A 9:   \A 10: \A 11: .plan-day\A 12:   margin-bottom: 10px\A 13:   h3\A 14:     @include shiny-blue-box\A 15:     @include border-radius(4px)\A 16:     @include blue-text-shadow\A 17:     padding: 10px\A 18:     color: white\A 19:     font-size: 18px"; }
+  content: "Syntax error: Undefined mixin 'shiny-blue-box'.\A         on line 28 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass, in `shiny-blue-box'\A         from line 28 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass\A \A 23:     color: #666\A 24: \A 25: .plan-day\A 26:   margin-bottom: 10px\A 27:   h3\A 28:     @include shiny-blue-box\A 29:     @include border-radius(4px)\A 30:     @include blue-text-shadow\A 31:     padding: 10px\A 32:     color: white\A 33:     font-size: 18px"; }

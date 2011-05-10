@@ -31,3 +31,25 @@ Then /^I should see the following days in the plan:$/ do |table|
     end
   end
 end
+
+Given /^I have the following plans created by (.+):$/ do |creator_name, table|
+  creator = UserProfile.find_by_name(creator_name).user
+  # Avoid having to put plan name in every hash
+  plan_name = ""
+  table.hashes.each do |hash|
+    plan_name = hash[:name] unless hash[:name].empty?
+    plan = Plan.find_by_name(plan_name) || Factory(:plan, :name => plan_name, :creator => creator)
+    hash[:exercises].split(',').each do |exercise|
+      Factory(:plan_item, :exercise => Exercise.find_by_name(exercise.strip),
+                          :day => hash[:day],
+                          :plan => plan)
+    end
+  end
+end
+
+Then /^I should see the following list of plans:$/ do |table|
+  table.hashes.each do |hash|
+    Then %{I should see "#{hash[:name]}" within ".plan"}
+    And %{I should see "Created by #{hash[:creator]}" within ".plan"}
+  end
+end

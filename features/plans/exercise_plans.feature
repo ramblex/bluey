@@ -11,6 +11,19 @@ Feature: Manage exercise plans
         | Sit-ups     |
         | Hello world |
 
+    Scenario: View list of existing plans
+      Given I have the following users:
+        | name         | email         | password   |
+        | Alex         | alex@test.com | mypassword |
+      And I have the following plans created by Alex:
+        | name         | day | exercises            |
+        | Alex's plan  | 1   | Bench press, Sit-ups |
+        |              | 2   | Sit-ups              |
+      When I follow "Plans" within "nav"
+      Then show me the page
+      Then I should see the following list of plans:
+        | creator | name        |
+        | Alex    | Alex's plan |
 
     @javascript
     Scenario: View an existing plan

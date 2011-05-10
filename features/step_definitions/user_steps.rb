@@ -101,3 +101,11 @@ Then /^(?:|I )should be told to sign in$/ do
   Then %{I should see "You need to sign in or sign up before continuing"}
   And %{I should be on the sign in page}
 end
+
+Given /^(?:|I )have the following users:$/ do |table|
+  table.hashes.each do |hash|
+    name = hash[:name]
+    profile = Factory(:user_profile, :name => hash[:name])
+    Factory(:user, :email => hash[:email], :password => hash[:password], :user_profile => profile)
+  end
+end
