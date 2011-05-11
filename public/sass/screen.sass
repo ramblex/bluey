@@ -36,13 +36,38 @@ $link_visited = $link_colour - #101010
 $link_hover = $link_colour - #202020
 $link_active = $link_hover - #202020
 $error_red = #900
+$subtle = #cdcdcd
+$text_colour = #515151
+$pale_green = #d8f3a6
+$pale_yellow = #fffcc3
+
+/* Font sizes */
+$small = 12px
+$normal = 14px
+$large = 18px
 
 /* Mixins */
+@mixin shiny-red-box
+  @include linear-gradient(color-stops(#900, #900 45%, #a3322b 45%, #a3322b 100%), bottom)
+  @include border-radius($default_border_radius)
+  border: 1px solid #666
+  @include box-shadow(#454545, 0, 0, 2px, 0px)
+
+@mixin shiny-green-box
+  @include linear-gradient(color-stops(#72bc00, #72bc00 45%, #90c135 45%, #90c135 100%), bottom)
+  @include border-radius(4px)
+  border: 1px solid #568302
+  text-decoration: none
+
 @mixin shiny-blue-box
   @include linear-gradient(color-stops($blue_bg, $blue_bg 45%, #5ebdf1 45%, #5ebdf1 100%), bottom)
   @include border-radius($default_border_radius)
   @include box-shadow(#454545, 0, 0, 2px, 0px)
   border: 1px solid #666
+
+@mixin green-text-shadow
+  color: white
+  @include text-shadow(#568302, 1px, 1px, 1px)
 
 @mixin blue-text-shadow
   color: white
@@ -64,8 +89,8 @@ $error_red = #900
 
 /* Globals and wrapper */
 body
-  font: 14px Helvetica, Arial, sans-serif
-  color: #333
+  font: $normal Helvetica, Arial, sans-serif
+  color: $text_colour
 
 a
   color: $link_colour
@@ -97,7 +122,8 @@ h1
   font-size: 24px
 
 h2
-  font-size: 110%
+  font-size: $large
+  letter-spacing: -1px
   margin-bottom: 10px
 
 .button
@@ -267,7 +293,7 @@ nav ul
 #logout
   display: block
   margin-top: 20px
-  @include shiny-blue-box
+  @include shiny-red-box
   height: $stats_bar_height
   float: left
   margin-right: 0
@@ -275,10 +301,7 @@ nav ul
   color: white
   line-height: $stats_bar_height + 5px
   text-decoration: none
-  @include blue-text-shadow
-  font-weight: bold
-  &:hover
-    background: $light_blue_bg
+  font-size: $small
 
 #content
   clear: both

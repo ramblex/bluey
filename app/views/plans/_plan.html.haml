@@ -1,7 +1,4 @@
-%article.plan
-  %header
-    = link_to plan.name, plan
-    %p
-      Created
-      = "by #{plan.creator.user_profile.name}"
-      on #{l plan.created_at, :format => :short}
+%li
+  = link_to 'View', plan, :class => 'view'
+  = link_to plan.name, plan, :class => 'title'
+  %p.creator Created by #{plan.creator.user_profile.name}

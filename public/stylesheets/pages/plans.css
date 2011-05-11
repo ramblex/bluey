@@ -1,31 +1,26 @@
 /*
-Syntax error: Undefined mixin 'shiny-blue-box'.
-        on line 28 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass, in `shiny-blue-box'
-        from line 28 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass
+Syntax error: Undefined variable: "$subtle".
+        on line 9 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass
 
-23:     color: #666
-24: 
-25: .plan-day
-26:   margin-bottom: 10px
-27:   h3
-28:     @include shiny-blue-box
-29:     @include border-radius(4px)
-30:     @include blue-text-shadow
-31:     padding: 10px
-32:     color: white
-33:     font-size: 18px
+4:  * Contents:
+5:  * - 
+6:  */
+7: 
+8: ul#plans
+9:   border-top: 1px solid $subtle
+10:   li
+11:     border-bottom: 1px solid $subtle
+12:     padding: 20px 10px
+13:     a.title
+14:       color: $text_colour
 
 Backtrace:
-/Users/alexduller/www/bluey/public/sass/pages/plans.sass:28:in `shiny-blue-box'
-/Users/alexduller/www/bluey/public/sass/pages/plans.sass:28
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/mixin_node.rb:62:in `perform!'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/rule_node.rb:191:in `perform!'
+/Users/alexduller/www/bluey/public/sass/pages/plans.sass:9
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/script/variable.rb:39:in `_perform'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/script/node.rb:61:in `perform'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/script/operation.rb:67:in `_perform'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/script/node.rb:61:in `perform'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/prop_node.rb:132:in `perform!'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
@@ -108,4 +103,4 @@ script/rails:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'shiny-blue-box'.\A         on line 28 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass, in `shiny-blue-box'\A         from line 28 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass\A \A 23:     color: #666\A 24: \A 25: .plan-day\A 26:   margin-bottom: 10px\A 27:   h3\A 28:     @include shiny-blue-box\A 29:     @include border-radius(4px)\A 30:     @include blue-text-shadow\A 31:     padding: 10px\A 32:     color: white\A 33:     font-size: 18px"; }
+  content: "Syntax error: Undefined variable: \"$subtle\".\A         on line 9 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass\A \A 4:  * Contents:\A 5:  * - \A 6:  */\A 7: \A 8: ul#plans\A 9:   border-top: 1px solid $subtle\A 10:   li\A 11:     border-bottom: 1px solid $subtle\A 12:     padding: 20px 10px\A 13:     a.title\A 14:       color: $text_colour"; }

@@ -5,29 +5,33 @@
  * - 
  */
 
-.plan
-  position: relative
-  a
-    font-weight: bold
-    text-decoration: none
-  float: left
-  width: 100px
-  height: 115px
-  padding: 10px
-  background: url(/images/plan.png) no-repeat
-  margin: 0 20px
-  .date
-    position: absolute
-    bottom: 10px
-    font-size: 11px
-    color: #666
+ul#plans
+  border-top: 1px solid $subtle
+  li
+    border-bottom: 1px solid $subtle
+    padding: 20px 10px
+    a.title
+      color: $text_colour
+      font-weight: bold
+      text-decoration: none
+      font-size: $large
+      letter-spacing: -1px
+    .creator
+      font-size: $small
+      color: #666
+    a.view
+      @include shiny-green-box
+      @include green-text-shadow
+      padding: 5px 30px
+      font-size: $large
+      float: right
 
 .plan-day
   margin-bottom: 10px
   h3
-    @include shiny-blue-box
+    @include shiny-green-box
     @include border-radius(4px)
-    @include blue-text-shadow
+    @include green-text-shadow
     padding: 10px
     color: white
     font-size: 18px
@@ -35,15 +39,12 @@
       color: white
       float: right
       font-size: 14px
-  section
-    background: #cdedff
-    padding: 10px
-
-.exercise
-  width: 120px
-  float: left
-  margin: 0 10px 10px 0
-  text-align: center
-  img
-    width: 120px
-    height: 120px
+  ul
+    margin: 3px 1px
+    background: #efefef
+    padding: 0 10px
+    border: 1px solid $subtle
+    li
+      padding: 12px
+      border-bottom: 1px dotted $subtle
+      margin-bottom: -1px
