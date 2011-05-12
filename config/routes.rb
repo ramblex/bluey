@@ -5,6 +5,8 @@ Bluey::Application.routes.draw do
   match "profile", :to => "user_profiles#update", :via => "put"
   match "profile/quickedit", :to => "user_profiles#update_attribute_on_the_spot", :via => "put"
 
+  resources :plan_items, :only => [:update]
+
   resources :user_goals, :only => :index
   match "user_goals", :to => "user_goals#update", :via => "put"
   resources :plans

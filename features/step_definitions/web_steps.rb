@@ -215,3 +215,7 @@ Given /^I have the following (.+) records?:$/ do |factory, table|
     Factory(factory.to_sym, hash)
   end
 end
+
+When /^I reload the page$/ do
+  visit page.driver.browser.current_url
+end

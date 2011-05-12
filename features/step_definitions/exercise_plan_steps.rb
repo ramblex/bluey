@@ -53,3 +53,7 @@ Then /^I should see the following list of plans:$/ do |table|
     And %{I should see "Created by #{hash[:creator]}" within ".plan"}
   end
 end
+
+Then /^"([^"]*)" inside day (\d+) should be completed$/ do |item, day|
+  Then %{the "#{item}" checkbox should be checked inside day #{day}}
+end

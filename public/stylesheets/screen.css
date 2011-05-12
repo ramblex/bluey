@@ -637,16 +637,28 @@ ul#plans li a.view {
 }
 /* line 42, ../sass/pages/plans.sass */
 .plan-day ul {
-  margin: 3px 1px;
+  margin: 3px 0;
   background: #efefef;
   padding: 0 10px;
   border: 1px solid #cdcdcd;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
 }
-/* line 47, ../sass/pages/plans.sass */
+/* line 48, ../sass/pages/plans.sass */
 .plan-day ul li {
   padding: 12px;
   border-bottom: 1px dotted #cdcdcd;
   margin-bottom: -1px;
+}
+
+/* line 53, ../sass/pages/plans.sass */
+li.plan-item.completed {
+  text-decoration: line-through;
+  color: #cdcdcd;
 }
 
 /* Globals and wrapper */

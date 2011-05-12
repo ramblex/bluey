@@ -40,11 +40,16 @@ ul#plans
       float: right
       font-size: 14px
   ul
-    margin: 3px 1px
+    margin: 3px 0
     background: #efefef
     padding: 0 10px
     border: 1px solid $subtle
+    @include border-radius(4px)
     li
       padding: 12px
       border-bottom: 1px dotted $subtle
       margin-bottom: -1px
+
+li.plan-item.completed
+  text-decoration: line-through
+  color: $subtle

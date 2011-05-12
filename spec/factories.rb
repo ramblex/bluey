@@ -25,7 +25,7 @@ Factory.define :plan do |f|
   f.description "Plan description"
 end
 
-Factory.define :plan_item do |f|
+Factory.define :plan_item do |item|
 end
 
 Factory.define :user do |user|

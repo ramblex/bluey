@@ -37,6 +37,10 @@ Feature: Manage exercise plans
       And I follow "Plans" within "nav"
       And I follow "My plan"
       Then I should see "Bench press"
+      When I check "Bench press" inside day 1
+      Then "Bench press" inside day 1 should be completed
+      And I reload the page
+      Then "Bench press" inside day 1 should be completed
 
     @javascript
     Scenario: Creating a plan with some items but without a name

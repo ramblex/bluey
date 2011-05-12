@@ -6,6 +6,10 @@ updatePlanDays = ->
     $(this).find('.fields').each (pos) ->
       $(this).find('input[id$=_position]').attr('value', pos)
 
+updatePlanItems = ->
+  $('.plan-item input[type=checkbox]:checked').parent().addClass('completed')
+  $('.plan-item input[type=checkbox]:not(:checked)').parent().removeClass('completed')
+
 $(document).ready ->
   $('#new_plan')
     .bind('nested:fieldAdded', updatePlanDays)
@@ -17,4 +21,21 @@ $(document).ready ->
     content.find('.fields').remove()
     $(this).parent().before('<div class="plan-day">'+$(content).html()+'</div>')
     event.preventDefault()
-  
+
+  updatePlanItems()
+
+  $('.plan-item input[type=checkbox]').click ->
+    if $(this).is(':checked')
+      console.log('Completed item '+$(this).attr('value'))
+      $.ajax
+        url: '/plan_items/'+$(this).attr('value')
+        type: 'put'
+        data:
+          plan_item:
+            completed: true
+        success: ->
+          updatePlanItems()
+        error: ->
+          console.log('Error')
+        complete: ->
+          console.log('Complete')

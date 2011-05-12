@@ -1,2 +1,3 @@
 %li.plan-item
-  = render plan_item.exercise
+  = check_box_tag plan_item.exercise.name, plan_item.id, plan_item.completed
+  = plan_item.exercise.name
