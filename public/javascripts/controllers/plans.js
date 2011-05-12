@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Thu, 12 May 2011 09:29:30 GMT from
+/* DO NOT MODIFY. This file was compiled Thu, 12 May 2011 16:53:24 GMT from
  * /Users/alexduller/www/bluey/app/coffeescripts/controllers/plans.coffee
  */
 
@@ -31,7 +31,6 @@
     });
     updatePlanItems();
     return $('.plan-item input[type=checkbox]').click(function() {
-      console.log('Completed item ' + $(this).attr('value'));
       return $.ajax({
         url: '/plan_items/' + $(this).attr('value'),
         type: 'put',
@@ -46,9 +45,6 @@
         },
         error: function() {
           return console.log('Error');
-        },
-        complete: function() {
-          return console.log('Complete');
         }
       });
     });

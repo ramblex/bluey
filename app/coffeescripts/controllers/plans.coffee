@@ -25,7 +25,6 @@ $(document).ready ->
   updatePlanItems()
 
   $('.plan-item input[type=checkbox]').click ->
-    console.log('Completed item '+$(this).attr('value'))
     $.ajax
       url: '/plan_items/'+$(this).attr('value')
       type: 'put'
@@ -37,5 +36,3 @@ $(document).ready ->
         updatePlanItems()
       error: ->
         console.log('Error')
-      complete: ->
-        console.log('Complete')
