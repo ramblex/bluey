@@ -4,19 +4,19 @@ Feature: Manage exercise plans
   Should be able to manage their exercise plans
 
     Background:
-      Given I am a new, authenticated user
-      And I have the following exercise records:
+      Given I have the following exercise records:
         | name        |
         | Bench press |
         | Sit-ups     |
         | Hello world |
-
-    Scenario: View list of existing plans
-      Given I have the following users:
+      And I have the following users:
         | name         | email         | password   |
         | Alex         | alex@test.com | mypassword |
         | Manny        | manny@bluey.com | otherpassword |
-      And I sign in as "alex@test.com/mypassword"
+        | Dave         | dave@dave.com | mypassword |
+
+    Scenario: View list of existing plans
+      Given I sign in as "alex@test.com/mypassword"
       And I have the following plans created by Alex:
         | name         | day | exercises            |
         | Alex's plan  | 1   | Bench press, Sit-ups |
@@ -35,10 +35,7 @@ Feature: Manage exercise plans
 
     @javascript
     Scenario: View an existing plan
-      Given I have the following users:
-        | name         | email         | password   |
-        | Dave         | dave@dave.com | mypassword |
-      And I sign in as "dave@dave.com/mypassword"
+      Given I sign in as "dave@dave.com/mypassword"
       And I have the following plans created by Dave:
         | name    | day | exercises              |
         | My plan | 1   | Bench press, Sit-ups   |
@@ -58,7 +55,8 @@ Feature: Manage exercise plans
 
     @javascript
     Scenario: Creating a plan with some items but without a name
-      Given I follow "Plans" within "nav"
+      Given I sign in as "dave@dave.com/mypassword"
+      And I follow "Plans" within "nav"
       And I follow "Create a plan"
       And I fill in "Description" with "My description"
       When I add the following days to the plan:
@@ -74,7 +72,8 @@ Feature: Manage exercise plans
 
     @javascript
     Scenario: Creating a plan with a single day and some items
-      Given I follow "Plans" within "nav"
+      Given I sign in as "dave@dave.com/mypassword"
+      And I follow "Plans" within "nav"
       And I follow "Create a plan"
       When I fill in "Name" with "My plan"
       And I fill in "Description" with "My description"

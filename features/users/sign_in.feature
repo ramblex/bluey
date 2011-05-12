@@ -3,6 +3,14 @@ Feature: Sign in
   A user
   Should be able to sign in
 
+    Scenario: Guest tries to access plans page
+      Given I try to access the plans page when unauthorised
+      Then I should be told to sign in
+
+    Scenario: Guest tries to create a plan
+      Given I try to access the new plan page when unauthorised
+      Then I should be told to sign in
+
     Scenario: Guest tries to access user pictures page
       Given I try to access the user pictures page when unauthorised
       Then I should be told to sign in

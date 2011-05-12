@@ -22,7 +22,10 @@ module NavigationHelpers
       user_goals_path
     when /the user pictures page/
       user_images_path
-
+    when /the plans page/
+      plans_path
+    when /the new plan page/
+      new_plan_path
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
