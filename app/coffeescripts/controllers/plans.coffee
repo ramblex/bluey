@@ -32,6 +32,7 @@ $(document).ready ->
       data:
         plan_item:
           completed: $(this).is(':checked')
+        authenticity_token: $('meta[name=csrf-token]').attr('content')
       success: ->
         updatePlanItems()
       error: ->

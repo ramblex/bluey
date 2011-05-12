@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Thu, 12 May 2011 00:12:05 GMT from
+/* DO NOT MODIFY. This file was compiled Thu, 12 May 2011 09:29:30 GMT from
  * /Users/alexduller/www/bluey/app/coffeescripts/controllers/plans.coffee
  */
 
@@ -38,7 +38,8 @@
         data: {
           plan_item: {
             completed: $(this).is(':checked')
-          }
+          },
+          authenticity_token: $('meta[name=csrf-token]').attr('content')
         },
         success: function() {
           return updatePlanItems();
