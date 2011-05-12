@@ -585,6 +585,24 @@ ul.plans li .creator {
   color: #666666;
 }
 /* line 22, ../sass/pages/plans.sass */
+ul.plans li .admin {
+  float: right;
+  margin-right: 20px;
+  width: 50px;
+}
+/* line 26, ../sass/pages/plans.sass */
+ul.plans li .admin a {
+  display: none;
+  line-height: 33px;
+  text-decoration: none;
+  color: #cdcdcd;
+  margin-right: 10px;
+}
+/* line 32, ../sass/pages/plans.sass */
+ul.plans li .admin a:hover {
+  color: #3baeee;
+}
+/* line 34, ../sass/pages/plans.sass */
 ul.plans li a.view {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #72bc00), color-stop(45%, #72bc00), color-stop(45%, #90c135), color-stop(100%, #90c135));
   background-image: -moz-linear-gradient(bottom, #72bc00 0%, #72bc00 45%, #90c135 45%, #90c135 100%);
@@ -603,12 +621,24 @@ ul.plans li a.view {
   font-size: 18px;
   float: right;
 }
+/* line 40, ../sass/pages/plans.sass */
+ul.plans li a.view:hover {
+  background: #72bc00;
+}
+/* line 42, ../sass/pages/plans.sass */
+ul.plans li:hover {
+  background: #ffffd9;
+}
+/* line 44, ../sass/pages/plans.sass */
+ul.plans li:hover .admin a {
+  display: inline;
+}
 
-/* line 29, ../sass/pages/plans.sass */
+/* line 47, ../sass/pages/plans.sass */
 .plan-day {
   margin-bottom: 10px;
 }
-/* line 31, ../sass/pages/plans.sass */
+/* line 49, ../sass/pages/plans.sass */
 .plan-day h3 {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #72bc00), color-stop(45%, #72bc00), color-stop(45%, #90c135), color-stop(100%, #90c135));
   background-image: -moz-linear-gradient(bottom, #72bc00 0%, #72bc00 45%, #90c135 45%, #90c135 100%);
@@ -633,13 +663,13 @@ ul.plans li a.view {
   color: white;
   font-size: 18px;
 }
-/* line 38, ../sass/pages/plans.sass */
+/* line 56, ../sass/pages/plans.sass */
 .plan-day h3 a {
   color: white;
   float: right;
   font-size: 14px;
 }
-/* line 42, ../sass/pages/plans.sass */
+/* line 60, ../sass/pages/plans.sass */
 .plan-day ul {
   margin: 3px 0;
   background: #efefef;
@@ -652,14 +682,14 @@ ul.plans li a.view {
   -khtml-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 48, ../sass/pages/plans.sass */
+/* line 66, ../sass/pages/plans.sass */
 .plan-day ul li {
   padding: 12px;
   border-bottom: 1px dotted #cdcdcd;
   margin-bottom: -1px;
 }
 
-/* line 53, ../sass/pages/plans.sass */
+/* line 71, ../sass/pages/plans.sass */
 li.plan-item.completed {
   text-decoration: line-through;
   color: #cdcdcd;

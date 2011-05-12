@@ -19,12 +19,30 @@ ul.plans
     .creator
       font-size: $small
       color: #666
+    .admin
+      float: right
+      margin-right: 20px
+      width: 50px
+      a
+        display: none
+        line-height: 33px
+        text-decoration: none
+        color: $subtle
+        margin-right: 10px
+        &:hover
+          color: $blue_bg
     a.view
       @include shiny-green-box
       @include green-text-shadow
       padding: 5px 30px
       font-size: $large
       float: right
+      &:hover
+        background: #72bc00
+    &:hover
+      background: $pale_green + #333
+      .admin a
+        display: inline
 
 .plan-day
   margin-bottom: 10px
