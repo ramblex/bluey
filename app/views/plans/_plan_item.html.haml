@@ -3,4 +3,4 @@
   = f.hidden_field :position
   = f.label :exercise_id, 'Choose an exercise'
   = f.collection_select :exercise_id, Exercise.all, :id, :name
-  = f.link_to_remove "Remove this item"
+  = f.link_to_remove "&#x2717".html_safe

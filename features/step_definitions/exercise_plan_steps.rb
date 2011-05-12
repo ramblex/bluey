@@ -17,7 +17,7 @@ When /^(?:|I )add the following days to the plan:$/ do |table|
     Then %{I should see "Day #{hash[:day]}" inside day #{hash[:day]}}
     hash[:exercises].split(',').each_with_index do |exercise, idx|
       When %{I follow "Add an item" inside day #{hash[:day]}} unless idx == 0 && day_idx == 0
-      And %{I select "#{exercise.strip}" from "Choose an exercise" inside item #{idx + 1} in day #{hash[:day]}}
+      And %{I fill in "Exercise" with "#{exercise.strip}" inside item #{idx + 1} in day #{hash[:day]}}
     end
   end
 end
