@@ -36,5 +36,4 @@ Feature: Manage goals
       When I follow "General" within ".person"
       And I fill in "Current" with "140/79" within "fieldset#blood-pressure"
       And I press "Update" within "#edit_general"
-      Then show me the page
       Then I should see "Updated your goals"
