@@ -32,15 +32,21 @@ Feature: Manage exercise plans
         | Dave         | dave@dave.com | mypassword |
       And I sign in as "dave@dave.com/mypassword"
       And I have the following plans created by Dave:
-        | name    | day | exercises     |
-        | My plan | 1   | Bench press   |
+        | name    | day | exercises              |
+        | My plan | 1   | Bench press, Sit-ups   |
+        | My plan | 2   | Sit-ups                |
       And I follow "Plans" within "nav"
       And I follow "My plan"
       Then I should see "Bench press"
       When I check "Bench press" inside day 1
+      And I check "Sit-ups" inside day 2
       Then "Bench press" inside day 1 should be completed
+      Then "Sit-ups" inside day 2 should be completed
+      When I uncheck "Sit-ups" inside day 2
+      Then "Sit-ups" inside day 2 should not be completed
       And I reload the page
       Then "Bench press" inside day 1 should be completed
+      Then "Sit-ups" inside day 2 should not be completed
 
     @javascript
     Scenario: Creating a plan with some items but without a name

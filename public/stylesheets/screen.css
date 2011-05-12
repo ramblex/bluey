@@ -563,16 +563,16 @@ form p.number {
  * - 
  */
 /* line 8, ../sass/pages/plans.sass */
-ul#plans {
+ul.plans {
   border-top: 1px solid #cdcdcd;
 }
 /* line 10, ../sass/pages/plans.sass */
-ul#plans li {
+ul.plans li {
   border-bottom: 1px solid #cdcdcd;
   padding: 20px 10px;
 }
 /* line 13, ../sass/pages/plans.sass */
-ul#plans li a.title {
+ul.plans li a.title {
   color: #515151;
   font-weight: bold;
   text-decoration: none;
@@ -580,12 +580,12 @@ ul#plans li a.title {
   letter-spacing: -1px;
 }
 /* line 19, ../sass/pages/plans.sass */
-ul#plans li .creator {
+ul.plans li .creator {
   font-size: 12px;
   color: #666666;
 }
 /* line 22, ../sass/pages/plans.sass */
-ul#plans li a.view {
+ul.plans li a.view {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #72bc00), color-stop(45%, #72bc00), color-stop(45%, #90c135), color-stop(100%, #90c135));
   background-image: -moz-linear-gradient(bottom, #72bc00 0%, #72bc00 45%, #90c135 45%, #90c135 100%);
   background-image: linear-gradient(bottom, #72bc00 0%, #72bc00 45%, #90c135 45%, #90c135 100%);

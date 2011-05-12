@@ -7,7 +7,7 @@ When /^(.*) inside item (\d+) in day (\d+)$/ do |step, item, day|
 end
 
 Then /^(?:|I )should see (\d+) items in day (\d+)$/ do |num_items, day|
-  find(:xpath, "//div[@class='plan-day'][#{day}]//div[@class='plan-item']", :count => num_items.to_i)
+  find(:xpath, "//div[@class='plan-day'][#{day}]//li[@class='plan-item']", :count => num_items.to_i)
 end
 
 When /^(?:|I )add the following days to the plan:$/ do |table|
@@ -49,11 +49,15 @@ end
 
 Then /^I should see the following list of plans:$/ do |table|
   table.hashes.each do |hash|
-    Then %{I should see "#{hash[:name]}" within ".plan"}
-    And %{I should see "Created by #{hash[:creator]}" within ".plan"}
+    Then %{I should see "#{hash[:name]}" within "ul.plans"}
+    And %{I should see "Created by #{hash[:creator]}" within "ul.plans"}
   end
 end
 
 Then /^"([^"]*)" inside day (\d+) should be completed$/ do |item, day|
   Then %{the "#{item}" checkbox should be checked inside day #{day}}
+end
+
+Then /^"([^"]*)" inside day (\d+) should not be completed$/ do |item, day|
+  Then %{the "#{item}" checkbox should not be checked inside day #{day}}
 end

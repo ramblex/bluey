@@ -25,17 +25,16 @@ $(document).ready ->
   updatePlanItems()
 
   $('.plan-item input[type=checkbox]').click ->
-    if $(this).is(':checked')
-      console.log('Completed item '+$(this).attr('value'))
-      $.ajax
-        url: '/plan_items/'+$(this).attr('value')
-        type: 'put'
-        data:
-          plan_item:
-            completed: true
-        success: ->
-          updatePlanItems()
-        error: ->
-          console.log('Error')
-        complete: ->
-          console.log('Complete')
+    console.log('Completed item '+$(this).attr('value'))
+    $.ajax
+      url: '/plan_items/'+$(this).attr('value')
+      type: 'put'
+      data:
+        plan_item:
+          completed: $(this).is(':checked')
+      success: ->
+        updatePlanItems()
+      error: ->
+        console.log('Error')
+      complete: ->
+        console.log('Complete')
