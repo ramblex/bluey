@@ -2,7 +2,7 @@ class PlansController < ApplicationController
   # GET /plans
   # GET /plans.xml
   def index
-    @plans = Plan.all
+    @plans = current_user.plans
 
     respond_to do |format|
       format.html # index.html.erb

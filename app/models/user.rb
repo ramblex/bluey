@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   has_one :user_profile
+  has_many :plans, :foreign_key => 'creator_id'
 
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable, :lockable and :timeoutable

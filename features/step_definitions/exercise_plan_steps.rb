@@ -54,6 +54,12 @@ Then /^I should see the following list of plans:$/ do |table|
   end
 end
 
+Then /^I should not see the following list of plans:$/ do |table|
+  table.hashes.each do |hash|
+    Then %{I should not see "#{hash[:name]}" within "ul.plans"}
+  end
+end
+
 Then /^"([^"]*)" inside day (\d+) should be completed$/ do |item, day|
   Then %{the "#{item}" checkbox should be checked inside day #{day}}
 end

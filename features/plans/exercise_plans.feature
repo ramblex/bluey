@@ -15,15 +15,23 @@ Feature: Manage exercise plans
       Given I have the following users:
         | name         | email         | password   |
         | Alex         | alex@test.com | mypassword |
+        | Manny        | manny@bluey.com | otherpassword |
       And I sign in as "alex@test.com/mypassword"
       And I have the following plans created by Alex:
         | name         | day | exercises            |
         | Alex's plan  | 1   | Bench press, Sit-ups |
         |              | 2   | Sit-ups              |
+      And I have the following plans created by Manny:
+        | name         | day | exercises            |
+        | Manny's plan  | 1   | Bench press, Sit-ups |
+        |              | 2   | Sit-ups              |
       When I follow "Plans" within "nav"
       Then I should see the following list of plans:
         | creator | name        |
         | Alex    | Alex's plan |
+      And I should not see the following list of plans:
+        | creator | name        |
+        | Manny   | Manny's plan |
 
     @javascript
     Scenario: View an existing plan
