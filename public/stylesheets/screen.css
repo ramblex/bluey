@@ -238,6 +238,10 @@ form p.number {
 #new_plan input[type=text].wide, #new_plan textarea.wide {
   width: 803px;
 }
+/* line 108, ../sass/forms.sass */
+#new_plan .add-plan-item {
+  margin: 10px 0;
+}
 
 /* line 1, ../sass/pages/user-profile.sass */
 .edit-email {

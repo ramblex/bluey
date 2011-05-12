@@ -17,10 +17,10 @@
       %h3
         %span
           Day #{day}
-      %section
+      %ul
         = f.fields_for :plan_items, plan_items.sort_by(&:position) do |item_form|
           = render :partial => 'plan_item', :locals => {:f => item_form}
-        = f.link_to_add "Add an item", :plan_items, :class => 'button'
+        = f.link_to_add "Add an item", :plan_items, :class => 'button add-plan-item'
   %p=link_to "Add a day to this plan", '#', :class => 'button', :id => 'add-day'
   %p
     = f.submit 'Create'
