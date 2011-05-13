@@ -16,10 +16,6 @@ Factory.define :body_part do |f|
   f.name "foo"
 end
 
-Factory.define :exercise do |f|
-  f.name "Exercise"
-end
-
 Factory.define :plan do |f|
   f.name "Plan name"
   f.description "Plan description"

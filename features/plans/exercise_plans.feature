@@ -4,12 +4,7 @@ Feature: Manage exercise plans
   Should be able to manage their exercise plans
 
     Background:
-      Given I have the following exercise records:
-        | name        |
-        | Bench press |
-        | Sit-ups     |
-        | Hello world |
-      And I have the following users:
+      Given I have the following users:
         | name         | email         | password   |
         | Alex         | alex@test.com | mypassword |
         | Manny        | manny@bluey.com | otherpassword |

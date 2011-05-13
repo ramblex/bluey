@@ -2,8 +2,7 @@
   = f.hidden_field :day
   = f.hidden_field :position
   = f.link_to_remove "&#x2717".html_safe
-  = f.fields_for :exercise do |exercise_form|
-    %p
-      = exercise_form.label :name, 'Exercise'
-      %br/
-      = exercise_form.text_field :name
+  %p
+    = f.label :name, 'Exercise'
+    %br/
+    = f.text_field :name

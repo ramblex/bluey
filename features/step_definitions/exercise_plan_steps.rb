@@ -40,7 +40,7 @@ Given /^I have the following plans created by (.+):$/ do |creator_name, table|
     plan_name = hash[:name] unless hash[:name].empty?
     plan = Plan.find_by_name(plan_name) || Factory(:plan, :name => plan_name, :creator => creator)
     hash[:exercises].split(',').each do |exercise|
-      Factory(:plan_item, :exercise => Exercise.find_by_name(exercise.strip),
+      Factory(:plan_item, :name => exercise.strip,
                           :day => hash[:day],
                           :plan => plan)
     end
