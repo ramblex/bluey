@@ -242,6 +242,18 @@ form p.number {
 #new_plan .add-plan-item {
   margin: 10px 0;
 }
+/* line 110, ../sass/forms.sass */
+#new_plan .remove_nested_fields {
+  display: block;
+  float: left;
+  color: #515151;
+  text-decoration: none;
+  margin: 0 20px 50px 0;
+}
+/* line 116, ../sass/forms.sass */
+#new_plan .remove_nested_fields:hover {
+  color: #3baeee;
+}
 
 /* line 1, ../sass/pages/user-profile.sass */
 .edit-email {

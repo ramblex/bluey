@@ -1,6 +1,9 @@
 %li.plan-item
   = f.hidden_field :day
   = f.hidden_field :position
-  = f.label :exercise_id, 'Choose an exercise'
-  = f.collection_select :exercise_id, Exercise.all, :id, :name
   = f.link_to_remove "&#x2717".html_safe
+  = f.fields_for :exercise do |exercise_form|
+    %p
+      = exercise_form.label :name, 'Exercise'
+      %br/
+      = exercise_form.text_field :name

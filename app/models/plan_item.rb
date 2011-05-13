@@ -1,4 +1,4 @@
 class PlanItem < ActiveRecord::Base
-  belongs_to :exercise
   belongs_to :plan
+  has_many :metrics
 end
