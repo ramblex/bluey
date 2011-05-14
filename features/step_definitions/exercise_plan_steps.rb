@@ -3,15 +3,15 @@ Capybara.add_selector(:plan_day) do
 end
 
 Capybara.add_selector(:plan_item) do
-  xpath { |item| ".//div[@class='plan-item'][#{item}]" }
+  xpath { |item| "./ul/div[@class='fields'][#{item}]" }
 end
 
 Capybara.add_selector(:plan_metric) do
   xpath { |metric| ".//fieldset[@class='exercise-metrics']//div[@class='fields'][#{metric}]"}
 end
 
-Then /^(?:|I )should see (\d+) items in day (\d+)$/ do |num_items, day|
-  find(:xpath, "//div[@class='plan-day'][#{day}]//li[@class='plan-item']", :count => num_items.to_i)
+Then /(.*) inside day (\d+)$/ do |step, day|
+  within(:plan_day, day.to_i) { When step }
 end
 
 When /^(?:|I )add the following days to the plan:$/ do |table|
@@ -42,12 +42,16 @@ When /^(?:|I )add the following days to the plan:$/ do |table|
   end
 end
 
-Then /^I should see the following days in the plan:$/ do |table|
+Then /^I should see the following days in the plan form:$/ do |table|
   table.hashes.each do |hash|
-    Then %{I should see "Day #{hash[:day]}" inside "div.plan-day[#{hash[:day]}]"}
-    hash[:exercises].each do |exercises|
-      num_exercises = exercises.split(',').count
-      Then %{I should see #{num_exercises} items in day #{hash[:day]}}
+  within(:plan_day, hash[:day]) do
+    Then %{I should see "Day #{hash[:day]}"}
+    hash[:exercises].split(',').each_with_index do |exercise, idx|
+        name, metrics = exercise.split('(')
+        within(:plan_item, idx + 1) do
+          Then %{the "Exercise" field should contain "#{name.strip}"}
+        end
+      end
     end
   end
 end
@@ -86,4 +90,15 @@ end
 
 Then /^"([^"]*)" inside day (\d+) should not be completed$/ do |item, day|
   Then %{the "#{item}" checkbox should not be checked inside day #{day}}
+end
+
+Then /^I should see the following new plan:$/ do |table|
+  table.hashes.each do |hash|
+    within(:plan_day, hash[:day]) do
+      hash[:exercises].split(',').each do |exercise|
+        name, metrics = exercise.split('(')
+        Then %{I should see "#{name.strip}"}
+      end
+    end
+  end
 end
