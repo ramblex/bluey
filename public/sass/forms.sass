@@ -112,6 +112,35 @@ form
     float: left
     color: $text_colour
     text-decoration: none
-    margin: 0 20px 50px 0
+    margin-right: 20px
     &:hover
       color: $blue_bg
+  .plan-item
+    @include clearfix
+  .item-fields
+    float: left
+  .exercise-name
+    width: 720px
+  .exercise-metrics
+    margin: 5px 0
+    padding: 5px
+    background: $subtle
+    @include border-radius(4px)
+    legend
+      @include border-radius(4px)
+      background: $subtle - #333
+      width: 100%
+      padding: 5px
+      margin-left: -5px
+      color: white
+      font-size: $small
+    .fields
+      @include clearfix
+      margin-bottom: 5px
+      padding: 5px
+      background: white
+      p
+        float: left
+        margin: 0 30px 0 0
+  #plan_submit
+    width: $content_width

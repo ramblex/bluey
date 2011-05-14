@@ -248,11 +248,68 @@ form p.number {
   float: left;
   color: #515151;
   text-decoration: none;
-  margin: 0 20px 50px 0;
+  margin-right: 20px;
 }
 /* line 116, ../sass/forms.sass */
 #new_plan .remove_nested_fields:hover {
   color: #3baeee;
+}
+/* line 118, ../sass/forms.sass */
+#new_plan .plan-item {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 120, ../sass/forms.sass */
+#new_plan .item-fields {
+  float: left;
+}
+/* line 122, ../sass/forms.sass */
+#new_plan .exercise-name {
+  width: 720px;
+}
+/* line 124, ../sass/forms.sass */
+#new_plan .exercise-metrics {
+  margin: 5px 0;
+  padding: 5px;
+  background: #cdcdcd;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 129, ../sass/forms.sass */
+#new_plan .exercise-metrics legend {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  background: #9a9a9a;
+  width: 100%;
+  padding: 5px;
+  margin-left: -5px;
+  color: white;
+  font-size: 12px;
+}
+/* line 137, ../sass/forms.sass */
+#new_plan .exercise-metrics .fields {
+  overflow: hidden;
+  *zoom: 1;
+  margin-bottom: 5px;
+  padding: 5px;
+  background: white;
+}
+/* line 142, ../sass/forms.sass */
+#new_plan .exercise-metrics .fields p {
+  float: left;
+  margin: 0 30px 0 0;
+}
+/* line 145, ../sass/forms.sass */
+#new_plan #plan_submit {
+  width: 813px;
 }
 
 /* line 1, ../sass/pages/user-profile.sass */

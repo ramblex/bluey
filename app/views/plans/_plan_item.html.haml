@@ -2,7 +2,19 @@
   = f.hidden_field :day
   = f.hidden_field :position
   = f.link_to_remove "&#x2717".html_safe
-  %p
+  .item-fields
     = f.label :name, 'Exercise'
     %br/
-    = f.text_field :name
+    = f.text_field :name, :class => 'exercise-name'
+    = field_set_tag 'Metrics', :class => 'exercise-metrics' do
+      = f.fields_for :metrics do |metric_form|
+        = metric_form.link_to_remove '&#x2717'.html_safe
+        %p
+          = metric_form.label :amount
+          %br/
+          = metric_form.text_field :amount, :class => 'number'
+        %p
+          = metric_form.label :unit
+          %br/
+          = metric_form.text_field :unit, :class => 'number'
+      = f.link_to_add "Add a metric", :metrics, :class => 'button'

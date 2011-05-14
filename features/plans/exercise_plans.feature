@@ -56,14 +56,14 @@ Feature: Manage exercise plans
       And I fill in "Description" with "My description"
       When I add the following days to the plan:
         | day   | exercises            |
-        | 1     | Bench press, Sit-ups |
-        | 2     | Bench press          |
+        | 1     | Bench press (2 sets 3 reps 45 kg), Sit-ups (2 sets 30 reps) |
+        | 2     | Swimming (10 lengths)          |
       And I press "Create"
       Then I should see "Name can't be blank"
       And I should see the following days in the plan:
         | day   | exercises            |
-        | 1     | Bench press, Sit-ups |
-        | 2     | Bench press          |
+        | 1     | Bench press (2 sets 3 reps 45 kg), Sit-ups (2 sets 30 reps) |
+        | 2     | Swimming (10 lengths)          |
 
     @javascript
     Scenario: Creating a plan with a single day and some items
