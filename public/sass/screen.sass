@@ -40,6 +40,7 @@ $subtle = #cdcdcd
 $text_colour = #515151
 $pale_green = #d8f3a6
 $pale_yellow = #fffcc3
+$green_bg = #72bc00
 
 /* Font sizes */
 $small = 12px
@@ -138,6 +139,12 @@ h2
   cursor: pointer
   &:hover
     background: $light_blue_bg
+
+.green-button
+  @extend .button
+  @include shiny-green-box
+  &:hover
+    background: $green_bg
 
 .cancel
   background: none

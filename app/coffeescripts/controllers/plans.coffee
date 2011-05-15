@@ -7,8 +7,8 @@ updatePlanDays = ->
       $(this).find('input[id$=_position]').attr('value', pos)
 
 updatePlanItems = ->
-  $('.plan-item input[type=checkbox]:checked').parent().addClass('completed')
-  $('.plan-item input[type=checkbox]:not(:checked)').parent().removeClass('completed')
+  $('.plan-item input[type=checkbox]:checked').closest('li').addClass('completed')
+  $('.plan-item input[type=checkbox]:not(:checked)').closest('li').removeClass('completed')
 
 $(document).ready ->
   $('#new_plan')
@@ -36,3 +36,16 @@ $(document).ready ->
         updatePlanItems()
       error: ->
         console.log('Error')
+
+  $('li.plan-item section').hide()
+  $('<a href="#">Show metrics</a>')
+    .prependTo('li.plan-item section')
+    .click (event) ->
+      link = $(this)
+      $(this).parent().find('section').toggle('fast', ->
+        if $(this).is(':visible')
+          link.text('Hide metrics')
+        else
+          link.text('Show metrics')
+      )
+      event.preventDefault()

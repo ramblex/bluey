@@ -115,6 +115,8 @@ form
     margin-right: 20px
     &:hover
       color: $blue_bg
+  .fields
+    @include clearfix
   .plan-item
     @include clearfix
   .item-fields
@@ -131,11 +133,10 @@ form
       background: $subtle - #333
       width: 100%
       padding: 5px
-      margin-left: -5px
+      margin: 0 -5px
       color: white
       font-size: $small
     .fields
-      @include clearfix
       margin-bottom: 5px
       padding: 5px
       background: white

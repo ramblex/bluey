@@ -6,6 +6,10 @@ Capybara.add_selector(:plan_item) do
   xpath { |item| "./ul/div[@class='fields'][#{item}]" }
 end
 
+Capybara.add_selector(:plan_list_item) do
+  xpath { |item| "./ul/li[@class='plan-item'][#{item}]" }
+end
+
 Capybara.add_selector(:plan_metric) do
   xpath { |metric| ".//fieldset[@class='exercise-metrics']//div[@class='fields'][#{metric}]"}
 end
@@ -95,9 +99,16 @@ end
 Then /^I should see the following new plan:$/ do |table|
   table.hashes.each do |hash|
     within(:plan_day, hash[:day]) do
-      hash[:exercises].split(',').each do |exercise|
+      hash[:exercises].split(',').each_with_index do |exercise, idx|
         name, metrics = exercise.split('(')
         Then %{I should see "#{name.strip}"}
+        within(:plan_list_item, idx + 1) do
+          When %{I follow "Show metrics"}
+          metrics.split.each_slice(2) do |amount, unit|
+            Then %{I should see "#{amount} #{unit}"}
+            And %{I should see "Hide metrics"}
+          end
+        end
       end
     end
   end

@@ -1,5 +1,5 @@
-/* DO NOT MODIFY. This file was compiled Thu, 12 May 2011 17:55:16 GMT from
- * /Users/alexduller/www/bluey/app/coffeescripts/controllers/plans.coffee
+/* DO NOT MODIFY. This file was compiled Sat, 14 May 2011 19:36:59 GMT from
+ * /home/alexd/www/bluey/app/coffeescripts/controllers/plans.coffee
  */
 
 (function() {
@@ -16,8 +16,8 @@
     });
   };
   updatePlanItems = function() {
-    $('.plan-item input[type=checkbox]:checked').parent().addClass('completed');
-    return $('.plan-item input[type=checkbox]:not(:checked)').parent().removeClass('completed');
+    $('.plan-item input[type=checkbox]:checked').closest('li').addClass('completed');
+    return $('.plan-item input[type=checkbox]:not(:checked)').closest('li').removeClass('completed');
   };
   $(document).ready(function() {
     $('#new_plan').bind('nested:fieldAdded', updatePlanDays).bind('nested:fieldRemoved', updatePlanDays);
@@ -30,7 +30,7 @@
       return event.preventDefault();
     });
     updatePlanItems();
-    return $('.plan-item input[type=checkbox]').click(function() {
+    $('.plan-item input[type=checkbox]').click(function() {
       return $.ajax({
         url: '/plan_items/' + $(this).attr('value'),
         type: 'put',
@@ -47,6 +47,19 @@
           return console.log('Error');
         }
       });
+    });
+    $('li.plan-item section').hide();
+    return $('<a href="#">Show metrics</a>').prependTo('li.plan-item section').click(function(event) {
+      var link;
+      link = $(this);
+      $(this).parent().find('section').toggle('fast', function() {
+        if ($(this).is(':visible')) {
+          return link.text('Hide metrics');
+        } else {
+          return link.text('Show metrics');
+        }
+      });
+      return event.preventDefault();
     });
   });
 }).call(this);

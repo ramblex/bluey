@@ -19,5 +19,12 @@ describe PlanItemsController do
       put :update, :id => plan_item.id, :plan_item => {:completed => false}
       assigns[:plan_item].completed.should be_false
     end
+
+    it "should have some metrics" do
+      plan_item = Factory.create(:plan_item)
+      Factory.create(:metric, :amount => "3", :unit => "Lengths", :plan_item => plan_item)
+      Factory.create(:metric, :amount => "4", :unit => "kg", :plan_item => plan_item)
+      plan_item.metrics.count.should == 2
+    end
   end
 end

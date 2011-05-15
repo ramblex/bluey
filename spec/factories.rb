@@ -32,3 +32,6 @@ end
 Factory.define :user_profile do |f|
   f.name "My name"
 end
+
+Factory.define :metric do |f|
+end
