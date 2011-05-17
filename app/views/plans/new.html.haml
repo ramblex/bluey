@@ -2,7 +2,7 @@
 
 = render :partial => 'context_bar'
 %h2 Create an exercise plan
-= nested_form_for @plan do |f|
+= form_for @plan do |f|
   = render 'shared/form_errors', :object => @plan
   %p
     = f.label :name
@@ -12,15 +12,5 @@
     = f.label :description
     %br/
     = f.text_area :description, :class => 'small wide'
-  - @plan.plan_items.group_by(&:day).sort.each do |day, plan_items|
-    .plan-day
-      %h3
-        %span
-          Day #{day}
-      %ul
-        = f.fields_for :plan_items, plan_items.sort_by(&:position) do |item_form|
-          = render :partial => 'plan_item', :locals => {:f => item_form}
-        = f.link_to_add "Add an exercise", :plan_items, :class => 'button add-plan-item'
-  %p=link_to "Add a day to this plan", '#', :class => 'green-button', :id => 'add-day'
   %p
     = f.submit 'Create'

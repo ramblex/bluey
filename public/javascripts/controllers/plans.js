@@ -1,5 +1,5 @@
-/* DO NOT MODIFY. This file was compiled Sat, 14 May 2011 19:36:59 GMT from
- * /home/alexd/www/bluey/app/coffeescripts/controllers/plans.coffee
+/* DO NOT MODIFY. This file was compiled Tue, 17 May 2011 18:54:05 GMT from
+ * /Users/alexduller/www/bluey/app/coffeescripts/controllers/plans.coffee
  */
 
 (function() {
@@ -21,14 +21,6 @@
   };
   $(document).ready(function() {
     $('#new_plan').bind('nested:fieldAdded', updatePlanDays).bind('nested:fieldRemoved', updatePlanDays);
-    $('#add-day').click(function(event) {
-      var content;
-      content = $('.plan-day').clone();
-      content.find('span').text('Day ' + ($('.plan-day').length + 1));
-      content.find('.fields').remove();
-      $(this).parent().before('<div class="plan-day">' + $(content).html() + '</div>');
-      return event.preventDefault();
-    });
     updatePlanItems();
     $('.plan-item input[type=checkbox]').click(function() {
       return $.ajax({

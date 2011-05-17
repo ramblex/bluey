@@ -15,13 +15,6 @@ $(document).ready ->
     .bind('nested:fieldAdded', updatePlanDays)
     .bind('nested:fieldRemoved', updatePlanDays)
 
-  $('#add-day').click (event) ->
-    content = $('.plan-day').clone() # Day template
-    content.find('span').text('Day ' + ($('.plan-day').length + 1))
-    content.find('.fields').remove()
-    $(this).parent().before('<div class="plan-day">'+$(content).html()+'</div>')
-    event.preventDefault()
-
   updatePlanItems()
 
   $('.plan-item input[type=checkbox]').click ->

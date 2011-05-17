@@ -10,12 +10,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110514181618) do
+ActiveRecord::Schema.define(:version => 20110517184345) do
 
   create_table "body_parts", :force => true do |t|
     t.string   "name"
     t.integer  "x"
     t.integer  "y"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "days", :force => true do |t|
+    t.string   "name"
+    t.integer  "number"
+    t.integer  "plan_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -26,6 +34,7 @@ ActiveRecord::Schema.define(:version => 20110514181618) do
     t.string   "amount"
     t.string   "unit"
     t.integer  "plan_item_id"
+    t.integer  "set"
   end
 
   create_table "plan_days_plan_items", :id => false, :force => true do |t|
@@ -34,10 +43,9 @@ ActiveRecord::Schema.define(:version => 20110514181618) do
   end
 
   create_table "plan_items", :force => true do |t|
-    t.integer  "day"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "plan_id"
+    t.integer  "day_id"
     t.integer  "position"
     t.boolean  "completed",  :default => false
     t.string   "name"

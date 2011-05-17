@@ -4,9 +4,9 @@
 %h2= @plan.name
 %p= @plan.description
 %hr
-- @plan.plan_items.group_by(&:day).sort.each do |day, plan_items|
-  .plan-day
-    %h3
-      %span Day #{day}
-    %ul
-      = render plan_items
+.plan-days
+  - if @plan.days.empty?
+    %em#no-days No days have been added to this plan yet!
+  - else
+    = render @plan.days
+%p=link_to "Add a day", plan_days_path(@plan), :class => 'button', :remote => true, :method => :post

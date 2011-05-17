@@ -69,8 +69,7 @@ Given /^I have the following plans created by (.+):$/ do |creator_name, table|
     plan = Plan.find_by_name(plan_name) || Factory(:plan, :name => plan_name, :creator => creator)
     hash[:exercises].split(',').each do |exercise|
       Factory(:plan_item, :name => exercise.strip,
-                          :day => hash[:day],
-                          :plan => plan)
+                          :day => Day.find_by_number(hash[:day].to_i) || Day.create!(:number => hash[:day].to_i, :plan => plan))
     end
   end
 end

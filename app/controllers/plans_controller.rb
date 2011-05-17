@@ -26,17 +26,11 @@ class PlansController < ApplicationController
   # GET /plans/new.xml
   def new
     @plan = Plan.new
-    @plan.plan_items.build(:day => 1, :position => 0)
 
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @plan }
     end
-  end
-
-  # GET /plans/1/edit
-  def edit
-    @plan = Plan.find(params[:id])
   end
 
   # POST /plans
