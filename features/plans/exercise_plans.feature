@@ -76,3 +76,32 @@ Feature: Manage exercise plans
       And I should see "No days have been added to this plan yet!"
       When I follow "Add a day"
       Then I should see "Day 1"
+
+    Scenario: Delete a day from a plan which has one day
+      Given I sign in as "dave@dave.com/mypassword"
+      And I have the following plans created by Dave:
+        | name          | day | exercises   |
+        | My plan       | 1   | Bench press |
+      And I am on the "My plan" plan page
+      Then I should see "My plan"
+      And I should see "Day 1"
+      When I follow "Delete day" within ".plan-day"
+      Then I should not see "Day 1"
+      And I should see "No days have been added to this plan yet!"
+
+    Scenario: Delete a day from the middle of a plan with multiple days
+      Given I sign in as "dave@dave.com/mypassword"
+      And I have the following plans created by Dave:
+        | name          | day | exercises            |
+        | My plan       | 1   | Bench press          |
+        |               | 2   | Bench press, Sit-ups |
+        |               | 3   | Bench press          |
+        |               | 4   | Sit-ups              |
+      And I am on the "My plan" plan page
+      Then I should see "My plan"
+      When I follow "Delete day" inside day 2
+      Then I should see the following plan:
+        | day | exercises            |
+        | 1   | Bench press          |
+        | 2   | Bench press          |
+        | 3   | Sit-ups              |

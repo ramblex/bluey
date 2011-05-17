@@ -17,7 +17,7 @@ Bluey::Application.routes.draw do
 
   # Plans
   resources :plans, :except => [:edit] do
-    resources :days, :only => [:create]
+    resources :days, :only => [:create, :destroy]
   end
   resources :plan_items, :only => [:update]
 

@@ -112,3 +112,14 @@ Then /^I should see the following new plan:$/ do |table|
     end
   end
 end
+
+Then /^I should see the following plan:$/ do |table|
+  table.hashes.each do |hash|
+    within(:plan_day, hash[:day]) do
+      Then %{I should see "Day #{hash[:day]}"}
+      hash[:exercises].split(',').each do |exercise|
+        Then %{I should see "#{exercise.strip}"}
+      end
+    end
+  end
+end

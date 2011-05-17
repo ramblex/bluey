@@ -1,5 +1,6 @@
 .plan-day
   %h3
     %span Day #{day.number}
+    %span=link_to 'Delete day', plan_day_path(day.plan, day), :method => :delete
   %ul
     = render day.plan_items
