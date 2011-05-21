@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Sat, 21 May 2011 13:34:30 GMT from
+/* DO NOT MODIFY. This file was compiled Sat, 21 May 2011 17:24:01 GMT from
  * /Users/alexduller/www/bluey/app/coffeescripts/controllers/plans.coffee
  */
 

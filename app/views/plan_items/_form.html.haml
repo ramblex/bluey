@@ -1,7 +1,11 @@
-= form_for [@plan, @day, @plan_item], :remote => true do |f|
+= nested_form_for [@plan, @day, @plan_item], :remote => true do |f|
   %p
     = f.label :name, 'Exercise'
     = f.text_field :name
+  = f.fields_for :sets do |set_form|
+    = set_form.label :measurements
+    = set_form.text_field :measurements
+  = f.link_to_add 'Add set'
   %hr
   %p.buttons
     = f.submit 'Add exercise'

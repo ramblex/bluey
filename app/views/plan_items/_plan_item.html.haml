@@ -2,7 +2,3 @@
   %header
     = check_box_tag plan_item.name, plan_item.id, plan_item.completed
     = plan_item.name
-  - unless plan_item.metrics.empty?
-    %section.metrics
-      - plan_item.metrics.each do |metric|
-        = "#{metric.amount} #{metric.unit}"

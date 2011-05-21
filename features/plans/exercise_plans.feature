@@ -75,14 +75,11 @@ Feature: Manage exercise plans
       And I am on the "My empty plan" plan page
       Then I should see "My empty plan"
       And I should see "No days have been added to this plan yet!"
-      When I follow "Add a day"
-      Then I should see "Day 1"
-      And I should not see "No days have been added to this plan yet!"
-      When I follow "Add exercise" inside day 1
-      And I fill in "Exercise" with "My exercise"
-      And I press "Add exercise"
-      Then I should see "My exercise" inside day 1
-      And I should see the empty form to add an exercise on day 1
+      When I add the following days:
+        | day  | exercises                                             |
+        | 1    | Bench press (Set 1: 10 kg, 10 minutes, Set 2: 15 kg)  |
+        | 1    | Sit-ups (Set 1: 10 minutes)                           |
+        | 2    | Bench press (Set 1: 10 kg, 10 minutes)                |
 
     Scenario: Delete a day from a plan which has one day
       Given I sign in as "dave@dave.com/mypassword"

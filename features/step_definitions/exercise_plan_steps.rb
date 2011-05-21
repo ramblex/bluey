@@ -130,3 +130,29 @@ Then /^I should see the empty form to add an exercise on day (\d+)$/ do |day|
     Then %{the "Exercise" field should contain "^$"}
   end
 end
+
+When /^I add the following days:$/ do |table|
+  table.hashes.each do |hash|
+    When %{I follow "Add a day"}
+    within(:plan_day, hash[:day]) do
+      Then %{I should see "Day #{hash[:day]}"}
+      And %{I should not see "No days have been added to this plan yet!"}
+      When %{I follow "Add exercise"} if find_link("Add exercise").visible?
+      exercise, sets = hash[:exercises].split('(')
+      sets.gsub!(")", "")
+      sets.split(",").each do |set|
+        set_num, metrics = set.strip.scan(/^Set (\d+): (.*)$/)
+        When %{I follow "Add set"}
+        metrics.split.each_slice(2) do |amount, unit|
+          When %{I follow "Add metric"}
+          When %{I fill in "Amount" with "#{amount}"}
+          When %{I fill in "Unit" with "#{unit}"}
+        end
+      end
+      And %{I fill in "Exercise" with "#{exercise.strip}"}
+      And %{I press "Add exercise"}
+      Then %{I should see "#{exercise.strip}" within "ul"}
+      And %{the "Exercise" field should contain "^$"}
+    end
+  end
+end
