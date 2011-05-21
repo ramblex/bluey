@@ -1,9 +1,9 @@
-/* DO NOT MODIFY. This file was compiled Fri, 06 May 2011 20:40:15 GMT from
+/* DO NOT MODIFY. This file was compiled Sat, 21 May 2011 19:29:36 GMT from
  * /Users/alexduller/www/bluey/app/coffeescripts/application.coffee
  */
 
 (function() {
-  var animate_progress;
+  var animate_progress, scanMetrics;
   animate_progress = function(meter_idx, percentage, append_hint) {
     var hint, meter, stick;
     meter = $(".meter:eq(" + meter_idx + ")");
@@ -41,4 +41,16 @@
     });
     return $('#notifications').delay(5000).fadeOut(2000);
   });
+  scanMetrics = function() {
+    return $('input[id$=_measurements]').keyup(function() {
+      var matches;
+      $(this).parent().append('<span class="found" />');
+      matches = $(this).attr('value').match(/(\d\.+)\s*(\S[^,0-9]+)/g);
+      matches = $.map(function(matches, i) {
+        return '<span class="cancel">' + i + '</span>';
+      });
+      console.log(matches);
+      return $(this).parent().find('.found').html("Found: " + matches);
+    });
+  };
 }).call(this);

@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Sat, 21 May 2011 17:24:01 GMT from
+/* DO NOT MODIFY. This file was compiled Sat, 21 May 2011 19:26:00 GMT from
  * /Users/alexduller/www/bluey/app/coffeescripts/controllers/plans.coffee
  */
 
@@ -22,7 +22,7 @@
   $(document).ready(function() {
     $('#new_plan').bind('nested:fieldAdded', updatePlanDays).bind('nested:fieldRemoved', updatePlanDays);
     updatePlanItems();
-    return $('.plan-item header input[type=checkbox]').click(function() {
+    $('.plan-item header input[type=checkbox]').click(function() {
       return $.ajax({
         url: '/plan_items/' + $(this).attr('value'),
         type: 'put',
@@ -40,5 +40,6 @@
         }
       });
     });
+    return scanMetrics();
   });
 }).call(this);

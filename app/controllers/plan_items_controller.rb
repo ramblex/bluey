@@ -3,6 +3,7 @@ class PlanItemsController < ApplicationController
     @plan = Plan.find(params[:plan_id])
     @day = Day.find(params[:day_id])
     @plan_item = PlanItem.new
+    @plan_item.plan_item_sets.build
   end
 
   def create

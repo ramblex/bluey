@@ -9,3 +9,18 @@ $('<%= day_selector %> #cancel-add-exercise').click(function(event) {
   $('<%= add_link %>').show();
   event.preventDefault();
 });
+
+scanMetrics = function() {
+  $('input[id$=_measurements]').keyup(function() {
+    if ($(this).parent().find('.found').length == 0) {
+      $(this).parent().append('<span class="found" />')
+    }
+    matches = $(this).attr('value').match(/(\d\.+)\s*(\S[^,0-9]+)/g);
+    matches = $.map(matches, function(i) {
+      return '<span class="cancel">'+i+'</span>';
+    });
+    $(this).parent().find('.found').html("Found: " + matches);
+  });
+}
+
+$('#new_plan_item').bind('nested:fieldAdded', scanMetrics);

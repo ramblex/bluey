@@ -31,3 +31,12 @@ $(document).ready ->
 
   # Notifications
   $('#notifications').delay(5000).fadeOut(2000)
+
+scanMetrics = ->
+  $('input[id$=_measurements]').keyup ->
+    $(this).parent().append('<span class="found" />')
+    matches = $(this).attr('value').match(/(\d\.+)\s*(\S[^,0-9]+)/g)
+    matches = $.map (matches, i) ->
+      return '<span class="cancel">'+i+'</span>'
+    console.log(matches)
+    $(this).parent().find('.found').html("Found: " + matches)

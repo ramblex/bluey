@@ -41,6 +41,7 @@ $text_colour = #515151
 $pale_green = #d8f3a6
 $pale_yellow = #fffcc3
 $green_bg = #72bc00
+$green_border = #568302
 
 /* Font sizes */
 $small = 12px
@@ -57,7 +58,7 @@ $large = 18px
 @mixin shiny-green-box
   @include linear-gradient(color-stops(#72bc00, #72bc00 45%, #90c135 45%, #90c135 100%), bottom)
   @include border-radius(4px)
-  border: 1px solid #568302
+  border: 1px solid $green_border
   text-decoration: none
 
 @mixin shiny-blue-box

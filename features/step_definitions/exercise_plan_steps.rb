@@ -140,14 +140,10 @@ When /^I add the following days:$/ do |table|
       When %{I follow "Add exercise"} if find_link("Add exercise").visible?
       exercise, sets = hash[:exercises].split('(')
       sets.gsub!(")", "")
-      sets.split(",").each do |set|
+      sets.split(",").each_with_index do |set, idx|
         set_num, metrics = set.strip.scan(/^Set (\d+): (.*)$/)
-        When %{I follow "Add set"}
-        metrics.split.each_slice(2) do |amount, unit|
-          When %{I follow "Add metric"}
-          When %{I fill in "Amount" with "#{amount}"}
-          When %{I fill in "Unit" with "#{unit}"}
-        end
+        When %{I follow "Add another set"} unless idx == 0
+        And %{I fill in "Set measurements" with "#{metrics}"}
       end
       And %{I fill in "Exercise" with "#{exercise.strip}"}
       And %{I press "Add exercise"}

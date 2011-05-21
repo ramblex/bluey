@@ -29,3 +29,4 @@ $(document).ready ->
         updatePlanItems()
       error: ->
         console.log('Error')
+  scanMetrics()
