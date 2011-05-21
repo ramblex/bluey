@@ -1,0 +1,9 @@
+= form_for [@plan, @day, @plan_item], :remote => true do |f|
+  %p
+    = f.label :name, 'Exercise'
+    = f.text_field :name
+  %hr
+  %p.buttons
+    = f.submit 'Add exercise'
+    or
+    = link_to "I'm done adding exercises", '#', :class => 'cancel', :id => 'cancel-add-exercise'

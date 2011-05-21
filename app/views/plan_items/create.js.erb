@@ -1,0 +1,3 @@
+<%- day_selector = "#day_#{@plan_item.day_id}" %>
+$('<%= day_selector %> ul').append('<%= escape_javascript render(@plan_item) %>');
+$('<%= day_selector %> form').resetForm();

@@ -44,30 +44,38 @@ ul.plans
       .admin a
         display: inline
 
-.plan-day
+.day
   margin-bottom: 10px
   h3
     @include shiny-green-box
     @include border-radius(4px)
     @include green-text-shadow
-    padding: 10px
+    padding: 7px
     color: white
     font-size: 18px
     a
-      color: white
+      color: inherit
       float: right
       font-size: 14px
-  ul
+  section
     margin: 3px 0
     background: #efefef
-    padding: 0 10px
+    padding: 0 7px
     border: 1px solid $subtle
     @include border-radius(4px)
     li
       @include clearfix
-      padding: 12px
+      padding: 7px 0
       border-bottom: 1px dotted $subtle
       margin-bottom: -1px
+  /* Form to add an exercise */
+  form
+    margin: 10px
+    background: #efefef - #111
+    padding: 10px 10px 0px 10px
+    font-size: $small
+    .buttons
+      padding-bottom: 5px
 
 li.plan-item.completed
   text-decoration: line-through
@@ -76,3 +84,8 @@ li.plan-item.completed
 #no-days
   display: block
   margin-bottom: 10px
+
+.add-exercise
+  display: inline-block
+  margin: 7px
+  font-size: $small

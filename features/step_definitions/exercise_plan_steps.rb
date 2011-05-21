@@ -1,5 +1,5 @@
 Capybara.add_selector(:plan_day) do
-  xpath { |day| ".//div[@class='plan-day'][#{day}]" }
+  xpath { |day| ".//div[@class='day'][#{day}]" }
 end
 
 Capybara.add_selector(:plan_item) do
@@ -121,5 +121,12 @@ Then /^I should see the following plan:$/ do |table|
         Then %{I should see "#{exercise.strip}"}
       end
     end
+  end
+end
+
+Then /^I should see the empty form to add an exercise on day (\d+)$/ do |day|
+  Then %{show me the page}
+  within(:plan_day, day) do
+    Then %{the "Exercise" field should contain "^$"}
   end
 end

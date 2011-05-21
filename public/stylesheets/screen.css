@@ -707,11 +707,12 @@ ul.plans li:hover .admin a {
 }
 
 /* line 47, ../sass/pages/plans.sass */
-.plan-day {
+.day {
   margin-bottom: 10px;
+  /* Form to add an exercise */
 }
 /* line 49, ../sass/pages/plans.sass */
-.plan-day h3 {
+.day h3 {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #72bc00), color-stop(45%, #72bc00), color-stop(45%, #90c135), color-stop(100%, #90c135));
   background-image: -moz-linear-gradient(bottom, #72bc00 0%, #72bc00 45%, #90c135 45%, #90c135 100%);
   background-image: linear-gradient(bottom, #72bc00 0%, #72bc00 45%, #90c135 45%, #90c135 100%);
@@ -731,21 +732,21 @@ ul.plans li:hover .admin a {
   border-radius: 4px;
   color: white;
   text-shadow: #568302 1px 1px 1px;
-  padding: 10px;
+  padding: 7px;
   color: white;
   font-size: 18px;
 }
 /* line 56, ../sass/pages/plans.sass */
-.plan-day h3 a {
-  color: white;
+.day h3 a {
+  color: inherit;
   float: right;
   font-size: 14px;
 }
 /* line 60, ../sass/pages/plans.sass */
-.plan-day ul {
+.day section {
   margin: 3px 0;
   background: #efefef;
-  padding: 0 10px;
+  padding: 0 7px;
   border: 1px solid #cdcdcd;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -755,24 +756,42 @@ ul.plans li:hover .admin a {
   border-radius: 4px;
 }
 /* line 66, ../sass/pages/plans.sass */
-.plan-day ul li {
+.day section li {
   overflow: hidden;
   *zoom: 1;
-  padding: 12px;
+  padding: 7px 0;
   border-bottom: 1px dotted #cdcdcd;
   margin-bottom: -1px;
 }
-
 /* line 72, ../sass/pages/plans.sass */
+.day form {
+  margin: 10px;
+  background: #dedede;
+  padding: 10px 10px 0px 10px;
+  font-size: 12px;
+}
+/* line 77, ../sass/pages/plans.sass */
+.day form .buttons {
+  padding-bottom: 5px;
+}
+
+/* line 80, ../sass/pages/plans.sass */
 li.plan-item.completed {
   text-decoration: line-through;
   color: #cdcdcd;
 }
 
-/* line 76, ../sass/pages/plans.sass */
+/* line 84, ../sass/pages/plans.sass */
 #no-days {
   display: block;
   margin-bottom: 10px;
+}
+
+/* line 88, ../sass/pages/plans.sass */
+.add-exercise {
+  display: inline-block;
+  margin: 7px;
+  font-size: 12px;
 }
 
 /* Globals and wrapper */
@@ -901,7 +920,7 @@ h2 {
   text-decoration: underline;
   cursor: pointer;
   padding: 0;
-  color: #990000;
+  color: #990000 !important;
 }
 
 /* line 157, ../sass/screen.sass */

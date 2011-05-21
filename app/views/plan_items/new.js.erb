@@ -1,0 +1,11 @@
+<%- day_selector = "#day_#{@day.id}" %>
+<%- add_link = "#{day_selector} .add-exercise" %>
+$('<%= add_link %>').before('<%= escape_javascript render('form') %>');
+$('<%= add_link %>').hide();
+
+// Cancel link
+$('<%= day_selector %> #cancel-add-exercise').click(function(event) {
+  $(this).closest('form').remove();
+  $('<%= add_link %>').show();
+  event.preventDefault();
+});

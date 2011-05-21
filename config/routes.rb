@@ -17,9 +17,10 @@ Bluey::Application.routes.draw do
 
   # Plans
   resources :plans, :except => [:edit] do
-    resources :days, :only => [:create, :destroy]
+    resources :days, :only => [:create, :destroy] do
+      resources :plan_items
+    end
   end
-  resources :plan_items, :only => [:update]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

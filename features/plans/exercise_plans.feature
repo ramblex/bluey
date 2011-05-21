@@ -66,7 +66,8 @@ Feature: Manage exercise plans
       Then I should be on the "My plan name" plan page
       And I should see "My plan name"
 
-    Scenario: Edit an existing plan
+    @javascript
+    Scenario: Add a day to a plan
       Given I sign in as "dave@dave.com/mypassword"
       And I have the following plans created by Dave:
         | name | day | exercises |
@@ -76,6 +77,12 @@ Feature: Manage exercise plans
       And I should see "No days have been added to this plan yet!"
       When I follow "Add a day"
       Then I should see "Day 1"
+      And I should not see "No days have been added to this plan yet!"
+      When I follow "Add exercise" inside day 1
+      And I fill in "Exercise" with "My exercise"
+      And I press "Add exercise"
+      Then I should see "My exercise" inside day 1
+      And I should see the empty form to add an exercise on day 1
 
     Scenario: Delete a day from a plan which has one day
       Given I sign in as "dave@dave.com/mypassword"
@@ -85,7 +92,7 @@ Feature: Manage exercise plans
       And I am on the "My plan" plan page
       Then I should see "My plan"
       And I should see "Day 1"
-      When I follow "Delete day" within ".plan-day"
+      When I follow "Delete day" within ".day"
       Then I should not see "Day 1"
       And I should see "No days have been added to this plan yet!"
 

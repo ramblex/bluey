@@ -1,5 +1,5 @@
 updatePlanDays = ->
-  $('.plan-day:visible').each (idx) ->
+  $('.day:visible').each (idx) ->
     day = idx + 1
     $(this).find('span').text('Day ' + day)
     $(this).find('input[id$=_day]').attr('value', day)
@@ -17,7 +17,7 @@ $(document).ready ->
 
   updatePlanItems()
 
-  $('.plan-item input[type=checkbox]').click ->
+  $('.plan-item header input[type=checkbox]').click ->
     $.ajax
       url: '/plan_items/'+$(this).attr('value')
       type: 'put'
@@ -29,16 +29,3 @@ $(document).ready ->
         updatePlanItems()
       error: ->
         console.log('Error')
-
-  $('li.plan-item section').hide()
-  $('<a href="#">Show metrics</a>')
-    .prependTo('li.plan-item section')
-    .click (event) ->
-      link = $(this)
-      $(this).parent().find('section').toggle('fast', ->
-        if $(this).is(':visible')
-          link.text('Hide metrics')
-        else
-          link.text('Show metrics')
-      )
-      event.preventDefault()
