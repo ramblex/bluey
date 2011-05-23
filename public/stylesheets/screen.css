@@ -770,39 +770,43 @@ ul.plans li:hover .admin a {
 /* line 72, ../sass/pages/plans.sass */
 .day form {
   margin: 10px;
-  background: #fffcc3;
+  background: #d8f3a6;
   padding: 5px 5px 0px 5px;
   font-size: 12px;
 }
 /* line 77, ../sass/pages/plans.sass */
+.day form label {
+  font-weight: bold;
+}
+/* line 79, ../sass/pages/plans.sass */
 .day form .buttons {
   padding-bottom: 5px;
 }
-/* line 79, ../sass/pages/plans.sass */
-.day form hr {
-  background: #c7e295;
+/* line 81, ../sass/pages/plans.sass */
+.day form p {
+  margin-bottom: 5px;
 }
 
-/* line 82, ../sass/pages/plans.sass */
+/* line 84, ../sass/pages/plans.sass */
 li.plan-item.completed {
   text-decoration: line-through;
   color: #cdcdcd;
 }
 
-/* line 86, ../sass/pages/plans.sass */
+/* line 88, ../sass/pages/plans.sass */
 #no-days {
   display: block;
   margin-bottom: 10px;
 }
 
-/* line 90, ../sass/pages/plans.sass */
+/* line 92, ../sass/pages/plans.sass */
 .add-exercise {
   display: inline-block;
   margin: 7px;
   font-size: 12px;
 }
 
-/* line 96, ../sass/pages/plans.sass */
+/* line 98, ../sass/pages/plans.sass */
 .found span {
   background: #cdcdcd;
   border: 1px solid #cccccc;
@@ -867,17 +871,17 @@ section {
 /* line 120, ../sass/screen.sass */
 h1, h2, h3 {
   font-weight: bold;
+  letter-spacing: -1px;
 }
 
-/* line 123, ../sass/screen.sass */
+/* line 124, ../sass/screen.sass */
 h1 {
   font-size: 24px;
 }
 
-/* line 126, ../sass/screen.sass */
+/* line 127, ../sass/screen.sass */
 h2 {
   font-size: 18px;
-  letter-spacing: -1px;
   margin-bottom: 10px;
 }
 
