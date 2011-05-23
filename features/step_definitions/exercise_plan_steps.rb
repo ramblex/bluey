@@ -80,8 +80,7 @@ Then /^I should see the following plan:$/ do |table|
         Then %{I should see "#{exercise.strip}"}
         sets.split(',').each do |set|
           set.gsub!(")", "")
-          set_num, metrics = set.strip.scan(/^Set (\d+): (.*)$/)[0]
-          p set
+          Then %{I should see "#{set.strip}"}
         end
       end
     end
@@ -108,7 +107,7 @@ When /^I add the following days:$/ do |table|
         set_num, metrics = set.strip.scan(/^Set (\d+): (.*)$/)[0]
         When %{I follow "Add another set"} unless idx == 0
         within(:plan_metric, idx + 1) do
-          And %{I fill in "Set measurements" with "#{metrics}"}
+          And %{I fill in "Set" with "#{metrics}"}
         end
       end
       And %{I fill in "Exercise" with "#{exercise.strip}"}

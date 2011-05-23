@@ -94,11 +94,34 @@ li.plan-item.completed
   margin: 7px
   font-size: $small
 
-.found
-  span
-    background: $subtle
-    border: 1px solid #ccc
-    @include border-radius(2px)
+.found span
+  background: $subtle
+  border: 1px solid #ccc
+  @include border-radius(2px)
+  padding: 3px
+  display: inline-block
+  margin-right: 5px
+
+.plan-item 
+  height: 20px
+  header
     padding: 3px
-    display: inline-block
-    margin-right: 5px
+    float: left
+    width: 400px
+  section
+    float: left
+    border: 0
+    margin: 0
+    ul
+      margin: 0
+      padding: 0
+      li
+        margin: 0
+        font-size: $small
+        float: left
+        background: $pale_yellow
+        @include border-radius(2px)
+        padding: 3px
+        display: inline-block
+        margin-right: 5px
+        border: 0

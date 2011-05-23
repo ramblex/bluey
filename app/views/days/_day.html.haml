@@ -3,6 +3,6 @@
     %span Day #{day.number}
     %span=link_to 'Delete day', plan_day_path(day.plan, day), :method => :delete
   %section
-    %ul
+    %ul.day-items
       = render day.plan_items
     = link_to 'Add exercise', new_plan_day_plan_item_path(day.plan, day), :class => 'add-exercise', :remote => true
