@@ -31,13 +31,13 @@ $content_width = $right_col_width - 80px
 $blue_border = #007cc2
 $blue_bg = #3baeee
 $light_blue_bg = #5ebdf1
-$link_colour = #5ebdf1
+$link_colour = #5ebdf1 - #111
 $link_visited = $link_colour - #101010
 $link_hover = $link_colour - #202020
 $link_active = $link_hover - #202020
 $error_red = #900
 $subtle = #cdcdcd
-$text_colour = #515151
+$text_colour = #414141
 $pale_green = #d8f3a6
 $pale_yellow = #fffcc3
 $green_bg = #72bc00
@@ -56,7 +56,7 @@ $large = 18px
   @include box-shadow(#454545, 0, 0, 2px, 0px)
 
 @mixin shiny-green-box
-  @include linear-gradient(color-stops(#72bc00, #72bc00 45%, #90c135 45%, #90c135 100%), bottom)
+  @include linear-gradient(color-stops(#72bc00, #90c135 100%), bottom)
   @include border-radius(4px)
   border: 1px solid $green_border
   text-decoration: none
@@ -64,7 +64,7 @@ $large = 18px
 @mixin shiny-blue-box
   @include linear-gradient(color-stops($blue_bg, $blue_bg 45%, #5ebdf1 45%, #5ebdf1 100%), bottom)
   @include border-radius($default_border_radius)
-  @include box-shadow(#454545, 0, 0, 2px, 0px)
+  @include box-shadow(#454545, 0, 0, 1px, 0px)
   border: 1px solid #666
 
 @mixin green-text-shadow
