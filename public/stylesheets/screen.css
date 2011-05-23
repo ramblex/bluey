@@ -810,6 +810,21 @@ li.plan-item.completed {
   font-size: 12px;
 }
 
+/* line 100, ../sass/pages/plans.sass */
+.found span {
+  background: #cdcdcd;
+  border: 1px solid #cccccc;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -khtml-border-radius: 2px;
+  border-radius: 2px;
+  padding: 3px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
 /* Globals and wrapper */
 /* line 93, ../sass/screen.sass */
 body {

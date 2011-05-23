@@ -29,4 +29,19 @@ $(document).ready ->
         updatePlanItems()
       error: ->
         console.log('Error')
-  scanMetrics()
+
+  scanMetrics = ->
+    if ($(this).parent().find('.found').length == 0)
+      $(this).parent().append('<span class="found" />')
+    matches = $(this).attr('value').match(/([\d\.]+)\s*(\S[^,0-9]+)/g)
+    if (matches isnt null)
+      found = $(this).parent().find('.found')
+      found.html('Found: ')
+      found.append('<span>'+value+'</span>') for value in matches
+    else
+      $(this).parent().remove('.found')
+
+  $('.add-exercise').bind 'ajax:complete', ->
+    $('input[id$=_measurements]').keyup(scanMetrics)
+    $('#new_plan_item').bind 'nested:fieldAdded', ->
+      $('input[id$=_measurements]').keyup(scanMetrics)

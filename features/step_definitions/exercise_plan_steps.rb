@@ -11,53 +11,11 @@ Capybara.add_selector(:plan_list_item) do
 end
 
 Capybara.add_selector(:plan_metric) do
-  xpath { |metric| ".//fieldset[@class='exercise-metrics']//div[@class='fields'][#{metric}]"}
+  xpath { |metric| ".//form[@id='new_plan_item']/div[@class='fields'][#{metric}]" }
 end
 
 Then /(.*) inside day (\d+)$/ do |step, day|
   within(:plan_day, day.to_i) { When step }
-end
-
-When /^(?:|I )add the following days to the plan:$/ do |table|
-  table.hashes.each_with_index do |hash, day_idx|
-    # Don't add a day the first time since there's already one there!
-    click_link('Add a day to this plan') unless day_idx == 0
-    within(:plan_day, hash[:day]) do
-      Then %{I should see "Day #{hash[:day]}"}
-      hash[:exercises].split(',').each_with_index do |exercise, idx|
-        name, metrics = exercise.split('(')
-        click_link('Add an exercise') unless idx == 0 && day_idx == 0
-        within(:plan_item, idx + 1) do
-          fill_in 'Exercise', :with => name
-          unless metrics.nil?
-            metric_idx = 0
-            metrics.split.each_slice(2) do |amount, unit|
-              metric_idx += 1
-              click_link('Add a metric')
-              within(:plan_metric, metric_idx) do
-                fill_in 'Amount', :with => amount
-                fill_in 'Unit', :with => unit
-              end
-            end
-          end
-        end
-      end
-    end
-  end
-end
-
-Then /^I should see the following days in the plan form:$/ do |table|
-  table.hashes.each do |hash|
-  within(:plan_day, hash[:day]) do
-    Then %{I should see "Day #{hash[:day]}"}
-    hash[:exercises].split(',').each_with_index do |exercise, idx|
-        name, metrics = exercise.split('(')
-        within(:plan_item, idx + 1) do
-          Then %{the "Exercise" field should contain "#{name.strip}"}
-        end
-      end
-    end
-  end
 end
 
 Given /^I have the following plans created by (.+):$/ do |creator_name, table|
@@ -91,10 +49,6 @@ Then /^"([^"]*)" inside day (\d+) should be completed$/ do |item, day|
   Then %{the "#{item}" checkbox should be checked inside day #{day}}
 end
 
-Then /^"([^"]*)" inside day (\d+) should not be completed$/ do |item, day|
-  Then %{the "#{item}" checkbox should not be checked inside day #{day}}
-end
-
 Then /^I should see the following new plan:$/ do |table|
   table.hashes.each do |hash|
     within(:plan_day, hash[:day]) do
@@ -117,8 +71,18 @@ Then /^I should see the following plan:$/ do |table|
   table.hashes.each do |hash|
     within(:plan_day, hash[:day]) do
       Then %{I should see "Day #{hash[:day]}"}
-      hash[:exercises].split(',').each do |exercise|
+      if hash[:exercises].split('(').length == 1
+        hash[:exercises].split(',').each do |exercise|
+          Then %{I should see "#{exercise.strip}"}
+        end
+      else
+        exercise, sets = hash[:exercises].split('(')
         Then %{I should see "#{exercise.strip}"}
+        sets.split(',').each do |set|
+          set.gsub!(")", "")
+          set_num, metrics = set.strip.scan(/^Set (\d+): (.*)$/)[0]
+          p set
+        end
       end
     end
   end
@@ -141,9 +105,11 @@ When /^I add the following days:$/ do |table|
       exercise, sets = hash[:exercises].split('(')
       sets.gsub!(")", "")
       sets.split(",").each_with_index do |set, idx|
-        set_num, metrics = set.strip.scan(/^Set (\d+): (.*)$/)
+        set_num, metrics = set.strip.scan(/^Set (\d+): (.*)$/)[0]
         When %{I follow "Add another set"} unless idx == 0
-        And %{I fill in "Set measurements" with "#{metrics}"}
+        within(:plan_metric, idx + 1) do
+          And %{I fill in "Set measurements" with "#{metrics}"}
+        end
       end
       And %{I fill in "Exercise" with "#{exercise.strip}"}
       And %{I press "Add exercise"}

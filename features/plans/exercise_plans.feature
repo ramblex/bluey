@@ -80,6 +80,11 @@ Feature: Manage exercise plans
         | 1    | Bench press (Set 1: 10 kg, 10 minutes, Set 2: 15 kg)  |
         | 1    | Sit-ups (Set 1: 10 minutes)                           |
         | 2    | Bench press (Set 1: 10 kg, 10 minutes)                |
+      Then I should see the following plan:
+        | day  | exercises                                             |
+        | 1    | Bench press (Set 1: 10 kg, 10 minutes, Set 2: 15 kg)  |
+        | 1    | Sit-ups (Set 1: 10 minutes)                           |
+        | 2    | Bench press (Set 1: 10 kg, 10 minutes)                |
 
     Scenario: Delete a day from a plan which has one day
       Given I sign in as "dave@dave.com/mypassword"
