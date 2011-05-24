@@ -1207,18 +1207,20 @@ nav ul li a:hover, nav ul li a.selected {
 }
 /* line 336, ../sass/screen.sass */
 #context-bar ul {
-  color: #333333;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #f4f4f4), color-stop(100%, #ececec));
-  background-image: -moz-linear-gradient(top, #f4f4f4 0%, #ececec 100%);
-  background-image: linear-gradient(top, #f4f4f4 0%, #ececec 100%);
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
+  background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
+  background-image: linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
   -moz-border-radius: 12px;
   -webkit-border-radius: 12px;
   -o-border-radius: 12px;
   -ms-border-radius: 12px;
   -khtml-border-radius: 12px;
   border-radius: 12px;
-  border: 1px solid #d4d4d4;
-  text-shadow: white 1px 1px 1px;
+  -moz-box-shadow: #bbbbbb 0 0 1px 0px;
+  -webkit-box-shadow: #bbbbbb 0 0 1px 0px;
+  -o-box-shadow: #bbbbbb 0 0 1px 0px;
+  box-shadow: #bbbbbb 0 0 1px 0px;
+  border: 1px solid #999999;
   float: left;
   padding: 0 10px;
   width: 225px;
