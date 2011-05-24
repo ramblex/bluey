@@ -114,3 +114,14 @@ Feature: Manage exercise plans
         | 1   | Bench press          |
         | 2   | Bench press          |
         | 3   | Sit-ups              |
+
+    @javascript
+    Scenario: Try to input an exercise without a name
+      Given I sign in as "dave@dave.com/mypassword"
+      And I have the following plans created by Dave:
+        | name          | day | exercises              |
+        | Simple plan   | 1   |                        |
+      And I am on the "Simple plan" plan page
+      When I try to add an empty exercise
+      Then I should see "Please fix the following 1 error"
+      And I should see "Exercise cannot be blank"

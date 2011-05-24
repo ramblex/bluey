@@ -1,4 +1,5 @@
 = nested_form_for [@plan, @day, @plan_item], :remote => true do |f|
+  .form-errors
   %p
     = f.label :name, 'Exercise'
     = f.text_field :name

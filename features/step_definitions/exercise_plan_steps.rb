@@ -117,3 +117,11 @@ When /^I add the following days:$/ do |table|
     end
   end
 end
+
+When /I try to add an empty exercise/ do
+  When %{I follow "Add a day"}
+  within(:plan_day, 1) do
+    And %{I follow "Add exercise"}
+    And %{I press "Add exercise"}
+  end
+end

@@ -786,27 +786,41 @@ ul.plans li:hover .admin a {
 .day form p {
   margin-bottom: 5px;
 }
-
 /* line 84, ../sass/pages/plans.sass */
+.day form #error_explanation h3 {
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  text-shadow: none;
+  color: #990000;
+  font-size: 14px;
+}
+/* line 92, ../sass/pages/plans.sass */
+.day form #error_explanation li {
+  border: 0;
+}
+
+/* line 95, ../sass/pages/plans.sass */
 li.plan-item.completed {
   text-decoration: line-through;
   color: #cdcdcd;
 }
 
-/* line 88, ../sass/pages/plans.sass */
+/* line 99, ../sass/pages/plans.sass */
 #no-days {
   display: block;
   margin-bottom: 10px;
 }
 
-/* line 92, ../sass/pages/plans.sass */
+/* line 103, ../sass/pages/plans.sass */
 .add-exercise {
   display: inline-block;
   margin: 7px;
   font-size: 12px;
 }
 
-/* line 97, ../sass/pages/plans.sass */
+/* line 108, ../sass/pages/plans.sass */
 .found span {
   background: #cdcdcd;
   border: 1px solid #cccccc;
@@ -821,28 +835,28 @@ li.plan-item.completed {
   margin-right: 5px;
 }
 
-/* line 105, ../sass/pages/plans.sass */
+/* line 116, ../sass/pages/plans.sass */
 .plan-item {
   height: 20px;
 }
-/* line 107, ../sass/pages/plans.sass */
+/* line 118, ../sass/pages/plans.sass */
 .plan-item header {
   padding: 3px;
   float: left;
   width: 400px;
 }
-/* line 111, ../sass/pages/plans.sass */
+/* line 122, ../sass/pages/plans.sass */
 .plan-item section {
   float: left;
   border: 0;
   margin: 0;
 }
-/* line 115, ../sass/pages/plans.sass */
+/* line 126, ../sass/pages/plans.sass */
 .plan-item section ul {
   margin: 0;
   padding: 0;
 }
-/* line 118, ../sass/pages/plans.sass */
+/* line 129, ../sass/pages/plans.sass */
 .plan-item section ul li {
   margin: 0;
   font-size: 12px;

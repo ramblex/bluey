@@ -1,8 +1,12 @@
 <%- day_selector = "#day_#{@plan_item.day_id}" %>
-$('<%= escape_javascript render(@plan_item) %>')
-  .hide()
-  .appendTo('<%= day_selector %> .day-items')
-  .fadeIn();
-$('<%= day_selector %> form').resetForm();
-$('<%= day_selector %> form').find('.found').remove();
-$('<%= day_selector %>').find('.fields:gt(0)').remove();
+<%- if @plan_item.errors.any? %>
+  $('<%= day_selector %> .form-errors').html('<%= escape_javascript render('shared/form_errors', :object => @plan_item) %>');
+<% else %>
+  $('<%= escape_javascript render(@plan_item) %>')
+    .hide()
+    .appendTo('<%= day_selector %> .day-items')
+    .fadeIn();
+  $('<%= day_selector %> form').resetForm();
+  $('<%= day_selector %> form').find('.found').remove();
+  $('<%= day_selector %>').find('.fields:gt(0)').remove();
+<% end %>
