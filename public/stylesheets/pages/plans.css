@@ -1,21 +1,21 @@
 /*
 Syntax error: Undefined variable: "$subtle".
-        on line 9 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass
+        on line 14 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass
 
-4:  * Contents:
-5:  * - 
-6:  */
-7: 
-8: ul.plans
-9:   border-top: 1px solid $subtle
-10:   li
-11:     border-bottom: 1px solid $subtle
-12:     padding: 20px 10px
-13:     a.title
-14:       color: $text_colour
+9:   h1
+10:     margin: 10px 0
+11: 
+12: ul.plans
+13:   margin-top: 15px
+14:   border-top: 1px solid $subtle
+15:   li
+16:     border-bottom: 1px solid $subtle
+17:     padding: 10px 0
+18:     a.title
+19:       font-weight: bold
 
 Backtrace:
-/Users/alexduller/www/bluey/public/sass/pages/plans.sass:9
+/Users/alexduller/www/bluey/public/sass/pages/plans.sass:14
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/script/variable.rb:39:in `_perform'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/script/node.rb:61:in `perform'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/script/operation.rb:67:in `_perform'
@@ -103,4 +103,4 @@ script/rails:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$subtle\".\A         on line 9 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass\A \A 4:  * Contents:\A 5:  * - \A 6:  */\A 7: \A 8: ul.plans\A 9:   border-top: 1px solid $subtle\A 10:   li\A 11:     border-bottom: 1px solid $subtle\A 12:     padding: 20px 10px\A 13:     a.title\A 14:       color: $text_colour"; }
+  content: "Syntax error: Undefined variable: \"$subtle\".\A         on line 14 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass\A \A 9:   h1\A 10:     margin: 10px 0\A 11: \A 12: ul.plans\A 13:   margin-top: 15px\A 14:   border-top: 1px solid $subtle\A 15:   li\A 16:     border-bottom: 1px solid $subtle\A 17:     padding: 10px 0\A 18:     a.title\A 19:       font-weight: bold"; }

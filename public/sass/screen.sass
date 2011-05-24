@@ -23,7 +23,7 @@ $total_width = 1000px
 $left_col_width = 107px
 $right_col_width = $total_width - $left_col_width
 $stats_bar_height = 107px
-$default_border_radius = 15px
+$default_border_radius = 12px
 $ctx_bar_height = 65px
 $content_width = $right_col_width - 80px
 
@@ -42,13 +42,21 @@ $pale_green = #d8f3a6
 $pale_yellow = #fffcc3
 $green_bg = #72bc00
 $green_border = #568302
+$nav_link_colour = $blue_bg - #777
 
 /* Font sizes */
 $small = 12px
-$normal = 14px
+$normal = 13.34px
 $large = 18px
 
 /* Mixins */
+@mixin shiny-grey-box
+  color: #333
+  @include linear-gradient(color-stops(#f4f4f4, #ececec), top)
+  @include border-radius($default_border_radius)
+  border: 1px solid #d4d4d4
+  @include text-shadow(#fff, 1px, 1px, 1px)
+
 @mixin shiny-red-box
   @include linear-gradient(color-stops(#900, #900 45%, #a3322b 45%, #a3322b 100%), bottom)
   @include border-radius($default_border_radius)
@@ -64,8 +72,8 @@ $large = 18px
 @mixin shiny-blue-box
   @include linear-gradient(color-stops($blue_bg, $blue_bg 45%, #5ebdf1 45%, #5ebdf1 100%), bottom)
   @include border-radius($default_border_radius)
-  @include box-shadow(#454545, 0, 0, 1px, 0px)
-  border: 1px solid #666
+  @include box-shadow(#bbb, 0, 0, 1px, 0px)
+  border: 1px solid #999
 
 @mixin green-text-shadow
   color: white
@@ -99,9 +107,9 @@ a
   &:visited
     color: $link_visited
   &:hover
-    color: $link_hover
-  &:active
     color: #333
+  &:active
+    color: black
 
 hr
   border: 0
@@ -132,8 +140,8 @@ h2
 
 .button
   font-size: 13px
-  @include shiny-blue-box
-  @include blue-text-shadow
+  @include shiny-green-box
+  @include green-text-shadow
   @include border-radius(4px)
   padding: 5px
   color: white !important
@@ -141,7 +149,7 @@ h2
   display: inline-block
   cursor: pointer
   &:hover
-    background: $light_blue_bg
+    background: $green_bg
 
 .green-button
   @extend .button
@@ -214,8 +222,8 @@ h1
 nav ul
   width: 107px
   background: url(/images/nav-shine.png) no-repeat 1px 1px $blue_bg
-  @include box-shadow(#666, 0, 0, 2px, 0px)
-  border: 1px solid #666
+  @include box-shadow(#bbb, 0, 0, 2px, 0px)
+  border: 1px solid #999
   @include border-radius($default_border_radius)
   padding: 10px 0
   li
@@ -223,24 +231,23 @@ nav ul
     list-style: none
     margin: 0
     a
-      padding: 5px 0
-      height: 90px
-      color: #333
+      padding: 75px 0 15px 0
+      color: $nav_link_colour
       display: block
       text-decoration: none
       font-weight: bold
       &#plans
-        background: url(/images/plans.png) no-repeat center 20px
+        background: url(/images/plans.png) no-repeat center 0
       &#community
-        background: url(/images/community.png) no-repeat center 20px
+        background: url(/images/community.png) no-repeat center 0
       &#challenges
-        background: url(/images/challenges.png) no-repeat center 25px
+        background: url(/images/challenges.png) no-repeat center 0
       &#profile
-        background: url(/images/profile.png) no-repeat center 15px
+        background: url(/images/profile.png) no-repeat center 0
       &#financial
-        background: url(/images/financial.png) no-repeat center 20px
+        background: url(/images/financial.png) no-repeat center 0
       &:visited
-        color: #333
+        color: $nav_link_colour
       &:hover, &.selected
         color: white
 
@@ -316,7 +323,7 @@ nav ul
 #content
   clear: both
   margin: 0 20px 10px 20px
-  padding: 20px
+  padding: 15px
   @include border-radius($default_border_radius)
   @include box-shadow(#ccc, 0, 0, 3px, 1px)
   @include clearfix
@@ -327,7 +334,7 @@ nav ul
   font-weight: 550
   /* Filter buttons */
   ul
-    @include shiny-blue-box
+    @include shiny-grey-box
     float: left
     padding: 0 10px
     width: 225px
@@ -354,9 +361,9 @@ nav ul
     height: 30px
     padding: 10px 10px 10px 40px
     background: url(/images/magnifying-glass.png) no-repeat 7px 10px white
-    border: 1px solid #666
+    border: 1px solid #aaa
     @include border-radius($default_border_radius)
-    @include box-shadow(#333, 0, 0, 2px, 0px)
+    @include box-shadow(#666, 0, 0, 2px, 0px)
     margin: 7px 0 0 15px
     font-size: 18px
     color: #ddd
@@ -366,15 +373,16 @@ nav ul
   #button
     float: right
     width: 245px
-    @include shiny-blue-box
+    @include shiny-green-box
+    @include border-radius($default_border_radius)
     &:hover
-      background: $light_blue_bg
+      background: $green_bg
     a
       display: block
-      @include blue-text-shadow
-      color: white
       text-decoration: none
       cursor: pointer
+      color: white
+      @include green-text-shadow
   #share
     width: 195px
     background: url(/images/share-icon.png) no-repeat 150px 5px

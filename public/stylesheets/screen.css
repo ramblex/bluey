@@ -160,17 +160,17 @@ form p.number {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
   background-image: linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -o-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -khtml-border-radius: 15px;
-  border-radius: 15px;
-  -moz-box-shadow: #454545 0 0 1px 0px;
-  -webkit-box-shadow: #454545 0 0 1px 0px;
-  -o-box-shadow: #454545 0 0 1px 0px;
-  box-shadow: #454545 0 0 1px 0px;
-  border: 1px solid #666666;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: #bbbbbb 0 0 1px 0px;
+  -webkit-box-shadow: #bbbbbb 0 0 1px 0px;
+  -o-box-shadow: #bbbbbb 0 0 1px 0px;
+  box-shadow: #bbbbbb 0 0 1px 0px;
+  border: 1px solid #999999;
   background: #3baeee;
   padding: 10px;
   margin-top: 10px;
@@ -391,17 +391,17 @@ form p.number {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
   background-image: linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -o-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -khtml-border-radius: 15px;
-  border-radius: 15px;
-  -moz-box-shadow: #454545 0 0 1px 0px;
-  -webkit-box-shadow: #454545 0 0 1px 0px;
-  -o-box-shadow: #454545 0 0 1px 0px;
-  box-shadow: #454545 0 0 1px 0px;
-  border: 1px solid #666666;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: #bbbbbb 0 0 1px 0px;
+  -webkit-box-shadow: #bbbbbb 0 0 1px 0px;
+  -o-box-shadow: #bbbbbb 0 0 1px 0px;
+  box-shadow: #bbbbbb 0 0 1px 0px;
+  border: 1px solid #999999;
   color: white;
   text-shadow: #378cbb 1px 1px 2px;
 }
@@ -555,17 +555,17 @@ form p.number {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
   background-image: linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -o-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -khtml-border-radius: 15px;
-  border-radius: 15px;
-  -moz-box-shadow: #454545 0 0 1px 0px;
-  -webkit-box-shadow: #454545 0 0 1px 0px;
-  -o-box-shadow: #454545 0 0 1px 0px;
-  box-shadow: #454545 0 0 1px 0px;
-  border: 1px solid #666666;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: #bbbbbb 0 0 1px 0px;
+  -webkit-box-shadow: #bbbbbb 0 0 1px 0px;
+  -o-box-shadow: #bbbbbb 0 0 1px 0px;
+  box-shadow: #bbbbbb 0 0 1px 0px;
+  border: 1px solid #999999;
   padding: 15px 30px;
   color: white;
   text-decoration: none;
@@ -612,12 +612,12 @@ form p.number {
   -webkit-box-shadow: #333333 0 0 2px 0px;
   -o-box-shadow: #333333 0 0 2px 0px;
   box-shadow: #333333 0 0 2px 0px;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -o-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -khtml-border-radius: 15px;
-  border-radius: 15px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  border-radius: 12px;
 }
 
 /* line 60, ../sass/pages/landing.sass */
@@ -638,128 +638,61 @@ form p.number {
  * Contents:
  * - 
  */
-/* line 8, ../sass/pages/plans.sass */
+/* line 9, ../sass/pages/plans.sass */
+#plan h1 {
+  margin: 10px 0;
+}
+
+/* line 12, ../sass/pages/plans.sass */
 ul.plans {
+  margin-top: 15px;
   border-top: 1px solid #cdcdcd;
 }
-/* line 10, ../sass/pages/plans.sass */
+/* line 15, ../sass/pages/plans.sass */
 ul.plans li {
   border-bottom: 1px solid #cdcdcd;
-  padding: 20px 10px;
+  padding: 10px 0;
 }
-/* line 13, ../sass/pages/plans.sass */
+/* line 18, ../sass/pages/plans.sass */
 ul.plans li a.title {
-  color: #414141;
   font-weight: bold;
-  text-decoration: none;
   font-size: 18px;
-  letter-spacing: -1px;
 }
-/* line 19, ../sass/pages/plans.sass */
+/* line 21, ../sass/pages/plans.sass */
 ul.plans li .creator {
   font-size: 12px;
   color: #666666;
 }
-/* line 22, ../sass/pages/plans.sass */
-ul.plans li .admin {
-  float: right;
-  margin-right: 20px;
-  width: 50px;
-}
-/* line 26, ../sass/pages/plans.sass */
-ul.plans li .admin a {
-  display: none;
-  line-height: 33px;
-  text-decoration: none;
-  color: #747474;
-  margin-right: 10px;
-}
-/* line 32, ../sass/pages/plans.sass */
-ul.plans li .admin a:hover {
-  color: #3baeee;
-}
-/* line 34, ../sass/pages/plans.sass */
-ul.plans li a.view {
-  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #72bc00), color-stop(100%, #90c135));
-  background-image: -moz-linear-gradient(bottom, #72bc00 0%, #90c135 100%);
-  background-image: linear-gradient(bottom, #72bc00 0%, #90c135 100%);
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  border-radius: 4px;
-  border: 1px solid #568302;
-  text-decoration: none;
-  color: white;
-  text-shadow: #568302 1px 1px 1px;
-  padding: 5px 30px;
-  font-size: 18px;
-  float: right;
-}
-/* line 40, ../sass/pages/plans.sass */
-ul.plans li a.view:hover {
-  background: #72bc00;
-}
-/* line 42, ../sass/pages/plans.sass */
-ul.plans li:hover {
-  background: #ffffd9;
-}
-/* line 44, ../sass/pages/plans.sass */
-ul.plans li:hover .admin a {
-  display: inline;
-}
 
-/* line 47, ../sass/pages/plans.sass */
+/* line 25, ../sass/pages/plans.sass */
 .day {
   margin-bottom: 10px;
+  background: #efefef;
+  border: 1px solid #cccccc;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
   /* Form to add an exercise */
 }
-/* line 49, ../sass/pages/plans.sass */
+/* line 30, ../sass/pages/plans.sass */
 .day h3 {
-  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #72bc00), color-stop(100%, #90c135));
-  background-image: -moz-linear-gradient(bottom, #72bc00 0%, #90c135 100%);
-  background-image: linear-gradient(bottom, #72bc00 0%, #90c135 100%);
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  border-radius: 4px;
-  border: 1px solid #568302;
-  text-decoration: none;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  border-radius: 4px;
-  color: white;
-  text-shadow: #568302 1px 1px 1px;
-  padding: 7px;
-  color: white;
+  font-weight: normal;
+  padding: 7px 7px 0 7px;
   font-size: 18px;
 }
-/* line 56, ../sass/pages/plans.sass */
+/* line 34, ../sass/pages/plans.sass */
 .day h3 a {
-  color: inherit;
   float: right;
   font-size: 14px;
 }
-/* line 60, ../sass/pages/plans.sass */
+/* line 37, ../sass/pages/plans.sass */
 .day section {
-  margin: 3px 0;
-  background: #efefef;
   padding: 0 7px;
-  border: 1px solid #cdcdcd;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -khtml-border-radius: 4px;
-  border-radius: 4px;
 }
-/* line 66, ../sass/pages/plans.sass */
+/* line 39, ../sass/pages/plans.sass */
 .day section li {
   overflow: hidden;
   *zoom: 1;
@@ -767,26 +700,28 @@ ul.plans li:hover .admin a {
   border-bottom: 1px dotted #cdcdcd;
   margin-bottom: -1px;
 }
-/* line 72, ../sass/pages/plans.sass */
+/* line 45, ../sass/pages/plans.sass */
 .day form {
-  margin: 10px;
-  background: #d8f3a6;
+  margin: 10px 20px;
   padding: 5px 5px 0px 5px;
   font-size: 12px;
+  float: left;
 }
-/* line 77, ../sass/pages/plans.sass */
+/* line 50, ../sass/pages/plans.sass */
 .day form label {
   font-weight: bold;
+  width: 70px;
+  display: inline-block;
 }
-/* line 79, ../sass/pages/plans.sass */
+/* line 54, ../sass/pages/plans.sass */
 .day form .buttons {
   padding-bottom: 5px;
 }
-/* line 81, ../sass/pages/plans.sass */
+/* line 56, ../sass/pages/plans.sass */
 .day form p {
   margin-bottom: 5px;
 }
-/* line 84, ../sass/pages/plans.sass */
+/* line 59, ../sass/pages/plans.sass */
 .day form #error_explanation h3 {
   background: none;
   padding: 0;
@@ -794,33 +729,33 @@ ul.plans li:hover .admin a {
   border: 0;
   text-shadow: none;
   color: #990000;
-  font-size: 14px;
+  font-size: 13.34px;
 }
-/* line 92, ../sass/pages/plans.sass */
+/* line 67, ../sass/pages/plans.sass */
 .day form #error_explanation li {
   border: 0;
 }
 
-/* line 95, ../sass/pages/plans.sass */
+/* line 70, ../sass/pages/plans.sass */
 li.plan-item.completed {
   text-decoration: line-through;
   color: #cdcdcd;
 }
 
-/* line 99, ../sass/pages/plans.sass */
+/* line 74, ../sass/pages/plans.sass */
 #no-days {
   display: block;
   margin-bottom: 10px;
 }
 
-/* line 103, ../sass/pages/plans.sass */
+/* line 78, ../sass/pages/plans.sass */
 .add-exercise {
   display: inline-block;
   margin: 7px;
   font-size: 12px;
 }
 
-/* line 108, ../sass/pages/plans.sass */
+/* line 83, ../sass/pages/plans.sass */
 .found span {
   background: #cdcdcd;
   border: 1px solid #cccccc;
@@ -835,28 +770,28 @@ li.plan-item.completed {
   margin-right: 5px;
 }
 
-/* line 116, ../sass/pages/plans.sass */
+/* line 91, ../sass/pages/plans.sass */
 .plan-item {
   height: 20px;
 }
-/* line 118, ../sass/pages/plans.sass */
+/* line 93, ../sass/pages/plans.sass */
 .plan-item header {
   padding: 3px;
   float: left;
   width: 400px;
 }
-/* line 122, ../sass/pages/plans.sass */
+/* line 97, ../sass/pages/plans.sass */
 .plan-item section {
   float: left;
   border: 0;
   margin: 0;
 }
-/* line 126, ../sass/pages/plans.sass */
+/* line 101, ../sass/pages/plans.sass */
 .plan-item section ul {
   margin: 0;
   padding: 0;
 }
-/* line 129, ../sass/pages/plans.sass */
+/* line 104, ../sass/pages/plans.sass */
 .plan-item section ul li {
   margin: 0;
   font-size: 12px;
@@ -875,92 +810,89 @@ li.plan-item.completed {
 }
 
 /* Globals and wrapper */
-/* line 93, ../sass/screen.sass */
+/* line 101, ../sass/screen.sass */
 body {
-  font: 14px Helvetica, Arial, sans-serif;
+  font: 13.34px Helvetica, Arial, sans-serif;
   color: #414141;
 }
 
-/* line 97, ../sass/screen.sass */
+/* line 105, ../sass/screen.sass */
 a {
   color: #4dace0;
 }
-/* line 99, ../sass/screen.sass */
+/* line 107, ../sass/screen.sass */
 a:visited {
   color: #3d9cd0;
 }
-/* line 101, ../sass/screen.sass */
+/* line 109, ../sass/screen.sass */
 a:hover {
-  color: #2d8cc0;
-}
-/* line 103, ../sass/screen.sass */
-a:active {
   color: #333333;
 }
+/* line 111, ../sass/screen.sass */
+a:active {
+  color: black;
+}
 
-/* line 106, ../sass/screen.sass */
+/* line 114, ../sass/screen.sass */
 hr {
   border: 0;
   background: #cccccc;
   height: 1px;
 }
 
-/* line 111, ../sass/screen.sass */
+/* line 119, ../sass/screen.sass */
 strong {
   font-weight: bold;
 }
 
-/* line 114, ../sass/screen.sass */
+/* line 122, ../sass/screen.sass */
 em {
   font-style: italic;
 }
 
-/* line 117, ../sass/screen.sass */
+/* line 125, ../sass/screen.sass */
 input, textarea {
   font: 14px Helvetica, Arial, sans-serif;
 }
 
-/* line 120, ../sass/screen.sass */
+/* line 128, ../sass/screen.sass */
 section {
   overflow: hidden;
   *zoom: 1;
 }
 
-/* line 123, ../sass/screen.sass */
+/* line 131, ../sass/screen.sass */
 h1, h2, h3 {
   font-weight: 600;
 }
 
-/* line 126, ../sass/screen.sass */
+/* line 134, ../sass/screen.sass */
 h1 {
   font-size: 24px;
 }
 
-/* line 129, ../sass/screen.sass */
+/* line 137, ../sass/screen.sass */
 h2 {
   font-size: 18px;
   margin-bottom: 10px;
 }
 
-/* line 133, ../sass/screen.sass */
+/* line 141, ../sass/screen.sass */
 .button, form input[type=submit], form button[type=submit], .green-button {
   font-size: 13px;
-  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
-  background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
-  background-image: linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -o-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -khtml-border-radius: 15px;
-  border-radius: 15px;
-  -moz-box-shadow: #454545 0 0 1px 0px;
-  -webkit-box-shadow: #454545 0 0 1px 0px;
-  -o-box-shadow: #454545 0 0 1px 0px;
-  box-shadow: #454545 0 0 1px 0px;
-  border: 1px solid #666666;
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #72bc00), color-stop(100%, #90c135));
+  background-image: -moz-linear-gradient(bottom, #72bc00 0%, #90c135 100%);
+  background-image: linear-gradient(bottom, #72bc00 0%, #90c135 100%);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #568302;
+  text-decoration: none;
   color: white;
-  text-shadow: #378cbb 1px 1px 2px;
+  text-shadow: #568302 1px 1px 1px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
@@ -973,12 +905,12 @@ h2 {
   display: inline-block;
   cursor: pointer;
 }
-/* line 143, ../sass/screen.sass */
+/* line 151, ../sass/screen.sass */
 .button:hover, form input[type=submit]:hover, form button[type=submit]:hover, .green-button:hover {
-  background: #5ebdf1;
+  background: #72bc00;
 }
 
-/* line 146, ../sass/screen.sass */
+/* line 154, ../sass/screen.sass */
 .green-button {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #72bc00), color-stop(100%, #90c135));
   background-image: -moz-linear-gradient(bottom, #72bc00 0%, #90c135 100%);
@@ -992,12 +924,12 @@ h2 {
   border: 1px solid #568302;
   text-decoration: none;
 }
-/* line 149, ../sass/screen.sass */
+/* line 157, ../sass/screen.sass */
 .green-button:hover {
   background: #72bc00;
 }
 
-/* line 152, ../sass/screen.sass */
+/* line 160, ../sass/screen.sass */
 .cancel, .on_the_spot_editing form button[type=cancel] {
   background: none;
   border: 0;
@@ -1007,7 +939,7 @@ h2 {
   color: #990000 !important;
 }
 
-/* line 160, ../sass/screen.sass */
+/* line 168, ../sass/screen.sass */
 .badge, .large-picture, .badges li {
   background: #cdedff;
   display: block;
@@ -1019,20 +951,20 @@ h2 {
   margin: 0 5px 5px 0;
 }
 
-/* line 170, ../sass/screen.sass */
+/* line 178, ../sass/screen.sass */
 .badge, .badges li {
   width: 30px;
   height: 30px;
 }
 
-/* line 174, ../sass/screen.sass */
+/* line 182, ../sass/screen.sass */
 .large-picture {
   width: 100px;
   height: 100px;
   margin-right: 20px !important;
 }
 
-/* line 179, ../sass/screen.sass */
+/* line 187, ../sass/screen.sass */
 #wrapper {
   overflow: hidden;
   *zoom: 1;
@@ -1043,20 +975,20 @@ h2 {
 }
 
 /* Notifications */
-/* line 187, ../sass/screen.sass */
+/* line 195, ../sass/screen.sass */
 #notifications {
   position: fixed;
   top: 20px;
   left: -1px;
   font-size: 12px;
 }
-/* line 192, ../sass/screen.sass */
+/* line 200, ../sass/screen.sass */
 #notifications #alert {
   border: 1px solid #990000;
   background: #e5b6b6;
   padding: 10px;
 }
-/* line 196, ../sass/screen.sass */
+/* line 204, ../sass/screen.sass */
 #notifications #notice {
   border: 1px solid #558108;
   background: #bcdd9f;
@@ -1064,13 +996,13 @@ h2 {
 }
 
 /* Left column */
-/* line 202, ../sass/screen.sass */
+/* line 210, ../sass/screen.sass */
 #left-col {
   width: 107px;
   float: left;
 }
 
-/* line 207, ../sass/screen.sass */
+/* line 215, ../sass/screen.sass */
 h1 a {
   margin: 20px 0;
   height: 107px;
@@ -1080,68 +1012,67 @@ h1 a {
   outline: 0;
 }
 
-/* line 214, ../sass/screen.sass */
+/* line 222, ../sass/screen.sass */
 nav ul {
   width: 107px;
   background: url(/images/nav-shine.png) no-repeat 1px 1px #3baeee;
-  -moz-box-shadow: #666666 0 0 2px 0px;
-  -webkit-box-shadow: #666666 0 0 2px 0px;
-  -o-box-shadow: #666666 0 0 2px 0px;
-  box-shadow: #666666 0 0 2px 0px;
-  border: 1px solid #666666;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -o-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -khtml-border-radius: 15px;
-  border-radius: 15px;
+  -moz-box-shadow: #bbbbbb 0 0 2px 0px;
+  -webkit-box-shadow: #bbbbbb 0 0 2px 0px;
+  -o-box-shadow: #bbbbbb 0 0 2px 0px;
+  box-shadow: #bbbbbb 0 0 2px 0px;
+  border: 1px solid #999999;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  border-radius: 12px;
   padding: 10px 0;
 }
-/* line 221, ../sass/screen.sass */
+/* line 229, ../sass/screen.sass */
 nav ul li {
   text-align: center;
   list-style: none;
   margin: 0;
 }
-/* line 225, ../sass/screen.sass */
+/* line 233, ../sass/screen.sass */
 nav ul li a {
-  padding: 5px 0;
-  height: 90px;
-  color: #333333;
+  padding: 75px 0 15px 0;
+  color: #003777;
   display: block;
   text-decoration: none;
   font-weight: bold;
 }
-/* line 232, ../sass/screen.sass */
+/* line 239, ../sass/screen.sass */
 nav ul li a#plans {
-  background: url(/images/plans.png) no-repeat center 20px;
+  background: url(/images/plans.png) no-repeat center 0;
 }
-/* line 234, ../sass/screen.sass */
+/* line 241, ../sass/screen.sass */
 nav ul li a#community {
-  background: url(/images/community.png) no-repeat center 20px;
+  background: url(/images/community.png) no-repeat center 0;
 }
-/* line 236, ../sass/screen.sass */
+/* line 243, ../sass/screen.sass */
 nav ul li a#challenges {
-  background: url(/images/challenges.png) no-repeat center 25px;
+  background: url(/images/challenges.png) no-repeat center 0;
 }
-/* line 238, ../sass/screen.sass */
+/* line 245, ../sass/screen.sass */
 nav ul li a#profile {
-  background: url(/images/profile.png) no-repeat center 15px;
+  background: url(/images/profile.png) no-repeat center 0;
 }
-/* line 240, ../sass/screen.sass */
+/* line 247, ../sass/screen.sass */
 nav ul li a#financial {
-  background: url(/images/financial.png) no-repeat center 20px;
+  background: url(/images/financial.png) no-repeat center 0;
 }
-/* line 242, ../sass/screen.sass */
+/* line 249, ../sass/screen.sass */
 nav ul li a:visited {
-  color: #333333;
+  color: #003777;
 }
-/* line 244, ../sass/screen.sass */
+/* line 251, ../sass/screen.sass */
 nav ul li a:hover, nav ul li a.selected {
   color: white;
 }
 
-/* line 247, ../sass/screen.sass */
+/* line 254, ../sass/screen.sass */
 #help {
   display: block;
   width: 107px;
@@ -1153,13 +1084,13 @@ nav ul li a:hover, nav ul li a.selected {
 }
 
 /* Right column */
-/* line 256, ../sass/screen.sass */
+/* line 263, ../sass/screen.sass */
 #right-col {
   width: 893px;
   float: right;
 }
 
-/* line 260, ../sass/screen.sass */
+/* line 267, ../sass/screen.sass */
 #stats-bar {
   float: left;
   margin: 20px 5px 20px 20px;
@@ -1169,26 +1100,26 @@ nav ul li a:hover, nav ul li a.selected {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
   background-image: linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -o-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -khtml-border-radius: 15px;
-  border-radius: 15px;
-  -moz-box-shadow: #454545 0 0 1px 0px;
-  -webkit-box-shadow: #454545 0 0 1px 0px;
-  -o-box-shadow: #454545 0 0 1px 0px;
-  box-shadow: #454545 0 0 1px 0px;
-  border: 1px solid #666666;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: #bbbbbb 0 0 1px 0px;
+  -webkit-box-shadow: #bbbbbb 0 0 1px 0px;
+  -o-box-shadow: #bbbbbb 0 0 1px 0px;
+  box-shadow: #bbbbbb 0 0 1px 0px;
+  border: 1px solid #999999;
 }
 
-/* line 268, ../sass/screen.sass */
+/* line 275, ../sass/screen.sass */
 .badges {
   float: left;
   width: 150px;
 }
 
-/* line 272, ../sass/screen.sass */
+/* line 279, ../sass/screen.sass */
 #stats {
   color: white;
   float: right;
@@ -1196,32 +1127,32 @@ nav ul li a:hover, nav ul li a.selected {
   color: white;
   text-shadow: #378cbb 1px 1px 2px;
 }
-/* line 277, ../sass/screen.sass */
+/* line 284, ../sass/screen.sass */
 #stats h2 {
   letter-spacing: 0;
   margin: 5px 0;
   font-size: 18px;
   font-weight: normal;
 }
-/* line 282, ../sass/screen.sass */
+/* line 289, ../sass/screen.sass */
 #stats li {
   float: left;
   width: 150px;
   text-align: center;
 }
-/* line 286, ../sass/screen.sass */
+/* line 293, ../sass/screen.sass */
 #stats li p {
   font-size: 36px;
 }
-/* line 288, ../sass/screen.sass */
+/* line 295, ../sass/screen.sass */
 #stats li p span {
   font-size: 24px;
 }
-/* line 291, ../sass/screen.sass */
+/* line 298, ../sass/screen.sass */
 #stats li.meter h2 {
   margin-bottom: 0;
 }
-/* line 293, ../sass/screen.sass */
+/* line 300, ../sass/screen.sass */
 #stats li.meter span {
   margin-left: 52px;
   float: left;
@@ -1230,24 +1161,24 @@ nav ul li a:hover, nav ul li a.selected {
   background: url(/images/meter-bg.png) no-repeat;
   display: block;
 }
-/* line 300, ../sass/screen.sass */
+/* line 307, ../sass/screen.sass */
 #stats li.meter .hint {
   display: none;
 }
 
-/* line 303, ../sass/screen.sass */
+/* line 310, ../sass/screen.sass */
 #logout {
   display: block;
   margin-top: 20px;
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #990000), color-stop(45%, #990000), color-stop(45%, #a3322b), color-stop(100%, #a3322b));
   background-image: -moz-linear-gradient(bottom, #990000 0%, #990000 45%, #a3322b 45%, #a3322b 100%);
   background-image: linear-gradient(bottom, #990000 0%, #990000 45%, #a3322b 45%, #a3322b 100%);
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -o-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -khtml-border-radius: 15px;
-  border-radius: 15px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  border-radius: 12px;
   border: 1px solid #666666;
   -moz-box-shadow: #454545 0 0 2px 0px;
   -webkit-box-shadow: #454545 0 0 2px 0px;
@@ -1263,17 +1194,17 @@ nav ul li a:hover, nav ul li a.selected {
   font-size: 12px;
 }
 
-/* line 316, ../sass/screen.sass */
+/* line 323, ../sass/screen.sass */
 #content {
   clear: both;
   margin: 0 20px 10px 20px;
-  padding: 20px;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -o-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -khtml-border-radius: 15px;
-  border-radius: 15px;
+  padding: 15px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  border-radius: 12px;
   -moz-box-shadow: #cccccc 0 0 3px 1px;
   -webkit-box-shadow: #cccccc 0 0 3px 1px;
   -o-box-shadow: #cccccc 0 0 3px 1px;
@@ -1282,7 +1213,7 @@ nav ul li a:hover, nav ul li a.selected {
   *zoom: 1;
 }
 
-/* line 324, ../sass/screen.sass */
+/* line 331, ../sass/screen.sass */
 #context-bar {
   height: 65px;
   margin-bottom: 20px;
@@ -1291,31 +1222,29 @@ nav ul li a:hover, nav ul li a.selected {
   /* Search bar */
   /* Share button */
 }
-/* line 329, ../sass/screen.sass */
+/* line 336, ../sass/screen.sass */
 #context-bar ul {
-  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
-  background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
-  background-image: linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -o-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -khtml-border-radius: 15px;
-  border-radius: 15px;
-  -moz-box-shadow: #454545 0 0 1px 0px;
-  -webkit-box-shadow: #454545 0 0 1px 0px;
-  -o-box-shadow: #454545 0 0 1px 0px;
-  box-shadow: #454545 0 0 1px 0px;
-  border: 1px solid #666666;
+  color: #333333;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #f4f4f4), color-stop(100%, #ececec));
+  background-image: -moz-linear-gradient(top, #f4f4f4 0%, #ececec 100%);
+  background-image: linear-gradient(top, #f4f4f4 0%, #ececec 100%);
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  border-radius: 12px;
+  border: 1px solid #d4d4d4;
+  text-shadow: white 1px 1px 1px;
   float: left;
   padding: 0 10px;
   width: 225px;
 }
-/* line 334, ../sass/screen.sass */
+/* line 341, ../sass/screen.sass */
 #context-bar ul li {
   float: left;
 }
-/* line 336, ../sass/screen.sass */
+/* line 343, ../sass/screen.sass */
 #context-bar ul li a {
   text-indent: -30000px;
   outline: 0;
@@ -1325,96 +1254,99 @@ nav ul li a:hover, nav ul li a.selected {
   display: block;
   margin: 7px 0;
 }
-/* line 343, ../sass/screen.sass */
+/* line 350, ../sass/screen.sass */
 #context-bar ul li a.profile {
   background-position: 0 -50px;
 }
-/* line 84, ../sass/screen.sass */
+/* line 92, ../sass/screen.sass */
 #context-bar ul li a.profile:hover, #context-bar ul li a.profile.selected {
   background-position: 0 0;
 }
-/* line 345, ../sass/screen.sass */
+/* line 352, ../sass/screen.sass */
 #context-bar ul li a.community {
   background-position: -55px -50px;
 }
-/* line 84, ../sass/screen.sass */
+/* line 92, ../sass/screen.sass */
 #context-bar ul li a.community:hover, #context-bar ul li a.community.selected {
   background-position: -55px 0;
 }
-/* line 347, ../sass/screen.sass */
+/* line 354, ../sass/screen.sass */
 #context-bar ul li a.challenges {
   background-position: -110px -50px;
 }
-/* line 84, ../sass/screen.sass */
+/* line 92, ../sass/screen.sass */
 #context-bar ul li a.challenges:hover, #context-bar ul li a.challenges.selected {
   background-position: -110px 0;
 }
-/* line 349, ../sass/screen.sass */
+/* line 356, ../sass/screen.sass */
 #context-bar ul li a.financial {
   background-position: -165px -50px;
 }
-/* line 84, ../sass/screen.sass */
+/* line 92, ../sass/screen.sass */
 #context-bar ul li a.financial:hover, #context-bar ul li a.financial.selected {
   background-position: -165px 0;
 }
-/* line 352, ../sass/screen.sass */
+/* line 359, ../sass/screen.sass */
 #context-bar input {
   width: 235px;
   height: 30px;
   padding: 10px 10px 10px 40px;
   background: url(/images/magnifying-glass.png) no-repeat 7px 10px white;
-  border: 1px solid #666666;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -o-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -khtml-border-radius: 15px;
-  border-radius: 15px;
-  -moz-box-shadow: #333333 0 0 2px 0px;
-  -webkit-box-shadow: #333333 0 0 2px 0px;
-  -o-box-shadow: #333333 0 0 2px 0px;
-  box-shadow: #333333 0 0 2px 0px;
+  border: 1px solid #aaaaaa;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: #666666 0 0 2px 0px;
+  -webkit-box-shadow: #666666 0 0 2px 0px;
+  -o-box-shadow: #666666 0 0 2px 0px;
+  box-shadow: #666666 0 0 2px 0px;
   margin: 7px 0 0 15px;
   font-size: 18px;
   color: #dddddd;
 }
-/* line 363, ../sass/screen.sass */
+/* line 370, ../sass/screen.sass */
 #context-bar input:focus {
   outline: none;
 }
-/* line 366, ../sass/screen.sass */
+/* line 373, ../sass/screen.sass */
 #context-bar #button {
   float: right;
   width: 245px;
-  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
-  background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
-  background-image: linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -o-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -khtml-border-radius: 15px;
-  border-radius: 15px;
-  -moz-box-shadow: #454545 0 0 1px 0px;
-  -webkit-box-shadow: #454545 0 0 1px 0px;
-  -o-box-shadow: #454545 0 0 1px 0px;
-  box-shadow: #454545 0 0 1px 0px;
-  border: 1px solid #666666;
-}
-/* line 370, ../sass/screen.sass */
-#context-bar #button:hover {
-  background: #5ebdf1;
-}
-/* line 372, ../sass/screen.sass */
-#context-bar #button a {
-  display: block;
-  color: white;
-  text-shadow: #378cbb 1px 1px 2px;
-  color: white;
+  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #72bc00), color-stop(100%, #90c135));
+  background-image: -moz-linear-gradient(bottom, #72bc00 0%, #90c135 100%);
+  background-image: linear-gradient(bottom, #72bc00 0%, #90c135 100%);
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #568302;
   text-decoration: none;
-  cursor: pointer;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -khtml-border-radius: 12px;
+  border-radius: 12px;
 }
 /* line 378, ../sass/screen.sass */
+#context-bar #button:hover {
+  background: #72bc00;
+}
+/* line 380, ../sass/screen.sass */
+#context-bar #button a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  color: white;
+  text-shadow: #568302 1px 1px 1px;
+}
+/* line 386, ../sass/screen.sass */
 #context-bar #share {
   width: 195px;
   background: url(/images/share-icon.png) no-repeat 150px 5px;
@@ -1423,7 +1355,7 @@ nav ul li a:hover, nav ul li a.selected {
   padding: 15px 0 0 50px;
   height: 50px;
 }
-/* line 385, ../sass/screen.sass */
+/* line 393, ../sass/screen.sass */
 #context-bar #create-plan {
   height: 65px;
   line-height: 65px;

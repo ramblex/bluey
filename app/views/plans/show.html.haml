@@ -1,12 +1,14 @@
 = load_controller_js
 
 = render :partial => 'context_bar'
-%h1= @plan.name
-%p= @plan.description
-%hr
-.plan-days
-  - if @plan.days.empty?
-    %em#no-days No days have been added to this plan yet!
-  - else
-    = render @plan.days
-%p=link_to "Add a day", plan_days_path(@plan), :class => 'button', :remote => true, :method => :post
+= link_to '&laquo; My plans'.html_safe, plans_path
+#plan
+  %h1= @plan.name
+  %p= @plan.description
+  %hr
+  .plan-days
+    - if @plan.days.empty?
+      %em#no-days No days have been added to this plan yet!
+    - else
+      = render @plan.days
+  %p=link_to "Add a day", plan_days_path(@plan), :class => 'button', :remote => true, :method => :post

@@ -1,7 +1,3 @@
 %li
-  = link_to 'View', plan, :class => 'view'
-  .admin
-    = link_to '&#x270e'.html_safe, '#'
-    = link_to '&#x2717'.html_safe, '#'
   = link_to plan.name, plan, :class => 'title'
   %p.creator Created by #{plan.creator.user_profile.name}
