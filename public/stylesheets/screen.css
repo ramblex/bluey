@@ -669,7 +669,7 @@ ul.plans li .creator {
 /* line 34, ../sass/pages/plans.sass */
 .day h3 a {
   float: right;
-  font-size: 14px;
+  font-size: 12px;
 }
 /* line 37, ../sass/pages/plans.sass */
 .day section {
@@ -795,6 +795,7 @@ li.plan-item.completed {
 /* line 115, ../sass/pages/plans.sass */
 .plan-item footer {
   float: right;
+  padding-top: 5px;
 }
 
 /* Globals and wrapper */
