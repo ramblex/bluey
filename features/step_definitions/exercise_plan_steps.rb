@@ -7,7 +7,7 @@ Capybara.add_selector(:plan_item) do
 end
 
 Capybara.add_selector(:plan_list_item) do
-  xpath { |item| "./ul/li[@class='plan-item'][#{item}]" }
+  xpath { |item| "./section/ul/li[@class='plan-item'][#{item}]" }
 end
 
 Capybara.add_selector(:plan_metric) do
@@ -123,5 +123,13 @@ When /I try to add an empty exercise/ do
   within(:plan_day, 1) do
     And %{I follow "Add exercise"}
     And %{I press "Add exercise"}
+  end
+end
+
+When /^I delete the exercise (\d+) on day (\d+)$/ do |exercise, day|
+  within(:plan_day, day) do
+    within(:plan_list_item, exercise) do
+      When %{I follow "Delete"}
+    end
   end
 end

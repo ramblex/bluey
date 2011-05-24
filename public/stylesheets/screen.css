@@ -756,6 +756,7 @@ li.plan-item.completed {
 /* line 91, ../sass/pages/plans.sass */
 .plan-item {
   height: 20px;
+  /* Delete link */
 }
 /* line 93, ../sass/pages/plans.sass */
 .plan-item header {
@@ -790,6 +791,10 @@ li.plan-item.completed {
   display: inline-block;
   margin-right: 5px;
   border: 0;
+}
+/* line 115, ../sass/pages/plans.sass */
+.plan-item footer {
+  float: right;
 }
 
 /* Globals and wrapper */

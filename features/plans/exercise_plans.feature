@@ -125,3 +125,16 @@ Feature: Manage exercise plans
       When I try to add an empty exercise
       Then I should see "Please fix the following 1 error"
       And I should see "Exercise cannot be blank"
+
+    @javascript
+    Scenario: Delete an exercise
+      Given I sign in as "dave@dave.com/mypassword"
+      And I have the following plans created by Dave:
+        | name        | day | exercises   |
+        | Simple plan | 1   | Bench press |
+        |             | 1   | Bicep curls |
+      And I am on the "Simple plan" plan page
+      When I delete the exercise 2 on day 1
+      Then I should see the following plan:
+        | name        | day | exercises   |
+        | Simple plan | 1   | Bench press |

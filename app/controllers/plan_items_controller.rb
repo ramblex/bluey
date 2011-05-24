@@ -25,4 +25,10 @@ class PlanItemsController < ApplicationController
       render :text => "Updated plan item"
     end
   end
+
+  def destroy
+    @plan_item = PlanItem.find(params[:id])
+    @plan_item.destroy
+    redirect_to :back, :notice => 'Deleted exercise'
+  end
 end
