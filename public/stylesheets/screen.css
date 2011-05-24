@@ -157,69 +157,58 @@ form p.number {
 .user-form {
   overflow: hidden;
   *zoom: 1;
-  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
-  background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
-  background-image: linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -o-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -khtml-border-radius: 12px;
-  border-radius: 12px;
-  -moz-box-shadow: #bbbbbb 0 0 1px 0px;
-  -webkit-box-shadow: #bbbbbb 0 0 1px 0px;
-  -o-box-shadow: #bbbbbb 0 0 1px 0px;
-  box-shadow: #bbbbbb 0 0 1px 0px;
-  border: 1px solid #999999;
-  background: #3baeee;
+  background: #efefef;
+  border: 1px solid #cccccc;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -khtml-border-radius: 4px;
+  border-radius: 4px;
   padding: 10px;
   margin-top: 10px;
 }
-/* line 65, ../sass/forms.sass */
+/* line 66, ../sass/forms.sass */
 .user-form h2, .user-form legend {
+  color: #414141;
   font-weight: bold;
-  color: white;
-  text-shadow: #378cbb 1px 1px 2px;
 }
-/* line 68, ../sass/forms.sass */
-.user-form input[type=text] {
-  border: 1px solid #3baeee;
-}
-/* line 70, ../sass/forms.sass */
+/* line 69, ../sass/forms.sass */
 .user-form fieldset {
-  background: #5ebdf1;
   padding: 10px;
   margin: 10px 0;
 }
-/* line 74, ../sass/forms.sass */
+/* line 72, ../sass/forms.sass */
 .user-form fieldset ul {
   margin-top: 10px;
 }
-/* line 76, ../sass/forms.sass */
+/* line 74, ../sass/forms.sass */
 .user-form fieldset ul li {
   margin: 5px 0;
 }
+/* line 76, ../sass/forms.sass */
+.user-form input[type=text], .user-form textarea {
+  width: 400px;
+}
 /* line 78, ../sass/forms.sass */
 .user-form textarea {
-  width: 400px;
   height: 100px;
-  border: 1px solid #3baeee;
 }
 
 /* Editable fields */
-/* line 84, ../sass/forms.sass */
+/* line 82, ../sass/forms.sass */
 .on_the_spot_editing {
   display: block;
 }
-/* line 86, ../sass/forms.sass */
+/* line 84, ../sass/forms.sass */
 .on_the_spot_editing:hover {
   background: #fffcc3;
 }
-/* line 88, ../sass/forms.sass */
+/* line 86, ../sass/forms.sass */
 .on_the_spot_editing form {
   padding: 10px;
 }
-/* line 90, ../sass/forms.sass */
+/* line 88, ../sass/forms.sass */
 .on_the_spot_editing form input, .on_the_spot_editing form textarea {
   display: block;
   width: 300px !important;
@@ -227,26 +216,26 @@ form p.number {
   padding: 5px;
   border: 1px solid #dddddd;
 }
-/* line 96, ../sass/forms.sass */
+/* line 94, ../sass/forms.sass */
 .on_the_spot_editing form textarea {
   height: 100px !important;
   margin-bottom: 5px;
 }
-/* line 99, ../sass/forms.sass */
+/* line 97, ../sass/forms.sass */
 .on_the_spot_editing form button[type=submit] {
   font-size: 11px;
 }
 
 /* New plans form */
-/* line 107, ../sass/forms.sass */
+/* line 105, ../sass/forms.sass */
 #new_plan input[type=text].wide, #new_plan textarea.wide {
   width: 803px;
 }
-/* line 110, ../sass/forms.sass */
+/* line 108, ../sass/forms.sass */
 #new_plan .add-plan-item {
   margin: 10px 0;
 }
-/* line 112, ../sass/forms.sass */
+/* line 110, ../sass/forms.sass */
 #new_plan .remove_nested_fields {
   display: block;
   float: left;
@@ -254,29 +243,29 @@ form p.number {
   text-decoration: none;
   margin-right: 20px;
 }
-/* line 118, ../sass/forms.sass */
+/* line 116, ../sass/forms.sass */
 #new_plan .remove_nested_fields:hover {
   color: #3baeee;
 }
-/* line 120, ../sass/forms.sass */
+/* line 118, ../sass/forms.sass */
 #new_plan .fields {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 122, ../sass/forms.sass */
+/* line 120, ../sass/forms.sass */
 #new_plan .plan-item {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 124, ../sass/forms.sass */
+/* line 122, ../sass/forms.sass */
 #new_plan .item-fields {
   float: left;
 }
-/* line 126, ../sass/forms.sass */
+/* line 124, ../sass/forms.sass */
 #new_plan .exercise-name {
   width: 720px;
 }
-/* line 128, ../sass/forms.sass */
+/* line 126, ../sass/forms.sass */
 #new_plan .exercise-metrics {
   margin: 5px 0;
   padding: 5px;
@@ -288,7 +277,7 @@ form p.number {
   -khtml-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 133, ../sass/forms.sass */
+/* line 131, ../sass/forms.sass */
 #new_plan .exercise-metrics legend {
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -300,21 +289,21 @@ form p.number {
   width: 100%;
   padding: 5px;
   margin: 0 -5px;
-  color: white;
+  color: #414141;
   font-size: 12px;
 }
-/* line 141, ../sass/forms.sass */
+/* line 139, ../sass/forms.sass */
 #new_plan .exercise-metrics .fields {
   margin-bottom: 5px;
   padding: 5px;
   background: white;
 }
-/* line 145, ../sass/forms.sass */
+/* line 143, ../sass/forms.sass */
 #new_plan .exercise-metrics .fields p {
   float: left;
   margin: 0 30px 0 0;
 }
-/* line 148, ../sass/forms.sass */
+/* line 146, ../sass/forms.sass */
 #new_plan #plan_submit {
   width: 813px;
 }
@@ -376,7 +365,7 @@ form p.number {
 }
 /* line 29, ../sass/pages/user-profile.sass */
 #user-tabs li.selected, #user-tabs li:hover {
-  background: #3baeee;
+  background: #cccccc;
 }
 /* line 31, ../sass/pages/user-profile.sass */
 #user-tabs li a {
@@ -419,21 +408,17 @@ form p.number {
   font-size: 12px;
 }
 /* line 53, ../sass/pages/user-profile.sass */
-#user-forms a {
-  color: white;
-}
-/* line 56, ../sass/pages/user-profile.sass */
 #user-forms #new_user_image {
   clear: both;
 }
-/* line 60, ../sass/pages/user-profile.sass */
+/* line 57, ../sass/pages/user-profile.sass */
 #user-forms #edit-symptoms textarea {
   height: 200px;
   width: 600px;
 }
 
 /* Goals */
-/* line 65, ../sass/pages/user-profile.sass */
+/* line 62, ../sass/pages/user-profile.sass */
 .person {
   position: relative;
   width: 250px;
@@ -441,11 +426,11 @@ form p.number {
   float: left;
 }
 
-/* line 70, ../sass/pages/user-profile.sass */
+/* line 67, ../sass/pages/user-profile.sass */
 #man {
   background: url(/images/man.png);
 }
-/* line 72, ../sass/pages/user-profile.sass */
+/* line 69, ../sass/pages/user-profile.sass */
 #man li {
   position: absolute;
   width: 20px;
@@ -455,11 +440,11 @@ form p.number {
   overflow: hidden;
   cursor: pointer;
 }
-/* line 80, ../sass/pages/user-profile.sass */
+/* line 77, ../sass/pages/user-profile.sass */
 #man li.selected, #man li:hover {
   background-position: 0 -20px;
 }
-/* line 82, ../sass/pages/user-profile.sass */
+/* line 79, ../sass/pages/user-profile.sass */
 #man li#general {
   text-indent: 0;
   width: 50px;
@@ -468,20 +453,20 @@ form p.number {
   line-height: 20px;
 }
 
-/* line 88, ../sass/pages/user-profile.sass */
+/* line 85, ../sass/pages/user-profile.sass */
 #parts {
   float: right;
   width: 350px;
 }
 
 /* Pictures */
-/* line 93, ../sass/pages/user-profile.sass */
+/* line 90, ../sass/pages/user-profile.sass */
 #user-images {
   margin-top: 10px;
   min-height: 100px;
 }
 
-/* line 97, ../sass/pages/user-profile.sass */
+/* line 94, ../sass/pages/user-profile.sass */
 .user-image {
   width: 100px;
   margin: 0 25px 20px 0;
@@ -489,15 +474,14 @@ form p.number {
   position: relative;
   font-size: 12px;
 }
-/* line 103, ../sass/pages/user-profile.sass */
+/* line 100, ../sass/pages/user-profile.sass */
 .user-image a, .user-image p {
   text-align: center;
-  background: #5ebdf1;
   display: block;
   width: 104px;
   display: block;
 }
-/* line 109, ../sass/pages/user-profile.sass */
+/* line 105, ../sass/pages/user-profile.sass */
 .user-image .delete-image {
   position: absolute;
   top: -10px;
@@ -510,11 +494,10 @@ form p.number {
   outline: 0;
   cursor: pointer;
 }
-/* line 119, ../sass/pages/user-profile.sass */
+/* line 115, ../sass/pages/user-profile.sass */
 .user-image .use-for-profile {
   font-size: 11px;
   padding-bottom: 5px;
-  color: white;
 }
 
 /* Landing page */
