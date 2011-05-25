@@ -5,3 +5,7 @@ en:
   time:
     formats:
       short: "%d %B %Y"
+  activerecord:
+    attributes:
+      plan_item:
+        name: "Exercise"

@@ -124,7 +124,7 @@ Feature: Manage exercise plans
       And I am on the "Simple plan" plan page
       When I try to add an empty exercise
       Then I should see "Please fix the following 1 error"
-      And I should see "Exercise cannot be blank"
+      And I should see "Exercise can't be blank"
 
     @javascript
     Scenario: Delete an exercise
