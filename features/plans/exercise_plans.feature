@@ -29,7 +29,7 @@ Feature: Manage exercise plans
         | Manny   | Manny's plan |
 
     @javascript
-    Scenario: View an existing plan
+    Scenario: View an existing plan and complete some exercises
       Given I sign in as "dave@dave.com/mypassword"
       And I have the following plans created by Dave:
         | name    | day | exercises              |

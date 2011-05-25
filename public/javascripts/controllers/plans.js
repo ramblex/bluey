@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Sun, 22 May 2011 12:21:32 GMT from
+/* DO NOT MODIFY. This file was compiled Wed, 25 May 2011 18:34:55 GMT from
  * /Users/alexduller/www/bluey/app/coffeescripts/controllers/plans.coffee
  */
 
@@ -25,7 +25,7 @@
     updatePlanItems();
     $('.plan-item header input[type=checkbox]').click(function() {
       return $.ajax({
-        url: '/plan_items/' + $(this).attr('value'),
+        url: $(this).attr('data-url'),
         type: 'put',
         data: {
           plan_item: {

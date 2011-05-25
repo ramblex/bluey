@@ -1,6 +1,7 @@
 %li.plan-item
   %header
-    = check_box_tag plan_item.name, plan_item.id, plan_item.completed
+    = check_box_tag plan_item.name, plan_item.id, plan_item.completed, 
+                    :'data-url' => plan_day_plan_item_path(plan_item.day.plan, plan_item.day, plan_item)
     = plan_item.name
   %section
     %ul

@@ -19,7 +19,7 @@ $(document).ready ->
 
   $('.plan-item header input[type=checkbox]').click ->
     $.ajax
-      url: '/plan_items/'+$(this).attr('value')
+      url: $(this).attr('data-url')
       type: 'put'
       data:
         plan_item:

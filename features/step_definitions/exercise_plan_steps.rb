@@ -49,6 +49,10 @@ Then /^"([^"]*)" inside day (\d+) should be completed$/ do |item, day|
   Then %{the "#{item}" checkbox should be checked inside day #{day}}
 end
 
+Then /^"([^"]*)" inside day (\d+) should not be completed$/ do |item, day|
+  Then %{the "#{item}" checkbox should not be checked inside day #{day}}
+end
+
 Then /^I should see the following new plan:$/ do |table|
   table.hashes.each do |hash|
     within(:plan_day, hash[:day]) do
