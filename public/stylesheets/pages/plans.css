@@ -1,26 +1,38 @@
 /*
-Syntax error: Undefined variable: "$subtle".
-        on line 14 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass
+Syntax error: Undefined variable: "$normal".
+        on line 17 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass
 
-9:   h1
-10:     margin: 10px 0
-11: 
 12: ul.plans
-13:   margin-top: 15px
-14:   border-top: 1px solid $subtle
-15:   li
-16:     border-bottom: 1px solid $subtle
-17:     padding: 10px 0
-18:     a.title
-19:       font-weight: bold
+13:   li
+14:     padding: 5px 0
+15:     a.title
+16:       font-weight: bold
+17:       font-size: $normal
+18:     .creator
+19:       font-size: $tiny
+20:       color: #666
+21: 
+22: .day
 
 Backtrace:
-/Users/alexduller/www/bluey/public/sass/pages/plans.sass:14
+/Users/alexduller/www/bluey/public/sass/pages/plans.sass:17
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/script/variable.rb:39:in `_perform'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/script/node.rb:61:in `perform'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/script/operation.rb:67:in `_perform'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/script/node.rb:61:in `perform'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/prop_node.rb:132:in `perform!'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/rule_node.rb:191:in `perform!'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/rule_node.rb:191:in `perform!'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
@@ -103,4 +115,4 @@ script/rails:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$subtle\".\A         on line 14 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass\A \A 9:   h1\A 10:     margin: 10px 0\A 11: \A 12: ul.plans\A 13:   margin-top: 15px\A 14:   border-top: 1px solid $subtle\A 15:   li\A 16:     border-bottom: 1px solid $subtle\A 17:     padding: 10px 0\A 18:     a.title\A 19:       font-weight: bold"; }
+  content: "Syntax error: Undefined variable: \"$normal\".\A         on line 17 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass\A \A 12: ul.plans\A 13:   li\A 14:     padding: 5px 0\A 15:     a.title\A 16:       font-weight: bold\A 17:       font-size: $normal\A 18:     .creator\A 19:       font-size: $tiny\A 20:       color: #666\A 21: \A 22: .day"; }
