@@ -9,4 +9,6 @@
   $('<%= day_selector %> form').resetForm();
   $('<%= day_selector %> form').find('.found').remove();
   $('<%= day_selector %>').find('.fields:gt(0)').remove();
+  // Make sure there are no errors displayed after successful creation
+  $('<%= day_selector %> .form-errors').html('');
 <% end %>
