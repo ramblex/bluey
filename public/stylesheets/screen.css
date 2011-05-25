@@ -755,20 +755,20 @@ li.plan-item.completed {
 
 /* line 91, ../sass/pages/plans.sass */
 .plan-item {
-  height: 20px;
   /* Delete link */
 }
-/* line 93, ../sass/pages/plans.sass */
+/* line 92, ../sass/pages/plans.sass */
 .plan-item header {
-  padding: 3px;
   float: left;
   width: 400px;
 }
-/* line 97, ../sass/pages/plans.sass */
+/* line 95, ../sass/pages/plans.sass */
 .plan-item section {
   float: left;
   border: 0;
   margin: 0;
+  width: 300px;
+  padding: 0;
 }
 /* line 101, ../sass/pages/plans.sass */
 .plan-item section ul {
@@ -777,7 +777,6 @@ li.plan-item.completed {
 }
 /* line 104, ../sass/pages/plans.sass */
 .plan-item section ul li {
-  margin: 0;
   font-size: 12px;
   float: left;
   background: #fffcc3;
@@ -788,14 +787,13 @@ li.plan-item.completed {
   -khtml-border-radius: 2px;
   border-radius: 2px;
   padding: 3px;
-  display: inline-block;
-  margin-right: 5px;
+  margin: 0 5px 0 0;
   border: 0;
 }
-/* line 115, ../sass/pages/plans.sass */
+/* line 113, ../sass/pages/plans.sass */
 .plan-item footer {
   float: right;
-  padding-top: 5px;
+  padding-top: 3px;
 }
 
 /* Globals and wrapper */
