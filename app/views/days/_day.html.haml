@@ -1,6 +1,6 @@
 = div_for day do
   %h3
-    %span Day #{day.number}
+    %span Day #{day_counter + 1}
     %span=link_to 'Delete day', plan_day_path(day.plan, day), :method => :delete
   %section
     %ul.day-items

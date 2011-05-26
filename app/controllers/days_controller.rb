@@ -16,12 +16,14 @@ class DaysController < ApplicationController
 
   def destroy
     @day = Day.find(params[:id])
-    # Need to update all days that were later than this one so that we don't have any gaps
-    # in the day numbers
-    later_days = @day.plan.days.where('number > ?', @day.number)
-    later_days.each {|d| d.decrement!(:number)}
     @day.destroy
 
-    redirect_to :back, :notice => 'Deleted day'
+    redirect_to :back, :notice => "Delete day. #{undo_link}".html_safe
+  end
+
+  private
+
+  def undo_link
+    view_context.link_to("undo", revert_version_path(@day.versions.scoped.last), :method => :post)
   end
 end

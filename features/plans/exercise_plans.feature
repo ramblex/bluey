@@ -114,6 +114,21 @@ Feature: Manage exercise plans
         | 1   | Bench press          |
         | 2   | Bench press          |
         | 3   | Sit-ups              |
+      And I should see "undo"
+      When I follow "undo"
+      Then I should see the following plan:
+        | day | exercises            |
+        | 1   | Bench press          |
+        | 2   | Bench press, Sit-ups |
+        | 3   | Bench press          |
+        | 4   | Sit-ups              |
+      And I should see "redo"
+      When I follow "redo"
+      Then I should see the following plan:
+        | day | exercises            |
+        | 1   | Bench press          |
+        | 2   | Bench press          |
+        | 3   | Sit-ups              |
 
     @javascript
     Scenario: Try to input an exercise without a name
