@@ -141,3 +141,31 @@ Feature: Manage exercise plans
       Then I should see the following plan:
         | name        | day | exercises   |
         | Simple plan | 1   | Bench press |
+
+    @javascript
+    Scenario: Rename a plan
+      Given I sign in as "dave@dave.com/mypassword"
+      And I have the following plans created by Dave:
+        | name        | day | exercises   |
+        | Simple plan | 1   | Bench press |
+      And I am on the "Simple plan" plan page
+      When I click on "#plan h1 .on_the_spot_editing"
+      And I fill in "value" with "My new plan name"
+      And I press "Save" within "#plan h1"
+      Then I should see "My new plan name"
+      When I reload the page
+      Then I should see "My new plan name"
+
+    @javascript
+    Scenario: Change plan description
+      Given I sign in as "dave@dave.com/mypassword"
+      And I have the following plans created by Dave:
+        | name        | day | exercises   |
+        | Simple plan | 1   | Bench press |
+      And I am on the "Simple plan" plan page
+      When I click on "#plan #description .on_the_spot_editing"
+      And I fill in "value" with "New plan description"
+      And I press "Save" within "#plan #description"
+      Then I should see "New plan description"
+      When I reload the page
+      Then I should see "New plan description"
