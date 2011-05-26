@@ -31,3 +31,7 @@ $(document).ready ->
 
   # Notifications
   $('#notifications').delay(5000).fadeOut(2000)
+
+  $('a[data-remote="true"]').click ->
+    original = $(this).html()
+    $(this).html('Loading...').bind('ajax:complete', -> $(this).html(original))

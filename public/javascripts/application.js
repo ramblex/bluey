@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Sun, 22 May 2011 10:34:53 GMT from
+/* DO NOT MODIFY. This file was compiled Thu, 26 May 2011 17:27:08 GMT from
  * /Users/alexduller/www/bluey/app/coffeescripts/application.coffee
  */
 
@@ -39,6 +39,13 @@
       });
       return dialog_form.dialog('open');
     });
-    return $('#notifications').delay(5000).fadeOut(2000);
+    $('#notifications').delay(5000).fadeOut(2000);
+    return $('a[data-remote="true"]').click(function() {
+      var original;
+      original = $(this).html();
+      return $(this).html('Loading...').bind('ajax:complete', function() {
+        return $(this).html(original);
+      });
+    });
   });
 }).call(this);
