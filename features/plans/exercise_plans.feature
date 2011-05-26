@@ -195,3 +195,17 @@ Feature: Manage exercise plans
       Then I should see "New plan description"
       When I reload the page
       Then I should see "New plan description"
+
+    Scenario: Deleting a plan
+      Given I sign in as "dave@dave.com/mypassword"
+      And I have the following plans created by Dave:
+        | name        | day | exercises   |
+        | Simple plan | 1   | Bench press |
+      And I am on the plans page
+      When I follow "delete"
+      Then I should see "Deleted plan"
+      And I should not see "Simple plan"
+      When I follow "undo"
+      Then I should see "Simple plan"
+      When I follow "redo"
+      Then I should not see "Simple plan"

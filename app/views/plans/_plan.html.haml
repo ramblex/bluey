@@ -1,3 +1,4 @@
 %li
   = link_to plan.name, plan, :class => 'title'
   %p.creator Created by #{plan.creator.user_profile.name}
+  = link_to 'delete', plan_path(plan), :method => :delete, :class => 'cancel'

@@ -73,9 +73,12 @@ class PlansController < ApplicationController
     @plan = Plan.find(params[:id])
     @plan.destroy
 
-    respond_to do |format|
-      format.html { redirect_to(plans_url) }
-      format.xml  { head :ok }
-    end
+    redirect_to(plans_url, :notice => "Deleted plan #{undo_link}".html_safe)
+  end
+
+  private
+
+  def undo_link
+    view_context.link_to("undo", revert_version_path(@plan.versions.scoped.last), :method => :post)
   end
 end
