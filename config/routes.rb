@@ -1,6 +1,7 @@
 Bluey::Application.routes.draw do
   get "pages/landing"
   get "pages/dashboard"
+  post "versions/:id/revert" => "versions#revert", :as => "revert_version"
 
   # Users and their profile management
   match "profile/edit", :to => "user_profiles#edit", :via => "get"

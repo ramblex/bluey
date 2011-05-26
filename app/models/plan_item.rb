@@ -4,4 +4,5 @@ class PlanItem < ActiveRecord::Base
   has_many :plan_item_sets
   accepts_nested_attributes_for :plan_item_sets, :allow_destroy => true,
     :reject_if => proc { |attributes| attributes.all? {|k,v| v.blank?}}
+  has_paper_trail
 end

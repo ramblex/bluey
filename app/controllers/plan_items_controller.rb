@@ -29,6 +29,12 @@ class PlanItemsController < ApplicationController
   def destroy
     @plan_item = PlanItem.find(params[:id])
     @plan_item.destroy
-    redirect_to :back, :notice => 'Deleted exercise'
+    redirect_to :back, :notice => "Deleted exercise #{undo_link}".html_safe
+  end
+
+  private
+
+  def undo_link
+    view_context.link_to("undo", revert_version_path(@plan_item.versions.scoped.last), :method => :post)
   end
 end

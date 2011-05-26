@@ -141,6 +141,17 @@ Feature: Manage exercise plans
       Then I should see the following plan:
         | name        | day | exercises   |
         | Simple plan | 1   | Bench press |
+      And I should see "undo"
+      When I follow "undo"
+      Then I should see the following plan:
+        | name        | day | exercises   |
+        | Simple plan | 1   | Bench press |
+        |             | 1   | Bicep curls |
+      And I should see "redo"
+      When I follow "redo"
+      Then I should see the following plan:
+        | name        | day | exercises   |
+        | Simple plan | 1   | Bench press |
 
     @javascript
     Scenario: Rename a plan
