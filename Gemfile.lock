@@ -118,6 +118,8 @@ GEM
     nokogiri (1.4.4)
     on_the_spot (0.0.9)
       json_pure (>= 1.4.6)
+    paper_trail (2.2.4)
+      rails (~> 3)
     paperclip (2.3.8)
       activerecord
       activesupport
@@ -200,6 +202,7 @@ DEPENDENCIES
   mysql2 (= 0.2.7)
   nested_form
   on_the_spot (= 0.0.9)
+  paper_trail
   paperclip (= 2.3.8)
   rails (= 3.0.7)
   remotipart (= 0.3.4)

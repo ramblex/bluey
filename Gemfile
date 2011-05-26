@@ -19,6 +19,7 @@ gem 'remotipart', '0.3.4'
 gem 'slugify', '1.0.4'
 gem 'json'
 gem 'barista'
+gem 'paper_trail'
 
 # Use unicorn as the web server
 # gem 'unicorn'
