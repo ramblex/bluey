@@ -380,12 +380,12 @@ form p.number {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
   background-image: linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -o-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -khtml-border-radius: 12px;
-  border-radius: 12px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
   -moz-box-shadow: #bbbbbb 0 0 1px 0px;
   -webkit-box-shadow: #bbbbbb 0 0 1px 0px;
   -o-box-shadow: #bbbbbb 0 0 1px 0px;
@@ -538,12 +538,12 @@ form p.number {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
   background-image: linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -o-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -khtml-border-radius: 12px;
-  border-radius: 12px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
   -moz-box-shadow: #bbbbbb 0 0 1px 0px;
   -webkit-box-shadow: #bbbbbb 0 0 1px 0px;
   -o-box-shadow: #bbbbbb 0 0 1px 0px;
@@ -595,12 +595,12 @@ form p.number {
   -webkit-box-shadow: #333333 0 0 2px 0px;
   -o-box-shadow: #333333 0 0 2px 0px;
   box-shadow: #333333 0 0 2px 0px;
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -o-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -khtml-border-radius: 12px;
-  border-radius: 12px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
 }
 
 /* line 60, ../sass/pages/landing.sass */
@@ -1002,12 +1002,12 @@ nav ul {
   -o-box-shadow: #bbbbbb 0 0 2px 0px;
   box-shadow: #bbbbbb 0 0 2px 0px;
   border: 1px solid #999999;
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -o-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -khtml-border-radius: 12px;
-  border-radius: 12px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
   padding: 10px 0;
 }
 /* line 230, ../sass/screen.sass */
@@ -1073,34 +1073,43 @@ nav ul li a:hover, nav ul li a.selected {
 
 /* line 268, ../sass/screen.sass */
 #stats-bar {
+  opacity: 0.2;
   float: left;
-  margin: 20px 5px 20px 20px;
+  margin: 20px 5px 19px 10px;
   padding: 15px;
   height: 77px;
   width: 750px;
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
   background-image: linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -o-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -khtml-border-radius: 12px;
-  border-radius: 12px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
   -moz-box-shadow: #bbbbbb 0 0 1px 0px;
   -webkit-box-shadow: #bbbbbb 0 0 1px 0px;
   -o-box-shadow: #bbbbbb 0 0 1px 0px;
   box-shadow: #bbbbbb 0 0 1px 0px;
   border: 1px solid #999999;
+  position: relative;
+}
+/* line 277, ../sass/screen.sass */
+#stats-bar .coming-soon {
+  opacity: 20;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
-/* line 276, ../sass/screen.sass */
+/* line 283, ../sass/screen.sass */
 .badges {
   float: left;
   width: 150px;
 }
 
-/* line 280, ../sass/screen.sass */
+/* line 287, ../sass/screen.sass */
 #stats {
   color: white;
   float: right;
@@ -1108,32 +1117,32 @@ nav ul li a:hover, nav ul li a.selected {
   color: white;
   text-shadow: #378cbb 1px 1px 2px;
 }
-/* line 285, ../sass/screen.sass */
+/* line 292, ../sass/screen.sass */
 #stats h2 {
   letter-spacing: 0;
   margin: 5px 0;
   font-size: 18px;
   font-weight: normal;
 }
-/* line 290, ../sass/screen.sass */
+/* line 297, ../sass/screen.sass */
 #stats li {
   float: left;
   width: 150px;
   text-align: center;
 }
-/* line 294, ../sass/screen.sass */
+/* line 301, ../sass/screen.sass */
 #stats li p {
   font-size: 36px;
 }
-/* line 296, ../sass/screen.sass */
+/* line 303, ../sass/screen.sass */
 #stats li p span {
   font-size: 24px;
 }
-/* line 299, ../sass/screen.sass */
+/* line 306, ../sass/screen.sass */
 #stats li.meter h2 {
   margin-bottom: 0;
 }
-/* line 301, ../sass/screen.sass */
+/* line 308, ../sass/screen.sass */
 #stats li.meter span {
   margin-left: 52px;
   float: left;
@@ -1142,24 +1151,24 @@ nav ul li a:hover, nav ul li a.selected {
   background: url(/images/meter-bg.png) no-repeat;
   display: block;
 }
-/* line 308, ../sass/screen.sass */
+/* line 315, ../sass/screen.sass */
 #stats li.meter .hint {
   display: none;
 }
 
-/* line 311, ../sass/screen.sass */
+/* line 318, ../sass/screen.sass */
 #logout {
   display: block;
   margin-top: 20px;
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #990000), color-stop(45%, #990000), color-stop(45%, #a3322b), color-stop(100%, #a3322b));
   background-image: -moz-linear-gradient(bottom, #990000 0%, #990000 45%, #a3322b 45%, #a3322b 100%);
   background-image: linear-gradient(bottom, #990000 0%, #990000 45%, #a3322b 45%, #a3322b 100%);
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -o-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -khtml-border-radius: 12px;
-  border-radius: 12px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
   border: 1px solid #666666;
   -moz-box-shadow: #454545 0 0 2px 0px;
   -webkit-box-shadow: #454545 0 0 2px 0px;
@@ -1168,24 +1177,24 @@ nav ul li a:hover, nav ul li a.selected {
   height: 107px;
   float: left;
   margin-right: 0;
-  padding: 0 10px;
+  padding: 0 23px;
   color: white;
   line-height: 112px;
   text-decoration: none;
   font-size: 12px;
 }
 
-/* line 324, ../sass/screen.sass */
+/* line 331, ../sass/screen.sass */
 #content {
   clear: both;
-  margin: 0 20px 10px 20px;
-  padding: 15px;
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -o-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -khtml-border-radius: 12px;
-  border-radius: 12px;
+  margin: 0 10px 10px 10px;
+  padding: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
   -moz-box-shadow: #cccccc 0 0 3px 1px;
   -webkit-box-shadow: #cccccc 0 0 3px 1px;
   -o-box-shadow: #cccccc 0 0 3px 1px;
@@ -1194,26 +1203,26 @@ nav ul li a:hover, nav ul li a.selected {
   *zoom: 1;
 }
 
-/* line 332, ../sass/screen.sass */
+/* line 339, ../sass/screen.sass */
 #context-bar {
   height: 65px;
-  margin-bottom: 20px;
   font-weight: 550;
+  margin-bottom: 10px;
   /* Filter buttons */
   /* Search bar */
   /* Share button */
 }
-/* line 337, ../sass/screen.sass */
+/* line 344, ../sass/screen.sass */
 #context-bar ul {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
   background-image: linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -o-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -khtml-border-radius: 12px;
-  border-radius: 12px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
   -moz-box-shadow: #bbbbbb 0 0 1px 0px;
   -webkit-box-shadow: #bbbbbb 0 0 1px 0px;
   -o-box-shadow: #bbbbbb 0 0 1px 0px;
@@ -1223,11 +1232,11 @@ nav ul li a:hover, nav ul li a.selected {
   padding: 0 10px;
   width: 225px;
 }
-/* line 342, ../sass/screen.sass */
+/* line 349, ../sass/screen.sass */
 #context-bar ul li {
   float: left;
 }
-/* line 344, ../sass/screen.sass */
+/* line 351, ../sass/screen.sass */
 #context-bar ul li a {
   text-indent: -30000px;
   outline: 0;
@@ -1237,7 +1246,7 @@ nav ul li a:hover, nav ul li a.selected {
   display: block;
   margin: 7px 0;
 }
-/* line 351, ../sass/screen.sass */
+/* line 358, ../sass/screen.sass */
 #context-bar ul li a.profile {
   background-position: 0 -50px;
 }
@@ -1245,7 +1254,7 @@ nav ul li a:hover, nav ul li a.selected {
 #context-bar ul li a.profile:hover, #context-bar ul li a.profile.selected {
   background-position: 0 0;
 }
-/* line 353, ../sass/screen.sass */
+/* line 360, ../sass/screen.sass */
 #context-bar ul li a.community {
   background-position: -55px -50px;
 }
@@ -1253,7 +1262,7 @@ nav ul li a:hover, nav ul li a.selected {
 #context-bar ul li a.community:hover, #context-bar ul li a.community.selected {
   background-position: -55px 0;
 }
-/* line 355, ../sass/screen.sass */
+/* line 362, ../sass/screen.sass */
 #context-bar ul li a.challenges {
   background-position: -110px -50px;
 }
@@ -1261,7 +1270,7 @@ nav ul li a:hover, nav ul li a.selected {
 #context-bar ul li a.challenges:hover, #context-bar ul li a.challenges.selected {
   background-position: -110px 0;
 }
-/* line 357, ../sass/screen.sass */
+/* line 364, ../sass/screen.sass */
 #context-bar ul li a.financial {
   background-position: -165px -50px;
 }
@@ -1269,19 +1278,19 @@ nav ul li a:hover, nav ul li a.selected {
 #context-bar ul li a.financial:hover, #context-bar ul li a.financial.selected {
   background-position: -165px 0;
 }
-/* line 360, ../sass/screen.sass */
+/* line 367, ../sass/screen.sass */
 #context-bar input {
-  width: 235px;
+  width: 275px;
   height: 30px;
   padding: 10px 10px 10px 40px;
   background: url(/images/magnifying-glass.png) no-repeat 7px 10px white;
   border: 1px solid #aaaaaa;
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -o-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -khtml-border-radius: 12px;
-  border-radius: 12px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
   -moz-box-shadow: #666666 0 0 2px 0px;
   -webkit-box-shadow: #666666 0 0 2px 0px;
   -o-box-shadow: #666666 0 0 2px 0px;
@@ -1290,11 +1299,11 @@ nav ul li a:hover, nav ul li a.selected {
   font-size: 18px;
   color: #dddddd;
 }
-/* line 371, ../sass/screen.sass */
+/* line 378, ../sass/screen.sass */
 #context-bar input:focus {
   outline: none;
 }
-/* line 374, ../sass/screen.sass */
+/* line 381, ../sass/screen.sass */
 #context-bar #button {
   float: right;
   width: 245px;
@@ -1309,18 +1318,18 @@ nav ul li a:hover, nav ul li a.selected {
   border-radius: 4px;
   border: 1px solid #568302;
   text-decoration: none;
-  -moz-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -o-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -khtml-border-radius: 12px;
-  border-radius: 12px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  border-radius: 10px;
 }
-/* line 379, ../sass/screen.sass */
+/* line 386, ../sass/screen.sass */
 #context-bar #button:hover {
   background: #72bc00;
 }
-/* line 381, ../sass/screen.sass */
+/* line 388, ../sass/screen.sass */
 #context-bar #button a {
   display: block;
   text-decoration: none;
@@ -1329,7 +1338,7 @@ nav ul li a:hover, nav ul li a.selected {
   color: white;
   text-shadow: #568302 1px 1px 1px;
 }
-/* line 387, ../sass/screen.sass */
+/* line 394, ../sass/screen.sass */
 #context-bar #share {
   width: 195px;
   background: url(/images/share-icon.png) no-repeat 150px 5px;
@@ -1338,7 +1347,7 @@ nav ul li a:hover, nav ul li a.selected {
   padding: 15px 0 0 50px;
   height: 50px;
 }
-/* line 394, ../sass/screen.sass */
+/* line 401, ../sass/screen.sass */
 #context-bar #create-plan {
   height: 65px;
   line-height: 65px;

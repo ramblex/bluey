@@ -23,7 +23,7 @@ $total_width = 1000px
 $left_col_width = 107px
 $right_col_width = $total_width - $left_col_width
 $stats_bar_height = 107px
-$default_border_radius = 12px
+$default_border_radius = 10px
 $ctx_bar_height = 65px
 $content_width = $right_col_width - 80px
 
@@ -266,12 +266,19 @@ nav ul
   float: right
 
 #stats-bar
+  opacity: 0.2
   float: left
-  margin: 20px 5px 20px 20px
+  margin: 20px 5px 19px 10px
   padding: 15px
   height: $stats_bar_height - 30px
   width: 750px
   @include shiny-blue-box
+  position: relative
+  .coming-soon
+    opacity: 20
+    position: absolute
+    bottom: 10px
+    right: 10px
 
 .badges
   float: left
@@ -315,7 +322,7 @@ nav ul
   height: $stats_bar_height
   float: left
   margin-right: 0
-  padding: 0 10px
+  padding: 0 23px
   color: white
   line-height: $stats_bar_height + 5px
   text-decoration: none
@@ -323,16 +330,16 @@ nav ul
 
 #content
   clear: both
-  margin: 0 20px 10px 20px
-  padding: 15px
+  margin: 0 10px 10px 10px
+  padding: 10px
   @include border-radius($default_border_radius)
   @include box-shadow(#ccc, 0, 0, 3px, 1px)
   @include clearfix
 
 #context-bar
   height: $ctx_bar_height
-  margin-bottom: 20px
   font-weight: 550
+  margin-bottom: 10px
   /* Filter buttons */
   ul
     @include shiny-blue-box
@@ -358,7 +365,7 @@ nav ul
           @include filter-icon(-165px)
   /* Search bar */
   input
-    width: 235px
+    width: 275px
     height: 30px
     padding: 10px 10px 10px 40px
     background: url(/images/magnifying-glass.png) no-repeat 7px 10px white
