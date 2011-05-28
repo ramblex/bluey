@@ -209,3 +209,11 @@ Feature: Manage exercise plans
       Then I should see "Simple plan"
       When I follow "redo"
       Then I should not see "Simple plan"
+
+    Scenario: I should only be able to view my own plans
+      Given I sign in as "alex@test.com/mypassword"
+      And I have the following plans created by Dave:
+        | name        | day | exercises   |
+        | Simple plan | 1   | Bench press |
+      When I go to the "Simple plan" plan page
+      Then I should see "Unauthorised"

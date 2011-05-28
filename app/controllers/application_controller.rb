@@ -9,4 +9,8 @@ class ApplicationController < ActionController::Base
     end
     stored_location_for(:user) || default_path
   end
+
+  rescue_from CanCan::AccessDenied do |exception|
+    redirect_to '/unauthorised.html'
+  end
 end

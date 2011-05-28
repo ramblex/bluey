@@ -16,6 +16,7 @@ class PlansController < ApplicationController
   # GET /plans/1.xml
   def show
     @plan = Plan.find(params[:id])
+    authorize! :read, @plan
 
     respond_to do |format|
       format.html # show.html.erb
