@@ -20,6 +20,7 @@ gem 'slugify', '1.0.4'
 gem 'json'
 gem 'barista'
 gem 'paper_trail'
+gem 'friendly_id'
 
 # Use unicorn as the web server
 # gem 'unicorn'

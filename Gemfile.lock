@@ -32,6 +32,7 @@ GEM
     arel (2.0.9)
     autotest (4.4.6)
       ZenTest (>= 4.4.1)
+    babosa (0.2.2)
     barista (1.0.0)
       coffee-script (~> 2.1.1)
     bcrypt-ruby (2.1.4)
@@ -86,6 +87,8 @@ GEM
       railties (>= 3.0.0)
     ffi (1.0.7)
       rake (>= 0.8.7)
+    friendly_id (3.2.1)
+      babosa (~> 0.2.1)
     gherkin (2.3.7)
       json (>= 1.4.6)
     haml (3.0.25)
@@ -194,6 +197,7 @@ DEPENDENCIES
   database_cleaner
   devise (= 1.1.5)
   factory_girl_rails
+  friendly_id
   haml (= 3.0.25)
   hpricot (= 0.8.2)
   jquery-rails (>= 0.2.6)

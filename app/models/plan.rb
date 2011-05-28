@@ -4,4 +4,5 @@ class Plan < ActiveRecord::Base
   attr_accessible :name, :description, :plan_items_attributes
   has_many :days
   has_paper_trail
+  has_friendly_id :name, :use_slug => true
 end
