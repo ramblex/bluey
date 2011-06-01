@@ -45,8 +45,8 @@ ActiveRecord::Schema.define(:version => 20110528115949) do
     t.datetime "updated_at"
     t.integer  "day_id"
     t.integer  "position"
-    t.string   "name"
     t.boolean  "completed",  :default => false
+    t.string   "name"
   end
 
   create_table "plans", :force => true do |t|

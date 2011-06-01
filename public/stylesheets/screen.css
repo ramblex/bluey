@@ -1030,30 +1030,33 @@ nav ul li a#plans {
 }
 /* line 242, ../sass/screen.sass */
 nav ul li a#community {
+  opacity: 0.65;
   background: url(/images/community.png) no-repeat center 0;
 }
-/* line 244, ../sass/screen.sass */
+/* line 245, ../sass/screen.sass */
 nav ul li a#challenges {
+  opacity: 0.65;
   background: url(/images/challenges.png) no-repeat center 0;
 }
-/* line 246, ../sass/screen.sass */
+/* line 248, ../sass/screen.sass */
 nav ul li a#profile {
   background: url(/images/profile.png) no-repeat center 0;
 }
-/* line 248, ../sass/screen.sass */
+/* line 250, ../sass/screen.sass */
 nav ul li a#financial {
+  opacity: 0.65;
   background: url(/images/financial.png) no-repeat center 0;
 }
-/* line 250, ../sass/screen.sass */
+/* line 253, ../sass/screen.sass */
 nav ul li a:visited {
   color: #003777;
 }
-/* line 252, ../sass/screen.sass */
+/* line 255, ../sass/screen.sass */
 nav ul li a:hover, nav ul li a.selected {
   color: white;
 }
 
-/* line 255, ../sass/screen.sass */
+/* line 258, ../sass/screen.sass */
 #help {
   display: block;
   width: 107px;
@@ -1065,13 +1068,13 @@ nav ul li a:hover, nav ul li a.selected {
 }
 
 /* Right column */
-/* line 264, ../sass/screen.sass */
+/* line 267, ../sass/screen.sass */
 #right-col {
   width: 893px;
   float: right;
 }
 
-/* line 268, ../sass/screen.sass */
+/* line 271, ../sass/screen.sass */
 #stats-bar {
   opacity: 0.2;
   float: left;
@@ -1095,7 +1098,7 @@ nav ul li a:hover, nav ul li a.selected {
   border: 1px solid #999999;
   position: relative;
 }
-/* line 277, ../sass/screen.sass */
+/* line 280, ../sass/screen.sass */
 #stats-bar .coming-soon {
   opacity: 20;
   position: absolute;
@@ -1103,13 +1106,13 @@ nav ul li a:hover, nav ul li a.selected {
   right: 10px;
 }
 
-/* line 283, ../sass/screen.sass */
+/* line 286, ../sass/screen.sass */
 .badges {
   float: left;
   width: 150px;
 }
 
-/* line 287, ../sass/screen.sass */
+/* line 290, ../sass/screen.sass */
 #stats {
   color: white;
   float: right;
@@ -1117,32 +1120,32 @@ nav ul li a:hover, nav ul li a.selected {
   color: white;
   text-shadow: #378cbb 1px 1px 2px;
 }
-/* line 292, ../sass/screen.sass */
+/* line 295, ../sass/screen.sass */
 #stats h2 {
   letter-spacing: 0;
   margin: 5px 0;
   font-size: 18px;
   font-weight: normal;
 }
-/* line 297, ../sass/screen.sass */
+/* line 300, ../sass/screen.sass */
 #stats li {
   float: left;
   width: 150px;
   text-align: center;
 }
-/* line 301, ../sass/screen.sass */
+/* line 304, ../sass/screen.sass */
 #stats li p {
   font-size: 36px;
 }
-/* line 303, ../sass/screen.sass */
+/* line 306, ../sass/screen.sass */
 #stats li p span {
   font-size: 24px;
 }
-/* line 306, ../sass/screen.sass */
+/* line 309, ../sass/screen.sass */
 #stats li.meter h2 {
   margin-bottom: 0;
 }
-/* line 308, ../sass/screen.sass */
+/* line 311, ../sass/screen.sass */
 #stats li.meter span {
   margin-left: 52px;
   float: left;
@@ -1151,12 +1154,12 @@ nav ul li a:hover, nav ul li a.selected {
   background: url(/images/meter-bg.png) no-repeat;
   display: block;
 }
-/* line 315, ../sass/screen.sass */
+/* line 318, ../sass/screen.sass */
 #stats li.meter .hint {
   display: none;
 }
 
-/* line 318, ../sass/screen.sass */
+/* line 321, ../sass/screen.sass */
 #logout {
   display: block;
   margin-top: 20px;
@@ -1184,7 +1187,7 @@ nav ul li a:hover, nav ul li a.selected {
   font-size: 12px;
 }
 
-/* line 331, ../sass/screen.sass */
+/* line 334, ../sass/screen.sass */
 #content {
   clear: both;
   margin: 0 10px 10px 10px;
@@ -1203,7 +1206,7 @@ nav ul li a:hover, nav ul li a.selected {
   *zoom: 1;
 }
 
-/* line 339, ../sass/screen.sass */
+/* line 342, ../sass/screen.sass */
 #context-bar {
   height: 65px;
   font-weight: 550;
@@ -1212,7 +1215,7 @@ nav ul li a:hover, nav ul li a.selected {
   /* Search bar */
   /* Share button */
 }
-/* line 344, ../sass/screen.sass */
+/* line 347, ../sass/screen.sass */
 #context-bar ul {
   background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0%, #3baeee), color-stop(45%, #3baeee), color-stop(45%, #5ebdf1), color-stop(100%, #5ebdf1));
   background-image: -moz-linear-gradient(bottom, #3baeee 0%, #3baeee 45%, #5ebdf1 45%, #5ebdf1 100%);
@@ -1232,11 +1235,11 @@ nav ul li a:hover, nav ul li a.selected {
   padding: 0 10px;
   width: 225px;
 }
-/* line 349, ../sass/screen.sass */
+/* line 352, ../sass/screen.sass */
 #context-bar ul li {
   float: left;
 }
-/* line 351, ../sass/screen.sass */
+/* line 354, ../sass/screen.sass */
 #context-bar ul li a {
   text-indent: -30000px;
   outline: 0;
@@ -1246,7 +1249,7 @@ nav ul li a:hover, nav ul li a.selected {
   display: block;
   margin: 7px 0;
 }
-/* line 358, ../sass/screen.sass */
+/* line 361, ../sass/screen.sass */
 #context-bar ul li a.profile {
   background-position: 0 -50px;
 }
@@ -1254,7 +1257,7 @@ nav ul li a:hover, nav ul li a.selected {
 #context-bar ul li a.profile:hover, #context-bar ul li a.profile.selected {
   background-position: 0 0;
 }
-/* line 360, ../sass/screen.sass */
+/* line 363, ../sass/screen.sass */
 #context-bar ul li a.community {
   background-position: -55px -50px;
 }
@@ -1262,7 +1265,7 @@ nav ul li a:hover, nav ul li a.selected {
 #context-bar ul li a.community:hover, #context-bar ul li a.community.selected {
   background-position: -55px 0;
 }
-/* line 362, ../sass/screen.sass */
+/* line 365, ../sass/screen.sass */
 #context-bar ul li a.challenges {
   background-position: -110px -50px;
 }
@@ -1270,7 +1273,7 @@ nav ul li a:hover, nav ul li a.selected {
 #context-bar ul li a.challenges:hover, #context-bar ul li a.challenges.selected {
   background-position: -110px 0;
 }
-/* line 364, ../sass/screen.sass */
+/* line 367, ../sass/screen.sass */
 #context-bar ul li a.financial {
   background-position: -165px -50px;
 }
@@ -1278,7 +1281,7 @@ nav ul li a:hover, nav ul li a.selected {
 #context-bar ul li a.financial:hover, #context-bar ul li a.financial.selected {
   background-position: -165px 0;
 }
-/* line 367, ../sass/screen.sass */
+/* line 370, ../sass/screen.sass */
 #context-bar input {
   width: 275px;
   height: 30px;
@@ -1299,11 +1302,11 @@ nav ul li a:hover, nav ul li a.selected {
   font-size: 18px;
   color: #dddddd;
 }
-/* line 378, ../sass/screen.sass */
+/* line 381, ../sass/screen.sass */
 #context-bar input:focus {
   outline: none;
 }
-/* line 381, ../sass/screen.sass */
+/* line 384, ../sass/screen.sass */
 #context-bar #button {
   float: right;
   width: 245px;
@@ -1325,11 +1328,11 @@ nav ul li a:hover, nav ul li a.selected {
   -khtml-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 386, ../sass/screen.sass */
+/* line 389, ../sass/screen.sass */
 #context-bar #button:hover {
   background: #72bc00;
 }
-/* line 388, ../sass/screen.sass */
+/* line 391, ../sass/screen.sass */
 #context-bar #button a {
   display: block;
   text-decoration: none;
@@ -1338,7 +1341,7 @@ nav ul li a:hover, nav ul li a.selected {
   color: white;
   text-shadow: #568302 1px 1px 1px;
 }
-/* line 394, ../sass/screen.sass */
+/* line 397, ../sass/screen.sass */
 #context-bar #share {
   width: 195px;
   background: url(/images/share-icon.png) no-repeat 150px 5px;
@@ -1347,7 +1350,7 @@ nav ul li a:hover, nav ul li a.selected {
   padding: 15px 0 0 50px;
   height: 50px;
 }
-/* line 401, ../sass/screen.sass */
+/* line 404, ../sass/screen.sass */
 #context-bar #create-plan {
   height: 65px;
   line-height: 65px;
