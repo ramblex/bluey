@@ -229,7 +229,7 @@ form p.number {
 /* New plans form */
 /* line 105, ../sass/forms.sass */
 #new_plan input[type=text].wide, #new_plan textarea.wide {
-  width: 803px;
+  width: 843px;
 }
 /* line 108, ../sass/forms.sass */
 #new_plan .add-plan-item {
@@ -305,7 +305,7 @@ form p.number {
 }
 /* line 146, ../sass/forms.sass */
 #new_plan #plan_submit {
-  width: 813px;
+  width: 853px;
 }
 
 /* line 1, ../sass/pages/user-profile.sass */
@@ -621,28 +621,34 @@ form p.number {
  * Contents:
  * - 
  */
-/* line 9, ../sass/pages/plans.sass */
+/* line 12, ../sass/pages/plans.sass */
+#plan {
+  float: left;
+  width: 853px;
+  margin-right: 10px;
+}
+/* line 16, ../sass/pages/plans.sass */
 #plan h1 {
   margin: 10px 0;
 }
 
-/* line 13, ../sass/pages/plans.sass */
+/* line 20, ../sass/pages/plans.sass */
 ul.plans li {
   padding: 5px 0;
 }
-/* line 15, ../sass/pages/plans.sass */
+/* line 22, ../sass/pages/plans.sass */
 ul.plans li a.title {
   font-weight: bold;
   font-size: 13.34px;
 }
-/* line 18, ../sass/pages/plans.sass */
+/* line 25, ../sass/pages/plans.sass */
 ul.plans li .creator {
   font-size: 11px;
   color: #666666;
 }
 
-/* line 22, ../sass/pages/plans.sass */
-.day {
+/* line 29, ../sass/pages/plans.sass */
+.day, .history {
   margin-bottom: 10px;
   background: #efefef;
   border: 1px solid #cccccc;
@@ -652,32 +658,35 @@ ul.plans li .creator {
   -ms-border-radius: 4px;
   -khtml-border-radius: 4px;
   border-radius: 4px;
+}
+
+/* line 35, ../sass/pages/plans.sass */
+.day {
   /* Form to add an exercise */
 }
-/* line 27, ../sass/pages/plans.sass */
+/* line 36, ../sass/pages/plans.sass */
 .day h3 {
   font-weight: normal;
   padding: 7px 7px 0 7px;
   font-size: 18px;
 }
-/* line 31, ../sass/pages/plans.sass */
+/* line 40, ../sass/pages/plans.sass */
 .day h3 a {
   float: right;
   font-size: 12px;
 }
-/* line 34, ../sass/pages/plans.sass */
+/* line 43, ../sass/pages/plans.sass */
 .day section {
   padding: 0 7px;
 }
-/* line 36, ../sass/pages/plans.sass */
+/* line 45, ../sass/pages/plans.sass */
 .day section li {
   overflow: hidden;
   *zoom: 1;
   padding: 7px 0;
   border-bottom: 1px dotted #cdcdcd;
-  margin-bottom: -1px;
 }
-/* line 42, ../sass/pages/plans.sass */
+/* line 50, ../sass/pages/plans.sass */
 .day form {
   background: #fffcc3;
   margin: 10px 20px;
@@ -685,21 +694,21 @@ ul.plans li .creator {
   font-size: 12px;
   float: left;
 }
-/* line 48, ../sass/pages/plans.sass */
+/* line 56, ../sass/pages/plans.sass */
 .day form label {
   font-weight: bold;
   width: 70px;
   display: inline-block;
 }
-/* line 52, ../sass/pages/plans.sass */
+/* line 60, ../sass/pages/plans.sass */
 .day form .buttons {
   padding-bottom: 5px;
 }
-/* line 54, ../sass/pages/plans.sass */
+/* line 62, ../sass/pages/plans.sass */
 .day form p {
   margin-bottom: 5px;
 }
-/* line 57, ../sass/pages/plans.sass */
+/* line 65, ../sass/pages/plans.sass */
 .day form #error_explanation h3 {
   background: none;
   padding: 0;
@@ -709,30 +718,30 @@ ul.plans li .creator {
   color: #990000;
   font-size: 13.34px;
 }
-/* line 65, ../sass/pages/plans.sass */
+/* line 73, ../sass/pages/plans.sass */
 .day form #error_explanation li {
   border: 0;
 }
 
-/* line 68, ../sass/pages/plans.sass */
+/* line 76, ../sass/pages/plans.sass */
 li.plan-item.completed {
   color: #cdcdcd;
 }
 
-/* line 71, ../sass/pages/plans.sass */
+/* line 79, ../sass/pages/plans.sass */
 #no-days {
   display: block;
   margin-bottom: 10px;
 }
 
-/* line 75, ../sass/pages/plans.sass */
+/* line 83, ../sass/pages/plans.sass */
 .add-exercise {
   display: inline-block;
   margin: 7px;
   font-size: 12px;
 }
 
-/* line 80, ../sass/pages/plans.sass */
+/* line 88, ../sass/pages/plans.sass */
 .found span {
   background: #cdcdcd;
   border: 1px solid #cccccc;
@@ -747,16 +756,16 @@ li.plan-item.completed {
   margin-right: 5px;
 }
 
-/* line 88, ../sass/pages/plans.sass */
+/* line 96, ../sass/pages/plans.sass */
 .plan-item {
   /* Delete link */
 }
-/* line 89, ../sass/pages/plans.sass */
+/* line 97, ../sass/pages/plans.sass */
 .plan-item header {
   float: left;
-  width: 400px;
+  width: 200px;
 }
-/* line 92, ../sass/pages/plans.sass */
+/* line 100, ../sass/pages/plans.sass */
 .plan-item section {
   float: left;
   border: 0;
@@ -764,12 +773,7 @@ li.plan-item.completed {
   width: 300px;
   padding: 0;
 }
-/* line 98, ../sass/pages/plans.sass */
-.plan-item section ul {
-  margin: 0;
-  padding: 0;
-}
-/* line 101, ../sass/pages/plans.sass */
+/* line 106, ../sass/pages/plans.sass */
 .plan-item section ul li {
   font-size: 12px;
   float: left;
@@ -784,10 +788,29 @@ li.plan-item.completed {
   margin: 0 5px 0 0;
   border: 0;
 }
-/* line 110, ../sass/pages/plans.sass */
+/* line 115, ../sass/pages/plans.sass */
 .plan-item footer {
   float: right;
   padding-top: 3px;
+}
+
+/* Plan history */
+/* line 120, ../sass/pages/plans.sass */
+sidebar.history {
+  float: right;
+  width: 218px;
+  padding: 5px;
+}
+/* line 124, ../sass/pages/plans.sass */
+sidebar.history li {
+  padding: 7px 0;
+  border-bottom: 1px dotted #cdcdcd;
+}
+/* line 127, ../sass/pages/plans.sass */
+sidebar.history li span {
+  font-size: 11px;
+  display: block;
+  color: #666666;
 }
 
 /* Globals and wrapper */

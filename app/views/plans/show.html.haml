@@ -1,7 +1,7 @@
 = load_controller_js
 
 = render :partial => 'context_bar'
-= link_to '&laquo; My plans'.html_safe, plans_path
+%p= link_to '&laquo; My plans'.html_safe, plans_path
 #plan
   %h1= on_the_spot_edit @plan, :name
   %p#description= on_the_spot_edit @plan, :description, :type => :textarea

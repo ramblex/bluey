@@ -5,6 +5,7 @@ en:
   time:
     formats:
       short: "%d %B %Y"
+      with_time: "%d %B %Y %H:%M %Z"
   activerecord:
     attributes:
       plan_item:

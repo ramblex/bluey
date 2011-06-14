@@ -1,46 +1,24 @@
 /*
-Syntax error: Undefined variable: "$normal".
-        on line 17 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass
+Syntax error: Undefined variable: "$content_width".
+        on line 10 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass
 
-12: ul.plans
-13:   li
-14:     padding: 5px 0
-15:     a.title
-16:       font-weight: bold
-17:       font-size: $normal
-18:     .creator
-19:       font-size: $tiny
-20:       color: #666
-21: 
-22: .day
+5:  * - 
+6:  */
+7: 
+8: $plan_history_width = 230px
+9: $plan_right_margin = 10px
+10: $plan_width = $content_width
+11: 
+12: #plan
+13:   float: left
+14:   width: $plan_width
+15:   margin-right: $plan_right_margin
 
 Backtrace:
-/Users/alexduller/www/bluey/public/sass/pages/plans.sass:17
+/Users/alexduller/www/bluey/public/sass/pages/plans.sass:10
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/script/variable.rb:39:in `_perform'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/script/node.rb:61:in `perform'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/prop_node.rb:132:in `perform!'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/rule_node.rb:191:in `perform!'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/rule_node.rb:191:in `perform!'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:317:in `perform!'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/rule_node.rb:191:in `perform!'
-/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:305:in `_perform'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/variable_node.rb:30:in `_perform'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:213:in `perform'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `perform_children'
 /Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/tree/node.rb:327:in `map'
@@ -115,4 +93,4 @@ script/rails:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$normal\".\A         on line 17 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass\A \A 12: ul.plans\A 13:   li\A 14:     padding: 5px 0\A 15:     a.title\A 16:       font-weight: bold\A 17:       font-size: $normal\A 18:     .creator\A 19:       font-size: $tiny\A 20:       color: #666\A 21: \A 22: .day"; }
+  content: "Syntax error: Undefined variable: \"$content_width\".\A         on line 10 of /Users/alexduller/www/bluey/public/sass/pages/plans.sass\A \A 5:  * - \A 6:  */\A 7: \A 8: $plan_history_width = 230px\A 9: $plan_right_margin = 10px\A 10: $plan_width = $content_width\A 11: \A 12: #plan\A 13:   float: left\A 14:   width: $plan_width\A 15:   margin-right: $plan_right_margin"; }
