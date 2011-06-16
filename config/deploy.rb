@@ -1,8 +1,10 @@
 require 'bundler/capistrano'
 set :application, "bluey"
 set :repository,  "git://github.com/ramblex/bluey.git"
-set :user, "alexd"
-set :ip, "178.79.132.38"
+#set :user, "alexd"
+set :user, "blueyfit.com"
+#set :ip, "178.79.132.38"
+set :ip, "s113184.gridserver.com"
 ssh_options[:forward_agent] = true
 
 default_run_options[:pty] = true
@@ -10,7 +12,8 @@ default_run_options[:pty] = true
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-set :deploy_to, "/home/#{user}/public_html/#{application}"
+#set :deploy_to, "/home/#{user}/public_html/#{application}"
+set :deploy_to, "/home/113184/users/.home/domains/bluey"
 set :deploy_via, :remote_cache
 
 set :default_environment, {

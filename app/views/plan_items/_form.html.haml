@@ -13,6 +13,11 @@
   = f.link_to_add 'Add another set', :plan_item_sets
   %hr
   %p.buttons
-    = f.submit 'Add exercise'
-    or
-    = link_to "I'm done adding exercises", '#', :class => 'cancel', :id => 'cancel-add-exercise'
+    - if local_assigns[:edit_form].nil?
+      = f.submit 'Add exercise'
+      or
+      = link_to "I'm done adding exercises", '#', :class => 'cancel', :id => 'cancel-add-exercise'
+    - else
+      = f.submit 'Update'
+      or
+      = link_to "cancel", '#', :class => 'cancel', :id => 'cancel-edit-exercise'

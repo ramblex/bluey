@@ -1,4 +1,4 @@
-%li.plan-item
+%li.plan-item{:id => "plan_item_#{plan_item.id}"}
   %header
     = check_box_tag plan_item.name, plan_item.id, plan_item.completed, 
                     :'data-url' => plan_day_plan_item_path(plan_item.day.plan, plan_item.day, plan_item)
@@ -8,4 +8,5 @@
       - plan_item.plan_item_sets.each_with_index do |set, idx|
         %li= "<strong>Set #{idx + 1}</strong>: #{set.measurements}".html_safe
   %footer
+    = link_to 'Edit', edit_plan_day_plan_item_path(plan_item.day.plan, plan_item.day, plan_item), :remote => :true
     = link_to 'Delete', plan_day_plan_item_path(plan_item.day.plan, plan_item.day, plan_item), :method => :delete

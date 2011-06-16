@@ -18,6 +18,12 @@ class PlanItemsController < ApplicationController
     end
   end
 
+  def edit
+    @plan_item = PlanItem.find(params[:id])
+    @plan = Plan.find(params[:plan_id])
+    @day = Day.find(params[:day_id])
+  end
+
   # PUT /update/:id
   def update
     @plan_item = PlanItem.find(params[:id])

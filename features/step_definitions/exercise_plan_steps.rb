@@ -120,6 +120,7 @@ When /^I add the following days:$/ do |table|
       And %{the "Exercise" field should contain "^$"}
     end
   end
+  When %{I follow "I'm done adding exercises"}
 end
 
 When /I try to add an empty exercise/ do
@@ -134,6 +135,14 @@ When /^I delete the exercise (\d+) on day (\d+)$/ do |exercise, day|
   within(:plan_day, day) do
     within(:plan_list_item, exercise) do
       When %{I follow "Delete"}
+    end
+  end
+end
+
+When /^I open the edit form for exercise (\d+) on day (\d+)$/ do |exercise, day|
+  within(:plan_day, day) do
+    within(:plan_list_item, exercise) do
+      When %{I follow "Edit"}
     end
   end
 end
