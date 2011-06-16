@@ -1,2 +1,2 @@
 <%- item_selector = "#plan_item_#{@plan_item.id}" %>
-$('<%= item_selector %>').after('<%= escape_javascript render(:partial => 'form', :locals => {:edit_form => true}) %>');
+$('<%= item_selector %>').append('<%= escape_javascript render(:partial => 'form', :locals => {:edit_form => true}) %>');

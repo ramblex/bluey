@@ -27,8 +27,12 @@ class PlanItemsController < ApplicationController
   # PUT /update/:id
   def update
     @plan_item = PlanItem.find(params[:id])
-    if @plan_item.update_attributes(params[:plan_item])
-      render :text => "Updated plan item"
+    respond_to do |format|
+      if @plan_item.update_attributes(params[:plan_item])
+        format.js
+      else
+        format.js
+      end
     end
   end
 

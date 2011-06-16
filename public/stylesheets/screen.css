@@ -8,7 +8,7 @@
  * - Left column
  * - Right column
  */
-/* line 14, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 14, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -28,42 +28,42 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   vertical-align: baseline;
 }
 
-/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
   color: black;
   background: white;
 }
 
-/* line 19, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 19, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 21, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: separate;
   border-spacing: 0;
   vertical-align: middle;
 }
 
-/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 23, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 25, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 25, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: "" "";
 }
-/* line 96, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 96, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
 }
 
-/* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 27, ../../../../../../usr/lib/ruby/gems/1.8/gems/compass-0.10.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
@@ -662,31 +662,33 @@ ul.plans li .creator {
 
 /* line 35, ../sass/pages/plans.sass */
 .day {
+  overflow: hidden;
+  *zoom: 1;
   /* Form to add an exercise */
 }
-/* line 36, ../sass/pages/plans.sass */
+/* line 37, ../sass/pages/plans.sass */
 .day h3 {
   font-weight: normal;
   padding: 7px 7px 0 7px;
   font-size: 18px;
 }
-/* line 40, ../sass/pages/plans.sass */
+/* line 41, ../sass/pages/plans.sass */
 .day h3 a {
   float: right;
   font-size: 12px;
 }
-/* line 43, ../sass/pages/plans.sass */
+/* line 44, ../sass/pages/plans.sass */
 .day section {
   padding: 0 7px;
 }
-/* line 45, ../sass/pages/plans.sass */
+/* line 46, ../sass/pages/plans.sass */
 .day section li {
   overflow: hidden;
   *zoom: 1;
   padding: 7px 0;
   border-bottom: 1px dotted #cdcdcd;
 }
-/* line 50, ../sass/pages/plans.sass */
+/* line 51, ../sass/pages/plans.sass */
 .day form {
   background: #fffcc3;
   margin: 10px 20px;
@@ -694,21 +696,21 @@ ul.plans li .creator {
   font-size: 12px;
   float: left;
 }
-/* line 56, ../sass/pages/plans.sass */
+/* line 57, ../sass/pages/plans.sass */
 .day form label {
   font-weight: bold;
   width: 70px;
   display: inline-block;
 }
-/* line 60, ../sass/pages/plans.sass */
+/* line 61, ../sass/pages/plans.sass */
 .day form .buttons {
   padding-bottom: 5px;
 }
-/* line 62, ../sass/pages/plans.sass */
+/* line 63, ../sass/pages/plans.sass */
 .day form p {
   margin-bottom: 5px;
 }
-/* line 65, ../sass/pages/plans.sass */
+/* line 66, ../sass/pages/plans.sass */
 .day form #error_explanation h3 {
   background: none;
   padding: 0;
@@ -718,30 +720,30 @@ ul.plans li .creator {
   color: #990000;
   font-size: 13.34px;
 }
-/* line 73, ../sass/pages/plans.sass */
+/* line 74, ../sass/pages/plans.sass */
 .day form #error_explanation li {
   border: 0;
 }
 
-/* line 76, ../sass/pages/plans.sass */
+/* line 77, ../sass/pages/plans.sass */
 li.plan-item.completed {
   color: #cdcdcd;
 }
 
-/* line 79, ../sass/pages/plans.sass */
+/* line 80, ../sass/pages/plans.sass */
 #no-days {
   display: block;
   margin-bottom: 10px;
 }
 
-/* line 83, ../sass/pages/plans.sass */
+/* line 84, ../sass/pages/plans.sass */
 .add-exercise {
   display: inline-block;
   margin: 7px;
   font-size: 12px;
 }
 
-/* line 88, ../sass/pages/plans.sass */
+/* line 89, ../sass/pages/plans.sass */
 .found span {
   background: #cdcdcd;
   border: 1px solid #cccccc;
@@ -756,16 +758,16 @@ li.plan-item.completed {
   margin-right: 5px;
 }
 
-/* line 96, ../sass/pages/plans.sass */
+/* line 97, ../sass/pages/plans.sass */
 .plan-item {
   /* Delete link */
 }
-/* line 97, ../sass/pages/plans.sass */
+/* line 98, ../sass/pages/plans.sass */
 .plan-item header {
   float: left;
   width: 200px;
 }
-/* line 100, ../sass/pages/plans.sass */
+/* line 101, ../sass/pages/plans.sass */
 .plan-item section {
   float: left;
   border: 0;
@@ -773,7 +775,7 @@ li.plan-item.completed {
   width: 300px;
   padding: 0;
 }
-/* line 106, ../sass/pages/plans.sass */
+/* line 107, ../sass/pages/plans.sass */
 .plan-item section ul li {
   font-size: 12px;
   float: left;
@@ -788,25 +790,25 @@ li.plan-item.completed {
   margin: 0 5px 0 0;
   border: 0;
 }
-/* line 115, ../sass/pages/plans.sass */
+/* line 116, ../sass/pages/plans.sass */
 .plan-item footer {
   float: right;
   padding-top: 3px;
 }
 
 /* Plan history */
-/* line 120, ../sass/pages/plans.sass */
+/* line 121, ../sass/pages/plans.sass */
 sidebar.history {
   float: right;
   width: 218px;
   padding: 5px;
 }
-/* line 124, ../sass/pages/plans.sass */
+/* line 125, ../sass/pages/plans.sass */
 sidebar.history li {
   padding: 7px 0;
   border-bottom: 1px dotted #cdcdcd;
 }
-/* line 127, ../sass/pages/plans.sass */
+/* line 128, ../sass/pages/plans.sass */
 sidebar.history li span {
   font-size: 11px;
   display: block;
