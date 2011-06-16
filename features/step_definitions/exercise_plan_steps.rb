@@ -146,3 +146,7 @@ When /^I open the edit form for exercise (\d+) on day (\d+)$/ do |exercise, day|
     end
   end
 end
+
+Then /^the edit form should be closed$/ do
+  page.should_not have_css('.edit_plan_item')
+end

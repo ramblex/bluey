@@ -233,5 +233,26 @@ Feature: Manage exercise plans
       And I open the edit form for exercise 2 on day 1
       And I fill in "Exercise" with "My other exercise"
       And I press "Update"
-      Then I should see "My other exercise"
+      Then show me the page
+      Then I should see the following plan:
+        | day  | exercises                                             |
+        | 1    | Bench press (Set 1: 10 kg 10 minutes, Set 2: 15 kg)   |
+        | 1    | My other exercise (Set 1: 10 minutes)                           |
+        | 2    | Bench press (Set 1: 10 kg 10 minutes)                 |
       And I should not see "Update"
+
+    @javascript
+    Scenario: Cancel editing a plan item
+      Given I sign in as "dave@dave.com/mypassword"
+      And I have the following plans created by Dave:
+        | name        | day | exercises |
+        | Dave's plan |     |           |
+      And I am on the "Dave's plan" plan page
+      When I add the following days:
+        | day  | exercises                                             |
+        | 1    | Bench press (Set 1: 10 kg 10 minutes, Set 2: 15 kg)   |
+        | 1    | Sit-ups (Set 1: 10 minutes)                           |
+        | 2    | Bench press (Set 1: 10 kg 10 minutes)                 |
+      And I open the edit form for exercise 2 on day 1
+      And I follow "cancel"
+      Then the edit form should be closed

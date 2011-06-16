@@ -1,6 +1,3 @@
 <%- item_selector = "#plan_item_#{@plan_item.id}" %>
 $('<%= item_selector %>')
-  .fadeOut(100, function() {
-    $(this).replaceWith('<%= escape_javascript(render(@plan_item)) %>')
-    .fadeIn(500);
-  });
+  .replaceWith('<%= escape_javascript(render(@plan_item)) %>');
