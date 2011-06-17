@@ -226,19 +226,19 @@ Feature: Manage exercise plans
         | Dave's plan |     |           |
       And I am on the "Dave's plan" plan page
       When I add the following days:
-        | day  | exercises                                             |
-        | 1    | Bench press (Set 1: 10 kg 10 minutes, Set 2: 15 kg)   |
-        | 1    | Sit-ups (Set 1: 10 minutes)                           |
-        | 2    | Bench press (Set 1: 10 kg 10 minutes)                 |
+        | day  | exercises                    |
+        | 1    | Bench press                  |
+        | 1    | Sit-ups                      |
+        | 2    | Bench press                  |
       And I open the edit form for exercise 2 on day 1
       And I fill in "Exercise" with "My other exercise"
       And I press "Update"
       Then show me the page
       Then I should see the following plan:
-        | day  | exercises                                             |
-        | 1    | Bench press (Set 1: 10 kg 10 minutes, Set 2: 15 kg)   |
-        | 1    | My other exercise (Set 1: 10 minutes)                           |
-        | 2    | Bench press (Set 1: 10 kg 10 minutes)                 |
+        | day  | exercises                    |
+        | 1    | Bench press                  |
+        | 1    | My other exercise            |
+        | 2    | Bench press                  |
       And I should not see "Update"
 
     @javascript

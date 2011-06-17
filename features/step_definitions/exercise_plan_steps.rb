@@ -106,12 +106,14 @@ When /^I add the following days:$/ do |table|
       And %{I should not see "No days have been added to this plan yet!"}
       When %{I follow "Add exercise"} if find_link("Add exercise").visible?
       exercise, sets = hash[:exercises].split('(')
-      sets.gsub!(")", "")
-      sets.split(",").each_with_index do |set, idx|
-        set_num, metrics = set.strip.scan(/^Set (\d+): (.*)$/)[0]
-        When %{I follow "Add another set"} unless idx == 0
-        within(:plan_metric, idx + 1) do
-          And %{I fill in "Set" with "#{metrics}"}
+      unless sets.nil?
+        sets.gsub!(")", "")
+        sets.split(",").each_with_index do |set, idx|
+          set_num, metrics = set.strip.scan(/^Set (\d+): (.*)$/)[0]
+          When %{I follow "Add another set"} unless idx == 0
+          within(:plan_metric, idx + 1) do
+            And %{I fill in "Set" with "#{metrics}"}
+          end
         end
       end
       And %{I fill in "Exercise" with "#{exercise.strip}"}
