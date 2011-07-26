@@ -16,7 +16,9 @@ set :deploy_to, "/home/#{user}/#{application}"
 #set :deploy_via, :remote_cache
 
 set :default_environment, {
-  'PATH' => '/var/lib/gems/1.8/bin:$PATH'
+  'PATH' => '/home/blueybot/.rvm/gems/ruby-1.9.2-p180/bin:$PATH',
+  'GEM_HOME' => '/home/blueybot/.rvm/gems/ruby-1.9.2-p180',
+  'GEM_PATH' => '/home/blueybot/.rvm/gems/ruby-1.9.2-p180'
 }
 
 role :web, ip                          # Your HTTP server, Apache/etc
