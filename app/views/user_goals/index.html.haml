@@ -4,12 +4,13 @@
       %li{:style => "top: #{part.y}px; left: #{part.x}px", :name => part.name}= link_to part.name, '#'
   #parts
     - @user_goals.group_by(&:body_part).each do |part, goals|
+      - next if part.nil?
       %div{:name => part.name, :class => 'body-part-form'}
         %h3= part.name
-        = form_tag(user_goals_path, :remote => true, :id => "edit_#{part.name.slugify}", :method => :put) do
+        = form_tag(user_goals_path, :remote => true, :id => "edit_#{part.name.to_slug.downcase}", :method => :put) do
           - goals.each do |goal|
             = fields_for "user_goals[]", goal do |f|
-              = field_set_tag goal.name, :id => goal.name.slugify do
+              = field_set_tag goal.name, :id => goal.name.to_slug.downcase do
                 %div{:class => 'form_errors'}
                   = render 'shared/form_errors', :object => goal
                 %p.number

@@ -171,6 +171,7 @@ GEM
     sexp_processor (3.0.5)
     term-ansicolor (1.0.5)
     thor (0.14.6)
+    to_slug (1.0.8)
     treetop (1.4.9)
       polyglot (>= 0.3.1)
     tzinfo (0.3.27)
@@ -211,3 +212,4 @@ DEPENDENCIES
   remotipart (= 0.3.4)
   rspec-rails
   ruby_parser (= 2.0.4)
+  to_slug (= 1.0.8)
