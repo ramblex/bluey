@@ -1,10 +1,10 @@
 require 'bundler/capistrano'
-set :application, "bluey"
+set :application, "bluey_web"
 set :repository,  "git://github.com/ramblex/bluey.git"
 #set :user, "alexd"
-set :user, "blueyfit.com"
+set :user, "blueybot"
 #set :ip, "178.79.132.38"
-set :ip, "s113184.gridserver.com"
+set :ip, "blueyfit.com"
 ssh_options[:forward_agent] = true
 
 default_run_options[:pty] = true
@@ -12,9 +12,8 @@ default_run_options[:pty] = true
 set :scm, :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-#set :deploy_to, "/home/#{user}/public_html/#{application}"
-set :deploy_to, "/home/113184/users/.home/domains/bluey"
-set :deploy_via, :remote_cache
+set :deploy_to, "/home/#{user}/#{application}"
+#set :deploy_via, :remote_cache
 
 set :default_environment, {
   'PATH' => '/var/lib/gems/1.8/bin:$PATH'
@@ -36,8 +35,8 @@ namespace :deploy do
   end
 
   task :symlink_shared do
-    run "ln -sfn /home/#{user}/public_html/#{application}/shared/database.yml #{release_path}/config/database.yml"
-    run "ln -sfn /home/#{user}/public_html/#{application}/shared/bluey.mov #{release_path}/public/videos/bluey.mov"
+    run "ln -sfn /home/#{user}/#{application}/shared/database.yml #{release_path}/config/database.yml"
+    run "ln -sfn /home/#{user}/#{application}/shared/bluey.mov #{release_path}/public/videos/bluey.mov"
   end
 
   after 'deploy:update_code', 'deploy:symlink_shared'
